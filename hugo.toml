@@ -1,4 +1,4 @@
-baseURL = 'https://riscv-summit-china.com'
+baseURL = 'https://riscv-summit-china.com/'
 languageCode = 'en-us'
 title = 'RISC-V Summit China 2024'
-theme = 'ananke'
+theme = 'hugo-liftoff'
