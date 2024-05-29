@@ -60,7 +60,7 @@ We invite submissions of RISC-V related presentations to discuss the following t
 The speaker submission period for RVSC2024 is from May 28 to June 22, and speakers will receive a notification of the results around July 7. Submission address:
 
 - (Chinese) https://www.wenjuan.com/s/MfqIZj4/
-- (English) TBD. Available before June 1st.
+- (English) https://www.wenjuan.com/s/veQzu2V/
 
 For more information on the submission of RISC-V Summit speech proposals, meeting formats and types, submission guidelines and deadlines, please visit (after June 1):
 
