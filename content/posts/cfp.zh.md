@@ -7,7 +7,7 @@ slug: cfp2024cn
 author:  RVSC2024组委会
 
 draft: false
-date: 2024-05-28T21:51:51+08:00
+date: 2024-05-28T20:51:51+08:00
 lastmod: 
 expiryDate: 
 publishDate: 
