@@ -37,7 +37,7 @@ The RISC-V International is the leader of the global RISC-V Summits. The 2024 RI
 - Notification of author acceptance: July 7, 2024
 - Tentative agenda announcement: July 18, 2024
 - Camera Ready: August 8, 2024
-- Summit dates: August 19-25, 2024
+- Summit dates: August 21-25, 2024
 
 ## CFP Notices
 
