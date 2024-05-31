@@ -2,3 +2,4 @@ baseURL = 'https://riscv-summit-china.com/'
 languageCode = 'en-us'
 title = 'RISC-V Summit China 2024'
 theme = 'ananke'
+recent_posts_number = 8
