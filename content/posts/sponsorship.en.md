@@ -12,6 +12,8 @@ The RISC-V International is the leader of the global RISC-V Summits. The 2024 RI
 
 See [Call for Speakers](/posts/cfp2024en) and submit your proposals!
 
+**Sponsorship packages will be made public before June 1, and reservations will be accepted starting at 11AM on June 8 (Hangzhou time zone, UTC+8). To register, send an email to china@riscv.org and include [Reservation: Sponsorship Level + Company] in the title. Emails sent before the above start time will be ignored.**
+
 [Download Sponsorship Slides](/rvsc2024/RVSC2024SponsorshipENv1.pdf)
 
 (If you live in mainland China and have issues when trying to download the file from GitHub, try [this link](https://mirror.iscas.ac.cn/plct/RVSC2024SponsorshipENv1.pdf) to download from a mirror site.) 

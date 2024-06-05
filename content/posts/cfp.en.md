@@ -30,6 +30,8 @@ The 4th RISC-V Summit China (RVSC2024) is scheduled to be held from August 19 to
 
 The RISC-V International is the leader of the global RISC-V Summits. The 2024 RISC-V Summit China Organizing Committee (OC) is responsible for the preparation and coordination of the Summit China. The Program Committee is responsible for the review of speech applications. This year's summit plans to set up more sub-venues and sub-forums to provide more speaking opportunities and longer speaking time to meet the communication and sharing needs of the speakers. All partners engaged in RISC-V related R&D and industry are welcome to contribute.
 
+Also, welcome to [sponsor the summit](/posts/sponsorship/)
+
 ## Important Dates
 
 - Submissions open: May 28, 2024
