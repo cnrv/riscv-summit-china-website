@@ -28,8 +28,11 @@ function isIOS() {
 export const resizeToFullCover = (ele) => {
   let height = window.innerHeight;
   let width = window.innerWidth;
-  ele.style.minWidth = width + 'px';
+  // Why the innerWidth value is incorrect in iOS Safari
+  // when rotate from landscape to portrait?
+  // Use the 'vw' unit in css to set the width as a backup
   if (!isIOS) {
+    ele.style.minWidth = width + 'px';
     ele.style.minHeight = height + 'px';
   } else {
     // iOS safari brower hide the address bar automatically,
@@ -40,8 +43,5 @@ export const resizeToFullCover = (ele) => {
       h = height;
     }
     ele.style.minHeight = h + 'px';
-    console.log(height);
-    console.log(h);
-    console.log(maxInnerHeight);
   }
 }
