@@ -19,8 +19,8 @@ body {
 }
 
 .section-container {
-    --section-container-pl: 0;
-    --section-container-pr: 0;
+    --section-container-pl: 0px;
+    --section-container-pr: 0px;
     padding-left: calc(var(--section-container-pl) + var(--sal));
     padding-right: calc(var(--section-container-pr) + var(--sar));
     color: $fontColorLight;
@@ -61,12 +61,12 @@ body >header >div >nav {
     background-color: #0000002A;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    padding-top: calc(1rem + var(--sat));
-    padding-left: calc(1rem + var(--sal));
-    padding-right: calc(1rem + var(--sar));
+    padding-top: calc(1rem + var(--sat)) !important;
+    padding-left: calc(1rem + var(--sal)) !important;
+    padding-right: calc(1rem + var(--sar)) !important;
     @media screen and (min-width:30em) {
-        padding-left: calc(2rem + var(--sal));
-        padding-right: calc(2rem + var(--sar));
+        padding-left: calc(2rem + var(--sal)) !important;
+        padding-right: calc(2rem + var(--sar)) !important;
     }
     li a {
         display: inline-block;
@@ -235,7 +235,10 @@ section.section-container {
     }
 
     &#welcome {
-        padding: 6em 3em;
+        --section-container-pl: 3em;
+        --section-container-pr: 3em;
+        padding-top: 6em;
+        padding-bottom: 6em;
         color: $fontColorDark;
         background-color: $bgColorPaper;
         a {
