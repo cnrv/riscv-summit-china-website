@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url={{ relURL .Params.redirect_url }}">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        window.location.href = "{{ relURL .Params.redirect_url }}";
+    </script>
+</head>
+<body>
+    <p>如若未自动跳转，请点击<a href="{{ relURL .Params.redirect_url }}">此链接</a>。</p>
+    <p>If you are not redirected automatically, please follow this <a href="{{ relURL .Params.redirect_url }}">link</a>.</p>
+</body>
+</html>
