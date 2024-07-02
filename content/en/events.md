@@ -1,5 +1,5 @@
 ---
-title: Concurrent events
+title: Co-events
 tba: true
 events:
   - title: "balabala1"
