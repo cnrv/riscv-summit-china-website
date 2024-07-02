@@ -7,8 +7,12 @@ body:not(.in-home) {
             -webkit-backdrop-filter: none;
         }
     }
-    article header >aside {
-        display: none;
+    article {
+        padding-left: calc(var(--sal) + 1em) !important;
+        padding-right: calc(var(--sar) + 1em) !important;
+        header >aside {
+            display: none;
+        }
     }
     footer {
         color: $fontColorDark;

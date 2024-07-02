@@ -27,6 +27,8 @@ body {
 }
 
 .fullweb-section {
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .force-hidden {
@@ -36,12 +38,14 @@ body {
 #home-page-cover {
     position: fixed;
     z-index: -99;
+    width: 100vh;
+    height: 100vh;
     top: 0;
     left: 0;
     background-image: url(/img/background.webp);
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: center top;
+    background-attachment: scroll;
 }
 
 body >header {
@@ -112,6 +116,8 @@ header#home-page-header {
     &:before {
         content: '';
         position: absolute;
+        top: 0;
+        left: 0;
         height: 100%;
         width: 100%;
         background-image: url(/img/Leifeng-Pagoda-Broken-Bridge-HUANQUIZHONGXIN-Three-Pools-Mirroring-the-Moon.webp);

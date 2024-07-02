@@ -9,12 +9,8 @@ function resizeHeaderCover() {
   if ( ! homePageHeader || ! homePageCover ) {
     return
   }
-  let height = window.innerHeight;
-  let width = window.innerWidth;
-  homePageHeader.style.minHeight = height + 'px';
-  homePageHeader.style.minWidth = width + 'px';
-  homePageCover.style.height = height + 'px';
-  homePageCover.style.width = width + 'px';
+  resizeToFullCover(homePageHeader);
+  resizeToFullCover(homePageCover);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
