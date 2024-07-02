@@ -1,0 +1,10 @@
+{{/* For Users's overwrite */}}
+
+{{ $opts := "" }}
+{{ if hugo.IsProduction }}
+  {{ $opts = dict "targetPath" "main.js" "minify" true }}
+{{ else }}
+  {{ $opts = dict "targetPath" "main.js" "sourceMap" "inline" }}
+{{ end }}
+{{ $js := resources.Get "js/main.js" | js.Build $opts | fingerprint }}
+<script src="{{ $js.RelPermalink }}"></script>

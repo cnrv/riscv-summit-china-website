@@ -1,0 +1,42 @@
+{{- with .Site.GetPage "events" }}
+{{- $leftImg := true }}
+<section id="events" class="fullweb-section section-container">
+  <div class="text-container">
+    <h1>{{ .Title | markdownify | emojify }}</h1>
+    <div class="content">
+      {{ if .Params.events }}
+      {{ range .Params.events }}
+      <div class="event-container">
+        {{ if .image }}
+          {{ if not $leftImg }}
+        <div>
+          <a target="_blank" href="{{ .url }}"><h2>{{ .title }}</h2></a>
+          <p>{{ .description }}</p>
+        </div>
+          {{ end }}
+        <a target="_blank" href="{{ .url }}"><img src="{{ .image }}" /></a>
+          {{ if $leftImg }}
+            {{ $leftImg = false }}
+        <div>
+          <a target="_blank" href="{{ .url }}"><h2>{{ .title }}</h2></a>
+          <p>{{ .description }}</p>
+        </div>
+          {{ else }}
+            {{ $leftImg = true }}
+          {{ end }}
+        {{ else }}
+        <div class="full-columns">
+          <a target="_blank" href="{{ .url }}"><h2>{{ .title }}</h2></a>
+          <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  {{ if .Params.tba }}
+  {{ partial "partials/tba-section.html" . }}
+  {{ end }}
+</section>
+{{- end }}

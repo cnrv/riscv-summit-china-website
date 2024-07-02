@@ -1,0 +1,25 @@
+{{- with .Site.GetPage "venue" }}
+<section id="venue" class="fullweb-section section-container">
+  <div class="text-container">
+    <h1>{{ .Title | markdownify | emojify }}</h1>
+    <div class="content">
+      <p>{{ .Content | markdownify | emojify | safeHTML }}</p>
+    </div>
+  </div>
+  <div id="embedded-map-placeholder">
+    <p>{{ i18n "map_loading" | default "地图加载中.." }}</p>
+  </div>
+  <iframe id="embedded-map" src="{{ .Params.map_link }}" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mapIframe = document.querySelector('iframe#embedded-map');
+      mapIframe.style.visibility = 'hidden';
+      const mapIframePlaceholder = document.querySelector('#embedded-map-placeholder');
+      mapIframe.onload = function() {
+        mapIframePlaceholder.style.display = 'none';
+        mapIframe.style.visibility = 'initial';
+      };
+    });
+  </script>
+</section>
+{{- end }}

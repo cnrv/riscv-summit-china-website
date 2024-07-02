@@ -1,0 +1,16 @@
+body:not(.in-home) {
+    background-color: $bgColorLighter;
+    >header {
+        nav {
+            background-color: $primaryColor;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+    }
+    article header >aside {
+        display: none;
+    }
+    footer {
+        color: $fontColorDark;
+    }
+}

@@ -1,0 +1,44 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{ $section := .Site.GetPage "section" .Section }}
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      {{ partial "social-share.html" . }}
+      <h1 class="f1 athelas mt3 mb1">
+        {{- .Title -}}
+      </h1>
+      {{ with .Params.author | default .Site.Params.author }}
+      <p class="tracked">
+        by <strong>
+        {{- if reflect.IsSlice . -}}
+            {{ delimit . ", " | markdownify }}
+        {{- else -}}
+            {{ . | markdownify }}
+        {{- end -}}
+        </strong>
+      </p>
+      {{ end }}
+      {{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}
+      {{ if not .Date.IsZero }}
+      <time class="f6 mv4 dib tracked" {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
+        {{- .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) -}}
+      </time>
+      {{end}}
+    </header>
+    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+      {{- .Content -}}
+      <div class="mt6 instapaper_ignoref">
+      {{ if .Site.Config.Services.Disqus.Shortname }}
+        {{ template "_internal/disqus.html" . }}
+      {{ end }}
+      {{ if .Site.Params.commentoEnable }}
+        {{- partial "commento.html" . -}}
+      {{ end }}
+      </div>
+    </div>
+  </article>
+{{ end }}
