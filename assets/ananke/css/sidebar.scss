@@ -81,7 +81,7 @@
                 li {
                     a {
                         display: block;
-                        padding: 1.5em 3em;
+                        padding: 1.5em 3em 1.5em calc(var(--sal) + 3em);
                         &:hover {
                             background-color: #0000002A;
                         }
@@ -93,7 +93,7 @@
                 margin: auto 0 20px 0;
                 a {
                     display: block;
-                    padding: 1.5em 3em;
+                    padding: 1.5em 3em 1.5em calc(var(--sal) + 3em);
                 }
             }
         }

@@ -1,7 +1,7 @@
 <div class="languages-selector dropup-menu">
     <div class="dropup-menu-content">
-        {{ range .Site.Languages }}
-        <a class="no-underline white-90 {{ cond (eq $.Site.Language.LanguageName .LanguageName) "selected" "" }}" href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a>
+        {{ range .AllTranslations }}
+        <a class="no-underline white-90 {{ cond (eq $.Site.Language.LanguageName .Language.LanguageName) "selected" "" }}" href="{{  .RelPermalink }}">{{ .Language.LanguageName }}</a>
         {{ end}}
     </div>
     <a class="no-underline white-90 dropup-menu-btn">
