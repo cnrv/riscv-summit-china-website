@@ -22,6 +22,7 @@ defaultContentLanguageInSubdir = false
 [permalinks]
   [permalinks.page]
     posts = '/posts/:slug/'
+    posts_redirect = '/posts/:slug/'
   [permalinks.section]
     posts = '/posts/'
 
