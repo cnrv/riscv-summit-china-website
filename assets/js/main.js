@@ -1,6 +1,7 @@
 import './dropdown.js';
 import './dropup-menu.js';
 import './sidebar.js';
+import './figure.js';
 import { resizeToFullCover } from "./common";
 
 homePageHeader = undefined;

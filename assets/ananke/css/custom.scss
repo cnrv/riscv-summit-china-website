@@ -38,7 +38,7 @@ body {
 #home-page-cover {
     position: fixed;
     z-index: -99;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
@@ -46,6 +46,78 @@ body {
     background-size: cover;
     background-position: center top;
     background-attachment: scroll;
+}
+
+#fullPageContainer {
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #00000040;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    >div.container {
+        position: relative;
+        margin-left: var(--sal);
+        margin-right: var(--sar);
+        margin-top: var(--sat);
+        margin-bottom: var(--sab);
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        >figure {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                margin: auto;
+            }
+            figcaption {
+                position: absolute;
+                bottom: 1.5em;
+                display: block;
+                padding: 1em 2em;
+                margin-left: 1em;
+                color: $fontColorLight;
+                background-color: #00000020;
+            }
+        }
+    }
+    >div.container +div.close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #00000040;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            height: 5%;
+            background-color: #FFFFFFE0;
+            transform-origin: center;
+        }
+        &:before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        &:after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+}
+#fullPageContainer.hidden {
+    display: none;
 }
 
 body >header {
@@ -380,10 +452,14 @@ section.section-container {
             flex-wrap: wrap;
             width: 100%;
             figure {
-                width: calc(33% - 20px);
-                min-width: 400px;
+                position: relative;
+                max-width: calc(33% - 20px);
                 margin: 0 auto;
                 text-align: center;
+                img {
+                    position: relative;
+                    width: 100%;
+                }
                 figcaption {
                     margin: 1em auto;
                 }
