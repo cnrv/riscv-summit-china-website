@@ -1,0 +1,67 @@
+<div id="sidebar">
+  <a id="sidebar-btn">
+    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.426 283.426" xml:space="preserve"><g><rect x="0" y="40.84" style="fill:#010002;" width="283.426" height="47.735"/><rect x="0" y="117.282" style="fill:#010002;" width="283.426" height="47.735"/><rect x="0" y="194.851" style="fill:#010002;" width="283.426" height="47.735"/></g></svg>
+  </a>
+  <div id="sidebar-menu">
+    <a class="close-btn"></a>
+    <div>
+      {{ if .Site.Menus.main }}
+        <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0" "pl0" }}">
+          {{ if .IsHome }}
+            {{ range .Site.Menus.main }}
+            <li class="list">
+              <a class="no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          {{ else }}
+            {{ range .Site.Menus.main }}
+            <li class="list">
+              <a class="no-underline white-90" href="{{ cond (eq (substr .URL 0 1) "#") ( relLangURL "" ) "" }}{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ partial "i18nbtn.html" . }}
+    </div>
+  </div>
+</div>
+<nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="desktop-nav">
+    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white no-underline white-90 dib">
+      {{ with .Site.Params.site_logo }}
+        <img src="{{ relURL . }}" alt="{{ $.Site.Title }}" />
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
+    </a>
+    <div class="flex-l items-center">
+      {{ if .Site.Menus.main }}
+        <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0" "pl0" }}">
+          {{ if .IsHome }}
+            {{ range .Site.Menus.main }}
+            <li class="list f5 fw4 dib">
+              <a class="no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          {{ else }}
+            {{ range .Site.Menus.main }}
+            <li class="list f5 fw4 dib">
+              <a class="no-underline white-90" href="{{ cond (eq (substr .URL 0 1) "#") ( relLangURL "" ) "" }}{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ partial "i18nlist.html" . }}
+    </div>
+  </div>
+</nav>

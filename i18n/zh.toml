@@ -1,0 +1,17 @@
+[host]
+other = "主办单位："
+
+[organizer]
+other = "承办单位："
+
+[co_organizer]
+other = "协办单位："
+
+[details]
+other = "点击查阅详情"
+
+[tba]
+other = "即将公布，敬请关注"
+
+[map_loading]
+other = "地图载入中.."

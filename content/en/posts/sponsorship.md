@@ -1,6 +1,7 @@
 +++
 title = 'Sponsorship for RISC-V Summit China 2024'
 date = 2024-05-31T15:39:01+08:00
+slug = 'sponsorship'
 draft = false
 +++
 

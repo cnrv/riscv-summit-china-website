@@ -1,0 +1,106 @@
+#sidebar {
+    position: fixed;
+    z-index: 100;
+    a#sidebar-btn {
+        position: absolute;
+        top: calc(0 + var(--sat));
+        left: calc(10px + var(--sal));
+        height: $navHeightForMobile;
+        width: $sidebarBtnWidth;
+        display: none;
+        background: transparent;
+        cursor: pointer;
+        svg {
+            position: relative;
+            width: 60%;
+            height: 80%;
+            filter: invert(99%) sepia(0%) saturate(199%) hue-rotate(95deg) brightness(115%) contrast(89%);
+            margin: auto;
+        }
+        &:hover {
+            background-color: #0000002A;
+        }
+    }
+    div#sidebar-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background: $primaryColor;
+        display: flex;
+        //visibility: hidden;
+        transform: translateX(-100%);
+        transition-property: transform;
+        transition-duration: .3s;
+        >a.close-btn {
+            position: absolute;
+            top: 0;
+            right: 0px - $sidebarBtnWidth;
+            height: $navHeightForMobile;
+            width: $sidebarBtnWidth;
+            display: none;
+            opacity: 0;
+            cursor: pointer;
+            background-color: #0000002A;
+            transition-property: opacity;
+            transition-duration: 0.3s;
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 60%;
+                height: 5%;
+                background-color: #FFFFFFE0;
+                transform-origin: center;
+            }
+            &:before {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+        &.unfolding {
+            transform: translateX(0);
+            //visibility: initial;
+            >a.close-btn {
+                display: block;
+                opacity: 1;
+            }
+        }
+        >div {
+            position: relative;
+            margin: #{$navHeightForMobile + 10px} 10px 10px 10px;
+            width: calc(100% - 20px);
+            height: calc(100% - #{$navHeightForMobile + 20px});
+            display: grid;
+            overflow: scroll;
+            >ul {
+                li {
+                    a {
+                        display: block;
+                        padding: 1.5em 3em;
+                        &:hover {
+                            background-color: #0000002A;
+                        }
+                    }
+                    border-bottom: 1px solid #FFFFFF30;
+                }
+            }
+            >div {
+                margin: auto 0 20px 0;
+                a {
+                    display: block;
+                    padding: 1.5em 3em;
+                }
+            }
+        }
+    }
+    @media all and (max-width: 1200px) {
+        a#sidebar-btn {
+            display: flex;
+        }
+    }
+}

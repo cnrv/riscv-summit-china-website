@@ -1,0 +1,79 @@
+@keyframes dropBtnMoveDown1em {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(1em);
+    }
+}
+
+@keyframes dropBtnMoveBack {
+    from {
+        transform: translateY(1em);
+    }
+    to {
+        transform: translateY(0);
+        display: none;
+    }
+}
+
+.dropdown {
+    position: relative;
+    a.dropbtn {
+        position: relative;
+        z-index: 2;
+        color: var(--font-color-light);
+        display: inline-flex;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 0.5em 0.8em;
+        &:after {
+            border-color: var(--font-color-light) #0000;
+            border-style: solid;
+            border-width: .4em .4em 0;
+            content: " ";
+            margin-left: .3em;
+            position: relative;
+            display: inline-block;
+            transform: translateY(40%);
+        }
+        svg {
+            width: 1rem;
+        }
+        span {
+            padding: 0 0.1em 0 0.3em;
+            word-break: keep-all;
+        }
+    }
+    &.dark-font a.dropbtn {
+        color: var(--font-color-dark);
+        &:after {
+            border-color: var(--font-color-dark) #0000;
+        }
+    }
+    div.dropdown-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        top: calc(100% - 1em);
+        left: 0;
+        opacity: 0;
+        animation: dropBtnMoveBack 0.3s forwards;
+        transition-property: opacity;
+        transition-duration: .3s;
+        background-color: #0000003A;
+        a {
+            display: block;
+            text-align: left;
+            padding: 0.5em 1em;
+        }
+    }
+    &.unfolding div.dropdown-content {
+        display: block;
+        opacity: 1;
+        animation: dropBtnMoveDown1em 0.3s forwards;
+        transition-property: opacity;
+        transition-duration: .5s;
+    }
+}

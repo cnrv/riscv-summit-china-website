@@ -1,0 +1,10 @@
+{{- with .Site.GetPage "introduction" }}
+<section id="welcome" class="section-container">
+  <div class="text-container">
+    <h1>{{ .Title | markdownify | emojify }}</h1>
+    <div class="content">
+      <p>{{ .Content | markdownify | emojify | safeHTML }}</p>
+    </div>
+  </div>
+</section>
+{{- end }}

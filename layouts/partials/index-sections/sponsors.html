@@ -1,0 +1,96 @@
+{{- with .Site.GetPage "sponsors" }}
+<section id="sponsors" class="fullweb-section section-container">
+  <div class="text-container">
+    <h1>{{ .Title | markdownify | emojify }}</h1>
+    <div class="content">
+      {{ if .Params.diamond }}
+        <h2>Diamond</h2>
+        <div class="sponsors-container diamond">
+        {{ range .Params.diamond }}
+          <a target="_blank" href="{{ .url }}">
+            <img src="{{ .icon }}" />
+          </a>
+        {{ end }}
+        </div>
+      {{ end }}
+      {{ if .Params.gold }}
+        <h2>Gold</h2>
+        <div class="sponsors-container gold">
+        {{ range .Params.gold }}
+          <a target="_blank" href="{{ .url }}">
+            <img src="{{ .icon }}" />
+          </a>
+        {{ end }}
+        </div>
+      {{ end }}
+      {{ if .Params.silver }}
+        <h2>Silver</h2>
+        <div class="sponsors-container silver">
+        {{ range .Params.silver }}
+          <a target="_blank" href="{{ .url }}">
+            <img src="{{ .icon }}" />
+          </a>
+        {{ end }}
+        </div>
+      {{ end }}
+      {{ if .Params.bronze }}
+        <h2>Bronze</h2>
+        <div class="sponsors-container bronze">
+        {{ range .Params.bronze }}
+          <a target="_blank" href="{{ .url }}">
+            <img src="{{ .icon }}" />
+          </a>
+        {{ end }}
+        </div>
+      {{ end }}
+      {{ if .Params.lunch }}
+        <h2>Lunch</h2>
+        <div class="sponsors-container lunch">
+        {{ range .Params.lunch }}
+          <a target="_blank" href="{{ .url }}">
+            <img src="{{ .icon }}" />
+          </a>
+        {{ end }}
+        </div>
+      {{ end }}
+      {{ if .Params.dinner }}
+        <h2>Dinner</h2>
+        <div class="sponsors-container dinner">
+        {{ range .Params.dinner }}
+          <a target="_blank" href="{{ .url }}">
+            <img src="{{ .icon }}" />
+          </a>
+        {{ end }}
+        </div>
+      {{ end }}
+      {{ if .Params.student }}
+        <h2>For student participation</h2>
+        <div class="sponsors-container student">
+        {{ range .Params.student }}
+          <a target="_blank" href="{{ .url }}">
+            <img src="{{ .icon }}" />
+          </a>
+        {{ end }}
+        </div>
+      {{ end }}
+      {{ if .Params.venue }}
+        <h2>Venue</h2>
+        <div class="sponsors-container venue">
+        {{ range .Params.venue }}
+          <a target="_blank" href="{{ .url }}">
+            <img src="{{ .icon }}" />
+          </a>
+        {{ end }}
+        </div>
+      {{ end }}
+      <p>{{ .Content | markdownify | emojify | safeHTML }}</p>
+    </div>
+    {{ if .Params.link_slug }}
+    <a class="details" href="{{ (path.Join "posts/" .Params.link_slug | relLangURL) }}">{{ i18n "details" | default "点击查阅详情" }}</a>
+    {{ end }}
+  </div>
+  {{ if .Params.tba }}
+  {{ partial "partials/tba-section.html" . }}
+  {{ end }}
+</section>
+{{- end }}

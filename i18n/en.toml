@@ -1,0 +1,17 @@
+[host]
+other = "Hosts: "
+
+[organizer]
+other = "Organizers: "
+
+[co_organizer]
+other = "Co-organizers: "
+
+[details]
+other = "Click for details"
+
+[tba]
+other = "Stay tuned"
+
+[map_loading]
+other = "Map loading.."

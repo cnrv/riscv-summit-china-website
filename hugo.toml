@@ -1,5 +1,148 @@
 baseURL = 'https://riscv-summit-china.com/'
-languageCode = 'en-us'
+languageCode = 'zh-CN'
 title = 'RISC-V Summit China 2024'
 theme = 'ananke'
+timeZone = "Asia/Shanghai"
 recent_posts_number = 8
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
+
+[markup.goldmark.renderer]
+  unsafe= true
+
+[params]
+  custom_css = ["custom.scss"]
+  body_classes = "sans-serif"
+  site_logo = "/img/riscv-logo.webp"
+  date_img = "/img/date.webp"
+  title_zh_img = "/img/riscvsummit-title-zh.webp"
+  title_en_img = "/img/riscvsummit-title-en.webp"
+  subtitle_img = "/img/riscvsummit-subtitle.webp"
+
+[permalinks]
+  [permalinks.page]
+    posts = '/posts/:slug/'
+  [permalinks.section]
+    posts = '/posts/'
+
+[languages]
+  [languages.zh]
+    contentDir = 'content/zh'
+    disabled = false
+    languageCode = 'zh-CN'
+    languageDirection = 'ltr'
+    languageName = '简体中文'
+    title = 'RISC-V 中国峰会 2024'
+    copyright = 'RISC-V 中国峰会。'
+    weight = 1
+    hasCJKLanguage = true
+    summaryLength = 230
+    [languages.zh.params]
+      [[languages.zh.params.host]]
+        name = "浙江大学集成电路学院"
+      [[languages.zh.params.host]]
+        name = "国科大杭州高等研究院"
+      [[languages.zh.params.organizer]]
+        name = "上海苦芽科技有限公司"
+      [[languages.zh.params.organizer]]
+        name = "广州市智能软件产业研究院"
+      [[languages.zh.params.co_organizer]]
+        name = "CNRV"
+      [[languages.zh.params.co_organizer]]
+        name = "CRVA"
+      [[languages.zh.params.co_organizer]]
+        name = "CRVIC"
+      [[languages.zh.params.co_organizer]]
+        name = "RVEI"
+    [languages.zh.menu]
+      [[languages.zh.menu.main]]
+        name = "主页"
+        url = "#"
+        weight = 1
+      [[languages.zh.menu.main]]
+        name = "演讲征集"
+        url = "#cfp"
+        weight = 2
+      [[languages.zh.menu.main]]
+        name = "赞助商"
+        url = "#sponsors"
+        weight = 3
+      [[languages.zh.menu.main]]
+        name = "同期活动"
+        url = "#events"
+        weight = 4
+      [[languages.zh.menu.main]]
+        name = "大会议程"
+        url = "#program"
+        weight = 5
+      [[languages.zh.menu.main]]
+        name = "观众报名"
+        url = "#register"
+        weight = 6
+      [[languages.zh.menu.main]]
+        name = "路线及酒店"
+        url = "#venue"
+        weight = 7
+      [[languages.zh.menu.main]]
+        name = "展厅信息"
+        url = "#exhibition"
+        weight = 8
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'RISC-V Summit China 2024'
+    copyright = 'RISC-V Summit China.'
+    weight = 2
+    [languages.en.params]
+      [[languages.en.params.host]]
+        name = "浙江大学集成电路学院"
+      [[languages.en.params.host]]
+        name = "国科大杭州高等研究院"
+      [[languages.en.params.organizer]]
+        name = "上海苦芽科技有限公司"
+      [[languages.en.params.organizer]]
+        name = "广州市智能软件产业研究院"
+      [[languages.en.params.co_organizer]]
+        name = "CNRV"
+      [[languages.en.params.co_organizer]]
+        name = "CRVA"
+      [[languages.en.params.co_organizer]]
+        name = "CRVIC"
+      [[languages.en.params.co_organizer]]
+        name = "RVEI"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "Home"
+        url = "#"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Call for Papers"
+        url = "#cfp"
+        weight = 2
+      [[languages.en.menu.main]]
+        name = "Sponsors"
+        url = "#sponsors"
+        weight = 3
+      [[languages.en.menu.main]]
+        name = "Concurrent events"
+        url = "#events"
+        weight = 4
+      [[languages.en.menu.main]]
+        name = "Program"
+        url = "#program"
+        weight = 5
+      [[languages.en.menu.main]]
+        name = "Register"
+        url = "#register"
+        weight = 6
+      [[languages.en.menu.main]]
+        name = "Venue & Accomodation"
+        url = "#venue"
+        weight = 7
+      [[languages.en.menu.main]]
+        name = "Exhibition Space"
+        url = "#exhibition"
+        weight = 8
