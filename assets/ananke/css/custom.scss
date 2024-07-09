@@ -259,6 +259,18 @@ header#home-page-header {
         opacity: .6;
         font-size: 80%;
         line-height: 1.5em;
+        >div {
+            span:not(:last-of-type):after {
+                position: relative;
+                display: inline-block;
+                bottom: 0.2em;
+                content: '|';
+                margin: 0 0.5em;
+                opacity: 0.6;
+                font-size: 0.6em;
+                font-weight: bold;
+            }
+        }
     }
 }
 

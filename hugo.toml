@@ -40,9 +40,11 @@ defaultContentLanguageInSubdir = false
     summaryLength = 230
     [languages.zh.params]
       [[languages.zh.params.host]]
-        name = "浙江大学集成电路学院"
-      [[languages.zh.params.host]]
+        name = "浙江大学杭州国际科创中心"
+      [[languages.zh.params.co_host]]
         name = "国科大杭州高等研究院"
+      [[languages.zh.params.co_host]]
+        name = "RISC-V 工作委员会 (RVEI)"
       [[languages.zh.params.organizer]]
         name = "上海苦芽科技有限公司"
       [[languages.zh.params.organizer]]
@@ -53,8 +55,6 @@ defaultContentLanguageInSubdir = false
         name = "CRVA"
       [[languages.zh.params.co_organizer]]
         name = "CRVIC"
-      [[languages.zh.params.co_organizer]]
-        name = "RVEI"
     [languages.zh.menu]
       [[languages.zh.menu.main]]
         name = "主页"
@@ -99,21 +99,21 @@ defaultContentLanguageInSubdir = false
     weight = 2
     [languages.en.params]
       [[languages.en.params.host]]
-        name = "浙江大学集成电路学院"
-      [[languages.en.params.host]]
-        name = "国科大杭州高等研究院"
+        name = "ZJU-Hangzhou Global Scientific and Technological Innovation Center"
+      [[languages.en.params.co_host]]
+        name = "Hangzhou Institute for Advanced Study, UCAS"
+      [[languages.en.params.co_host]]
+        name = "RVEI"
       [[languages.en.params.organizer]]
-        name = "上海苦芽科技有限公司"
+        name = "Shanghai Kubuds Technology Co., Ltd."
       [[languages.en.params.organizer]]
-        name = "广州市智能软件产业研究院"
+        name = "Institute of Intelligent Software, Guangzhou"
       [[languages.en.params.co_organizer]]
         name = "CNRV"
       [[languages.en.params.co_organizer]]
         name = "CRVA"
       [[languages.en.params.co_organizer]]
         name = "CRVIC"
-      [[languages.en.params.co_organizer]]
-        name = "RVEI"
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "Home"

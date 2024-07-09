@@ -1,6 +1,9 @@
 [host]
 other = "主办单位："
 
+[co_host]
+other = "联合主办单位："
+
 [organizer]
 other = "承办单位："
 
