@@ -1,5 +1,8 @@
 [host]
-other = "Hosts: "
+other = "Host: "
+
+[co_host]
+other = "Co-hosts: "
 
 [organizer]
 other = "Organizers: "

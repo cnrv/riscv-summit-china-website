@@ -17,21 +17,27 @@
       <div id="host-info">
           <div>
             <label>{{ i18n "host" | default "主办单位：" }}</label>
-            {{ range .Site.Params.host }}
+            {{ range .Site.Params.host -}}
             <span>{{ .name }}</span>
-            {{ end }}
+            {{- end }}
+          </div>
+          <div>
+            <label>{{ i18n "co_host" | default "联合主办单位：" }}</label>
+            {{ range .Site.Params.co_host -}}
+            <span>{{ .name }}</span>
+            {{- end }}
           </div>
           <div>
             <label>{{ i18n "organizer" | default "承办单位：" }}</label>
-            {{ range .Site.Params.organizer }}
+            {{ range .Site.Params.organizer -}}
             <span>{{ .name }}</span>
-            {{ end }}
+            {{- end }}
           </div>
           <div>
             <label>{{ i18n "co_organizer" | default "协办单位：" }}</label>
-            {{ range .Site.Params.co_organizer }}
+            {{ range .Site.Params.co_organizer -}}
             <span>{{ .name }}</span>
-            {{ end }}
+            {{- end }}
           </div>
         </div>
     </div>
