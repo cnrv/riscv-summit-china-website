@@ -253,12 +253,19 @@ header#home-page-header {
     div#host-info {
         position: absolute;
         bottom: 0;
-        margin: 1em auto;
+        margin: 0;
+        padding: 1em 0;
         width: 100%;
         text-align: center;
         opacity: .6;
         font-size: 80%;
         line-height: 1.5em;
+        @media all and (max-width: 600px) {
+            font-size: 60%;
+        }
+        @media all and (max-width: 500px) {
+            font-size: 50%;
+        }
         >div {
             span:not(:last-of-type):after {
                 position: relative;
