@@ -450,6 +450,17 @@ section.section-container {
             }
         }
     }
+    &#registration {
+        a.button {
+            display: block;
+            padding: 1em 0.5em;
+            margin: 2em auto;
+            border-radius: 10px;
+            background-color: #0000002A;
+            max-width: 10em;
+            text-decoration: none;
+        }
+    }
     &#venue {
         div#embedded-map-placeholder {
             text-align: center;
