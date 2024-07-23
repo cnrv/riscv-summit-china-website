@@ -54,6 +54,8 @@ defaultContentLanguageInSubdir = false
       [[languages.zh.params.co_organizer]]
         name = "CRVA"
       [[languages.zh.params.co_organizer]]
+        name = "CRVA 浙江中心"
+      [[languages.zh.params.co_organizer]]
         name = "CRVIC"
     [languages.zh.menu]
       [[languages.zh.menu.main]]
@@ -112,6 +114,8 @@ defaultContentLanguageInSubdir = false
         name = "CNRV"
       [[languages.en.params.co_organizer]]
         name = "CRVA"
+      [[languages.en.params.co_organizer]]
+        name = "CRVA Zhejiang Centre"
       [[languages.en.params.co_organizer]]
         name = "CRVIC"
     [languages.en.menu]
