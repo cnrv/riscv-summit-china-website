@@ -121,20 +121,57 @@ body {
 }
 
 body >header {
-    position: relative;
-    height: $navHeightForMobile;
-    >div {
-        position: relative;
-    }
-}
-
-body >header >div >nav {
     position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #0000002A;
+    transform: translateY(0);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    >div {
+        position: relative;
+        background-color: #0000002A;
+        overflow: show;
+    }
+    >div#banners {
+        background-color: $primaryColor;
+        ul {
+            margin: 0;
+            width: 100%;
+            list-style: none;
+            li {
+                width: 100%;
+                padding:0.3em 1em 0.5em 1em;
+                text-align: center;
+                color: $fontColorLight;
+                font-size: 90%;
+                opacity: 0.8;
+                line-height: 1em;
+                a {
+                    color: $fontColorLight;
+                    text-decoration: underline;
+                    font-size: 95%;
+                    &.details:before {
+                        display: inline-block;
+                        position: relative;
+                        bottom: 0.1em;
+                        opacity: 0.5;
+                        content: '|';
+                        margin: 0 0.3em;
+                        font-size: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body >header >div >nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     padding-top: calc(1rem + var(--sat)) !important;
@@ -175,107 +212,6 @@ body >header >div >nav {
             margin: auto 0 auto #{$sidebarBtnWidth + 5px};
             >div {
                 display: none;
-            }
-        }
-    }
-}
-
-header#home-page-header {
-    position: relative;
-    background-image: url(/img/streamer.webp);
-    background-size: cover;
-    background-position: center bottom;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-image: url(/img/Leifeng-Pagoda-Broken-Bridge-HUANQUIZHONGXIN-Three-Pools-Mirroring-the-Moon.webp);
-        background-size: cover;
-        background-position: center bottom;
-    }
-    >div {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: transparent;
-        display: flex;
-        flex-direction: column;
-        
-        >div#the-title {
-            margin: auto auto 420px auto;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            @media all and (max-height: 860px) {
-                margin: auto auto 320px auto;
-            }
-            @media all and (max-height: 760px) {
-                margin: auto auto 260px auto;
-            }
-            &:after {
-                content: '';
-                display: block;
-                margin: 20px auto 0 auto;
-                background-image: url('/img/date.webp');
-                background-size: cover;
-                background-position-x: center;
-                background-position-y: 100px;
-                width: 110px;
-                height: 60px;
-            }
-            div#title-images {
-                padding: 0 30px;
-                max-width: 900px;
-                display: flex;
-                flex-direction: column;
-                img#subtitle {
-                    width: 30%;
-                    margin-left: auto;
-                    margin-bottom: 2%;
-                    margin-right: 10px;
-                }
-                img#title-en {
-                    width: 60%;
-                    margin: 2% auto;
-                }
-            }
-        }
-    }
-    &.is-en >div >div#the-title:after {
-        width: 160px;
-        background-position-y: 60px;
-    }
-    div#host-info {
-        position: absolute;
-        bottom: 0;
-        margin: 0;
-        padding: 1em 0;
-        width: 100%;
-        text-align: center;
-        opacity: .6;
-        font-size: 80%;
-        line-height: 1.5em;
-        @media all and (max-width: 600px) {
-            font-size: 60%;
-        }
-        @media all and (max-width: 500px) {
-            font-size: 50%;
-        }
-        >div {
-            span:not(:last-of-type):after {
-                position: relative;
-                display: inline-block;
-                bottom: 0.2em;
-                content: '|';
-                margin: 0 0.5em;
-                opacity: 0.6;
-                font-size: 0.6em;
-                font-weight: bold;
             }
         }
     }
@@ -328,6 +264,99 @@ section.section-container {
         -webkit-backdrop-filter: blur(30px);
         >div h1 + p {
             margin-bottom: 3em;
+        }
+    }
+
+    &#cover {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-image: url(/img/streamer.webp);
+        background-size: cover;
+        background-position: center bottom;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url(/img/Leifeng-Pagoda-Broken-Bridge-HUANQUIZHONGXIN-Three-Pools-Mirroring-the-Moon.webp);
+            background-size: cover;
+            background-position: center bottom;
+        }
+        display: flex;
+        flex-direction: column;
+        >div#the-title {
+            margin: auto auto 420px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            @media all and (max-height: 860px) {
+                margin: auto auto 320px auto;
+            }
+            @media all and (max-height: 760px) {
+                margin: auto auto 260px auto;
+            }
+            &:after {
+                content: '';
+                display: block;
+                margin: 20px auto 0 auto;
+                background-image: url('/img/date.webp');
+                background-size: cover;
+                background-position-x: center;
+                background-position-y: 100px;
+                width: 110px;
+                height: 60px;
+            }
+            div#title-images {
+                padding: 0 30px;
+                max-width: 900px;
+                display: flex;
+                flex-direction: column;
+                img#subtitle {
+                    width: 30%;
+                    margin-left: auto;
+                    margin-bottom: 2%;
+                    margin-right: 10px;
+                }
+                img#title-en {
+                    width: 60%;
+                    margin: 2% auto;
+                }
+            }
+        }
+        &.is-en >div#the-title:after {
+            width: 160px;
+            background-position-y: 60px;
+        }
+        div#host-info {
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            padding: 1em 0;
+            width: 100%;
+            text-align: center;
+            opacity: .6;
+            font-size: 80%;
+            line-height: 1.5em;
+            @media all and (max-width: 600px) {
+                font-size: 60%;
+            }
+            @media all and (max-width: 500px) {
+                font-size: 50%;
+            }
+            >div {
+                span:not(:last-of-type):after {
+                    position: relative;
+                    display: inline-block;
+                    bottom: 0.2em;
+                    content: '|';
+                    margin: 0 0.5em;
+                    opacity: 0.6;
+                    font-size: 0.6em;
+                    font-weight: bold;
+                }
+            }
         }
     }
 

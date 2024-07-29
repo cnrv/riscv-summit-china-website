@@ -2,6 +2,7 @@
 <body class="ma0 in-home {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
 {{ end }}
 {{ define "main" }}
+  {{ partial "index-sections/cover.html" . }}
   {{ partial "index-sections/intro.html" . }}
   {{ partial "index-sections/cfp.html" . }}
   {{ partial "index-sections/sponsors.html" . }}

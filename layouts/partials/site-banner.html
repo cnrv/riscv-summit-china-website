@@ -1,0 +1,25 @@
+{{- if (isset .Site.Params "banners" ) }}
+  <div id="banners" class="{{if .IsHome}}in-home{{else}}{{end}}">
+    <ul>
+      {{ with .Site.Params.banners }}
+      {{ range $index, $banner := . }}
+      <li id="banner-{{index $banner "id"}}" class="dismissed">
+        <div>
+          <span>{{index $banner "text"}}
+          {{- $linkText := (index $banner "link_text") -}}
+          {{- with (index $banner "link") }}
+          {{- if . -}}
+          <a href="{{.}}" class="details" target="_blank">{{if $linkText}}{{$linkText}}{{else}}{{ i18n "details" | default "Details"}}{{end}}</a>
+          {{- end }}
+          {{ end -}}
+          </span>
+          <!--
+          <a class="close" data-banner-id="banner-{{index $banner "id"}}"></a>
+          -->
+        </div>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+{{ end -}}

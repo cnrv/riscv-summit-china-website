@@ -22,7 +22,7 @@ async function toggleSidebarMenu(sbm) {
 
 window.addEventListener('DOMContentLoaded', () => {
   const sidebarMenu = document.querySelector('#sidebar #sidebar-menu');
-  const sidebarBtn = document.querySelector('#sidebar #sidebar-btn');
+  const sidebarBtn = document.querySelector('#sidebar-btn');
   const allLinks = document.querySelectorAll('#sidebar #sidebar-menu a:not(.dropup-menu-btn)');
   sidebarMenu.style.zIndex = 10;
   sidebarBtn.addEventListener('click', () => {
