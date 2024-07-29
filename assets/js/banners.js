@@ -5,10 +5,10 @@ var bannersDivHeight = 0;
 window.addEventListener('DOMContentLoaded', () => {
   header = document.querySelector('body >header');
   bannersDiv = document.querySelector('header #banners');
-  bannersDivHeight = window.getComputedStyle(bannersDiv).height.slice(0, -2);
+  bannersDivHeight = parseFloat(window.getComputedStyle(bannersDiv).height);
 });
 window.addEventListener('resize', () => {
-  bannersDivHeight = window.getComputedStyle(bannersDiv).height.slice(0, -2);
+  bannersDivHeight = parseFloat(window.getComputedStyle(bannersDiv).height);
 });
 window.addEventListener('scroll', () => {
   if (bannersDivHeight > 0) {
