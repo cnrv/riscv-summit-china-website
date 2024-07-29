@@ -57,6 +57,7 @@
   {{ block "body_tag" . }}{{ partial "default_body_tag.html" .}}{{ end }}
 
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+    {{ partial "site-sidebar.html" . }}
     <div id="fullPageContainer" style="display: none;"><div class="container"></div><div class="close"></div></div>
     <main role="main">
       {{ block "main" . }}{{ end }}

@@ -1,0 +1,29 @@
+<div id="sidebar">
+  <div id="sidebar-menu">
+    <a class="close-btn"></a>
+    <div>
+      {{ if .Site.Menus.main }}
+        <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0" "pl0" }}">
+          {{ if .IsHome }}
+            {{ range .Site.Menus.main }}
+            <li class="list">
+              <a class="no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          {{ else }}
+            {{ range .Site.Menus.main }}
+            <li class="list">
+              <a class="no-underline white-90" href="{{ cond (eq (substr .URL 0 1) "#") ( relLangURL "" ) "" }}{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ partial "i18nbtn.html" . }}
+    </div>
+  </div>
+</div>

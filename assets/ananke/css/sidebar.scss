@@ -1,26 +1,32 @@
+a#sidebar-btn {
+    position: absolute;
+    z-index: 1;
+    top: calc(0 + var(--sat));
+    left: calc(10px + var(--sal));
+    height: $navHeightForMobile;
+    width: $sidebarBtnWidth;
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    svg {
+        position: relative;
+        width: 60%;
+        height: 80%;
+        filter: invert(99%) sepia(0%) saturate(199%) hue-rotate(95deg) brightness(115%) contrast(89%);
+        margin: auto;
+    }
+    &:hover {
+        background-color: #0000002A;
+    }
+}
+@media all and (max-width: 1200px) {
+    a#sidebar-btn {
+        display: flex;
+    }
+}
 #sidebar {
     position: fixed;
     z-index: 100;
-    a#sidebar-btn {
-        position: absolute;
-        top: calc(0 + var(--sat));
-        left: calc(10px + var(--sal));
-        height: $navHeightForMobile;
-        width: $sidebarBtnWidth;
-        display: none;
-        background: transparent;
-        cursor: pointer;
-        svg {
-            position: relative;
-            width: 60%;
-            height: 80%;
-            filter: invert(99%) sepia(0%) saturate(199%) hue-rotate(95deg) brightness(115%) contrast(89%);
-            margin: auto;
-        }
-        &:hover {
-            background-color: #0000002A;
-        }
-    }
     div#sidebar-menu {
         position: fixed;
         top: 0;
@@ -96,11 +102,6 @@
                     padding: 1.5em 3em 1.5em calc(var(--sal) + 3em);
                 }
             }
-        }
-    }
-    @media all and (max-width: 1200px) {
-        a#sidebar-btn {
-            display: flex;
         }
     }
 }

@@ -31,7 +31,7 @@ export const resizeToFullCover = (ele) => {
   // Why the innerWidth value is incorrect in iOS Safari
   // when rotate from landscape to portrait?
   // Use the 'vw' unit in css to set the width as a backup
-  if (!isIOS) {
+  if (!isIOS()) {
     ele.style.minWidth = width + 'px';
     ele.style.minHeight = height + 'px';
   } else {

@@ -1,0 +1,38 @@
+<section id="cover" class="fullweb-section section-container {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+  <div id="the-title" class="tc-l pv3 ph3 ph4-ns">
+    <h1 class="force-hidden f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+      {{ .Title | default .Site.Title }}
+    </h1>
+    <div id="title-images">
+      <img id="subtitle" src="{{ relURL .Site.Params.subtitle_img }}" />
+      <img id="title-zh" src="{{ relURL .Site.Params.title_zh_img }}" />
+      <img id="title-en" src="{{ relURL .Site.Params.title_en_img }}" />
+    </div>
+  </div>
+  <div id="host-info">
+    <div>
+      <label>{{ i18n "host" | default "主办单位：" }}</label>
+      {{ range .Site.Params.host -}}
+      <span>{{ .name }}</span>
+      {{- end }}
+    </div>
+    <div>
+      <label>{{ i18n "co_host" | default "联合主办单位：" }}</label>
+      {{ range .Site.Params.co_host -}}
+      <span>{{ .name }}</span>
+      {{- end }}
+    </div>
+    <div>
+      <label>{{ i18n "organizer" | default "承办单位：" }}</label>
+      {{ range .Site.Params.organizer -}}
+      <span>{{ .name }}</span>
+      {{- end }}
+    </div>
+    <div>
+      <label>{{ i18n "co_organizer" | default "协办单位：" }}</label>
+      {{ range .Site.Params.co_organizer -}}
+      <span>{{ .name }}</span>
+      {{- end }}
+    </div>
+  </div>
+</section>
