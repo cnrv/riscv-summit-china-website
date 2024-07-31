@@ -45,3 +45,16 @@ export const resizeToFullCover = (ele) => {
     ele.style.minHeight = h + 'px';
   }
 }
+
+export const resizeToFullHeight = (ele) => {
+  let height = window.innerHeight;
+  if (isIOS()) {
+    let h = maxInnerHeight[currentOrientation];
+    if ( h == 0 || height > h ) {
+      maxInnerHeight[currentOrientation] = height;
+    } else {
+      height = h;
+    }
+  }
+  ele.style.height = height + 'px';
+}
