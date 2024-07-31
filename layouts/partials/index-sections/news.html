@@ -1,0 +1,21 @@
+{{- with .Site.GetPage "news" }}
+{{ $langCode := .Language.Lang }}
+{{ $date_format := .Site.Params.date_format }}
+<section id="news" class="fullweb-section section-container">
+  <div class="text-container">
+    <h1>{{ .Title | markdownify | emojify }}</h1>
+    <div class="content">
+      {{ if .Params.items }}
+      {{ range sort .Params.items "date" "desc" }}
+      <div class="items-container">
+        <div class="full-columns">
+          <time datetime="{{.date}}">{{.date | time.Format (default "January 2, 2006" $date_format)}}</time>
+          <a target="_blank" href="{{ .url }}"><span>{{ .title }}</span>{{if not (eq $langCode .lang)}} <span>{{if eq $langCode "zh"}}（英文）{{else if eq $langCode "en"}}(in Chinese){{end}}</span>{{end}}</a>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{- end }}

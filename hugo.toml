@@ -39,6 +39,7 @@ defaultContentLanguageInSubdir = false
     hasCJKLanguage = true
     summaryLength = 230
     [languages.zh.params]
+      date_format = "2006 年 1 月 2 日"
       [[languages.zh.params.host]]
         name = "浙江大学杭州国际科创中心"
       [[languages.zh.params.co_host]]
@@ -68,33 +69,37 @@ defaultContentLanguageInSubdir = false
         url = "#"
         weight = 1
       [[languages.zh.menu.main]]
+        name = "新闻"
+        url = "#news"
+        weight = 5
+      [[languages.zh.menu.main]]
         name = "演讲征集"
         url = "#cfp"
-        weight = 2
+        weight = 10
       [[languages.zh.menu.main]]
         name = "赞助商"
         url = "#sponsors"
-        weight = 3
+        weight = 15
       [[languages.zh.menu.main]]
         name = "同期活动"
         url = "#events"
-        weight = 4
+        weight = 20
       [[languages.zh.menu.main]]
         name = "大会议程"
         url = "#agenda"
-        weight = 5
+        weight = 25
       [[languages.zh.menu.main]]
         name = "观众报名"
         url = "#registration"
-        weight = 6
+        weight = 30
       [[languages.zh.menu.main]]
         name = "路线及酒店"
         url = "#venue"
-        weight = 7
+        weight = 35
       [[languages.zh.menu.main]]
         name = "展厅信息"
         url = "#exhibition"
-        weight = 8
+        weight = 40
   [languages.en]
     contentDir = 'content/en'
     disabled = false
@@ -105,6 +110,7 @@ defaultContentLanguageInSubdir = false
     copyright = 'RISC-V Summit China.'
     weight = 2
     [languages.en.params]
+      date_format = "January 2, 2006"
       [[languages.en.params.host]]
         name = "ZJU-Hangzhou Global Scientific and Technological Innovation Center"
       [[languages.en.params.co_host]]
@@ -134,30 +140,34 @@ defaultContentLanguageInSubdir = false
         url = "#"
         weight = 1
       [[languages.en.menu.main]]
+        name = "News"
+        url = "#news"
+        weight = 5
+      [[languages.en.menu.main]]
         name = "Call for Papers"
         url = "#cfp"
-        weight = 2
+        weight = 10
       [[languages.en.menu.main]]
         name = "Sponsors"
         url = "#sponsors"
-        weight = 3
+        weight = 15
       [[languages.en.menu.main]]
         name = "Co-events"
         url = "#events"
-        weight = 4
+        weight = 20
       [[languages.en.menu.main]]
         name = "Agenda"
         url = "#agenda"
-        weight = 5
+        weight = 25
       [[languages.en.menu.main]]
         name = "Registration"
         url = "#registration"
-        weight = 6
+        weight = 30
       [[languages.en.menu.main]]
         name = "Venue & Accomodation"
         url = "#venue"
-        weight = 7
+        weight = 35
       [[languages.en.menu.main]]
         name = "Exhibition Space"
         url = "#exhibition"
-        weight = 8
+        weight = 40
