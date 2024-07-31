@@ -119,8 +119,8 @@ window.addEventListener('DOMContentLoaded', () => {
       inlineNewsLiProp[inlineNewsCurrentEleIndex].element.classList.add("active");
     }
     inlineNewsTimerCountdown.style.height = inlineNewsTimerCountdownValue + '%';
-    inlineNewsTimerCountdownValue += 1;
-  }, 50);
+    inlineNewsTimerCountdownValue += 0.4;
+  }, 40);
 });
 
 
