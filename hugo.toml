@@ -50,6 +50,8 @@ defaultContentLanguageInSubdir = false
         name = "上海苦芽科技有限公司"
       [[languages.zh.params.organizer]]
         name = "广州市智能软件产业研究院"
+      [[languages.zh.params.organizer]]
+        name = "浙江大学集成电路学院"
       [[languages.zh.params.co_organizer]]
         name = "CNRV"
       [[languages.zh.params.co_organizer]]
@@ -58,8 +60,6 @@ defaultContentLanguageInSubdir = false
         name = "CRVA 浙江中心"
       [[languages.zh.params.co_organizer]]
         name = "CRVIC"
-      [[languages.zh.params.co_organizer]]
-        name = "浙江大学集成电路学院"
       [[languages.zh.params.banners]]
         id   = 1
         text = '欢迎参加 RISC-V 中国峰会 2024'
@@ -123,6 +123,8 @@ defaultContentLanguageInSubdir = false
         name = "Shanghai Kubuds Technology Co., Ltd."
       [[languages.en.params.organizer]]
         name = "Institute of Intelligent Software, Guangzhou"
+      [[languages.en.params.organizer]]
+        name = "College of Integrated Circuits Zhejiang University"
       [[languages.en.params.co_organizer]]
         name = "CNRV"
       [[languages.en.params.co_organizer]]
@@ -131,8 +133,6 @@ defaultContentLanguageInSubdir = false
         name = "CRVA Zhejiang Centre"
       [[languages.en.params.co_organizer]]
         name = "CRVIC"
-      [[languages.en.params.co_organizer]]
-        name = "College of Integrated Circuits Zhejiang University"
       [[languages.en.params.banners]]
         id   = 1
         text = 'Welcome to attend RISC-V Summit China 2024'
