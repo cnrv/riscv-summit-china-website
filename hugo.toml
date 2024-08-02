@@ -46,6 +46,8 @@ defaultContentLanguageInSubdir = false
         name = "国科大杭州高等研究院"
       [[languages.zh.params.co_host]]
         name = "RISC-V 工作委员会 (RVEI)"
+      [[languages.zh.params.co_host]]
+        name = "CRVA"
       [[languages.zh.params.organizer]]
         name = "上海苦芽科技有限公司"
       [[languages.zh.params.organizer]]
@@ -54,8 +56,6 @@ defaultContentLanguageInSubdir = false
         name = "浙江大学集成电路学院"
       [[languages.zh.params.co_organizer]]
         name = "CNRV"
-      [[languages.zh.params.co_organizer]]
-        name = "CRVA"
       [[languages.zh.params.co_organizer]]
         name = "CRVA 浙江中心"
       [[languages.zh.params.co_organizer]]
@@ -119,6 +119,8 @@ defaultContentLanguageInSubdir = false
         name = "Hangzhou Institute for Advanced Study, UCAS"
       [[languages.en.params.co_host]]
         name = "RVEI"
+      [[languages.en.params.co_host]]
+        name = "CRVA"
       [[languages.en.params.organizer]]
         name = "Shanghai Kubuds Technology Co., Ltd."
       [[languages.en.params.organizer]]
@@ -127,8 +129,6 @@ defaultContentLanguageInSubdir = false
         name = "College of Integrated Circuits Zhejiang University"
       [[languages.en.params.co_organizer]]
         name = "CNRV"
-      [[languages.en.params.co_organizer]]
-        name = "CRVA"
       [[languages.en.params.co_organizer]]
         name = "CRVA Zhejiang Centre"
       [[languages.en.params.co_organizer]]
