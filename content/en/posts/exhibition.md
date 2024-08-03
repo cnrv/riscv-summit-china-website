@@ -3,6 +3,8 @@ title: Exhibition space
 slug: exhibition
 ---
 
+**Please note that the following floor plans are subject to change, so please check the actual situation on site.**
+
 ## Symbols
 
 ![](/img/exhibition-info.webp)
