@@ -3,6 +3,8 @@ title: 展厅信息
 slug: exhibition
 ---
 
+**请注意，以下平面图可能存在变更，请以现场实际情况为准。**
+
 ## 图例
 
 ![](/img/exhibition-info.webp)
