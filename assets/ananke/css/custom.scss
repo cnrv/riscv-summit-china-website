@@ -229,7 +229,7 @@ section.section-container {
     position: relative;
     padding-top: calc(#{$navHeightForMobile} + 5em);
     padding-bottom: 5em;
-    &:before {
+    &:not(:first-of-type):before {
         content: '';
         position: absolute;
         z-index: -1;
@@ -237,7 +237,7 @@ section.section-container {
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: #00000020;
+        background-color: #00000010;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
     }
@@ -416,6 +416,9 @@ section.section-container {
             @media all and (max-width: 500px) {
                 font-size: 50%;
             }
+            label:after {
+                content: '：';
+            }
             >div {
                 span:not(:last-of-type):after {
                     position: relative;
@@ -428,6 +431,9 @@ section.section-container {
                     font-weight: bold;
                 }
             }
+        }
+        &.is-en div#host-info label:after {
+            content: ': ';
         }
     }
 
@@ -491,30 +497,47 @@ section.section-container {
         flex-wrap: wrap;
         a {
             position: relative;
-            display: block;
-            background-color: #0000002A;
+            display: flex;
+            background-color: #FFFFFF;
             margin: 5px auto;
+            padding: 10px 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #FFFFFF60;
+            img {
+                margin: auto;
+                object-fit: contain;
+                height: 120px;
+                @media all and (max-width: 800px) {
+                    height: 80px;
+                }
+            }
         }
-        &.diamond a {
-            width: calc(50% - 10px);
+        &.diamond, &.host {
+            a {
+                width: calc(50% - 10px);
+            }
         }
-        &.gold a {
-            width: calc(33% - 10px);
+        &.gold, &.co-hosts, &.organizers, &.co-organizers {
+            a {
+                width: calc(33% - 10px);
+            }
         }
-        &.silver a {
-            width: calc(25% - 10px);
+        &.silver, &.bronze, &.community {
+            a {
+                width: calc(25% - 10px);
+            }
         }
-        &.bronze a {
-            width: calc(20% - 10px);
-        }
-        &.lunch a {
-            width: calc(50% - 10px);
-        }
-        &.dinner a {
-            width: calc(33% - 10px);
-        }
-        &.student a {
-            width: calc(25% - 10px);
+        @media all and (max-width: 800px) {
+            &.diamond, &.host {
+                a {
+                    width: calc(100% - 10px);
+                }
+            }
+            &.gold, &.silver, &.bronze, &.community, &.co-hosts, &.organizers, &.co-organizers {
+                a {
+                    width: calc(50% - 10px);
+                }
+            }
         }
     }
 
@@ -631,6 +654,20 @@ section.section-container {
         }
     }
 }
+
+/*
+.fullweb-section:not(:first-of-type) {
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+    }
+}
+*/
+
 
 footer {
     padding: 3em calc(var(--sar) + 3em) calc(var(--sab) + 3em) calc(var(--sal) + 3em);

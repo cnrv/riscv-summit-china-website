@@ -1,14 +1,14 @@
 [host]
-other = "主办单位："
+other = "主办单位"
 
 [co_host]
-other = "联合主办单位："
+other = "联合主办单位"
 
 [organizer]
-other = "承办单位："
+other = "承办单位"
 
 [co_organizer]
-other = "协办单位："
+other = "协办单位"
 
 [details]
 other = "点击查阅详情"
@@ -21,3 +21,18 @@ other = "地图载入中.."
 
 [registration]
 other = "报名链接"
+
+[diamond]
+other = "钻石赞助"
+
+[gold]
+other = "黄金赞助"
+
+[silver]
+other = "白银赞助"
+
+[bronze]
+other = "青铜赞助"
+
+[community]
+other = "社区支持"

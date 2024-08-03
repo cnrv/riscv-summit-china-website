@@ -1,14 +1,14 @@
 [host]
-other = "Host: "
+other = "Host"
 
 [co_host]
-other = "Co-hosts: "
+other = "Co-hosts"
 
 [organizer]
-other = "Organizers: "
+other = "Organizers"
 
 [co_organizer]
-other = "Co-organizers: "
+other = "Co-organizers"
 
 [details]
 other = "Click for details"
@@ -21,3 +21,18 @@ other = "Map loading.."
 
 [registration]
 other = "Register"
+
+[diamond]
+other = "Diamond Sponsors"
+
+[gold]
+other = "Gold Sponsors"
+
+[silver]
+other = "Silver Sponsors"
+
+[bronze]
+other = "Bronze Sponsors"
+
+[community]
+other = "Community Supporters"
