@@ -4,7 +4,7 @@
     <h1>{{ .Title | markdownify | emojify }}</h1>
     <div class="content">
       {{ if .Params.diamond }}
-        <h2>Diamond</h2>
+        <h2>{{ i18n "diamond" }}</h2>
         <div class="sponsors-container diamond">
         {{ range .Params.diamond }}
           <a target="_blank" href="{{ .url }}">
@@ -14,7 +14,7 @@
         </div>
       {{ end }}
       {{ if .Params.gold }}
-        <h2>Gold</h2>
+        <h2>{{ i18n "gold" }}</h2>
         <div class="sponsors-container gold">
         {{ range .Params.gold }}
           <a target="_blank" href="{{ .url }}">
@@ -24,7 +24,7 @@
         </div>
       {{ end }}
       {{ if .Params.silver }}
-        <h2>Silver</h2>
+        <h2>{{ i18n "silver" }}</h2>
         <div class="sponsors-container silver">
         {{ range .Params.silver }}
           <a target="_blank" href="{{ .url }}">
@@ -34,7 +34,7 @@
         </div>
       {{ end }}
       {{ if .Params.bronze }}
-        <h2>Bronze</h2>
+        <h2>{{ i18n "bronze" }}</h2>
         <div class="sponsors-container bronze">
         {{ range .Params.bronze }}
           <a target="_blank" href="{{ .url }}">
@@ -43,40 +43,51 @@
         {{ end }}
         </div>
       {{ end }}
-      {{ if .Params.lunch }}
-        <h2>Lunch</h2>
-        <div class="sponsors-container lunch">
-        {{ range .Params.lunch }}
+      {{ if .Params.community }}
+        <h2>{{ i18n "community" }}</h2>
+        <div class="sponsors-container community">
+        {{ range .Params.community }}
           <a target="_blank" href="{{ .url }}">
             <img src="{{ .icon }}" />
           </a>
         {{ end }}
         </div>
       {{ end }}
-      {{ if .Params.dinner }}
-        <h2>Dinner</h2>
-        <div class="sponsors-container dinner">
-        {{ range .Params.dinner }}
+      <br />
+      {{ if .Params.host }}
+        <h2>{{ i18n "host" }}</h2>
+        <div class="sponsors-container host">
+        {{ range .Params.host }}
           <a target="_blank" href="{{ .url }}">
             <img src="{{ .icon }}" />
           </a>
         {{ end }}
         </div>
       {{ end }}
-      {{ if .Params.student }}
-        <h2>For student participation</h2>
-        <div class="sponsors-container student">
-        {{ range .Params.student }}
+      {{ if .Params.co_hosts }}
+        <h2>{{ i18n "co_host" }}</h2>
+        <div class="sponsors-container co-hosts">
+        {{ range .Params.co_hosts }}
           <a target="_blank" href="{{ .url }}">
             <img src="{{ .icon }}" />
           </a>
         {{ end }}
         </div>
       {{ end }}
-      {{ if .Params.venue }}
-        <h2>Venue</h2>
-        <div class="sponsors-container venue">
-        {{ range .Params.venue }}
+      {{ if .Params.organizers }}
+        <h2>{{ i18n "organizer" }}</h2>
+        <div class="sponsors-container organizers">
+        {{ range .Params.organizers }}
+          <a target="_blank" href="{{ .url }}">
+            <img src="{{ .icon }}" />
+          </a>
+        {{ end }}
+        </div>
+      {{ end }}
+      {{ if .Params.co_organizers }}
+        <h2>{{ i18n "co_organizer" }}</h2>
+        <div class="sponsors-container co-organizers">
+        {{ range .Params.co_organizers }}
           <a target="_blank" href="{{ .url }}">
             <img src="{{ .icon }}" />
           </a>
