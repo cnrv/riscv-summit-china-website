@@ -10,7 +10,7 @@ a21:
     time: 8:30
     duration: 30
   - title: 领导致辞、院士致辞、主席致辞
-    time: 8:30
+    time: 9:00
     duration: 30
   - title: RVI keynote
     time: 9:30
