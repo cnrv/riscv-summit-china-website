@@ -227,7 +227,7 @@ a22_A:
     index: 130
     authors:
       - name: 舒卓
-        title: 芯来科技有限公司，嵌入式软件工程师
+        title: 芯来科技，嵌入式软件工程师
   - title: AI/ML Panel
     time: 14:55
     duration: 50
@@ -741,7 +741,7 @@ a23_B:
     index: 131
     authors:
       - name: 舒卓
-        title: 芯来科技有限公司，嵌入式软件工程师
+        title: 芯来科技，嵌入式软件工程师
   - title: A Study on Transient Execution Vulnerabilities of RISC-V Implementations （RISC-V实现的瞬态执行漏洞研究）
     time: 10:00
     duration: 20
@@ -755,7 +755,7 @@ a23_B:
     index: 129
     authors:
       - name: 桂兵
-        title: 芯来科技有限公司，高级软件工程师
+        title: 芯来科技，高级软件工程师
   - title: 基于 RISC-V 的 HSM 方案设计与实现
     time: 10:30
     duration: 10
