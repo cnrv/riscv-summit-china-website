@@ -18,6 +18,58 @@ body:not(.in-home) {
         header >aside {
             display: none;
         }
+        p.small {
+            font-size: 90%;
+        }
+        .attention {
+            font-weight: bold;
+            background-color: yellow;
+            display: block;
+            width: fit-content;
+            padding: 0.5em 2em;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 0 5em 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            th, td {
+                padding: 12px 15px;
+            }
+            thead {
+                th {
+                    white-space: nowrap;
+                }
+                tr {
+                    background-color: $primaryColorLight;
+                    color: #FFFFFF;
+                    text-align: left;
+                }
+            }
+            tbody {
+                tr {
+                    border-bottom: 1px solid #dddddd;
+                }
+                tr:nth-of-type(even) {
+                    background-color: #f3f3f3;
+                }
+                tr:last-of-type {
+                    border-bottom: 2px solid $primaryColorLight;
+                }
+                tr.active-row {
+                    font-weight: bold;
+                    color: #009879;
+                }
+            }
+            .author-title {
+                &:before {
+                    content: ' ('
+                }
+                &:after {
+                    content: ')'
+                }
+            }
+        }
     }
     footer {
         color: $fontColorDark;
