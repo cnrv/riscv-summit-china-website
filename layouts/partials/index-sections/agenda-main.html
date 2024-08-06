@@ -1,0 +1,170 @@
+{{- with .Site.GetPage "agenda" }}
+    {{ .TableOfContents }}
+    <div>
+      <h2>8 月 21 日</h2>
+      <p class="small attention">{{ .Params.note }}</p>
+      <table>
+        <thead>
+          <tr>
+            <th>时间</th>
+            <th>时长</th>
+            <th>题目</th>
+            <th>演讲者</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Params.a21 }}
+          <tr>
+            <td>{{ .time }}</td>
+            <td>{{ .duration }}</td>
+            <td>{{ .title }}</td>
+            <td>
+              {{ if .authors }}
+              {{ range .authors }}
+              <div>
+              <span class="author">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
+              </div>
+              {{ end }}
+              {{ else }}
+              -
+              {{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+
+      <h2>8 月 22 日 - 主会场 A （水晶宫 1）</h2>
+      <p class="small attention">{{ .Params.note }}</p>
+      <table>
+        <thead>
+          <tr>
+            <th>时间</th>
+            <th>时长</th>
+            <th>题目</th>
+            <th>演讲者</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Params.a22_A }}
+          <tr>
+            <td>{{ .time }}</td>
+            <td>{{ .duration }}</td>
+            <td>{{ .title }}</td>
+            <td>
+              {{ if .authors }}
+              {{ range .authors }}
+              <div>
+              <span class="author">{{ .name }}</span><span class="author-title">{{ .title }}</span>
+              </div>
+              {{ end }}
+              {{ else }}
+              -
+              {{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+
+      <h2>8 月 22 日 - 主会场 B （水晶宫 3）</h2>
+      <p class="small attention">{{ .Params.note }}</p>
+      <table>
+        <thead>
+          <tr>
+            <th>时间</th>
+            <th>时长</th>
+            <th>题目</th>
+            <th>演讲者</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Params.a22_B }}
+          <tr>
+            <td>{{ .time }}</td>
+            <td>{{ .duration }}</td>
+            <td>{{ .title }}</td>
+            <td>
+              {{ if .authors }}
+              {{ range .authors }}
+              <div>
+              <span class="author">{{ .name }}</span><span class="author-title">{{ .title }}</span>
+              </div>
+              {{ end }}
+              {{ else }}
+              -
+              {{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+
+      <h2>8 月 23 日 - 主会场 A （水晶宫 1）</h2>
+      <p class="small attention">{{ .Params.note }}</p>
+      <table>
+        <thead>
+          <tr>
+            <th>时间</th>
+            <th>时长</th>
+            <th>题目</th>
+            <th>演讲者</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Params.a23_A }}
+          <tr>
+            <td>{{ .time }}</td>
+            <td>{{ .duration }}</td>
+            <td>{{ .title }}</td>
+            <td>
+              {{ if .authors }}
+              {{ range .authors }}
+              <div>
+              <span class="author">{{ .name }}</span><span class="author-title">{{ .title }}</span>
+              </div>
+              {{ end }}
+              {{ else }}
+              -
+              {{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+
+      <h2>8 月 23 日 - 主会场 B （水晶宫 3）</h2>
+      <p class="small attention">{{ .Params.note }}</p>
+      <table>
+        <thead>
+          <tr>
+            <th>时间</th>
+            <th>时长</th>
+            <th>题目</th>
+            <th>演讲者</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Params.a23_B }}
+          <tr>
+            <td>{{ .time }}</td>
+            <td>{{ .duration }}</td>
+            <td>{{ .title }}</td>
+            <td>
+              {{ if .authors }}
+              {{ range .authors }}
+              <div>
+              <span class="author">{{ .name }}</span><span class="author-title">{{ .title }}</span>
+              </div>
+              {{ end }}
+              {{ else }}
+              -
+              {{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+
+    </div>
+{{- end }}
