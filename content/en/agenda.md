@@ -1,6 +1,9 @@
 ---
 title: Agenda
 layout: agenda
+tba: true
+tba_description: The agenda is currently in draft form and available for review via the following link.
+tba_link: agenda
 note: 请注意，目前大会议程尚处于草稿状态，后续会根据作者反馈进行最终确认。
 a21:
   - title: 签到
