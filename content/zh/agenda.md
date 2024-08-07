@@ -9,6 +9,7 @@ a21:
   - title: 签到
     time: 8:30
     duration: 30
+    class: SE
   - title: 领导致辞、院士致辞、主席致辞
     time: 9:00
     duration: 30
@@ -22,19 +23,19 @@ a21:
     duration: 20
     authors:
       - name: Prof. Krste Asanović
-  - title: keynote - 达摩院
+  - title: Keynote - 达摩院
     time: 10:10
     duration: 20
-  - title: keynote - ESWIN
+  - title: Keynote - ESWIN
     time: 10:30
     duration: 20
-  - title: keynote - 沁恒微电子
+  - title: Keynote - 沁恒微电子
     time: 10:50
     duration: 20
-  - title: keynote - 算能
+  - title: Keynote - 算能
     time: 11:10
     duration: 20
-  - title: keynote - 芯来科技
+  - title: Keynote - 芯来科技
     time: 11:30
     duration: 20
   - title: 圆桌讨论
@@ -43,37 +44,39 @@ a21:
   - title: 午餐及展区
     time: 12:30
     duration: 70
+    class: SE
   - title: 一分钟 POSTER 报告（暂定）
     time: 13:40
     duration: 20
-  - title: keynote - 开芯院
+  - title: Keynote - 开芯院
     time: 14:00
     duration: 20
-  - title: keynote - 知合计算
+  - title: Keynote - 知合计算
     time: 14:20
     duration: 20
   - title: 邀请报告 (Jack Kang)
     time: 14:40
     duration: 15
-  - title: gold talk - Synopsys
+  - title: Gold Talk - Synopsys
     time: 14:55
     duration: 15
-  - title: gold talk - Andes
+  - title: Gold Talk - Andes
     time: 15:10
     duration: 15
     index: 317
-  - title: gold talk - SiFive
+  - title: Gold Talk - SiFive
     time: 15:25
     duration: 15
-  - title: gold talk - 赛昉科技
+  - title: Gold Talk - 赛昉科技
     time: 15:40
     duration: 15
-  - title: gold talk - Imagination
+  - title: Gold Talk - Imagination
     time: 15:55
     duration: 15
   - title: 茶歇、展区
     time: 16:10
     duration: 30
+    class: SE
   - title: “一生一芯”计划——从零开始设计你自己的 RISC-V 处理器芯片
     time: 16:40
     duration: 20
@@ -110,14 +113,14 @@ a21:
       - name: 柯一冉
         title: 深圳市群芯闪耀科技有限公司 (Milk-V)，副总裁
 a22_A:
-  - title: RISC-V服务器级 CPU 关键技术实践
+  - title: RISC-V 服务器级 CPU 关键技术实践
     time: 9:00
     duration: 20
     index: 110
     authors:
       - name: 费晓龙
         title: 杭州进迭时空科技有限公司，CPU 研发总监
-  - title: RISC-V + AI 赋能AGI时代新兴应用场景
+  - title: RISC-V + AI 赋能 AGI 时代新兴应用场景
     time: 9:20
     duration: 20
     index: 203
@@ -185,6 +188,7 @@ a22_A:
   - title: 午餐及展区
     time: 12:00
     duration: 60
+    class: SE
   - title: 功能越强，责任逾重 — 充分考虑验证地定制 RISC-V 之“实战指南“
     time: 13:00
     duration: 15
@@ -204,7 +208,7 @@ a22_A:
     index: 183
     authors:
       - name: 陈俭东
-        title: 进迭时空（杭州）科技有限公司，边端CPU产品总监
+        title: 进迭时空（杭州）科技有限公司，边端 CPU 产品总监
   - title: 基于 RISC-V 云端推理 NPU 的大模型应用实践
     time: 13:55
     duration: 15
@@ -239,13 +243,14 @@ a22_A:
   - title: Coffee Break
     time: 15:45
     duration: 30
+    class: SE
   - title: 面向机器学习推理应用的全同态编译器框架 (ACE)
     time: 16:15
     duration: 15
     authors:
       - name: 肖琳杰
         title: 支付宝（杭州）信息技术有限公司 技术专家
-  - title: 白银权益 面向 RISC-V 异构 AI 芯片的“大编译器”设计和实现
+  - title: 面向 RISC-V 异构 AI 芯片的“大编译器”设计和实现
     time: 16:30
     duration: 15
     authors:
@@ -316,21 +321,21 @@ a22_A:
         title: 兆松科技有限公司，软件开发工程师
 a22_B:
   - title: 香山 RISC-V 服务器 IP 现状和路线图
-    time: 9:20
+    time: 9:00
     duration: 20
     index: 206
     authors:
       - name: 张健
         title: 北京开源芯片研究院，产品经理
   - title: 香山开源处理器昆明湖架构的设计演进
-    time: 10:20
+    time: 9:20
     duration: 20
     index: 190
     authors:
       - name: 唐浩晋
         title: 中国科学院计算技术研究所，计算机科学与技术 研究生二年级
   - title: 香山处理器昆明湖架构向量扩展的设计与演进
-    time: 10:40
+    time: 9:40
     duration: 20
     index: 191
     authors:
@@ -339,21 +344,21 @@ a22_B:
       - name: 刘威丁
         title: 北京开源芯片研究院/南京理工大学，硕士生二年级
   - title: 香山处理器多核高速缓存的敏捷验证与设计探索方法
-    time: 9:40
+    time: 10:00
     duration: 20
     index: 197
     authors:
       - name: 丁昊楠
         title: 中国科学院计算技术研究所，芯片设计工程师
   - title: 基于开源众包芯片验证的探索与实践
-    time: 10:00
+    time: 10:20
     duration: 20
     index: 143
     authors:
       - name: 姚治成
         title: 中国科学院计算技术研究所，工程师
   - title: 香山缓存系统的形式化验证
-    time: 9:00
+    time: 10:40
     duration: 20
     index: 195
     authors:
@@ -364,6 +369,7 @@ a22_B:
   - title: 休息
     time: 11:00
     duration: 10
+    class: SE
   - title: “乘影”开源通用图形处理器指令集架构介绍
     time: 11:10
     duration: 10
@@ -402,6 +408,7 @@ a22_B:
   - title: 午餐及展区
     time: 12:00
     duration: 60
+    class: SE
   - title: "RISC-V Certification: Applying Advanced RISC-V Core and SoC Verification Towards the Anticipated Certification Requirements"
     time: 13:15
     duration: 15
@@ -479,13 +486,14 @@ a22_B:
   - title: 茶歇
     time: 16:00
     duration: 30
+    class: SE
   - title: 面向 risc-v 芯片的无人机领域应用及优化
     time: 16:30
     duration: 20
     index: 196
     authors:
       - name: 杨侃
-        title: 中科院空天院，无
+        title: 中科院空天院
   - title: 基于 RISC-V 芯片的键鼠方案介绍
     time: 16:50
     duration: 10
@@ -622,6 +630,7 @@ a23_A:
   - title: 午餐
     time: 12:00
     duration: 60
+    class: SE
   - title: RISC-V Android 的产品化探索
     time: 13:00
     duration: 20
@@ -683,6 +692,7 @@ a23_A:
   - title: 休息
     time: 15:20
     duration: 30
+    class: SE
   - title: Introducing RISC-V Platform Management Interface (RPMI)
     time: 15:50
     duration: 20
@@ -774,7 +784,7 @@ a23_B:
     authors:
       - name: 舒卓
         title: 芯来科技，嵌入式软件工程师
-  - title: A Study on Transient Execution Vulnerabilities of RISC-V Implementations （RISC-V实现的瞬态执行漏洞研究）
+  - title: A Study on Transient Execution Vulnerabilities of RISC-V Implementations （RISC-V 实现的瞬态执行漏洞研究）
     time: 10:00
     duration: 20
     index: 319
@@ -835,6 +845,7 @@ a23_B:
   - title: 午饭
     time: 12:00
     duration: 60
+    class: SE
   - title: "开源芯片社区 OChip: 香山贡献者机制发布"
     time: 13:00
     duration: 10
