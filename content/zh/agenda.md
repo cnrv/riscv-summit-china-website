@@ -990,4 +990,160 @@ a23_B:
     authors:
       - name: 蒋子健
         title: 中国科学院大学，计算机科学与技术 研一
+aPOSTER:
+  - title: Building Risc-v containers on VisionFive v2
+    time: 1
+    duration: POSTER
+    index: 301
+    authors:
+      - name: Leon Nunes
+        title: Personal/Risc-v Devboard program, Customer Success Engineer
+  - title: "RISC-V AI Edge: 一站式 AI 边缘计算开发平台"
+    time: 2
+    duration: POSTER
+    index: 180
+    authors:
+      - name: 张萌
+        title: 兆松科技（武汉）有限公司，软件工程师
+      - name: 雷依钒
+        title: 兆松科技（武汉）有限公司，软件工程师
+  - title: 嵌入式技术与智能系统期刊征文
+    time: 3
+    duration: POSTER
+    index: 139
+    authors:
+      - name: 何小庆
+        title: 嵌入式系统联谊会，秘书长
+  - title: Developing applications with RISC-V base and custom ISA extensions
+    time: 4
+    duration: POSTER
+    index: 312
+    authors:
+      - name: Niklas Källman
+        title: IAR Systems, Senior Product Manager for RISC-V Solutions
+  - title: 初探 xDSL （Python 原生的编译器工具箱）在软硬件协同设计中的潜力
+    time: 5
+    duration: POSTER
+    index: 204
+    authors:
+      - name: 李枫
+        title: 独立开发者，独立开发者
+  - title: 再论将 GraalVM 作为自由和开源 EDA 软件的通用运行时
+    time: 6
+    duration: POSTER
+    index: 210
+    authors:
+      - name: 李枫
+        title: 独立开发者，独立开发者
+  - title: Porting Latest AOSP (Android 15)
+    time: 7
+    duration: POSTER
+    index: 214
+    authors:
+      - name: 梁宇宁
+        title: 深度数智，高级工程师
+  - title: The case for using QEMU on the Cloud-V platform for RV64GC over current RISC-V
+    time: 8
+    duration: POSTER
+    index: 322
+  - title: openEuler RISC-V 运行时生态建设进展
+    time: 9
+    duration: POSTER
+    index: 228
+    authors:
+      - name: 张定立
+        title: 中国科学院软件研究所，OpenJDK Autho# openEuler Java SIG Maintainer
+  - title: openEuler LLVM 平行宇宙计划 RISC-V 架构进展同步与后续计划
+    time: 10
+    duration: POSTER
+    index: 225
+    authors:
+      - name: 周嘉诚
+        title: 中国科学院软件研究所，工程师
+  - title: MilkV-Duo 小核管理 - 热插拔，热更新，高效通信
+    time: 11
+    duration: POSTER
+    index: 229
+    authors:
+      - name: 罗君
+        title: 四川大学，2021 级计算机科学与技术
+  - title: 在 RISC-V 设备上加速边端大模型的探索
+    time: 12
+    duration: POSTER
+    index: 235
+    authors:
+      - name: 黄知柏
+        title: 上海交通大学，电子信息-博士一年级
+  - title: RISC-V 边缘 AI 软硬件生态分析及应用进展
+    time: 13
+    duration: POSTER
+    index: 237
+    authors:
+      - name: 梁致远
+        title: 中国电信股份有限公司研究院，科研人员
+  - title: 基于 RISC-V 服务器的 AI 国产智能处理器板卡适配
+    time: 14
+    duration: POSTER
+    index: 222
+    authors:
+      - name: 刘雨冬
+        title: 中科南京软件技术研究院，中科南京软件技术研究院操作系统工程师；中国科学院软件研究所EulixOS Maintainer
+      - name: 张义飞
+        title: 中国科学院计算技术研究所，中国科学院计算技术研究所工程师
+  - title: 赛昉在 riscv 工业应用上的探索与实现
+    time: 15
+    duration: POSTER
+    index: 231
+    authors:
+      - name: 罗佳维
+        title: 广东赛昉科技有限公司，软件工程师
+  - title: RISC-V + AI 与车载新应用场景
+    time: 16
+    duration: POSTER
+    index: 243
+    authors:
+      - name: 刘宇
+        title: 北京奕斯伟计算技术股份有限公司，车载事业部副总经理
+  - title: short forward branch 技术在 500 上的软硬件协同优化
+    time: 17
+    duration: POSTER
+    index: 245
+    authors:
+      - name: 赵坤鹏
+        title: 北京奕斯伟计算技术股份有限公司，资深硬件工程师
+  - title: 高性能 RISC-V 处理器中的 trace 实现
+    time: 18
+    duration: POSTER
+    index: 246
+    authors:
+      - name: 杨成章
+        title: 北京奕斯伟计算技术股份有限公司，资深硬件工程师
+  - title: R500A - 高性能 ASIL-B RISC-V 处理器
+    time: 19
+    duration: POSTER
+    index: 247
+    authors:
+      - name: 王晓耕
+        title: 北京奕斯伟计算技术股份有限公司，资深硬件工程师
+  - title: E100 - 超低成本的商用 32 位 RISC-V 处理器
+    time: 20
+    duration: POSTER
+    index: 248
+    authors:
+      - name: 王晓耕
+        title: 北京奕斯伟计算技术股份有限公司，资深硬件工程师
+  - title: GDB 调试 Snapshot 和 Replay
+    time: 21
+    duration: POSTER
+    index: 249
+    authors:
+      - name: 徐航
+        title: 北京奕斯伟计算技术股份有限公司，高级软件工程师
+  - title: "Hassert: 基于断言与 FPGA 加速的敏捷验证框架"
+    time: 22
+    duration: POSTER
+    index: 251
+    authors:
+      - name: 张子卿
+        title: 中国科学院计算技术研究所，计算机科学与技术 博士一年级
 ---
