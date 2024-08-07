@@ -69,9 +69,12 @@ a21:
   - title: Gold Talk - 赛昉科技
     time: 15:40
     duration: 15
-  - title: Gold Talk - Imagination
+  - title: "Revolutionizing RISC-V adoption: Imagination's Integrated CPU and GPU Solution"
     time: 15:55
     duration: 15
+    authors:
+      - name: Shreyas Derashri
+        title: Vice President of Compute, Imagination
   - title: 茶歇、展区
     time: 16:10
     duration: 30
@@ -163,8 +166,8 @@ a22_A:
     authors:
       - name: 向远洋
         title: 中科本原科技（北京）有限公司，工程师
-  - title: RISC-V + GPU 赋能产业化落地与生态创新
-    time: 11:10
+  - title: Imagination GPU 赋能 RISC-V 产业化落地与生态创新
+    time: 11:00
     duration: 10
     index: 160
     authors:
@@ -459,8 +462,8 @@ a22_B:
     duration: 10
     index: 316
     authors:
-      - name: Andrew Johnston
-        title: Imagination Technologies, Senior Functional Safety Manager
+      - name: Matthew Bubis
+        title: Director of Product Management, Imagination Technologies
   - title: Addressing Real-Time Workloads in Automotive Applications with Efficient RISC-V Processors
     time: 15:30
     duration: 10
