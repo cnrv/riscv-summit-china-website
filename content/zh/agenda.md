@@ -716,13 +716,9 @@ a23_A:
     authors:
       - name: 辜善群
         title: 晶心科技股份有限公司，副处长
-  - title: "Riscyforth: A Forth for RISC-V and why you should care"
+  - title: TBA
     time: 16:50
     duration: 10
-    index: 320
-    authors:
-      - name: Dr. Adrian McMenamin
-        title: No affiliation (open source project), Dr (PhD)
   - title: "Developing and Integrating ACPI and SMBIOS for RISC-V: Practical Approaches and Applications"
     time: 17:00
     duration: 20
