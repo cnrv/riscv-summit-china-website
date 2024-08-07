@@ -690,6 +690,8 @@ a23_A:
     authors:
       - name: Tan Ley Foon
         title: StarFive Technology, Associate Principal Engineer
+      - name: Rahul Pathak
+        title: Ventana Microsystems, Staff Software Engineer
   - title: 基于 RISC-V 架构的 IOMMU 虚拟化实施方案
     time: 16:10
     duration: 20
