@@ -414,6 +414,12 @@ a22_B:
     authors:
       - name: Sergey Yakushkin
         title: Director of Software Engineering, Syntacore
+  - title: 基于 RISC-V 的 DSP 中增强型 PWM 的设计与应用
+    time: 13:45
+    duration: 15
+    authors:
+      - name: 冯新华
+        title: 北京中科昊芯科技有限公司，研发工程师
   - title: 使用 RISC-V CPU ASIL B/D 开发集成中的挑战与方法
     time: 14:00
     duration: 20
