@@ -52,7 +52,7 @@ a21:
   - title: keynote - 知合计算
     time: 14:20
     duration: 20
-  - title: 邀请报告 (Jack Gang)
+  - title: 邀请报告 (Jack Kang)
     time: 14:40
     duration: 15
   - title: gold talk - Synopsys
