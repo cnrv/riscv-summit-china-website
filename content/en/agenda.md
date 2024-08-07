@@ -62,7 +62,7 @@ a21:
     time: 15:10
     duration: 15
     index: 317
-  - title: gold talk - SiFIve
+  - title: gold talk - SiFive
     time: 15:25
     duration: 15
   - title: gold talk - 赛昉科技
