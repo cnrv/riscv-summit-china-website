@@ -307,6 +307,13 @@ a22_A:
     authors:
       - name: Lv 'ZETALOG' Zheng
         title: SpacemiT, Computing IP Validation Leader
+  - title: 利用人工智能大模型优化 RISC-V 编译器的性能
+    time: 18:25
+    duration: 20
+    index: 213
+    authors:
+      - name: 赵正朋
+        title: 兆松科技有限公司，软件开发工程师
 a22_B:
   - title: 香山 RISC-V 服务器 IP 现状和路线图
     time: 9:20
@@ -528,6 +535,13 @@ a22_B:
     authors:
       - name: 陈敏达
         title: 赛昉科技，高级主任工程师
+  - title: 面向数据中心的 RISC-V 视频转码卡应用实践
+    time: 18:10
+    duration: 20
+    index: 122
+    authors:
+      - name: 李天正
+        title: 中国电信研究院，研究员
 a23_A:
   - title: OpenJDK on RISC-V
     time: 9:00
@@ -723,6 +737,13 @@ a23_A:
         title: Intel, System Software Architect
       - name: Xiao Wang
         title: Intel, System Software Engineer
+  - title: 从 StratoVirt 到 KataContainers：基于 H 扩展的软件生态建设
+    time: 18:00
+    duration: 10
+    index: 217
+    authors:
+      - name: 何若轻
+        title: 中国科学院软件研究所，工程师
 a23_B:
   - title: 抵御冲突型缓存侧信道的动态随机化缓存防御在 Rocket-Chip 上的实现
     time: 9:00
@@ -948,4 +969,11 @@ a23_B:
     authors:
       - name: 张寿林
         title: 郑州大学，计算机技术 研究生二年级
+  - title: 面向 RISC-V 指令集扩展的软硬件协同验证框架
+    time: 17:40
+    duration: 10
+    index: 224
+    authors:
+      - name: 蒋子健
+        title: 中国科学院大学，计算机科学与技术 研一
 ---
