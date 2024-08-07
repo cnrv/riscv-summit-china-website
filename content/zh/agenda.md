@@ -1,9 +1,8 @@
 ---
 title: 大会议程
 layout: agenda
-tba: true
-tba_description: 目前大会议程尚处于草稿状态，访问详情以查阅
-tba_link: agenda
+home_desc: 大会议程已公开，请点击下方链接查阅。
+link_slug: agenda
 note: 请注意，目前大会议程尚处于草稿状态，后续会根据作者反馈进行最终确认。
 a21:
   - title: 签到
