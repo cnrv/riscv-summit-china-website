@@ -167,7 +167,7 @@ a22_A:
       - name: 向远洋
         title: 中科本原科技（北京）有限公司，工程师
   - title: Imagination GPU 赋能 RISC-V 产业化落地与生态创新
-    time: 11:00
+    time: 11:10
     duration: 10
     index: 160
     authors:
