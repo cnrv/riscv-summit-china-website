@@ -573,13 +573,13 @@ a23_A:
     authors:
       - name: 李扬
         title: 阿里巴巴，技术专家
-  - title: LLVM 工具链 RISC-V 构建实现及其性能优化现状分析与展望
+  - title: LLVM 工具链 RISC-V 构建实现及其性能优化现状分析与未来展望
     time: 9:40
     duration: 20
     index: 179
     authors:
       - name: 肖玮
-        title: 英特尔，编译器性能优化架构师
+        title: 英特尔亚太研发有限公司，编译器性能优化架构师
   - title: GCC RVV 自动向量化及其应用
     time: 10:00
     duration: 20
