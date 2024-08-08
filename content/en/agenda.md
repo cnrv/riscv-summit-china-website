@@ -442,7 +442,7 @@ a22_B:
     index: 103
     authors:
       - name: 曹常锋
-        title: 长城汽车，总工程师
+        title: 长城汽车股份有限公司，总工程师
   - title: RISC-V 新 32 位嵌入式虚拟化架构 (rv64ilp32 v.s. Armv8-R AArch32 v.s. Infineon TriCore)
     time: 14:40
     duration: 20
