@@ -46,6 +46,8 @@ silver:
     url: "https://www.terapines.com"
   - icon: "/img/logos/2-Silver/AP-Memory.webp"
     url: "https://www.apmemory.com"
+  - icon: "/img/logos/2-Silver/Siemens.webp"
+    url: "https://www.siemens.com/"
 bronze:
   - icon: "/img/logos/3-Bronze/WingSemiTech.webp"
     url: "https://www.wingsemitech.com"
