@@ -52,7 +52,7 @@ bronze:
   - icon: "/img/logos/3-Bronze/WingSemiTech.webp"
     url: "https://www.wingsemitech.com"
   - icon: "/img/logos/3-Bronze/Arteris.webp"
-    url: "https://www.arteris.com"
+    url: "https://www.arteris.cn"
   - icon: "/img/logos/3-Bronze/S2C.webp"
     url: "https://www.s2cinc.com"
   - icon: "/img/logos/3-Bronze/SpacemiT.webp"
