@@ -782,7 +782,7 @@ a23_B:
     authors:
       - name: 舒卓
         title: 芯来科技，嵌入式软件工程师
-  - title: A Study on Transient Execution Vulnerabilities of RISC-V Implementations （RISC-V 实现的瞬态执行漏洞研究）
+  - title: A Study on Transient Execution Vulnerabilities of RISC-V Implementations（RISC-V 实现的瞬态执行漏洞研究）
     time: 10:00
     duration: 20
     index: 319
