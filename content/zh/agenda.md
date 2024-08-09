@@ -700,7 +700,7 @@ a23_A:
     index: 123
     authors:
       - name: 王宜怀
-        title: 苏州大学，苏州大学计算机科学与技术学院教授、博士生导师
+        title: 苏州大学，教授
   - title: 休息
     time: 15:20
     duration: 30
