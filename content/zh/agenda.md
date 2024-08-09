@@ -1106,15 +1106,15 @@ aPOSTER:
     authors:
       - name: 梁致远
         title: 中国电信股份有限公司研究院，科研人员
-  - title: 基于 RISC-V 服务器的 AI 国产智能处理器板卡适配
+  - title: 基于 RISC-V 服务器的国产 AI 处理器板卡适配
     time: 14
     duration: POSTER
     index: 222
     authors:
       - name: 刘雨冬
-        title: 中科南京软件技术研究院，中科南京软件技术研究院操作系统工程师；中国科学院软件研究所EulixOS Maintainer
+        title: 中国科学院软件研究所
       - name: 张义飞
-        title: 中国科学院计算技术研究所，中国科学院计算技术研究所工程师
+        title: 中国科学院计算技术研究所
   - title: 赛昉在 riscv 工业应用上的探索与实现
     time: 15
     duration: POSTER
