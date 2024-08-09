@@ -508,7 +508,9 @@ a22_B:
     index: 238
     authors:
       - name: 于虎
-        title: 湖北亿咖通科技有限公司，总监
+        title: 亿咖通科技，总监
+      - name: 王海军
+        title: 亿咖通科技，资深技术专家
   - title: 茶歇
     time: 16:00
     duration: 30
