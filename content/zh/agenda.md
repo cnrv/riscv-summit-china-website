@@ -263,7 +263,7 @@ a22_A:
     duration: 20
     index: 138
     authors:
-      - name: 张玉珩
+      - name: 张玉珩 (Annita Zhang)
         title: 英特尔，首席工程师
   - title: RISC-V CPU IP 赋能 AI 时代创芯应用
     time: 17:05
