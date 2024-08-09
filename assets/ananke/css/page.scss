@@ -71,6 +71,14 @@ body:not(.in-home) {
             }
         }
     }
+    div#co-events {
+        margin-top: 2em;
+        table {
+            td.nowrap {
+                white-space: nowrap;
+            }
+        }
+    }
     footer {
         color: $fontColorDark;
     }

@@ -541,7 +541,7 @@ section.section-container {
         }
     }
 
-    &#events {
+    &#co-events {
         position: relative;
         /*
         &:before {
@@ -603,6 +603,18 @@ section.section-container {
                 flex-direction: column;
                 &.full-columns {
                     grid-column: 1 / 3;
+                }
+                label:after {
+                    content: '：';
+                }
+            }
+        }
+        &.is-en {
+            .event-container {
+                >div {
+                    label:after {
+                        content: ': ';
+                    }
                 }
             }
         }
