@@ -955,7 +955,7 @@ a23_B:
     index: 155
     authors:
       - name: 郑律
-        title: 个人演讲，计算核测试部经理
+        title: 个人开发者
   - title: EDA 辅助的领域专用 RISC-V 处理器设计
     time: 17:00
     duration: 10
