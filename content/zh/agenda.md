@@ -878,7 +878,7 @@ a23_B:
     index: 178
     authors:
       - name: 林书塔
-        title: 阿里巴巴达摩院，技术专家
+        title: 阿里巴巴达摩院 RISC-V 及生态，技术专家
   - title: 利用 WASM 技术解决多种 ISA 的挑战
     time: 14:20
     duration: 10
