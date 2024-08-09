@@ -545,8 +545,8 @@ a22_B:
     duration: 10
     index: 223
     authors:
-      - name: 滕圣波
-        title: 中移（苏州）软件技术有限公司，高级系统架构专家
+      - name: 殷萍
+        title: 中移（苏州）软件技术有限公司，高级软件技术工程师
   - title: RISC-V 在高性能云桌面终端领域的应用
     time: 17:30
     duration: 10
