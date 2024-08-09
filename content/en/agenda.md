@@ -939,13 +939,13 @@ a23_B:
     authors:
       - name: 赖晓铮
         title: 华南理工大学，副教授
-  - title: EDA Verification Solution for RISC-V
+  - title: 从 IP 到系统的 RISC-V 敏捷验证方案
     time: 15:50
     duration: 10
     index: 104
     authors:
       - name: 杨晔
-        title: 芯华章科技，产品市场总监
+        title: 芯华章科技，科技产品和业务规划总监
   - title: Accelerate RISC-V SOC SW/HW co-debugging with mixed Emulation platforms
     time: 16:00
     duration: 10
