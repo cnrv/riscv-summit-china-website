@@ -735,12 +735,12 @@ a23_A:
     authors:
       - name: 杜超
         title: 北京奕斯伟计算技术股份有限公司，智能计算事业部-云组件开发部部长
-  - title: leverage BRS (Boot and runtime service) relevant standards to improve RISC-V SW compatibility
+  - title: Leverage BRS standard to improve RISC-V SW compatibility
     time: 17:30
     duration: 10
     index: 152
     authors:
-      - name: 许海波
+      - name: Haibo Xu
         title: Intel, RISC-V Software Engineer
       - name: Andrei Warkentin
         title: Intel, Principal Engineer
