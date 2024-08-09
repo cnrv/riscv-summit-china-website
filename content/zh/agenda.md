@@ -830,9 +830,11 @@ a23_B:
     index: 157
     authors:
       - name: 刘禹
-        title: 电科 58 所 / 无锡中微亿芯有限公司，工程师
+        title: 无锡中微亿芯有限公司，惠山实验室
       - name: 谭敏强
-        title: 电科 58 所 / 无锡中微亿芯有限公司，博士
+        title: 无锡中微亿芯有限公司，惠山实验室
+      - name: 余志洪
+        title: 无锡中微亿芯有限公司，惠山实验室
   - title: "tinyRV: 一种完备的 RISC-V 定制压缩指令集"
     time: 11:40
     duration: 20

@@ -824,15 +824,17 @@ a23_B:
     authors:
       - name: 刘鹏
         title: 浙江大学，教授
-  - title: "PySpike: Spike 指令集模拟器的 Python 语言集成"
+  - title: "PySpike: Python Bindings of RISC-V ISA Simulator"
     time: 11:30
     duration: 10
     index: 157
     authors:
-      - name: 刘禹
-        title: 电科 58 所 / 无锡中微亿芯有限公司，工程师
-      - name: 谭敏强
-        title: 电科 58 所 / 无锡中微亿芯有限公司，博士
+      - name: LIU Yu
+        title: WuXi EsionTech Inc.，HuiMt Lab
+      - name: TAN Min-Qiang
+        title: WuXi EsionTech Inc.，HuiMt Lab
+      - name: YU Zhi-Hong
+        title: WuXi EsionTech Inc.，HuiMt Lab
   - title: "tinyRV: 一种完备的 RISC-V 定制压缩指令集"
     time: 11:40
     duration: 20
