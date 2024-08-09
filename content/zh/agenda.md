@@ -801,7 +801,7 @@ a23_B:
     authors:
       - name: Tuo Chen （陈 拓）
         title: IISEC (Institute of Information Security, Japan), Master Student
-  - title: 基于 RISC-V 的 Linux OPTEE 异构安全解决方案
+  - title: RISC-V 架构下 OP-TEE 安全系统实践
     time: 10:20
     duration: 10
     index: 129
