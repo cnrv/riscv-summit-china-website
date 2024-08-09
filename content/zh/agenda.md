@@ -1081,7 +1081,7 @@ aPOSTER:
     authors:
       - name: 黄知柏
         title: 上海交通大学，电子信息-博士一年级
-  - title: RISC-V 边缘 AI 软硬件生态分析及应用进展
+  - title: "TeleBox: RISC-V 边缘 AI 盒子"
     time: 13
     duration: POSTER
     index: 237
