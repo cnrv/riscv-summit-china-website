@@ -620,7 +620,7 @@ a23_A:
     duration: 10
     index: 304
     authors:
-      - name: Yichuan Gao
+      - name: Yichuan Gao（高一川）
         title: Intel Labs China, CPU Research Scientist
   - title: RISC-V RVV 编译选项对性能影响的探索
     time: 11:50
