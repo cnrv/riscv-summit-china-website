@@ -572,7 +572,7 @@ a23_A:
     index: 141
     authors:
       - name: 李扬
-        title: 阿里巴巴，技术专家
+        title: 阿里巴巴达摩院 RISC-V 及生态，技术专家
   - title: LLVM RISC-V implementation and performance optimization status analysis and future prospects
     time: 09:40
     duration: 20
