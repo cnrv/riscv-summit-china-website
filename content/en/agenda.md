@@ -75,9 +75,15 @@ a21:
     authors:
       - name: Shreyas Derashri
         title: Vice President of Compute, Imagination
-  - title: 茶歇、展区
+  - title: "Unified-Compute in RISC-V: Making RISC-V fit for AI/ML"
     time: 16:10
-    duration: 30
+    duration: 15
+    authors:
+      - name: Philipp Tomsich
+        title: VRULL
+  - title: 茶歇、展区
+    time: 16:25
+    duration: 15
     class: SE
   - title: “一生一芯”计划——从零开始设计你自己的 RISC-V 处理器芯片
     time: 16:40
