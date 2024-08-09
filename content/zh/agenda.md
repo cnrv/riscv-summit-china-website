@@ -786,7 +786,7 @@ a23_B:
     index: 102
     authors:
       - name: 芮志清
-        title: 中国科学院软件研究所，软件工程 22 级博士生
+        title: 中国科学院软件研究所在读博士研究生
   - title: 安全加解密算子 RVK 性能优化
     time: 09:40
     duration: 20
