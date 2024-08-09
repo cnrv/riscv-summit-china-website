@@ -728,13 +728,13 @@ a23_A:
         title: StarFive Technology, Associate Principal Engineer
       - name: Rahul Pathak
         title: Ventana Microsystems, Staff Software Engineer
-  - title: 基于 RISC-V 架构的 IOMMU 虚拟化实施方案
+  - title: 面向云数据中心的 RISC-V IOMMU 技术探索与应用
     time: 16:10
     duration: 20
     index: 182
     authors:
       - name: 刘亚南
-        title: 中移（苏州）软件技术有限公司，中移芯片研发总监
+        title: 中移（苏州）软件技术有限公司，移动云芯片技术总监
   - title: High Area Efficiency IOPMP Design in a Large-Scale System
     time: 16:30
     duration: 20
