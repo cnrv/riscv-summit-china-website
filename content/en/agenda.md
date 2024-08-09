@@ -243,14 +243,17 @@ a22_A:
     authors:
       - name: 舒卓
         title: 芯来科技，嵌入式软件工程师
-  - title: AI/ML Session II
+  - title: Talk - TBD
     time: 14:55
-    duration: 70
+    duration: 15
+  - title: "RISC-V in AI/ML: How can we harness open standards for Innovation and Performance in AI/ML?"
+    time: 15:10
+    duration: 50
     authors:
       - name: Philipp & Tao
-  - title: Coffee Break
-    time: 16:05
-    duration: 10
+  - title: 茶歇、展区
+    time: 16:00
+    duration: 15
     class: SE
   - title: 面向机器学习推理应用的全同态编译器框架 (ACE)
     time: 16:15
