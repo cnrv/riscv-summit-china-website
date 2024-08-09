@@ -919,8 +919,12 @@ a23_B:
     duration: 10
     index: 176
     authors:
-      - name: 范宇杰
-        title: 新思科技，Application Engineer
+      - name: Yujie Fan
+        title: Synopsys/新思科技
+      - name: Aimee Sutton
+        title: Synopsys/新思科技
+      - name: Larry Lapides
+        title: Synopsys/新思科技
   - title: 基于 RISC-V 的架构级建模及使用其进行混合仿真验证方法
     time: 15:20
     duration: 20
