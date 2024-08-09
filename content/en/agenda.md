@@ -243,14 +243,14 @@ a22_A:
     authors:
       - name: 舒卓
         title: 芯来科技，嵌入式软件工程师
-  - title: AI/ML Panel
+  - title: AI/ML Session II
     time: 14:55
-    duration: 50
+    duration: 70
     authors:
       - name: Philipp & Tao
   - title: Coffee Break
-    time: 15:45
-    duration: 30
+    time: 16:05
+    duration: 10
     class: SE
   - title: 面向机器学习推理应用的全同态编译器框架 (ACE)
     time: 16:15
