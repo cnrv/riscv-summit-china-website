@@ -979,10 +979,8 @@ a23_B:
     duration: 10
     index: 211
     authors:
-      - name: 曾轶
-        title: 南京隼瞻科技有限公司，CEO
       - name: 姚彦斌
-        title: 南京隼瞻科技有限公司，CTO
+        title: 南京隼瞻科技有限公司，联合创始人兼 CTO
   - title: Accelerating Verification using RISC-V and cloud FPGAs
     time: 17:10
     duration: 10
