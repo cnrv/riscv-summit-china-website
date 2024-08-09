@@ -602,6 +602,8 @@ a23_A:
     authors:
       - name: 高斐
         title: 北京奕斯伟计算技术股份有限公司，编译器工程师
+      - name: 王峰
+        title: 北京奕斯伟计算技术股份有限公司，编译器工程师
   - title: QEMU for RISC-V 的整体进展
     time: 10:40
     duration: 20
