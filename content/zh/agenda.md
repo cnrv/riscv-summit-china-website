@@ -767,7 +767,9 @@ a23_B:
     index: 107
     authors:
       - name: 宋威
-        title: 中国科学院信息工程研究所，副研究员
+        title: 中国科学院信息工程研究所
+      - name: 薛子涵
+        title: 中国科学院信息工程研究所
   - title: "SeChain: 基于国密算法的 RISC-V 安全启动机制设计与实现"
     time: 09:20
     duration: 20
