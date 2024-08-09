@@ -278,13 +278,17 @@ a22_A:
     authors:
       - name: 马越
         title: 芯来科技，高级总监
-  - title: "AutoIREE: Automated Tuning for AI Model Optimization on RISC-V Vector Architectures"
+  - title: "AutoIREE: Automatic Performance Tuning for AI models on RISC-V Vector Architectures"
     time: 17:15
     duration: 10
     index: 321
     authors:
-      - name: Pei-Hsiang Hung
-        title: Andes Technology, Senior Engineer
+      - name: 洪培翔
+        title: Andes Technology, Toolchain Technology Manager
+      - name: 張元銘
+        title: Andes Technology
+      - name: 吳奕緯
+        title: Andes Technology
   - title: MLIR 在 RISC-V 上的优化实践：以 buddy-benchmark 为例
     time: 17:25
     duration: 10
