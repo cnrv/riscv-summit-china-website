@@ -229,7 +229,7 @@ a22_A:
     index: 106
     authors:
       - name: 张先轶
-        title: PerfXLab, CEO
+        title: 澎峰科技 PerfXLab, CEO
   - title: AI 关键算子 RVV 性能优化
     time: 14:45
     duration: 10
