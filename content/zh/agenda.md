@@ -857,7 +857,7 @@ a23_B:
     index: 121
     authors:
       - name: 刘勇
-        title: 华秋电子，电子发烧友运营负责人
+        title: 深圳华秋电子有限公司，电子发烧友平台社区运营负责人
   - title: 驱动数智未来，推动 RISC-V 高性能计算产品落地与创新
     time: 13:30
     duration: 20
