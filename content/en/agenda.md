@@ -800,7 +800,7 @@ a23_B:
     index: 319
     authors:
       - name: Tuo Chen （陈 拓）
-        title: Institute of Information Security/Suzaki Lab (Japan) （情报安全大学院大学/须崎研究室（日本）），Master Student, 2nd Yea# Institute of Information Security
+        title: IISEC (Institute of Information Security, Japan), Master Student
   - title: 基于 RISC-V 的 Linux OPTEE 异构安全解决方案
     time: 10:20
     duration: 10
