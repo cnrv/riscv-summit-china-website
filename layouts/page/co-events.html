@@ -1,0 +1,48 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <h1 class="f1 athelas mt3 mb1">
+        {{- .Title -}}
+      </h1>
+    </header>
+    <div class="content">
+      {{ .Content | markdownify | emojify | safeHTML }}
+    </div>
+    {{- with .Site.GetPage "co-events" }}
+    <div id="co-events">
+      <p class="small attention">{{ .Params.note }}</p>
+      <table>
+        <thead>
+          <tr>
+            <th>{{ i18n "co_event_date_duration" | default "日期" }}</th>
+            <th>{{ i18n "co_event_place" | default "场地" }}</th>
+            <th>{{ i18n "co_event_name" | default "活动名" }}</th>
+            <th>{{ i18n "co_event_organizer" | default "组织方" }}</th>
+            <th>{{ i18n "co_event_registration_method" | default "报名渠道" }}</th>
+            <th>{{ i18n "co_event_website" | default "官网" }}</th>
+            <th>{{ i18n "co_event_remarks" | default "备注说明" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Params.events }}
+          <tr>
+            <td class="nowrap">{{ .date_duration }}</td>
+            <td class="nowrap">{{ .place }}</td>
+            <td class="nowrap">{{ .name }}</td>
+            <td width="25%">{{ .organizer }}</td>
+            <td>{{ .registration_method | markdownify | emojify | safeHTML }}</td>
+            <td>{{ .website | markdownify | emojify | safeHTML }}</td>
+            <td>{{ .remarks | markdownify | emojify | safeHTML }}</td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+    {{- end }}
+  </article>
+{{ end }}
