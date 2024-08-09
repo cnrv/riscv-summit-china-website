@@ -364,10 +364,18 @@ a22_B:
     duration: 20
     index: 195
     authors:
-      - name: 马锟
-        title: 中国科学院软件研究所，计算机 硕士三年级
       - name: 陈韬宇
-        title: 中国科学院软件研究所，计算机 硕士生一年级
+        title: 中国科学院软件研究所
+      - name: 马锟
+        title: 中国科学院软件研究所
+      - name: 陈熙
+        title: 中国科学院计算技术研究所 北京开源芯片研究院
+      - name: 王凯帆
+        title: 中国科学院计算技术研究所 北京开源芯片研究院
+      - name: 李勇坚
+        title: 中国科学院软件研究所
+      - name: 蔡少伟
+        title: 中国科学院软件研究所
   - title: 休息
     time: 11:00
     duration: 10
