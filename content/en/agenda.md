@@ -1075,7 +1075,7 @@ aPOSTER:
     index: 228
     authors:
       - name: 张定立
-        title: 中国科学院软件研究所，OpenJDK Autho# openEuler Java SIG Maintainer
+        title: 中国科学院软件研究所，工程师
   - title: openEuler LLVM 平行宇宙计划 RISC-V 架构进展同步与后续计划
     time: 10
     duration: POSTER
