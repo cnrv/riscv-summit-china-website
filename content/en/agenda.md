@@ -532,8 +532,6 @@ a22_B:
     duration: 10
     index: 192
     authors:
-      - name: 李玉尧
-        title: 北京中科昊芯科技有限公司，FAE
       - name: 张伟杰
         title: 北京中科昊芯科技有限公司，FAE
   - title: RISC-V 云电脑终端软硬件生态分析及应用进展
