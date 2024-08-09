@@ -322,7 +322,7 @@ a22_A:
     index: 163
     authors:
       - name: 梅潮
-        title: 兆松科技，软件工程师
+        title: 兆松科技（武汉）有限公司，软件工程师
   - title: RISC-V IO 虚拟化架构在 X100 芯片上的实现实践
     time: 18:15
     duration: 10
