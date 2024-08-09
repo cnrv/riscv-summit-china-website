@@ -243,9 +243,12 @@ a22_A:
     authors:
       - name: 舒卓
         title: 芯来科技，嵌入式软件工程师
-  - title: Talk - TBD
+  - title: Experiences with extending the RISC-V ISA for Matrix/AI
     time: 14:55
     duration: 15
+    authors:
+      - name: Fan Fujie
+        title: Stream Computing, Director of Research
   - title: "RISC-V in AI/ML: How can we harness open standards for Innovation and Performance in AI/ML?"
     time: 15:10
     duration: 50
