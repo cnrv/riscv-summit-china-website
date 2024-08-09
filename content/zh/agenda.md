@@ -6,19 +6,19 @@ link_slug: agenda
 note: 请注意，目前大会议程尚处于草稿状态，后续会根据作者反馈进行最终确认。
 a21:
   - title: 签到
-    time: 8:30
+    time: 08:30
     duration: 30
     class: SE
   - title: 领导致辞、院士致辞、主席致辞
-    time: 9:00
+    time: 09:00
     duration: 30
   - title: RVI keynote
-    time: 9:30
+    time: 09:30
     duration: 20
     authors:
       - name: Calista Redmond
   - title: Keynote
-    time: 9:50
+    time: 09:50
     duration: 20
     authors:
       - name: Prof. Krste Asanović
@@ -116,21 +116,21 @@ a21:
         title: 深圳市群芯闪耀科技有限公司 (Milk-V)，副总裁
 a22_A:
   - title: RISC-V 服务器级 CPU 关键技术实践
-    time: 9:00
+    time: 09:00
     duration: 20
     index: 110
     authors:
       - name: 费晓龙
         title: 杭州进迭时空科技有限公司，CPU 研发总监
   - title: RISC-V + AI 赋能 AGI 时代新兴应用场景
-    time: 9:20
+    time: 09:20
     duration: 20
     index: 203
     authors:
       - name: 鲁海波
         title: 北京奕斯伟计算技术股份有限公司，IBU 总经理
   - title: 持续迭代创新，打造稳定、高效、易用的玄铁处理器
-    time: 9:40
+    time: 09:40
     duration: 20
     index: 181
     authors:
@@ -323,21 +323,21 @@ a22_A:
         title: 兆松科技有限公司，软件开发工程师
 a22_B:
   - title: 香山 RISC-V 服务器 IP 现状和路线图
-    time: 9:00
+    time: 09:00
     duration: 20
     index: 206
     authors:
       - name: 张健
         title: 北京开源芯片研究院，产品经理
   - title: 香山开源处理器昆明湖架构的设计演进
-    time: 9:20
+    time: 09:20
     duration: 20
     index: 190
     authors:
       - name: 唐浩晋
         title: 中国科学院计算技术研究所，计算机科学与技术 研究生二年级
   - title: 香山处理器昆明湖架构向量扩展的设计与演进
-    time: 9:40
+    time: 09:40
     duration: 20
     index: 191
     authors:
@@ -560,21 +560,21 @@ a22_B:
         title: 中国电信研究院，研究员
 a23_A:
   - title: OpenJDK on RISC-V
-    time: 9:00
+    time: 09:00
     duration: 20
     index: 158
     authors:
       - name: 杨飞
         title: 中科院软件所 PLCT 实验室，研发工程师
   - title: 基于 RISC-V 的 Chromium 浏览器性能优化实践
-    time: 9:20
+    time: 09:20
     duration: 20
     index: 141
     authors:
       - name: 李扬
         title: 阿里巴巴，技术专家
   - title: LLVM 工具链 RISC-V 构建实现及其性能优化现状分析与未来展望
-    time: 9:40
+    time: 09:40
     duration: 20
     index: 179
     authors:
@@ -762,21 +762,21 @@ a23_A:
         title: 中国科学院软件研究所，工程师
 a23_B:
   - title: 抵御冲突型缓存侧信道的动态随机化缓存防御在 Rocket-Chip 上的实现
-    time: 9:00
+    time: 09:00
     duration: 20
     index: 107
     authors:
       - name: 宋威
         title: 中国科学院信息工程研究所，副研究员
   - title: "SeChain: 基于国密算法的 RISC-V 安全启动机制设计与实现"
-    time: 9:20
+    time: 09:20
     duration: 20
     index: 102
     authors:
       - name: 芮志清
         title: 中国科学院软件研究所，软件工程 22 级博士生
   - title: 安全加解密算子 RVK 性能优化
-    time: 9:40
+    time: 09:40
     duration: 20
     index: 131
     authors:
