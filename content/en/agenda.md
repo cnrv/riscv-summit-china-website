@@ -610,7 +610,7 @@ a23_A:
     index: 162
     authors:
       - name: 刘志伟
-        title: 阿里巴巴达摩院，技术专家
+        title: 阿里巴巴达摩院 RISC-V 及生态，技术专家
   - title: Leveraging the RISC-V Efficient Trace (E-Trace) Standard
     time: 11:00
     duration: 20
