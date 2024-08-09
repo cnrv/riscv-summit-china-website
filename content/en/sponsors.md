@@ -84,6 +84,8 @@ community:
     url: "https://riseproject.dev"
   - icon: "/img/logos/4-Community/openKylin.webp"
     url: "https://www.openkylin.top"
+  - icon: "/img/logos/4-Community/Deepin.webp"
+    url: "https://www.deepin.org/"
   - icon: "/img/logos/4-Community/Fedora.webp"
     url: "https://fedoraproject.org"
   - icon: "/img/logos/4-Community/CHIPS-Alliance.webp"
