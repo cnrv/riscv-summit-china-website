@@ -925,13 +925,13 @@ a23_B:
         title: Synopsys/新思科技
       - name: Larry Lapides
         title: Synopsys/新思科技
-  - title: 基于 RISC-V 的架构级建模及使用其进行混合仿真验证方法
+  - title: 基于 RISC-V 的架构建模及混合仿真验证方法
     time: 15:20
     duration: 20
     index: 154
     authors:
       - name: 梁琪
-        title: 思尔芯 S2C, PM
+        title: 思尔芯 S2C, 产品经理
   - title: 基于 AIGC 的 RISCV CPU 及其模拟器设计初探
     time: 15:40
     duration: 10
