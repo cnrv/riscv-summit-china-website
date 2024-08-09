@@ -820,8 +820,8 @@ a23_B:
     duration: 10
     index: 146
     authors:
-      - name: 李勇
-        title: 英特尔亚太研发有限公司，软件架构师
+      - name: Yong Li
+        title: Intel, System Software Architect
   - title: 借助 RISC-V 开源处理器架构认识真实的计算机系统
     time: 10:50
     duration: 20
