@@ -197,13 +197,13 @@ a22_A:
     authors:
       - name: Julian HU 胡征宇
         title: Codasip China GM / 科达希普（深圳）有限公司 总经理
-  - title: 面向 AI 应用的矩阵扩展指令
+  - title: 面向 AI 应用的玄铁扩展指令
     time: 13:15
     duration: 20
     index: 109
     authors:
       - name: 仇径
-        title: 阿里巴巴达摩院，技术专家
+        title: 阿里巴巴达摩院 RISC-V 及生态，技术专家
   - title: RISC-V 融合 AI 技术的芯片实践和应用
     time: 13:35
     duration: 20
