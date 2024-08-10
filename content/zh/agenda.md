@@ -600,13 +600,13 @@ a22_B:
         title: 北京奕斯伟计算技术股份有限公司，资深软件工程师
       - name: 郑宇
         title: 北京奕斯伟计算技术股份有限公司，智能计算事业部软件研发高级总监
-  - title: RISC-V SoC JH7110 异构多核架构 (AMP) 方案在工业实时项目落地探索
+  - title: RISC-V SoC JH7110 工业实时系统方案落地探索
     time: 17:50
     duration: 20
     index: 118
     authors:
       - name: 陈敏达
-        title: 赛昉科技，高级主任工程师
+        title: 赛昉科技，高级主管工程师
   - title: 面向数据中心的 RISC-V 视频转码卡应用实践
     time: 18:10
     duration: 20
