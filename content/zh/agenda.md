@@ -155,9 +155,7 @@ a22_A:
     index: 189
     authors:
       - name: Hao Luan
-        title: Arteris, Chief Architect
-      - name: Gina Jacobs
-        title: Arteris, Head of Communications and Brand Marketing
+        title: Chief Architect, Arteris
   - title: 基于 RISC-V 的边缘侧 AI MCU 芯片及其应用
     time: 10:40
     duration: 20
