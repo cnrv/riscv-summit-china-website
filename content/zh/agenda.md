@@ -214,7 +214,7 @@ a22_A:
     index: 183
     authors:
       - name: 陈俭东
-        title: 进迭时空（杭州）科技有限公司，边端 CPU 产品总监
+        title: 进迭时空（杭州）科技有限公司，芯片产品总监
   - title: 基于 RISC-V 云端推理 NPU 的大模型应用实践
     time: 13:55
     duration: 15
