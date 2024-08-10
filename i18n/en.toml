@@ -36,3 +36,28 @@ other = "Bronze Sponsors"
 
 [community]
 other = "Community Supporters"
+
+[co_event_date_duration]
+other = "Date"
+
+[co_event_place]
+other = "Place"
+
+[co_event_name]
+other = "Name"
+
+[co_event_organizer]
+other = "Organizer"
+
+[co_event_registration_method]
+other = "Registration Method"
+
+[co_event_website]
+other = "Website"
+
+[co_event_remarks]
+other = "Remarks"
+
+[register_url]
+other = "Registration Link"
+

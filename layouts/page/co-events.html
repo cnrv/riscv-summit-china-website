@@ -37,15 +37,21 @@
             <td>{{ .organizer }}</td>
             <td class="breakall">
               {{- range .registration_method }}
-                <div>{{- .method | markdownify | emojify | safeHTML -}}</div>
+              <span>{{- .method | markdownify | emojify | safeHTML -}}</span>
+              {{- end -}}
+              {{- if and .registration_method .registration_url -}}
+              ,
               {{end -}}
               {{- if .registration_url }}
-              <div>
-                <label>{{i18n "register_url" | default "报名链接"}}</label>
+              <span>
                 {{- range .registration_url }}
-                <span>{{ .url | markdownify | emojify | safeHTML }}</span>
+                {{- if .label }}
+                <a target="_blank" href="{{.url}}" class="nowrap">{{.label}}</a>
+                {{- else -}}
+                <a target="_blank" href="{{.url}}" class="nowrap">{{i18n "register_url" | default "报名链接"}}</a>
+                {{end -}}
                 {{ end -}}
-              </div>
+              </span>
               {{ end -}}
             </td>
             <td>{{ .website | markdownify | emojify | safeHTML }}</td>

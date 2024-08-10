@@ -36,3 +36,27 @@ other = "青铜赞助"
 
 [community]
 other = "社区支持"
+
+[co_event_date_duration]
+other = "日期"
+
+[co_event_place]
+other = "场地"
+
+[co_event_name]
+other = "活动名"
+
+[co_event_organizer]
+other = "组织方"
+
+[co_event_registration_method]
+other = "报名渠道"
+
+[co_event_website]
+other = "官网"
+
+[co_event_remarks]
+other = "备注说明"
+
+[register_url]
+other = "报名链接"
