@@ -3,7 +3,8 @@ import './dropup-menu.js';
 import './sidebar.js';
 import './figure.js';
 import './banners.js';
-import './inline-news.js'
+import './inline-news.js';
+import './adaptive-table.js';
 import { resizeToFullCover, resizeToFullHeight } from "./common";
 
 news = undefined;

@@ -26,6 +26,9 @@ function isIOS() {
 }
 
 export const resizeToFullCover = (ele) => {
+  if (!ele) {
+    return;
+  }
   let height = window.innerHeight;
   let width = window.innerWidth;
   // Why the innerWidth value is incorrect in iOS Safari
@@ -47,6 +50,9 @@ export const resizeToFullCover = (ele) => {
 }
 
 export const resizeToFullHeight = (ele) => {
+  if (!ele) {
+    return;
+  }
   let height = window.innerHeight;
   if (isIOS()) {
     let h = maxInnerHeight[currentOrientation];
