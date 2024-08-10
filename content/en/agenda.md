@@ -580,15 +580,13 @@ a22_B:
     authors:
       - name: 殷萍
         title: 中移（苏州）软件技术有限公司，高级软件技术工程师
-  - title: RISC-V 在高性能云桌面终端领域的应用
+  - title: RISC-V 在高清云桌面终端领域的应用
     time: 17:30
     duration: 10
     index: 240
     authors:
       - name: 万峰
-        title: 深圳市青葡萄科技有限公司，总经理
-      - name: 徐超
-        title: 阿里巴巴达摩院，资深业务拓展专家
+        title: 深圳市青葡萄科技有限公司创始人
   - title: RISC-V OpenStack 与 k8s 开发实践分享
     time: 17:40
     duration: 10
