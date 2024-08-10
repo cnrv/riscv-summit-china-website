@@ -572,7 +572,7 @@ a22_B:
     index: 220
     authors:
       - name: 韦茜
-        title: 中国电信股份有限公司研究院，科研人员
+        title: 中国电信研究院
   - title: 中国移动基于 RISC-V 技术在云终端领域的探索
     time: 17:20
     duration: 10
