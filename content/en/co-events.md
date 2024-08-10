@@ -6,11 +6,9 @@ link_slug: co-events
 note: Please note that the list of events is currently in draft form and will be finalized based on feedback.
 events:
   - name: "Edge AI models: Algorithms and Chips"
-    date_duration: "Aug. 19, p.m."
-    place: "线上"
+    date_duration: ""
     organizer: "《半导体在线》、《蔻享学术》、《中国图象图形学报》等"
-    registration_method:
-      - method: "TBD"
+    remarks: "Merged with 2024 Hong Kong RISC-V Day"
   - name: "China Summit Volunteer Training (Session 1)"
     date_duration: "Aug. 19, p.m."
     place: "珍珠2"
