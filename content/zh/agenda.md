@@ -488,13 +488,13 @@ a22_B:
     authors:
       - name: Matthew Bubis
         title: Director of Product Management, Imagination Technologies
-  - title: Addressing Real-Time Workloads in Automotive Applications with Efficient RISC-V Processors
+  - title: 用高效的 ARC-V 处理器轻松驾驭汽车应用中的实时工作负载
     time: 15:30
     duration: 10
     index: 308
     authors:
-      - name: Rich Collins
-        title: Synopsys, Sr Directo# Product Management
+      - name: 裴亚强
+        title: 新思科技，资深处理器应用工程师
   - title: 面向车规等嵌入式领域的 riscv 核生成及 soc 敏捷开发云平台
     time: 15:40
     duration: 10
