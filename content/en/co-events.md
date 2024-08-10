@@ -177,7 +177,7 @@ events:
       - url: "https://www.wenjuan.com/s/bQzaYrS/"
   - name: "2024 Hong Kong RISC-V Day ＋ AICon"
     date_duration: "Aug. 24, all day"
-    place: "HongKong"
+    place: "Hong Kong"
     organizer: "LF开源软件学园 （LFOSSA）"
     registration_url:
       - url: "https://8781953947563.huodongxing.com/event/2762790104900"
