@@ -722,13 +722,13 @@ a23_A:
     authors:
       - name: 王文竹
         title: 信创海河实验室，高级工程师
-  - title: 由 deepin 视角，看 RISC-V 桌面生态的未来
+  - title: The future of the RISC-V desktop ecosystem from deepin's perspective
     time: 14:30
     duration: 20
     index: 167
     authors:
-      - name: 杨畅
-        title: 统信软件技术有限公司，研发工程师
+      - name: Chang Yang
+        title: System R&D Engineer of deepin Open Source Community (UnionTech)
   - title: "HVP: Hardware Accelerated RISC-V Android Emulator"
     time: 14:50
     duration: 20

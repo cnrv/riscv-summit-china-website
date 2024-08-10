@@ -728,7 +728,7 @@ a23_A:
     index: 167
     authors:
       - name: 杨畅
-        title: 统信软件技术有限公司，研发工程师
+        title: deepin 开源社区（统信软件）系统研发工程师
   - title: "HVP: Hardware Accelerated RISC-V Android Emulator"
     time: 14:50
     duration: 20
