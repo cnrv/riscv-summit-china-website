@@ -192,7 +192,7 @@ a22_A:
     index: 302
     authors:
       - name: Dmitry Zakharov
-        title: CloudBEAR, LLC (https://cloudbear.ru), Sr. Software Engineer
+        title: CloudBEAR, LLC
   - title: 午餐及展区
     time: 12:00
     duration: 60
