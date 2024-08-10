@@ -4,7 +4,7 @@
 {{ end }}
 
 {{ define "main" }}
-  <article class="flex-l flex-wrap justify-between mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+  <article class="flex-l flex-wrap justify-between mw9 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
     <header class="mt4 w-100">
       <h1 class="f1 athelas mt3 mb1">
         {{- .Title -}}
@@ -16,7 +16,7 @@
     {{- with .Site.GetPage "co-events" }}
     <div id="co-events">
       <p class="small attention">{{ .Params.note }}</p>
-      <table>
+      <table class="adaptive">
         <thead>
           <tr>
             <th>{{ i18n "co_event_date_duration" | default "日期" }}</th>
@@ -31,11 +31,12 @@
         <tbody>
           {{ range .Params.events }}
           <tr>
-            <td class="nowrap">{{ .date_duration }}</td>
-            <td class="nowrap">{{ .place }}</td>
-            <td class="nowrap">{{ .name }}</td>
-            <td>{{ .organizer }}</td>
-            <td class="breakall">
+            <td class="date-duration {{cond (not .date_duration) "empty" ""}}"><label class="hide-on-wide">{{i18n "co_event_date_duration"}}{{i18n "colon"}}</label>{{ .date_duration }}</td>
+            <td class="place {{cond (not .place) "empty" ""}}"><label class="hide-on-wide">{{i18n "co_event_place"}}{{i18n "colon"}}</label>{{ .place }}</td>
+            <td class="name"><label class="hide-on-wide">{{i18n "co_event_name"}}{{i18n "colon"}}</label>{{if eq .name "TBD" }}<i>{{else}}<b>{{end}}{{ .name }}{{if eq .name "TBD" }}</i>{{else}}</b>{{end}}</td>
+            <td class="organizer {{cond (not .organizer) "empty" ""}}"><label class="hide-on-wide">{{i18n "co_event_organizer"}}{{i18n "colon"}}</label>{{ .organizer }}</td>
+            <td class="registration-method {{cond (and (not .registration_method) (not .registration_url)) "empty" ""}}">
+              <label class="hide-on-wide">{{i18n "co_event_registration_method"}}{{i18n "colon"}}</label>
               {{- range .registration_method }}
               <span>{{- .method | markdownify | emojify | safeHTML -}}</span>
               {{- end -}}
@@ -54,8 +55,8 @@
               </span>
               {{ end -}}
             </td>
-            <td>{{ .website | markdownify | emojify | safeHTML }}</td>
-            <td>{{ .remarks | markdownify | emojify | safeHTML }}</td>
+            <td class="website {{cond (not .website) "empty" ""}}"><label class="hide-on-wide">{{i18n "co_event_website"}}{{i18n "colon"}}</label>{{ .website | markdownify | emojify | safeHTML }}</td>
+            <td class="remarks {{cond (not .remarks) "empty" ""}}"><label class="hide-on-wide">{{i18n "co_event_remarks"}}{{i18n "colon"}}</label>{{ .remarks | markdownify | emojify | safeHTML }}</td>
           </tr>
           {{ end }}
         </tbody>

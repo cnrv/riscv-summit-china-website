@@ -62,6 +62,9 @@ const observer = new MutationObserver((mutationsList) => {
 
 window.addEventListener('DOMContentLoaded', () => {
   const inlineNews = document.querySelector('#cover #inline-news');
+  if (!inlineNews) {
+    return;
+  }
   const inlineNewsTimerCountdown = inlineNews.querySelector('.countdown');
   const inlineNewsUl = inlineNews.querySelector('ul');
   inlineNewsLi = inlineNews.querySelectorAll('li');
@@ -126,6 +129,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('resize', () => {
   inlineNewsMaxWidth = 0;
+  if (!inlineNewsLi) {
+    return;
+  }
   inlineNewsLi.forEach((ele) => {
     const inlineNewsLiA = ele.querySelector('a');
     const widthLi = parseFloat(window.getComputedStyle(ele).width);

@@ -15,6 +15,11 @@ body:not(.in-home) {
     article {
         padding-left: calc(var(--sal) + 1em) !important;
         padding-right: calc(var(--sar) + 1em) !important;
+        position: relative;
+        >div {
+            width: 100%;
+            position: relative;
+        }
         header >aside {
             display: none;
         }
@@ -28,17 +33,12 @@ body:not(.in-home) {
             width: fit-content;
             padding: 0.5em 2em;
         }
-        label:after {
-            content: "："
-        }
-        &.is-en label:after {
-            content: ": "
-        }
         table {
             border-collapse: collapse;
             margin: 0 0 5em 0;
             font-size: 0.9em;
-            min-width: 400px;
+            width: 100%;
+            position: relative;
             th, td {
                 padding: 12px 15px;
             }
@@ -80,11 +80,58 @@ body:not(.in-home) {
     div#co-events {
         margin-top: 2em;
         table {
-            td.nowrap {
-                white-space: nowrap;
+            td {
+                &.date-duration, &.place, &.name {
+                    white-space: nowrap;
+                }
             }
-            td.breakall {
-                word-break: break-all;
+            .hide-on-wide {
+                display: none;
+            }
+            @media all and (max-width: 1440px) {
+                thead {
+                    th {
+                        display: none;
+                    }
+                    tr {
+                        height: 1em;
+                    }
+                    background-color: $primaryColorLight;
+                    display: block;
+                }
+                tbody {
+                    tr {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1em;
+                        td {
+                            padding: 0 0 0 1em;
+                            margin-bottom: 0.2em;
+                            font-size: 95%;
+                            &.name {
+                                margin-top: 0;
+                                margin-bottom: 0.5em;
+                                padding-left: 0;
+                                label {
+                                    display: none;
+                                }
+                                font-size: 120%;
+                                white-space: initial;
+                            }
+                            label {
+                                opacity: 0.6;
+                                margin-right: 0.3em;
+                            }
+                            &.empty {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .hide-on-wide {
+                    display: inline-block;
+                }
             }
         }
     }

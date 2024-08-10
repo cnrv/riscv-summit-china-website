@@ -61,3 +61,5 @@ other = "Remarks"
 [register_url]
 other = "Registration Link"
 
+[colon]
+other = ": "
