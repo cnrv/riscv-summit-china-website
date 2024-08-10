@@ -891,7 +891,7 @@ a23_B:
     index: 236
     authors:
       - name: 陈名书
-        title: 兰州大学，计算机科学与技术 2022 级
+        title: 兰州大学异步电路系统实验室，研究生
   - title: 午饭
     time: 12:00
     duration: 60
