@@ -962,13 +962,13 @@ a23_B:
     authors:
       - name: 杨晔
         title: 芯华章科技，科技产品和业务规划总监
-  - title: Accelerate RISC-V SOC SW/HW co-debugging with mixed Emulation platforms
+  - title: Accelerate RISC-V SOC SW/HW co-development with mixed Emulation platforms
     time: 16:00
     duration: 10
     index: 306
     authors:
-      - name: Bo Zang
-        title: Intel, FPGA develop manager
+      - name: Zang Bo（臧博）
+        title: Intel (China) Research Center Ltd.
   - title: 基于生成式多核 RISC-V 的设计验证方法
     time: 16:10
     duration: 20
