@@ -1011,13 +1011,13 @@ a23_B:
     authors:
       - name: 孙海龙
         title: 兆松科技（武汉）有限公司，硬件编译器工程师
-  - title: "sdfirm: RISC-V 芯片 IP/CPU/SoC 验证方法论与实践"
+  - title: "sdfirm: RISC-V 芯片验证方法论与实践"
     time: 16:40
     duration: 20
     index: 155
     authors:
       - name: 郑律
-        title: 个人开发者
+        title: sdfirm 社区，社区开发者
   - title: EDA 辅助的领域专用 RISC-V 处理器设计
     time: 17:00
     duration: 10
