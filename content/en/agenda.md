@@ -779,7 +779,7 @@ a23_A:
   - title: TBA
     time: 16:50
     duration: 10
-  - title: "Developing and Integrating ACPI and SMBIOS for RISC-V: Practical Approaches and Applications"
+  - title: Practical Approaches to Developing and Integrating ACPI and SMBIOS for RISC-V
     time: 17:00
     duration: 20
     index: 303
