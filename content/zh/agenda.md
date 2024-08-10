@@ -1037,7 +1037,7 @@ a23_B:
     authors:
       - name: 徐烁翔
         title: 上海科技大学，计算机科学与技术 研二
-  - title: 一种基于 FPGA 加速的软硬件联合 Difftest 框架
+  - title: "DUET: 一种基于 FPGA 加速的软硬件联合 Difftest 芯片验证框架"
     time: 17:30
     duration: 10
     index: 221
