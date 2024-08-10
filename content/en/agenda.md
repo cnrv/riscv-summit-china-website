@@ -890,11 +890,7 @@ a23_B:
     index: 157
     authors:
       - name: LIU Yu
-        title: WuXi EsionTech Inc.，HuiMt Lab
-      - name: TAN Min-Qiang
-        title: WuXi EsionTech Inc.，HuiMt Lab
-      - name: YU Zhi-Hong
-        title: WuXi EsionTech Inc.，HuiMt Lab
+        title: Wu-Xi EsionTech Inc.，Senior Software Engineer
   - title: "tinyRV: 一种完备的 RISC-V 定制压缩指令集"
     time: 11:40
     duration: 20

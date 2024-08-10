@@ -884,17 +884,13 @@ a23_B:
     authors:
       - name: 刘鹏
         title: 浙江大学，教授
-  - title: "PySpike: Spike 指令集模拟器的 Python 语言集成"
+  - title: "PySpike: RISC-V 指令集模拟器的 Python 语言集成"
     time: 11:30
     duration: 10
     index: 157
     authors:
       - name: 刘禹
-        title: 无锡中微亿芯有限公司，惠山实验室
-      - name: 谭敏强
-        title: 无锡中微亿芯有限公司，惠山实验室
-      - name: 余志洪
-        title: 无锡中微亿芯有限公司，惠山实验室
+        title: 无锡中微亿芯有限公司，资深软件工程师
   - title: "tinyRV: 一种完备的 RISC-V 定制压缩指令集"
     time: 11:40
     duration: 20
