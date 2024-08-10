@@ -817,15 +817,13 @@ a23_A:
       - name: 何若轻
         title: 中国科学院软件研究所，工程师
 a23_B:
-  - title: 抵御冲突型缓存侧信道的动态随机化缓存防御在 Rocket-Chip 上的实现
+  - title: 可抵御缓存侧信道攻击的随机化缓存设计
     time: 09:00
     duration: 20
     index: 107
     authors:
       - name: 宋威
-        title: 中国科学院信息工程研究所
-      - name: 薛子涵
-        title: 中国科学院信息工程研究所
+        title: 中国科学院信息工程研究所 网络空间安全防御重点实验室
   - title: "SeChain: 基于国密算法的 RISC-V 安全启动机制设计与实现"
     time: 09:20
     duration: 20
