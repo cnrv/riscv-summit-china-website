@@ -736,7 +736,7 @@ a23_A:
     index: 110
     authors:
       - name: 费晓龙
-        title: 杭州进迭时空科技有限公司，CPU 研发总监
+        title: 进迭时空（杭州）科技有限公司，CPU 研发总监
   - title: High Area Efficiency IOPMP Design in a Large-Scale System
     time: 16:30
     duration: 20
