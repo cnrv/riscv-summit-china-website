@@ -838,7 +838,7 @@ a23_B:
     authors:
       - name: 李勇
         title: 英特尔亚太研发有限公司，软件架构师
-  - title: 借助 RISC-V 开源处理器架构认识真实的计算机系统
+  - title: 基于 RISC-V 处理器架构搭建真实的计算机系统
     time: 10:50
     duration: 20
     index: 134

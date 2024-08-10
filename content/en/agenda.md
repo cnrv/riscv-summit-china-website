@@ -838,7 +838,7 @@ a23_B:
     authors:
       - name: Yong Li
         title: Intel, System Software Architect
-  - title: 借助 RISC-V 开源处理器架构认识真实的计算机系统
+  - title: 基于 RISC-V 处理器架构搭建真实的计算机系统
     time: 10:50
     duration: 20
     index: 134
