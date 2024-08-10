@@ -307,7 +307,7 @@ a22_A:
     authors:
       - name: 方华启
         title: 芯来科技，软件总监
-  - title: AI 促进 RISC-V 与 OpenHarmony 的 AIoT 新纪元
+  - title: RISC-V & OpenHarmony 助力 AI 云-边-端协同创新
     time: 17:55
     duration: 10
     index: 173
