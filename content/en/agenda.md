@@ -323,13 +323,13 @@ a22_A:
     authors:
       - name: 梅潮
         title: 兆松科技（武汉）有限公司，软件工程师
-  - title: RISC-V IO 虚拟化架构在 X100 芯片上的实现实践
+  - title: RISC-V IO 虚拟化架构在 X100 芯片上的实现
     time: 18:15
     duration: 10
     index: 207
     authors:
-      - name: Lv 'ZETALOG' Zheng
-        title: SpacemiT, Computing IP Validation Leader
+      - name: Lv 'ZETALOG' Zheng（郑律）
+        title: SpacemiT, CPU 架构总监
   - title: 利用人工智能大模型优化 RISC-V 编译器的性能
     time: 18:25
     duration: 20
