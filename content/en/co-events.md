@@ -24,7 +24,7 @@ events:
     registration_method:
       - method: "TBD"
   - name: "One Student One Chip Forum of Teaching Assistants"
-    date_duration: "Aug. 20, full day"
+    date_duration: "Aug. 20,  all day"
     organizer: "一生一芯"
     registration_method:
       - method: "For teaching assistants only"
@@ -35,13 +35,13 @@ events:
     registration_method:
       - method: "For volunteers only"
   - name: "RV 少年说"
-    date_duration: "Aug. 20, full day"
+    date_duration: "Aug. 20,  all day"
     place: "线上"
     organizer: "sigRISCV.com 青少年视角的 RISCV 社区"
     registration_method:
       - method: "TBD"
   - name: "The 6th Domestic Embedded Operating System Technology and Industry Forum"
-    date_duration: "Aug. 20, full day"
+    date_duration: "Aug. 20,  all day"
     place: "Hangzhou"
     organizer: "Embedded System Association"
     registration_method:
