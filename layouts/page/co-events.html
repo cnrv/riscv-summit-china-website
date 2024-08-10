@@ -4,7 +4,7 @@
 {{ end }}
 
 {{ define "main" }}
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
     <header class="mt4 w-100">
       <h1 class="f1 athelas mt3 mb1">
         {{- .Title -}}
@@ -35,7 +35,19 @@
             <td class="nowrap">{{ .place }}</td>
             <td class="nowrap">{{ .name }}</td>
             <td>{{ .organizer }}</td>
-            <td>{{ .registration_method | markdownify | emojify | safeHTML }}</td>
+            <td class="breakall">
+              {{- range .registration_method }}
+                <div>{{- .method | markdownify | emojify | safeHTML -}}</div>
+              {{end -}}
+              {{- if .registration_url }}
+              <div>
+                <label>{{i18n "register_url" | default "报名链接"}}</label>
+                {{- range .registration_url }}
+                <span>{{ .url | markdownify | emojify | safeHTML }}</span>
+                {{ end -}}
+              </div>
+              {{ end -}}
+            </td>
             <td>{{ .website | markdownify | emojify | safeHTML }}</td>
             <td>{{ .remarks | markdownify | emojify | safeHTML }}</td>
           </tr>

@@ -28,6 +28,12 @@ body:not(.in-home) {
             width: fit-content;
             padding: 0.5em 2em;
         }
+        label:after {
+            content: "："
+        }
+        &.is-en label:after {
+            content: ": "
+        }
         table {
             border-collapse: collapse;
             margin: 0 0 5em 0;
@@ -76,6 +82,9 @@ body:not(.in-home) {
         table {
             td.nowrap {
                 white-space: nowrap;
+            }
+            td.breakall {
+                word-break: break-all;
             }
         }
     }

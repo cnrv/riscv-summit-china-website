@@ -4,6 +4,7 @@
   <div class="text-container">
     <h1>{{ .Title | markdownify | emojify }}</h1>
     <!--
+    {{/*
     <div class="content">
       {{ if .Params.events }}
       {{ range .Params.events }}
@@ -44,6 +45,7 @@
       {{ end }}
       {{ end }}
     </div>
+    */}}
     -->
     {{ if .Params.home_desc }}
     <div class="content">
