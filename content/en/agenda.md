@@ -609,7 +609,7 @@ a22_B:
     index: 122
     authors:
       - name: 李天正
-        title: 中国电信研究院，研究员
+        title: 中国电信研究院，RISC-V 指令集研究员
 a23_A:
   - title: OpenJDK on RISC-V
     time: 09:00
