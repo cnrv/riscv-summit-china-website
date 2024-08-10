@@ -106,13 +106,7 @@ events:
     organizer: "Beijing Institute of Open Source Chip (BOSC)"
     registration_method:
       - method: "TBD"
-  - name: "ZH: RISC-V 开源处理器芯片生态发展论坛"
-    date_duration: "8月22日下午"
-    place: "紫荆2"
-    organizer: "北京开源芯片研究院"
-    registration_method:
-      - method: "待更新"
-  - name: "EN: Session of Open-source Chip Ecosystem based on RISC-V (OCERV)"
+  - name: "Session of Open-source Chip Ecosystem based on RISC-V (OCERV)"
     date_duration: "Aug. 22, p.m."
     place: "紫荆2"
     organizer: "Beijing Institute of Open Source Chip (BOSC)"
