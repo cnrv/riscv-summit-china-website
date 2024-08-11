@@ -68,7 +68,7 @@ a21:
     authors:
       - name: James NG
         title: Executive Director
-  - title: Andes RISC-V for Intelligent Edge Application Processing
+  - title: RISC-V for Intelligent Edge Application Processing
     time: 15:10
     duration: 15
     index: 317
