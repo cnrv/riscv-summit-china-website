@@ -391,8 +391,6 @@ a22_B:
     duration: 20
     index: 195
     speakers:
-      - name: 马锟
-        title: 中国科学院软件研究所，计算机 硕士三年级
       - name: 陈韬宇
         title: 中国科学院软件研究所，计算机 硕士生一年级
   - title: 休息
