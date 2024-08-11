@@ -407,16 +407,23 @@ a22_B:
         title: 中国科学院软件研究所
   - title: 休息
     time: 11:00
-    duration: 10
+    duration: 5
     class: SE
-  - title: “乘影”开源通用图形处理器指令集架构介绍
+  - title: 乘影开源 GPGPU 介绍
+    time: 11:05
+    duration: 5
+    index: 230-0
+    authors:
+      - name: 何虎
+        title: 清华大学集成电路学院，副教授
+  - title: “乘影”：开源通用 GPU 指令集架构介绍
     time: 11:10
     duration: 10
     index: 230-1
     authors:
       - name: 于芳菲
-        title: 清华大学集成电路学院，硕士三年级研究生
-  - title: 基于 RISC-V 内核的 GPGPU 的工程化 RTL 实现
+        title: 清华大学集成电路学院，硕士二年级研究生
+  - title: 基于 RISC-V 向量拓展的高性能开源 GPGPU 设计
     time: 11:20
     duration: 10
     index: 230-2
@@ -429,8 +436,8 @@ a22_B:
     index: 230-3
     authors:
       - name: 伍华林
-        title: 兆松科技，CTO
-  - title: 乘影 GPGPU 基于 Chisel HDL 的硬件实现最新进展
+        title: 兆松科技，联合创始人兼 CTO
+  - title: 开源通用 GPU “乘影” v2.1.0 基于 Chisel HDL 的硬件开发进展
     time: 11:40
     duration: 10
     index: 230-4
