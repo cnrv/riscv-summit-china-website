@@ -390,13 +390,16 @@ a22_B:
     authors:
       - name: 丁昊楠
         title: 中国科学院计算技术研究所，芯片设计工程师
-  - title: 基于开源众包芯片验证的探索与实践
+  - title: 基于香山的开源众包验证探索与实践
     time: 10:20
     duration: 20
     index: 143
     authors:
       - name: 姚治成
         title: 中国科学院计算技术研究所，工程师
+      - name: 谢云龙
+      - name: 刘锦程
+      - name: 王卅
   - title: 香山缓存系统的形式化验证
     time: 10:40
     duration: 20
