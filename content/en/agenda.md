@@ -301,10 +301,6 @@ a22_A:
     authors:
       - name: 洪培翔
         title: Andes Technology, Toolchain Technology Manager
-      - name: 張元銘
-        title: Andes Technology
-      - name: 吳奕緯
-        title: Andes Technology
   - title: 基于 MLIR 的 RISC-V 编译优化实践：以 Buddy Compiler 为例
     time: 17:25
     duration: 10
