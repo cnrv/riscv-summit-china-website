@@ -156,13 +156,17 @@ a22_A:
     authors:
       - name: Hao Luan
         title: Chief Architect, Arteris
-  - title: 基于 RISC-V 的边缘侧 AI MCU 芯片及其应用
+  - title: 基于边缘侧 AI MCU 芯片及其应用
     time: 10:40
     duration: 20
     index: 216
     authors:
+      - name: 匡启和
+        title: 苏州国芯科技股份有限公司 常务副总
+      - name: 王廷平
+        title: 苏州国芯科技股份有限公司 副总
       - name: 汪建强
-        title: 苏州国芯科技股份有限公司，芯片中心副主任
+        title: 苏州国芯科技股份有限公司 芯片中心副主任
   - title: 面向实时控制应用的 RISC-V 架构 DSP 处理器
     time: 11:00
     duration: 10
