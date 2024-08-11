@@ -913,8 +913,6 @@ a23_B:
     authors:
       - name: Chen Yolanda
         title: Intel, 编译器架构师
-      - name: Huang Wenyong
-        title: Intel
   - title: QEMU 调用本机动态库加速转译
     time: 14:30
     duration: 20
