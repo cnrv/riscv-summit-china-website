@@ -49,7 +49,7 @@ a21:
   - title: 午餐及展区
     time: 12:30
     duration: 70
-    class: SE
+    class: LUNCH
   - title: 一分钟 POSTER 报告（暂定）
     time: 13:40
     duration: 20
@@ -206,7 +206,7 @@ a22_A:
   - title: 午餐及展区
     time: 12:00
     duration: 60
-    class: SE
+    class: LUNCH
   - title: 功能越强，责任逾重 — 充分考虑验证地定制 RISC-V 之“实战指南“
     time: 13:00
     duration: 15
@@ -441,7 +441,7 @@ a22_B:
   - title: 午餐及展区
     time: 12:00
     duration: 60
-    class: SE
+    class: LUNCH
   - title: "RISC-V Certification: Applying Advanced RISC-V Core and SoC Verification Towards the Anticipated Certification Requirements"
     time: 13:15
     duration: 15
@@ -661,7 +661,7 @@ a23_A:
   - title: 午餐
     time: 12:00
     duration: 60
-    class: SE
+    class: LUNCH
   - title: RISC-V Android 的产品化探索
     time: 13:00
     duration: 20
@@ -870,7 +870,7 @@ a23_B:
   - title: 午饭
     time: 12:00
     duration: 60
-    class: SE
+    class: LUNCH
   - title: "开源芯片社区 OChip: 香山贡献者机制发布"
     time: 13:00
     duration: 10

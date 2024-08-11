@@ -21,7 +21,7 @@
         </thead>
         <tbody>
           {{ range .value }}
-          <tr class="{{ cond (eq .class "SE") "se" "" }}">
+          <tr class="{{ cond (eq .class "SE") "se" "" }} {{ cond (eq .class "LUNCH") "se lunch" "" }}">
             <td class="time">{{ .time }}</td>
             <td class="duration">{{ .duration }}<sup>'</sup></td>
             <td class="title">{{ .title }}</td>
