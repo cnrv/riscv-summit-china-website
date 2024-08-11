@@ -37,9 +37,12 @@ a21:
   - title: Keynote - 算能
     time: 11:10
     duration: 20
-  - title: Keynote - 芯来科技
+  - title: RISC-V 生态视角下的商业要素必要性与重要性
     time: 11:30
     duration: 20
+    authors:
+      - name: 胡振波
+        title: 芯来科技创始人
   - title: 圆桌讨论
     time: 11:50
     duration: 40
