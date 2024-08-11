@@ -1077,8 +1077,18 @@ a23_B:
     duration: 10
     index: 232
     authors:
+      - name: 石侃
+        title: 中国科学院计算技术研究所
       - name: 徐烁翔
-        title: 上海科技大学，计算机科学与技术 研二
+        title: 上海科技大学
+      - name: 刁予涵
+        title: 帝国理工大学
+      - name: David Boland
+        title: 悉尼大学
+      - name: 张子卿
+        title: 中国科学院大学
+      - name: 包云岗
+        title: 中国科学院计算技术研究所
   - title: "DUET: 一种基于 FPGA 加速的软硬件联合 Difftest 芯片验证框架"
     time: 17:30
     duration: 10
