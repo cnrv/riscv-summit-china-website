@@ -1,15 +1,15 @@
 {{- with .Site.GetPage "agenda" }}
-    <div id="agenda">
-      {{- $agenda21  := dict "id" "0821"  "title" "8 月 21 日"                         "value" .Params.a21 }}
-      {{- $agenda22a := dict "id" "0822a" "title" "8 月 22 日 - 主会场 A （水晶宫 1）" "value" .Params.a22_A }}
-      {{- $agenda22b := dict "id" "0822b" "title" "8 月 22 日 - 主会场 B （水晶宫 3）" "value" .Params.a22_B }}
-      {{- $agenda23a := dict "id" "0823a" "title" "8 月 23 日 - 主会场 A （水晶宫 1）" "value" .Params.a23_A }}
-      {{- $agenda23b := dict "id" "0823b" "title" "8 月 23 日 - 主会场 B （水晶宫 3）" "value" .Params.a23_B }}
+    <div id="agenda-container">
+      {{- $agenda21  := dict "id" "A0821"  "titlePrefix" "Day1" "titlePlace" "主会场" "title1" "8 月 21 日" "title2" "周三" "place" "水晶宫"       "value" .Params.a21 }}
+      {{- $agenda22a := dict "id" "A0822a" "titlePrefix" "Day2" "titlePrefixSub" "A" "titlePlace" "主会场 A" "title1" "8 月 22 日" "title2" "周四" "place" "水晶宫 1+2" "value" .Params.a22_A }}
+      {{- $agenda22b := dict "id" "A0822b" "titlePrefix" "Day2" "titlePrefixSub" "B" "titlePlace" "主会场 B" "title1" "8 月 22 日" "title2" "周四" "place" "水晶宫 3"   "value" .Params.a22_B }}
+      {{- $agenda23a := dict "id" "A0823a" "titlePrefix" "Day3" "titlePrefixSub" "A" "titlePlace" "主会场 A" "title1" "8 月 23 日" "title2" "周五" "place" "水晶宫 1+2" "value" .Params.a23_A }}
+      {{- $agenda23b := dict "id" "A0823b" "titlePrefix" "Day3" "titlePrefixSub" "B" "titlePlace" "主会场 B" "title1" "8 月 23 日" "title2" "周五" "place" "水晶宫 3"   "value" .Params.a23_B }}
       {{- $agendaData := slice $agenda21 $agenda22a $agenda22b $agenda23a $agenda23b }}
       {{- $note := .Params.note }}
       {{- range $agendaData }}
-      <h2 id="{{.id}}">{{ .title }}</h2>
-      <p class="small attention">{{ $note }}</p>
+      <h2 id="{{.id}}"><span class="title-prefix">{{.titlePrefix}}</span><span class="title-prefix-sub {{.titlePrefixSub}}">{{.titlePlace}}</span><span class="title">{{ .title1 }}<span>/</span>{{ .title2 }}</span><span class="place">{{.place}}</span></h2>
+      <div class="small attention">{{ $note }}</div>
       <table>
         <thead>
           <tr>
@@ -26,10 +26,10 @@
             <td class="duration">{{ .duration }}<sup>'</sup></td>
             <td class="title">{{ .title }}</td>
               {{ if .speakers }}
-            <td class="author">
+            <td class="speaker">
               {{ range .speakers}}
               <div>
-              <span class="author-name">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
+              <div class="author-name">{{ .name }}</div>{{if .title }}<div class="author-title">{{ .title }}</div>{{end}}
               </div>
               {{ end }}
               {{ else }}
@@ -43,8 +43,8 @@
       </table>
       {{- end }}
 
-      <h2>POSTER</h2>
-      <p class="small attention">{{ .Params.note }}</p>
+      <h2><span class="title-poster">POSTER</span></h2>
+      <div class="small attention">{{ .Params.note }}</div>
       <table>
         <thead>
           <tr>
@@ -60,7 +60,7 @@
               {{ if .authors }}
               {{ range .authors }}
               <div>
-              <span class="author-name">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
+              <div class="author-name">{{ .name }}</div>{{if .title }}<div class="author-title">{{ .title }}</div>{{end}}
               </div>
               {{ end }}
               {{ else }}

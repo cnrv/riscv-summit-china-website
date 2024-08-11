@@ -23,15 +23,17 @@ body:not(.in-home) {
         header >aside {
             display: none;
         }
-        p.small {
+        .small {
             font-size: 90%;
         }
         .attention {
             font-weight: bold;
-            background-color: yellow;
+            color: #F1F1F1;
+            background-color: #F96600;
             display: block;
-            width: fit-content;
-            padding: 0.5em 2em;
+            padding: 0.8em 15px;
+            border-top: 0.5px solid white;
+            border-bottom: 0.5px solid white;
         }
         table {
             border-collapse: collapse;
@@ -70,33 +72,235 @@ body:not(.in-home) {
                     color: #009879;
                 }
             }
-            .author-title {
-                &:before {
-                    content: ' ('
-                }
-                &:after {
-                    content: ')'
-                }
-            }
         }
     }
-    div#agenda {
-        margin-top: 1em;
-        table {
-            tbody {
-                tr {
-                    td {
+    #agenda {
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        div#agenda-container {
+            margin-top: 3em;
+            /*
+            h2, .attention, table {
+                box-shadow: -2px -2px 2px #00000020;
+            }
+            */
+            h2 {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                color: $primaryColor;
+                border-top-left-radius: 1.5em;
+                position: relative;
+                z-index: 1;
+                >span {
+                    padding: 0.5em 1em;
+                    display: block;
+                }
+                .title-prefix, .title-poster {
+                    padding: 0.1em 0.5em 0.3em 1.5em;
+                    color: #F1F1F1;
+                    border-top-left-radius: 1.5em;
+                    font-size: 120%;
+                    letter-spacing: 2px;
+                    display: flex;
+                    align-items: flex-end;
+                    z-index: 2;
+                }
+                .title-poster {
+                    background-color: $primaryColorLight;
+                    padding-top: 0.3em;
+                    width: 100%;
+                }
+                .title-prefix-sub {
+                    background-color: #00a3da;
+                    color: white;
+                    box-shadow: 2px 0 0 #00000030;
+                    z-index: 3;
+                }
+                .title, .place {
+                    padding: 0.4em 1em;
+                    margin: auto 0 0 0;
+                    font-size: 95%;
+                    height: 90%;
+                    color: white;
+                    background-color: gray;
+                }
+                .title {
+                    position: relative;
+                    span {
+                        position: relative;
+                        font-size: 70%;
+                        opacity: .8;
+                        bottom: 0.2em;
+                        margin: 0 0.3em;
                     }
-                    &.se {
-                        color: white;
-                        background-color: $primaryColorLight;
-                        border-top: .5px solid white;
-                        font-style: italic;
-                        opacity: .9;
+                    box-shadow: 2px 0 0 #00000030;
+                    z-index: 1;
+                }
+                .place {
+                    font-size: 75%;
+                    background-color: #555;
+                }
+                &#A0821 {
+                    .title-prefix {
+                        background-color: $colorDay1;
+                    }
+                }
+                &#A0822a, &#A0822b {
+                    .title-prefix {
+                        background-color: $colorDay2;
+                    }
+                }
+                &#A0823a, &#A0823b {
+                    .title-prefix {
+                        background-color: $colorDay3;
+                    }
+                }
+            }
+            table {
+                background-color: white;
+                tbody {
+                    tr {
                         td {
-                            &.author {
-                                span {
+                            &.time, &.duration {
+                                width: 5%;
+                            }
+                            &.speaker, &.author {
+                                width: 30%;
+                                .author-name {
+                                    font-weight: bold;
+                                    opacity: .8;
+                                    margin-top: 0.3em;
+                                    font-size: 105%;
+                                }
+                                .author-title {
+                                    font-size: 95%;
+                                    padding-top: 0.1em;
+                                    &:before {
+                                        content: '';
+                                    }
+                                }
+                            }
+                        }
+                        &.se {
+                            color: white;
+                            background-color: $primaryColorLight;
+                            border-top: .5px solid white;
+                            font-style: italic;
+                            opacity: .9;
+                            td {
+                                &.speaker, &.author {
+                                    span {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            &.lunch {
+                                .title {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @media all and (max-width: 960px) {
+                h2 {
+                    font-size: 80%;
+                }
+                .attention {
+                    font-size: 70%;
+                }
+                table {
+                    thead {
+                        th {
+                            display: none;
+                        }
+                        tr {
+                            height: 1em;
+                        }
+                        background-color: $primaryColorLight;
+                        display: block;
+                    }
+                    tbody {
+                        tr {
+                            position: relative;
+                            display: block;
+                            flex-direction: column;
+                            padding: 1em;
+                            td {
+                                padding: 0 0 0 1em;
+                                margin-bottom: 0.2em;
+                                font-size: 95%;
+                                &.empty {
                                     display: none;
+                                }
+                                &.time, &.duration {
+                                    width: fit-content;
+                                    display: inline-block;
+                                }
+                                &.time, &.duration {
+                                    padding-left: 2px;
+                                    font-family: monospace;
+                                    font-style: normal;
+                                }
+                                &.duration {
+                                    &:before {
+                                        content: '(';
+                                    }
+                                    &:after {
+                                        content: ')';
+                                    }
+                                }
+                                &.title, &.author, &.speaker {
+                                    display: block;
+                                    position: relative;
+                                    padding: 0.2em 0.2em 0.2em 30px;
+                                    margin: 0;
+                                    &:after {
+                                        content: '';
+                                        display: inline-block;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 20px;
+                                        width: 1px;
+                                        height: 100%;
+                                        background-color: #000000A0;
+                                        font-style: normal;
+                                        opacity: .6;
+                                        font-size: 80%;
+                                        margin-right: .5em;
+                                    }
+                                    &.empty {
+                                        display: none;
+                                    }
+                                }
+                                &.title {
+                                    font-size: 1em;
+                                }
+                                &.speaker, &.author {
+                                    width: unset;
+                                    &:before {
+                                        content: "演讲者：";
+                                        font-size: 80%;
+                                        opacity: .6;
+                                    }
+                                    >div {
+                                        margin-left: 0.5em;
+                                    }
+                                    .author-name {
+                                        margin-top: 0.1em;
+                                    }
+                                }
+                                &.author:before {
+                                    content: "作者：";
+                                }
+                            }
+                            &.se {
+                                td.title:after {
+                                    background-color: #FFFFFFA0;
                                 }
                             }
                         }
@@ -104,13 +308,16 @@ body:not(.in-home) {
                 }
             }
         }
-        @media all and (max-width: 960px) {
-            table {
-                tbody {
-                    tr {
-                        td {
-                            &.empty {
-                                display: none;
+        &.is-en {
+            div#agenda-container {
+                table {
+                    @media all and (max-width: 960px) {
+                        tbody tr td {
+                            &.speaker:before {
+                                content: "Speaker: ";
+                            }
+                            &.author:before {
+                                content: "Author: ";
                             }
                         }
                     }
