@@ -85,13 +85,13 @@ a21:
     time: 16:25
     duration: 15
     class: SE
-  - title: “一生一芯”计划——从零开始设计你自己的 RISC-V 处理器芯片
+  - title: “一生一芯”计划——从零开始设计自己的 RISC-V 处理器芯片
     time: 16:40
     duration: 20
     index: 161
     authors:
       - name: 余子濠
-        title: 中国科学院计算技术研究所，博士
+        title: 中国科学院计算技术研究所
   - title: RISC-V 走向数据中心之路
     time: 17:00
     duration: 20
