@@ -1222,13 +1222,15 @@ aPOSTER:
     authors:
       - name: 刘宇
         title: 北京奕斯伟计算技术股份有限公司，车载事业部副总经理
-  - title: short forward branch 技术在 500 上的软硬件协同优化
+  - title: Short Forward Branch 技术在 S500 上的软硬件协同优化
     time: 17
     duration: POSTER
     index: 245
     authors:
       - name: 赵坤鹏
-        title: 北京奕斯伟计算技术股份有限公司，资深硬件工程师
+        title: 奕斯伟计算，资深硬件工程师
+      - name: 王超
+        title: 奕斯伟计算，资深硬件工程师
   - title: 高性能 RISC-V 处理器中的 trace 实现
     time: 18
     duration: POSTER
