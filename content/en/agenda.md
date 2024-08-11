@@ -97,8 +97,8 @@ a21:
     duration: 20
     index: 142
     authors:
-      - name: 卢睿
-        title: 武汉元石智算科技有限公司，架构部部长
+      - name: 席宏海
+        title: 武汉元石智算科技有限公司
   - title: 全球首款 RISC-V 超级 SIM 芯片的技术创新与应用
     time: 17:20
     duration: 20
