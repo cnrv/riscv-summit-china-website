@@ -34,9 +34,12 @@ a21:
   - title: Keynote - 沁恒微电子
     time: 10:50
     duration: 20
-  - title: Keynote - 算能
+  - title: 开启算力新纪元：基于 RISC-V 的开放算力探索与展望
     time: 11:10
     duration: 20
+    speakers:
+      - name: 高鹏
+        title: 厦门算能科技有限公司，高级副总裁
   - title: RISC-V 生态视角下的商业要素必要性与重要性
     time: 11:30
     duration: 20
