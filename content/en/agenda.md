@@ -919,13 +919,7 @@ a23_B:
     index: 194
     authors:
       - name: 章子杨
-        title: 上海交通大学软件学院 TCLOUD 实验室
-      - name: 徐凯亮
-        title: 上海交通大学软件学院 TCLOUD 实验室
-      - name: 汪沄
-        title: 上海交通大学软件学院 TCLOUD 实验室
-      - name: 戚正伟
-        title: 上海交 通大学软件学院 TCLOUD 实验室
+        title: 上海交通大学软件学院 TCLOUD 实验室，研究生一年级
   - title: 基于开源 IP、SoC 和开源 EDA 工具的芯片全链条设计
     time: 14:50
     duration: 20
