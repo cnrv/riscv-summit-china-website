@@ -25,9 +25,12 @@ a21:
   - title: Keynote - 达摩院
     time: 10:10
     duration: 20
-  - title: Keynote - ESWIN
+  - title: 推动 RISC-V 产业升级，携手共筑 RDI 新生态
     time: 10:30
     duration: 20
+    authors:
+      - name: 何宁
+        title: 奕斯伟计算，高级副总裁、首席技术官
   - title: Keynote - 沁恒微电子
     time: 10:50
     duration: 20
