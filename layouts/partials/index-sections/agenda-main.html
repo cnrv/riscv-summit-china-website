@@ -1,8 +1,15 @@
 {{- with .Site.GetPage "agenda" }}
-    {{ .TableOfContents }}
-    <div>
-      <h2>8 月 21 日</h2>
-      <p class="small attention">{{ .Params.note }}</p>
+    <div id="agenda">
+      {{- $agenda21  := dict "id" "0821"  "title" "8 月 21 日"                         "value" .Params.a21 }}
+      {{- $agenda22a := dict "id" "0822a" "title" "8 月 22 日 - 主会场 A （水晶宫 1）" "value" .Params.a22_A }}
+      {{- $agenda22b := dict "id" "0822b" "title" "8 月 22 日 - 主会场 B （水晶宫 3）" "value" .Params.a22_B }}
+      {{- $agenda23a := dict "id" "0823a" "title" "8 月 23 日 - 主会场 A （水晶宫 1）" "value" .Params.a23_A }}
+      {{- $agenda23b := dict "id" "0823b" "title" "8 月 23 日 - 主会场 B （水晶宫 3）" "value" .Params.a23_B }}
+      {{- $agendaData := slice $agenda21 $agenda22a $agenda22b $agenda23a $agenda23b }}
+      {{- $note := .Params.note }}
+      {{- range $agendaData }}
+      <h2 id="{{.id}}">{{ .title }}</h2>
+      <p class="small attention">{{ $note }}</p>
       <table>
         <thead>
           <tr>
@@ -13,158 +20,28 @@
           </tr>
         </thead>
         <tbody>
-          {{ range .Params.a21 }}
-          <tr>
-            <td>{{ .time }}</td>
-            <td>{{ .duration }}</td>
-            <td>{{ .title }}</td>
-            <td>
+          {{ range .value }}
+          <tr class="{{ cond (eq .class "SE") "se" "" }}">
+            <td class="time">{{ .time }}</td>
+            <td class="duration">{{ .duration }}<sup>'</sup></td>
+            <td class="title">{{ .title }}</td>
               {{ if .speakers }}
-              {{ range .speakers }}
+            <td class="author">
+              {{ range .speakers}}
               <div>
-              <span class="author">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
+              <span class="author-name">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
               </div>
               {{ end }}
               {{ else }}
-              -
+            <td class="author empty">
+              <span>-</span>
               {{ end }}
             </td>
           </tr>
           {{ end }}
         </tbody>
       </table>
-
-      <h2>8 月 22 日 - 主会场 A （水晶宫 1）</h2>
-      <p class="small attention">{{ .Params.note }}</p>
-      <table>
-        <thead>
-          <tr>
-            <th>时间</th>
-            <th>时长</th>
-            <th>题目</th>
-            <th>演讲者</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{ range .Params.a22_A }}
-          <tr>
-            <td>{{ .time }}</td>
-            <td>{{ .duration }}</td>
-            <td>{{ .title }}</td>
-            <td>
-              {{ if .speakers }}
-              {{ range .speakers }}
-              <div>
-              <span class="author">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
-              </div>
-              {{ end }}
-              {{ else }}
-              -
-              {{ end }}
-            </td>
-          </tr>
-          {{ end }}
-        </tbody>
-      </table>
-
-      <h2>8 月 22 日 - 主会场 B （水晶宫 3）</h2>
-      <p class="small attention">{{ .Params.note }}</p>
-      <table>
-        <thead>
-          <tr>
-            <th>时间</th>
-            <th>时长</th>
-            <th>题目</th>
-            <th>演讲者</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{ range .Params.a22_B }}
-          <tr>
-            <td>{{ .time }}</td>
-            <td>{{ .duration }}</td>
-            <td>{{ .title }}</td>
-            <td>
-              {{ if .speakers }}
-              {{ range .speakers }}
-              <div>
-              <span class="author">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
-              </div>
-              {{ end }}
-              {{ else }}
-              -
-              {{ end }}
-            </td>
-          </tr>
-          {{ end }}
-        </tbody>
-      </table>
-
-      <h2>8 月 23 日 - 主会场 A （水晶宫 1）</h2>
-      <p class="small attention">{{ .Params.note }}</p>
-      <table>
-        <thead>
-          <tr>
-            <th>时间</th>
-            <th>时长</th>
-            <th>题目</th>
-            <th>演讲者</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{ range .Params.a23_A }}
-          <tr>
-            <td>{{ .time }}</td>
-            <td>{{ .duration }}</td>
-            <td>{{ .title }}</td>
-            <td>
-              {{ if .speakers }}
-              {{ range .speakers }}
-              <div>
-              <span class="author">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
-              </div>
-              {{ end }}
-              {{ else }}
-              -
-              {{ end }}
-            </td>
-          </tr>
-          {{ end }}
-        </tbody>
-      </table>
-
-      <h2>8 月 23 日 - 主会场 B （水晶宫 3）</h2>
-      <p class="small attention">{{ .Params.note }}</p>
-      <table>
-        <thead>
-          <tr>
-            <th>时间</th>
-            <th>时长</th>
-            <th>题目</th>
-            <th>演讲者</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{ range .Params.a23_B }}
-          <tr>
-            <td>{{ .time }}</td>
-            <td>{{ .duration }}</td>
-            <td>{{ .title }}</td>
-            <td>
-              {{ if .speakers }}
-              {{ range .speakers }}
-              <div>
-              <span class="author">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
-              </div>
-              {{ end }}
-              {{ else }}
-              -
-              {{ end }}
-            </td>
-          </tr>
-          {{ end }}
-        </tbody>
-      </table>
+      {{- end }}
 
       <h2>POSTER</h2>
       <p class="small attention">{{ .Params.note }}</p>
@@ -178,12 +55,12 @@
         <tbody>
           {{ range .Params.aPOSTER }}
           <tr>
-            <td>{{ .title }}</td>
-            <td>
+            <td class="title">{{ .title }}</td>
+            <td class="author">
               {{ if .authors }}
               {{ range .authors }}
               <div>
-              <span class="author">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
+              <span class="author-name">{{ .name }}</span>{{if .title }}<span class="author-title">{{ .title }}</span>{{end}}
               </div>
               {{ end }}
               {{ else }}

@@ -39,6 +39,9 @@ body:not(.in-home) {
             font-size: 0.9em;
             width: 100%;
             position: relative;
+            .hide-on-wide {
+                display: none;
+            }
             th, td {
                 padding: 12px 15px;
             }
@@ -77,6 +80,44 @@ body:not(.in-home) {
             }
         }
     }
+    div#agenda {
+        margin-top: 1em;
+        table {
+            tbody {
+                tr {
+                    td {
+                    }
+                    &.se {
+                        color: white;
+                        background-color: $primaryColorLight;
+                        border-top: .5px solid white;
+                        font-style: italic;
+                        opacity: .9;
+                        td {
+                            &.author {
+                                span {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media all and (max-width: 960px) {
+            table {
+                tbody {
+                    tr {
+                        td {
+                            &.empty {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     div#co-events {
         margin-top: 2em;
         table {
@@ -84,9 +125,6 @@ body:not(.in-home) {
                 &.date-duration, &.place, &.name {
                     white-space: nowrap;
                 }
-            }
-            .hide-on-wide {
-                display: none;
             }
             @media all and (max-width: 1440px) {
                 thead {
