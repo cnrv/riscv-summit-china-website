@@ -3,7 +3,7 @@ title: Agenda
 layout: agenda
 home_desc: The agenda is available for public viewing via the link below.
 link_slug: agenda
-note: 请注意，目前大会议程尚处于草稿状态，后续会根据作者反馈进行最终确认。
+note: Please note that the agenda is currently in draft form and will be finalized based on author feedback.
 a21:
   - title: 签到
     time: 08:30

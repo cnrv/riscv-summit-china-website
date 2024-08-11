@@ -40,6 +40,7 @@ defaultContentLanguageInSubdir = false
     summaryLength = 230
     [languages.zh.params]
       date_format = "2006 年 1 月 2 日"
+      date_format1 = "1 月 2 日"
       [[languages.zh.params.host]]
         name = "浙江大学杭州国际科创中心"
       [[languages.zh.params.co_host]]
@@ -113,6 +114,7 @@ defaultContentLanguageInSubdir = false
     weight = 2
     [languages.en.params]
       date_format = "January 2, 2006"
+      date_format1 = "Jan. 2"
       [[languages.en.params.host]]
         name = "ZJU-Hangzhou Global Scientific and Technological Innovation Center"
       [[languages.en.params.co_host]]

@@ -63,3 +63,24 @@ other = "报名链接"
 
 [colon]
 other = "："
+
+[main_venue]
+other = "主会场"
+
+[crystal_ballroom]
+other = "水晶宫"
+
+[agenda_time]
+other = "时间"
+
+[agenda_duration]
+other = "时长"
+
+[agenda_title]
+other = "题目"
+
+[agenda_speaker]
+other = "演讲者"
+
+[agenda_author]
+other = "作者"

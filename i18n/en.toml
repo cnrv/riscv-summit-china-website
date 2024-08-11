@@ -63,3 +63,24 @@ other = "Registration Link"
 
 [colon]
 other = ": "
+
+[main_venue]
+other = "Main Venue"
+
+[crystal_ballroom]
+other = "Crystal Ballroom"
+
+[agenda_time]
+other = "Time"
+
+[agenda_duration]
+other = "Duration"
+
+[agenda_title]
+other = "Title"
+
+[agenda_speaker]
+other = "Speaker"
+
+[agenda_author]
+other = "Author"

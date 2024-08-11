@@ -1,10 +1,17 @@
 {{- with .Site.GetPage "agenda" }}
     <div id="agenda-container">
-      {{- $agenda21  := dict "id" "A0821"  "titlePrefix" "Day1" "titlePlace" "主会场" "title1" "8 月 21 日" "title2" "周三" "place" "水晶宫"       "value" .Params.a21 }}
-      {{- $agenda22a := dict "id" "A0822a" "titlePrefix" "Day2" "titlePrefixSub" "A" "titlePlace" "主会场 A" "title1" "8 月 22 日" "title2" "周四" "place" "水晶宫 1+2" "value" .Params.a22_A }}
-      {{- $agenda22b := dict "id" "A0822b" "titlePrefix" "Day2" "titlePrefixSub" "B" "titlePlace" "主会场 B" "title1" "8 月 22 日" "title2" "周四" "place" "水晶宫 3"   "value" .Params.a22_B }}
-      {{- $agenda23a := dict "id" "A0823a" "titlePrefix" "Day3" "titlePrefixSub" "A" "titlePlace" "主会场 A" "title1" "8 月 23 日" "title2" "周五" "place" "水晶宫 1+2" "value" .Params.a23_A }}
-      {{- $agenda23b := dict "id" "A0823b" "titlePrefix" "Day3" "titlePrefixSub" "B" "titlePlace" "主会场 B" "title1" "8 月 23 日" "title2" "周五" "place" "水晶宫 3"   "value" .Params.a23_B }}
+      {{ $wDaysInChinese := dict "Wednesday" "周三" "Thursday" "周四" "Friday" "周五" }}
+      {{- $t21 := "2024-08-21T12:00:00+0800" }}
+      {{- $w21 := "Wednesday" }}
+      {{- $t22 := "2024-08-22T12:00:00+0800" }}
+      {{- $w22 := "Thursday" }}
+      {{- $t23 := "2024-08-23T12:00:00+0800" }}
+      {{- $w23 := "Friday" }}
+      {{- $agenda21  := dict "id" "A0821" "titlePrefix" "Day1" "titlePlace" ( i18n "main_venue" ) "title1" ( time.Format .Site.Params.date_format1 $t21 ) "title2" ( cond (eq .Site.Language.Lang "en") $w21 (index $wDaysInChinese $w21) ) "place" (i18n "crystal_ballroom") "value" .Params.a21 }}
+      {{- $agenda22a := dict "id" "A0822a" "titlePrefix" "Day2" "titlePrefixSub" "A" "titlePlace" (printf "%s %s" (i18n "main_venue") "A") "title1" ( time.Format .Site.Params.date_format1 $t22 ) "title2" ( cond (eq .Site.Language.Lang "en") $w22 (index $wDaysInChinese $w22) ) "place" (printf "%s %s" (i18n "crystal_ballroom") "1+2") "value" .Params.a22_A }}
+      {{- $agenda22b := dict "id" "A0822b" "titlePrefix" "Day2" "titlePrefixSub" "B" "titlePlace" (printf "%s %s" (i18n "main_venue") "B") "title1" ( time.Format .Site.Params.date_format1 $t22 ) "title2" ( cond (eq .Site.Language.Lang "en") $w22 (index $wDaysInChinese $w22) ) "place" (printf "%s %s" (i18n "crystal_ballroom") "3")   "value" .Params.a22_B }}
+      {{- $agenda23a := dict "id" "A0823a" "titlePrefix" "Day3" "titlePrefixSub" "A" "titlePlace" (printf "%s %s" (i18n "main_venue") "A") "title1" ( time.Format .Site.Params.date_format1 $t23 ) "title2" ( cond (eq .Site.Language.Lang "en") $w23 (index $wDaysInChinese $w23) ) "place" (printf "%s %s" (i18n "crystal_ballroom") "1+2") "value" .Params.a23_A }}
+      {{- $agenda23b := dict "id" "A0823b" "titlePrefix" "Day3" "titlePrefixSub" "B" "titlePlace" (printf "%s %s" (i18n "main_venue") "B") "title1" ( time.Format .Site.Params.date_format1 $t23 ) "title2" ( cond (eq .Site.Language.Lang "en") $w23 (index $wDaysInChinese $w23) ) "place" (printf "%s %s" (i18n "crystal_ballroom") "3")   "value" .Params.a23_B }}
       {{- $agendaData := slice $agenda21 $agenda22a $agenda22b $agenda23a $agenda23b }}
       {{- $note := .Params.note }}
       {{- range $agendaData }}
@@ -13,10 +20,10 @@
       <table>
         <thead>
           <tr>
-            <th>时间</th>
-            <th>时长</th>
-            <th>题目</th>
-            <th>演讲者</th>
+            <th>{{ i18n "agenda_time" }}</th>
+            <th>{{ i18n "agenda_duration" }}</th>
+            <th>{{ i18n "agenda_title" }}</th>
+            <th>{{ i18n "agenda_speaker" }}</th>
           </tr>
         </thead>
         <tbody>
@@ -48,8 +55,8 @@
       <table>
         <thead>
           <tr>
-            <th>题目</th>
-            <th>作者</th>
+            <th>{{ i18n "agenda_title" }}</th>
+            <th>{{ i18n "agenda_author" }}</th>
           </tr>
         </thead>
         <tbody>
