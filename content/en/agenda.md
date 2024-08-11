@@ -949,13 +949,13 @@ a23_B:
     authors:
       - name: 章子杨
         title: 上海交通大学，软件工程 研究生一年级
-  - title: 基于开源 IP/SoC 和开源 EDA 工具的芯片全链条设计——定制属于自己的 RISC-V 游戏掌机
+  - title: 基于开源 IP、SoC 和开源 EDA 工具的芯片全链条设计
     time: 14:50
     duration: 20
     index: 208
     authors:
-      - name: 解壁伟
-        title: 中国科学院计算技术研究所，助理研究员
+      - name: 缪宇飏
+        title: 中国科学院计算技术研究所
   - title: 5 levels of RISC-V Processor Verification
     time: 15:10
     duration: 10
