@@ -999,12 +999,8 @@ a23_B:
     duration: 10
     index: 318
     authors:
-      - name: Irfan Waheed
-        title: SilverLining EDA
       - name: Wajahat Riaz
-        title: SilverLining EDA
-      - name: Babar Sohail
-        title: SilverLining EDA
+        title: SilverLining EDA, Verification Engineer
   - title: 基于 FPGA 加速的 RISC-V 处理器敏捷验证框架
     time: 17:20
     duration: 10
