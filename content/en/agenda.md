@@ -1215,13 +1215,13 @@ aPOSTER:
     authors:
       - name: 罗佳维
         title: 广东赛昉科技有限公司，软件工程师
-  - title: RISC-V + AI 与车载新应用场景
+  - title: RISC-V+AI 与车载新应用场景
     time: 16
     duration: POSTER
     index: 243
     authors:
-      - name: 刘宇
-        title: 北京奕斯伟计算技术股份有限公司，车载事业部副总经理
+      - name: 刘俊
+        title: 奕斯伟计算，资深产品经理
   - title: Short Forward Branch 技术在 S500 上的软硬件协同优化
     time: 17
     duration: POSTER
