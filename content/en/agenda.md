@@ -68,10 +68,13 @@ a21:
     authors:
       - name: James NG
         title: Executive Director
-  - title: Gold Talk - Andes
+  - title: Andes RISC-V for Intelligent Edge Application Processing
     time: 15:10
     duration: 15
     index: 317
+    authors:
+      - name: 苏泓萌 博士 (Dr. Charlie Su)
+        title: Andes 晶心科技总经理暨首席技术官 (President and CTO, Andes Technology)
   - title: Gold Talk - SiFive
     time: 15:25
     duration: 15
