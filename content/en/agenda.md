@@ -134,7 +134,7 @@ a22_A:
     index: 203
     authors:
       - name: 鲁海波
-        title: 北京奕斯伟计算技术股份有限公司，IBU 总经理
+        title: 奕斯伟计算，智能计算事业部总经理
   - title: 持续迭代创新，打造稳定、高效、易用的玄铁处理器
     time: 09:40
     duration: 20
