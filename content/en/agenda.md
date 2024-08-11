@@ -967,13 +967,15 @@ a23_B:
     authors:
       - name: 林书塔
         title: 阿里巴巴达摩院 RISC-V 及生态，技术专家
-  - title: 利用 WASM 技术解决多种 ISA 的挑战
+  - title: 利用 WebAssembly 技术解决多种 ISA 的挑战
     time: 14:20
     duration: 10
     index: 166
     authors:
-      - name: Yolanda Chen
+      - name: Chen Yolanda
         title: Intel, 编译器架构师
+      - name: Huang Wenyong
+        title: Intel
   - title: QEMU 调用本机动态库加速转译
     time: 14:30
     duration: 20
