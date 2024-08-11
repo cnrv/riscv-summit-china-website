@@ -1103,10 +1103,17 @@ aPOSTER:
     authors:
       - name: 梁宇宁
         title: 深度数智，高级工程师
-  - title: The case for using QEMU on the Cloud-V platform for RV64GC over current RISC-V
+  - title: The case for using QEMU on the Cloud-V platform for RV64GC over current RISC-V hardware using SPECCPU2017 as a benchmark
     time: 8
     duration: POSTER
     index: 322
+    authors:
+      - name: M. Moiz Hussain
+        title: 10xEngineers, Cloud-V, University of Engineering and Technology
+      - name: Ali Tarig
+        title: 10xEngineers, Cloud-V, University of Engineering and Technology
+      - name: Umer Shahid
+        title: 10xEngineers, Cloud-V, University of Engineering and Technology
   - title: openEuler RISC-V 运行时生态建设进展
     time: 9
     duration: POSTER
