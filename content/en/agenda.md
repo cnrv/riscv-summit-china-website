@@ -933,11 +933,7 @@ a23_B:
     index: 176
     authors:
       - name: Yujie Fan
-        title: Synopsys/新思科技
-      - name: Aimee Sutton
-        title: Synopsys/新思科技
-      - name: Larry Lapides
-        title: Synopsys/新思科技
+        title: Synopsys，Application Engineer
   - title: 基于 RISC-V 的架构建模及混合仿真验证方法
     time: 15:20
     duration: 20
