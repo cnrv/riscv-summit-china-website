@@ -383,9 +383,6 @@ a22_B:
     authors:
       - name: 姚治成
         title: 中国科学院计算技术研究所，工程师
-      - name: 谢云龙
-      - name: 刘锦程
-      - name: 王卅
   - title: 香山缓存系统的形式化验证
     time: 10:40
     duration: 20
