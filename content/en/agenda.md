@@ -358,7 +358,7 @@ a22_A:
     index: 213
     authors:
       - name: 赵正朋
-        title: 兆松科技有限公司，软件开发工程师
+        title: 兆松科技（武汉）有限公司，软件开发工程师
 a22_B:
   - title: 香山 RISC-V 服务器 IP 现状和路线图
     time: 09:00
