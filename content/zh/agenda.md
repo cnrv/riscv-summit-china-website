@@ -554,8 +554,6 @@ a22_B:
     duration: 10
     index: 238
     authors:
-      - name: 于虎
-        title: 亿咖通科技，总监
       - name: 王海军
         title: 亿咖通科技，资深技术专家
   - title: 茶歇
