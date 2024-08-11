@@ -605,9 +605,9 @@ a22_B:
     index: 244
     authors:
       - name: 周良
-        title: 北京奕斯伟计算技术股份有限公司，资深软件工程师
+        title: 奕斯伟计算，资深软件工程师
       - name: 郑宇
-        title: 北京奕斯伟计算技术股份有限公司，智能计算事业部软件研发高级总监
+        title: 奕斯伟计算，智能计算事业部软件研发高级总监
   - title: RISC-V SoC JH7110 工业实时系统方案落地探索
     time: 17:50
     duration: 20
