@@ -725,7 +725,7 @@ a23_A:
     index: 108
     authors:
       - name: 王文竹
-        title: 信创海河实验室，高级工程师
+        title: openKylin 社区技术委员会 委员
   - title: The future of the RISC-V desktop ecosystem from deepin's perspective
     time: 14:30
     duration: 20
