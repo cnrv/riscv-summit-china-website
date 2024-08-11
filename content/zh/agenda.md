@@ -46,7 +46,7 @@ a21:
   - title: 圆桌讨论
     time: 11:50
     duration: 40
-  - title: 午餐及展区
+  - title: 午餐、展区
     time: 12:30
     duration: 70
     class: LUNCH
@@ -203,7 +203,7 @@ a22_A:
     speakers:
       - name: Dmitry Zakharov
         title: CloudBEAR, LLC
-  - title: 午餐及展区
+  - title: 午餐、展区
     time: 12:00
     duration: 60
     class: LUNCH
@@ -438,7 +438,7 @@ a22_B:
     speakers:
       - name: 孔荔
         title: 清华大学，软件工程师
-  - title: 午餐及展区
+  - title: 午餐、展区
     time: 12:00
     duration: 60
     class: LUNCH
@@ -867,7 +867,7 @@ a23_B:
     speakers:
       - name: 陈名书
         title: 兰州大学异步电路系统实验室，研究生
-  - title: 午饭
+  - title: 午餐
     time: 12:00
     duration: 60
     class: LUNCH
