@@ -62,9 +62,12 @@ a21:
   - title: 邀请报告 (Jack Kang)
     time: 14:40
     duration: 15
-  - title: Gold Talk - Synopsys
+  - title: Accelerating SoC Innovation with Synopsys RISC-V Solutions
     time: 14:55
     duration: 15
+    authors:
+      - name: James NG
+        title: Executive Director
   - title: Gold Talk - Andes
     time: 15:10
     duration: 15
