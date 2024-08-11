@@ -1245,13 +1245,13 @@ aPOSTER:
     authors:
       - name: 王晓耕
         title: 奕斯伟计算，资深硬件工程师
-  - title: E100 - 超低成本的商用 32 位 RISC-V 处理器
+  - title: E100 - 极低成本 RISC-V 处理器
     time: 20
     duration: POSTER
     index: 248
     authors:
-      - name: 王晓耕
-        title: 北京奕斯伟计算技术股份有限公司，资深硬件工程师
+      - name: 岳航博
+        title: 奕斯伟计算，高级硬件工程师
   - title: GDB 调试 Snapshot 和 Replay
     time: 21
     duration: POSTER
