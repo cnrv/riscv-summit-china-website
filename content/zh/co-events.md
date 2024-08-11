@@ -5,10 +5,6 @@ home_desc: 活动列表已公开，请点击下方链接查阅。
 link_slug: co-events
 note: 请注意，目前活动列表尚处于草稿状态，后续会根据反馈进行最终确认。
 events:
-  - name: "端侧大模型：算法与芯片"
-    date_duration: ""
-    organizer: "《半导体在线》、《蔻享学术》、《中国图象图形学报》等"
-    remarks: "与 2024 Hong Kong RISC-V Day 合并"
   - name: "中国峰会志愿者培训会（第一场）"
     date_duration: "8月19日下午"
     place: "珍珠2"
@@ -176,4 +172,8 @@ events:
         label: "注冊連結（內地）"
       - url: "https://docs.google.com/forms/d/e/1FAIpQLSfgbrzqq0GC8I42aW1igLKGoKkewL8r1S54WBhodIOoJTETvQ/viewform"
         label: "注冊連結（全球）"
+  - name: "端侧大模型：算法与芯片"
+    date_duration: ""
+    organizer: "《半导体在线》、《蔻享学术》、《中国图象图形学报》等"
+    remarks: "与 2024 Hong Kong RISC-V Day 合并"
 ---

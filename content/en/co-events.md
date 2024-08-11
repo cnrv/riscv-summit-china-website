@@ -5,10 +5,6 @@ home_desc: The co-events is available for public viewing via the link below.
 link_slug: co-events
 note: Please note that the list of events is currently in draft form and will be finalized based on feedback.
 events:
-  - name: "Edge AI models: Algorithms and Chips"
-    date_duration: ""
-    organizer: "《半导体在线》、《蔻享学术》、《中国图象图形学报》等"
-    remarks: "Merged with 2024 Hong Kong RISC-V Day"
   - name: "China Summit Volunteer Training (Session 1)"
     date_duration: "Aug. 19, p.m."
     place: "珍珠2"
@@ -176,4 +172,8 @@ events:
         label: "Registration Link (Mainland)"
       - url: "https://docs.google.com/forms/d/e/1FAIpQLSfgbrzqq0GC8I42aW1igLKGoKkewL8r1S54WBhodIOoJTETvQ/viewform"
         label: "Registration Link (Global)"
+  - name: "Edge AI models: Algorithms and Chips"
+    date_duration: ""
+    organizer: "《半导体在线》、《蔻享学术》、《中国图象图形学报》等"
+    remarks: "Merged with 2024 Hong Kong RISC-V Day"
 ---
