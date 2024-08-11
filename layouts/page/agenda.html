@@ -4,9 +4,9 @@
 {{ end }}
 
 {{ define "main" }}
-  <article class="flex-l flex-wrap justify-between mw9 center ph3">
+  <article id="agenda" class="flex-l flex-wrap justify-between mw9 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
     <header class="mt4 w-100">
-      <h1 class="f1 athelas mt3 mb1">
+      <h1 class="f1 mt3 mb1">
         {{- .Title -}}
       </h1>
     </header>
