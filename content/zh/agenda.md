@@ -297,13 +297,21 @@ a22_A:
         title: Andes Technology
       - name: 吳奕緯
         title: Andes Technology
-  - title: MLIR 在 RISC-V 上的优化实践：以 buddy-benchmark 为例
+  - title: 基于 MLIR 的 RISC-V 编译优化实践：以 Buddy Compiler 为例
     time: 17:25
     duration: 10
     index: 145
     authors:
+      - name: 张洪滨
+        title: 中国科学院软件研究所
       - name: 周旭林
-        title: 中科院软件所，软件工程专业，研究生一年级
+        title: 中国科学院软件研究所
+      - name: 高世豪
+        title: 中国科学院软件研究所
+      - name: 王润
+        title: 苏黎世联邦理工大学
+      - name: 刘尚昊
+        title: 北京航空航天大学
   - title: 构建 AIoT 时代 RISC-V 处理器的高效嵌入式集成开发环境
     time: 17:35
     duration: 20
