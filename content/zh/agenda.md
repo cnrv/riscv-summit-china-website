@@ -1252,13 +1252,13 @@ aPOSTER:
     authors:
       - name: 岳航博
         title: 奕斯伟计算，高级硬件工程师
-  - title: GDB 调试 Snapshot 和 Replay
+  - title: "Debug tools: SOC 软件快照及恢复"
     time: 21
     duration: POSTER
     index: 249
     authors:
       - name: 徐航
-        title: 北京奕斯伟计算技术股份有限公司，高级软件工程师
+        title: 奕斯伟计算，高级软件工程师
   - title: "Hassert: 基于断言与 FPGA 加速的敏捷验证框架"
     time: 22
     duration: POSTER
