@@ -950,13 +950,19 @@ a23_B:
     authors:
       - name: Yolanda Chen
         title: Intel, 编译器架构师
-  - title: QEMU 调用动态库加速翻译
+  - title: QEMU 调用本机动态库加速转译
     time: 14:30
     duration: 20
     index: 194
     authors:
       - name: 章子杨
-        title: 上海交通大学，软件工程 研究生一年级
+        title: 上海交通大学软件学院 TCLOUD 实验室
+      - name: 徐凯亮
+        title: 上海交通大学软件学院 TCLOUD 实验室
+      - name: 汪沄
+        title: 上海交通大学软件学院 TCLOUD 实验室
+      - name: 戚正伟
+        title: 上海交 通大学软件学院 TCLOUD 实验室
   - title: 基于开源 IP、SoC 和开源 EDA 工具的芯片全链条设计
     time: 14:50
     duration: 20
