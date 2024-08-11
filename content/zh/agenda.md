@@ -236,7 +236,7 @@ a22_A:
     speakers:
       - name: 王得科
         title: 广州希姆半导体 研发副总裁
-  - title: Introduction of AI/HPC solutions
+  - title: 高性能计算的挑战与机会
     time: 14:10
     duration: 15
     speakers:
