@@ -1040,7 +1040,7 @@ a23_B:
     authors:
       - name: 于兆杰
         title: 无锡亚科鸿禹电子有限公司，AE 总监
-  - title: 硬件设计新纪元：CIRCT SystemVerilog 新进展与蜂鸟 E203 RISC-V CPU 仿真案例
+  - title: CIRCT SV 新进展与蜂鸟 E200 RISC-V CPU 仿真案例
     time: 16:30
     duration: 10
     index: 175
