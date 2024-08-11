@@ -73,8 +73,8 @@ a21:
     duration: 15
     index: 317
     authors:
-      - name: 苏泓萌 博士 (Dr. Charlie Su)
-        title: Andes 晶心科技总经理暨首席技术官 (President and CTO, Andes Technology)
+      - name: 苏泓萌 博士
+        title: 晶心科技总经理暨首席技术官
   - title: Gold Talk - SiFive
     time: 15:25
     duration: 15
