@@ -707,13 +707,15 @@ a23_A:
     authors:
       - name: Yichuan Gao（高一川）
         title: Intel Labs China, CPU Research Scientist
-  - title: RISC-V RVV 编译选项对性能影响的探索
+  - title: RVV 编译选项对性能影响的探索
     time: 11:50
     duration: 10
     index: 188
     authors:
       - name: 徐凯亮
         title: 上海交通大学，计算机科学与技术专业 博一
+      - name: 黄知柏
+        title: 上海交通大学
   - title: 午餐
     time: 12:00
     duration: 60
