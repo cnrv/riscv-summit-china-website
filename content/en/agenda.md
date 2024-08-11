@@ -1237,7 +1237,7 @@ aPOSTER:
     index: 246
     authors:
       - name: 杨成章
-        title: 北京奕斯伟计算技术股份有限公司，资深硬件工程师
+        title: 奕斯伟计算，资深硬件工程师
   - title: R500A - 高性能 ASIL-B RISC-V 处理器
     time: 19
     duration: POSTER
