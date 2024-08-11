@@ -629,7 +629,7 @@ a23_A:
     index: 158
     authors:
       - name: 杨飞
-        title: 中科院软件所 PLCT 实验室，研发工程师
+        title: 中科院软件所 PLCT 实验室，研发工程师，OpenJDK Reviewer & OpenJDK RISC-V Port Project Leader
   - title: 基于 RISC-V 的 Chromium 浏览器性能优化实践
     time: 09:20
     duration: 20
