@@ -657,9 +657,7 @@ a23_A:
     index: 188
     authors:
       - name: 徐凯亮
-        title: 上海交通大学，计算机科学与技术专业 博一
-      - name: 黄知柏
-        title: 上海交通大学
+        title: 上海交通大学，计算机专业博士一年级
   - title: 午餐
     time: 12:00
     duration: 60
