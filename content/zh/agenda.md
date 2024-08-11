@@ -508,39 +508,7 @@ a22_B:
     index: 234
     authors:
       - name: 赵华龙
-        title: 北京开源芯片研究院
-      - name: 彭卓
-        title: 北京开源芯片研究院
-      - name: 吕明
-        title: 北京开源芯片研究院
-      - name: 代学超
-        title: 北京开源芯片研究院
-      - name: 王强
-        title: 北京开源芯片研究院
-      - name: 季子涛
-        title: 北京开源芯片研究院
-      - name: 丁旺
-        title: 北京开源芯片研究院
-      - name: 李宇濛
-        title: 北京开源芯片研究院
-      - name: 胡华昌
-        title: 北京开源芯片研究院
-      - name: 王晓冲
-        title: 北京开源芯片研究院
-      - name: 马江林
-        title: 北京开源芯片研究院
-      - name: 戴琦森
-        title: 北京开源芯片研究院
-      - name: 王雯雪
-        title: 北京开源芯片研究院
-      - name: 田宏宇
-        title: 北京开源芯片研究院
-      - name: 李志臻
-        title: 北京开源芯片研究院
-      - name: 吕聪康
-        title: 北京开源芯片研究院
-      - name: 杨震宇
-        title: 北京开源芯片研究院
+        title: 北京开源芯片研究院，研发总监
   - title: RISC-V Crypto Vector 扩展指令在车载 MCU HSM 模块中的应用
     time: 15:50
     duration: 10
