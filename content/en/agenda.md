@@ -794,13 +794,13 @@ a23_A:
     authors:
       - name: Sia Jee Heng
         title: StarFive Technology, Senior Staff Engineer
-  - title: RISC-V KVM 调试及调优-现状与展望
+  - title: RISC-V KVM 的调试与调优
     time: 17:20
     duration: 10
     index: 115
     authors:
       - name: 杜超
-        title: 北京奕斯伟计算技术股份有限公司，智能计算事业部-云组件开发部部长
+        title: 奕斯伟计算，资深软件工程师
   - title: Leverage BRS standard to improve RISC-V SW compatibility
     time: 17:30
     duration: 10
