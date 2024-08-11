@@ -907,7 +907,7 @@ a23_B:
     authors:
       - name: 常瑞
         title: 浙江大学，副教授、博士生导师
-  - title: “计算机组成与设计”课程实践--基于 RVfpga 的量化研究
+  - title: “计算机组成与设计”课程实践：基于 RVfpga 的量化研究
     time: 11:10
     duration: 20
     index: 201
