@@ -52,7 +52,9 @@ events:
     place: "紫荆厅 1"
     organizer: "新思科技 Synopsys"
     registration_method:
-      - method: "待更新"
+      - method: "仅限微信客户端"
+    registration_url:
+      - url: "https://snps.tech/xktuser/#/detail?id=66b5eef8f97688465165eaf9"
   - name: "第三届 硬件安全架构研讨会"
     date_duration: "8月21日下午"
     place: "紫荆厅 2"

@@ -52,7 +52,9 @@ events:
     place: "Bauhinia Hall 1"
     organizer: "Synopsys"
     registration_method:
-      - method: "TBD"
+      - method: "WeChat app only"
+    registration_url:
+      - url: "https://snps.tech/xktuser/#/detail?id=66b5eef8f97688465165eaf9"
   - name: "The 3rd Hardware Security Architecture Workshop"
     date_duration: "Aug. 21, p.m."
     place: "Bauhinia Room 2"
