@@ -1183,7 +1183,7 @@ aPOSTER:
         title: 香港科技大学，香港特别行政区
       - name: 王浩宇
         title: 浙江大学，中国
-      - name: David-Boland
+      - name: David Boland
         title: 悉尼大学，澳大利亚
       - name: 包云岗
         title: 中国科学院计算技术研究所，中国
