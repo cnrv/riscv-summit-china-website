@@ -10,7 +10,7 @@
   <div class="exhibition-images">
     {{ range .Params.summary_image }}
     <figure>
-      <img src="{{ .url }}"/>
+      <img src="{{ (printf "%s?v=%s" .url (readFile (printf "static%s" .url) | sha1) ) }}" />
       <figcaption>{{ .description }}</figcaption>
     </figure>
     {{ end }}

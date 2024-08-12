@@ -8,7 +8,7 @@
         <div class="sponsors-container diamond">
         {{ range .Params.diamond }}
           <a target="_blank" href="{{ .url }}">
-            <img src="{{ .icon }}" />
+            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>
@@ -18,7 +18,7 @@
         <div class="sponsors-container gold">
         {{ range .Params.gold }}
           <a target="_blank" href="{{ .url }}">
-            <img src="{{ .icon }}" />
+            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>
@@ -28,7 +28,7 @@
         <div class="sponsors-container silver">
         {{ range .Params.silver }}
           <a target="_blank" href="{{ .url }}">
-            <img src="{{ .icon }}" />
+            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>
@@ -38,7 +38,7 @@
         <div class="sponsors-container bronze">
         {{ range .Params.bronze }}
           <a target="_blank" href="{{ .url }}">
-            <img src="{{ .icon }}" />
+            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>
@@ -48,7 +48,7 @@
         <div class="sponsors-container community">
         {{ range .Params.community }}
           <a target="_blank" href="{{ .url }}">
-            <img src="{{ .icon }}" />
+            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>
@@ -59,7 +59,7 @@
         <div class="sponsors-container host">
         {{ range .Params.host }}
           <a target="_blank" href="{{ .url }}">
-            <img src="{{ .icon }}" />
+            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>
@@ -69,7 +69,7 @@
         <div class="sponsors-container co-hosts">
         {{ range .Params.co_hosts }}
           <a target="_blank" href="{{ .url }}">
-            <img src="{{ .icon }}" />
+            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>
@@ -79,7 +79,7 @@
         <div class="sponsors-container organizers">
         {{ range .Params.organizers }}
           <a target="_blank" href="{{ .url }}">
-            <img src="{{ .icon }}" />
+            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>
@@ -89,7 +89,7 @@
         <div class="sponsors-container co-organizers">
         {{ range .Params.co_organizers }}
           <a target="_blank" href="{{ .url }}">
-            <img src="{{ .icon }}" />
+            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>
