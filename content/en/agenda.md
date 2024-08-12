@@ -121,7 +121,7 @@ a21:
     speakers:
       - name: 刘梅娟
         title: 芯昇科技有限公司芯片产品总监
-  - title: 坚持标准，共建信赖：为快速增长的生态引入 RISC-V 认证体系
+  - title: 坚持标准，共建信赖：为快速增长的 RISC-V 生态引入认证体系
     time: 17:40
     duration: 20
     index: 233
