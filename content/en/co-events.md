@@ -17,7 +17,7 @@ events:
     organizer: "Beijing Institute of Open Source Chip (BOSC)"
     registration_method:
       - method: "TBD"
-  - name: "One Student One Chip Forum of Teaching Assistants"
+  - name: "\"One Student One Chip\" Forum of Teaching Assistants"
     date_duration: "Aug. 20,  all day"
     place: "Bauhinia Hall 1"
     organizer: "一生一芯"
