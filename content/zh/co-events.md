@@ -71,8 +71,8 @@ events:
     date_duration: "8月22日上午"
     place: "珍珠厅 2"
     organizer: "赛昉科技"
-    registration_method:
-      - method: "待更新"
+    registration_url:
+      - url: "https://egytfz5jk0ye1g0g.mikecrm.com/aRmQz95"
   - name: "TBD"
     date_duration: "8月22日上午"
     organizer: "TBD"

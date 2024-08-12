@@ -71,8 +71,8 @@ events:
     date_duration: "Aug. 22, a.m."
     place: "Pearl Ballroom 2"
     organizer: "StarFive"
-    registration_method:
-      - method: "TBD"
+    registration_url:
+      - url: "https://egytfz5jk0ye1g0g.mikecrm.com/aRmQz95"
   - name: "TBD"
     date_duration: "8月22日上午"
     organizer: "TBD"
