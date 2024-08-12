@@ -93,9 +93,12 @@ a21:
     speakers:
       - name: 苏泓萌 博士
         title: 晶心科技总经理暨首席技术官
-  - title: Gold Talk - SiFive
+  - title: RISC-V 在快速增长的数据中心市场展现价值
     time: 15:25
     duration: 15
+    speakers:
+      - name: 张岩
+        title: SiFive 首席现场应用工程师
   - title: RISC-V 在数据中心的挑战与机遇
     time: 15:40
     duration: 15

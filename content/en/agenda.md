@@ -93,9 +93,12 @@ a21:
     speakers:
       - name: Dr. Charlie Su
         title: President and CTO, Andes Technology
-  - title: Gold Talk - SiFive
+  - title: Demonstrating RISC-V Value in Fast Growing Datacenter Market
     time: 15:25
     duration: 15
+    speakers:
+      - name: Rocky Zhang
+        title: Principal Engineer, Field Application, SiFive
   - title: RISC-V 在数据中心的挑战与机遇
     time: 15:40
     duration: 15
