@@ -500,7 +500,7 @@ section.section-container {
             display: flex;
             background-color: #FFFFFF;
             margin: 5px auto;
-            padding: 10px 30px;
+            padding: 20px 30px;
             border-radius: 10px;
             box-shadow: 2px 2px 5px #FFFFFF60;
             a {
@@ -508,9 +508,9 @@ section.section-container {
             }
             img {
                 object-fit: contain;
-                height: 120px;
+                height: 100px;
                 @media all and (max-width: 800px) {
-                    height: 80px;
+                    height: 60px;
                 }
             }
             &.keep-ratio {
