@@ -84,9 +84,12 @@ a21:
   - title: Gold Talk - SiFive
     time: 15:25
     duration: 15
-  - title: Gold Talk - 赛昉科技
+  - title: RISC-V 在数据中心的挑战与机遇
     time: 15:40
     duration: 15
+    speakers:
+      - name: 刘文进
+        title: 赛昉科技高级首席工程师
   - title: "Revolutionizing RISC-V adoption: Imagination's Integrated CPU and GPU Solution"
     time: 15:55
     duration: 15
