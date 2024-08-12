@@ -101,12 +101,12 @@ co_hosts:
   - icon: "/img/logos/6-Co-host/CRVA.webp"
     url: "https://crva.ict.ac.cn"
 organizers:
+  - icon: "/img/logos/7-Org/ZJU-MNE.webp"
+    url: "https://mne.zju.edu.cn"
   - icon: "/img/logos/7-Org/Kubuds.webp"
     url: "http://kubuds.io"
   - icon: "/img/logos/7-Org/GZ-IIS.webp"
     url: "http://www.gziis.org.cn"
-  - icon: "/img/logos/7-Org/ZJU-MNE.webp"
-    url: "https://mne.zju.edu.cn"
 co_organizers:
   - icon: "/img/logos/8-Co-org/CNRV.webp"
     url: "https://cnrv.io"
