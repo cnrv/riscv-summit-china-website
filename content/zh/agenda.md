@@ -52,6 +52,8 @@ a21:
   - title: 圆桌讨论
     time: 11:50
     duration: 40
+    speakers:
+      - name: 包云岗
   - title: 午餐、展区
     time: 12:30
     duration: 70
