@@ -114,6 +114,8 @@ co_organizers:
     url: "http://crva.ict.ac.cn/news/202209/t20220928_46221.html"
   - icon: "/img/logos/8-Co-org/CRVIC.webp"
     url: "http://www.crvic.org"
+  - icon: "/img/logos/8-Co-org/ICTXM.webp"
+    url: "https://www.casxm.cn"
 ---
 
 <!--
