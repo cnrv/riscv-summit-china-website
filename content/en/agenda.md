@@ -17,11 +17,12 @@ a21:
     duration: 20
     speakers:
       - name: Calista Redmond
-  - title: Keynote
+  - title: RISC-V is Growing Rapidly--Everywhere
     time: 09:50
     duration: 20
     speakers:
       - name: Prof. Krste Asanović
+        title: Co-founder and Chief Architect, SiFive
   - title: Keynote - 达摩院
     time: 10:10
     duration: 20
