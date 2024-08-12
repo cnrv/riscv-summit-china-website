@@ -111,3 +111,6 @@ other = "上午"
 
 [pm]
 other = "下午"
+
+[tba2]
+other = "等待更新"

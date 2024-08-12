@@ -35,6 +35,12 @@ body:not(.in-home) {
             border-top: 0.5px solid white;
             border-bottom: 0.5px solid white;
         }
+        .anchor {
+            display: block;
+            position: relative;
+            top: -146px;
+            visibility: hidden;
+        }
         table {
             border-collapse: collapse;
             margin: 0 0 5em 0;
@@ -303,12 +309,6 @@ body:not(.in-home) {
                 background-color: white;
             }
             div.agenda-section {
-                .anchor {
-                    display: block;
-                    position: relative;
-                    top: -146px;
-                    visibility: hidden;
-                }
                 &#A0821-section h2 {
                     .title-prefix {
                         background-color: $colorDay1;
@@ -543,6 +543,165 @@ body:not(.in-home) {
                 }
                 .hide-on-wide {
                     display: inline-block;
+                }
+            }
+        }
+    }
+    article#organizing-teams {
+        position: relative;
+        >section {
+            position: relative;
+            margin-top: 3em;
+            padding-bottom: 3em;
+            h2 {
+                margin: 0 auto 0 0;
+                padding: 0;
+                color: white;
+                width: fit-content;
+                font-size: 100%;
+                border-top-left-radius: 0.2em;
+                border-bottom-left-radius: 0.2em;
+                border-top-right-radius: 1em;
+                border-bottom-right-radius: 1em;
+                background-color: $primaryColorLighter;
+                a {
+                    display: inline-block;
+                    padding: 0.5em 2em 0.5em 2em;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            >p.tba {
+                margin: 1em 0 0 0;
+                padding: 0 3em 0 3em;
+                font-style: italic;
+            }
+            div.members {
+                margin: 1em 0 0 0;
+                padding: 0 3em 0 3em;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-content: left;
+                justify-content: top;
+                div.member {
+                    margin-top: 1em;
+                    position: relative;
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: left;
+                    >div.person {
+                        >div.name {
+                            font-weight: bold;
+                        }
+                        >div.title, >div.description {
+                            margin-top: 0.5em;
+                            font-size: 80%;
+                            opacity: .8;
+                        }
+                        >div.title {
+                            display: flex;
+                            flex-direction: column;
+                            span {
+                                display: block;
+                                &.name {
+                                    margin-top: .3em;
+                                }
+                            }
+                        }
+                        >div.description {
+                            &:before {
+                                content: '简介：';
+                            }
+                        }
+                        &.with-description >div.title {
+                            flex-direction: row;
+                            span{
+                                display: inline-block;
+                                &.name {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+            &.with-avatar {
+                div.members {
+                    div.member {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 40px;
+                        padding: 10px 0;
+                        >a {
+                            position: relative;
+                            display: block;
+                            width: 160px;
+                            height: 160px;
+                            border-radius: 50%;
+                            border: 3px solid white;
+                            box-sizing: border-box;
+                            img {
+                                position: relative;
+                                width: 150px;
+                                height: 150px;
+                                top: 2.5px;
+                                left: 2.5px;
+                                border-radius: 50%;
+                                position: relative;
+                                object-fit: cover;
+                                background-color: $bgColorLighter;
+                            }
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                z-index: -1;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                background-color: white;
+                                box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px 0px;
+                            }
+                        }
+                        >div.person {
+                            max-width: calc(100% - 200px);
+                        }
+                    }
+                }
+            }
+            @media all and (max-width: 800px) {
+                &.with-avatar {
+                    div.members {
+                        div.member {
+                            flex-direction: column;
+                            margin-bottom: 1em;
+                            >a{
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+                            >div.person {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.is-en {
+            section {
+                >div.members {
+                    >div.member {
+                        >div.person {
+                            >div.description {
+                                &:before {
+                                    content: 'Bio: ';
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

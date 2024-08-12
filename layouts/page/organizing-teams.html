@@ -1,0 +1,41 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <article id="organizing-teams" class="flex-l flex-column-l flex-wrap justify-between mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+    {{- range .Params.teams }}
+    <section class="{{if .withAvatar}}with-avatar {{end}} flex-l flex-column">
+      <span class="anchor" id="{{.id}}"></span>
+      <h2><a href="#{{.id}}">{{.name}}</a></h2>
+      {{- if .tba }}
+      <p class="tba">{{i18n "tba2"}}</p>
+      {{- else }}
+      <div class="members">
+        {{- range .members }}
+        <div class="member">
+          {{- if .avatar }}
+          <a {{with .profile}}href="{{.}}" target="_blank"{{end}}>
+            {{- with .avatar }}
+            <img style="object-position: {{.position}}" src="{{.url}}" />
+            {{- end }}
+          </a>
+          {{- end }}
+          <div class="person{{if .description}} with-description{{end}}">
+            <div class="name">{{.name}}</div>
+            {{- range .title }}
+            <div class="title"><span class="affiliation">{{.affiliation}}</span><span class="name">{{.name}}</span></div>
+            {{- end -}}
+            {{- with .description }}
+            <div class="description">{{.}}</div>
+            {{- end }}
+          </div>
+        </div>
+        {{- end }}
+      </div>
+      {{- end }}
+    </section>
+    {{- end }}
+  </article>
+{{ end }}
