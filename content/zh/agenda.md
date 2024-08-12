@@ -1050,13 +1050,6 @@ aPOSTER:
     authors:
       - name: Niklas Källman
         title: IAR Systems, Senior Product Manager for RISC-V Solutions
-  - title: 初探 xDSL （Python 原生的编译器工具箱）在软硬件协同设计中的潜力
-    time: 5
-    duration: POSTER
-    index: 204
-    authors:
-      - name: 李枫
-        title: 独立开发者，独立开发者
   - title: 再论将 GraalVM 作为自由和开源 EDA 软件的通用运行时
     time: 6
     duration: POSTER
