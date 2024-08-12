@@ -34,6 +34,9 @@ a21:
   - title: Keynote - 沁恒微电子
     time: 10:50
     duration: 20
+    speakers:
+      - name: 杨勇
+        title: 沁恒微电子，技术总监、董事
   - title: 开启算力新纪元：基于 RISC-V 的开放算力探索与展望
     time: 11:10
     duration: 20
