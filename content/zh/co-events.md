@@ -100,12 +100,6 @@ events:
     organizer: "北京开源芯片研究院"
     registration_method:
       - method: "待更新"
-  - name: "RISC-V 开源处理器芯片生态发展论坛"
-    date_duration: "8月22日下午"
-    place: "紫荆2"
-    organizer: "北京开源芯片研究院"
-    registration_method:
-      - method: "待更新"
   - name: "TBD"
     date_duration: "8月23日上午"
     place: "珍珠1"

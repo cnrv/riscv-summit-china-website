@@ -100,12 +100,6 @@ events:
     organizer: "Beijing Institute of Open Source Chip (BOSC)"
     registration_method:
       - method: "TBD"
-  - name: "Session of Open-source Chip Ecosystem based on RISC-V (OCERV)"
-    date_duration: "Aug. 22, p.m."
-    place: "紫荆2"
-    organizer: "Beijing Institute of Open Source Chip (BOSC)"
-    registration_method:
-      - method: "待更新"
   - name: "TBD"
     date_duration: "8月23日上午"
     place: "珍珠1"
