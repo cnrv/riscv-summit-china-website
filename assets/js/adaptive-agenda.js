@@ -108,7 +108,8 @@ function setAgendaAnchorTop() {
   }
   agendaAnchors.forEach(anchor => {
     if (navHeight != 0) {
-      anchor.style.top = "-"+(offsetTop+navHeight)+"px";
+      anchor.style.top = "-"+(offsetTop+navHeight-1)+"px";
+      // TODO: weird 1px offset for firefox and chrome
     }
   });
 }
