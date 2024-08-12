@@ -11,7 +11,9 @@ diamond:
   - icon: "/img/logos/0-Diamond/WinChipHead.webp"
     url: "https://www.wch.cn"
   - icon: "/img/logos/0-Diamond/ESWIN.webp"
-    url: "https://www.eswin.com"
+    url: "https://www.eswincomputing.com/"
+    keepRatio: true
+    backgroundColor: "white"
   - icon: "/img/logos/0-Diamond/SOPHGO.webp"
     url: "https://www.sophgo.com"
   - icon: "/img/logos/0-Diamond/ZhiHe.webp"

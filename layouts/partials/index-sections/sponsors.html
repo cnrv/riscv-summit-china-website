@@ -7,8 +7,8 @@
         <h2>{{ i18n "diamond" }}</h2>
         <div class="sponsors-container diamond">
         {{ range .Params.diamond }}
-          <a target="_blank" href="{{ .url }}">
-            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
+          <a target="_blank" href="{{ .url }}"{{if eq true .keepRatio}} class="keep-ratio"{{end}}>
+            <img {{with .backgroundColor}}style="background-color: {{.}}"{{end}} src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
           </a>
         {{ end }}
         </div>

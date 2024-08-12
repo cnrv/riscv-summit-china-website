@@ -511,6 +511,15 @@ section.section-container {
                     height: 80px;
                 }
             }
+            &.keep-ratio {
+                padding: 0;
+                background-color: transparent;
+                border-radius: 0;
+                box-shadow: none;
+                img {
+                    height: 140px;
+                }
+            }
         }
         &.diamond, &.host {
             a {
