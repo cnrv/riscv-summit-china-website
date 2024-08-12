@@ -74,11 +74,12 @@ a21:
     speakers:
       - name: 孟建熠博士
         title: RISC-V 工委会会长、知合计算 CEO
-  - title: 邀请报告
+  - title: 定制芯片时代下的 RISC-V
     time: 14:40
     duration: 15
     speakers:
-      - name: Jack Kang
+      - name: 刚至坚
+        title: SiFive 全球商务资深副总裁
   - title: Accelerating SoC Innovation with Synopsys RISC-V Solutions
     time: 14:55
     duration: 15
