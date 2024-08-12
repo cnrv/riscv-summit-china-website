@@ -68,9 +68,11 @@ a21:
     speakers:
       - name: 孟建熠博士
         title: RISC-V 工委会会长、知合计算 CEO
-  - title: 邀请报告 (Jack Kang)
+  - title: 邀请报告
     time: 14:40
     duration: 15
+    speakers:
+      - name: Jack Kang
   - title: Accelerating SoC Innovation with Synopsys RISC-V Solutions
     time: 14:55
     duration: 15
