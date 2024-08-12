@@ -271,7 +271,7 @@ a22_A:
     time: 16:00
     duration: 15
     class: SE
-  - title: 面向机器学习推理应用的全同态编译器框架 (ACE)
+  - title: 面向机器学习推理应用的全同态编译器框架 (ANT-ACE)
     time: 16:15
     duration: 15
     speakers:
