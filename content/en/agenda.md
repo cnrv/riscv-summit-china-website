@@ -65,6 +65,9 @@ a21:
   - title: Keynote - 知合计算
     time: 14:20
     duration: 20
+    speakers:
+      - name: 孟建熠博士
+        title: RISC-V 工委会会长、知合计算 CEO
   - title: 邀请报告 (Jack Kang)
     time: 14:40
     duration: 15
