@@ -503,7 +503,7 @@ a22_B:
     speakers:
       - name: Yaqiang Pei
         title: Synopsys, 资深处理器应用工程师
-  - title: RISC-V SoC Agile Design Cloud Platform & Core Generation for Automotive and Other Edge Fields​
+  - title: RISC-V SoC Agile Design Cloud Platform & Core Generation for Automotive and Other Edge Fields
     time: 15:40
     duration: 10
     index: 234
