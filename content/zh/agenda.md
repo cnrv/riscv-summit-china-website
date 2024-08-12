@@ -56,9 +56,12 @@ a21:
   - title: 一分钟 POSTER 报告（暂定）
     time: 13:40
     duration: 20
-  - title: Keynote - 开芯院
+  - title: RISC-V 赋予技术创新与商业变革新机遇
     time: 14:00
     duration: 20
+    speakers:
+      - name: 包云岗
+        title: 北京开源芯片研究院首席科学家
   - title: Keynote - 知合计算
     time: 14:20
     duration: 20
