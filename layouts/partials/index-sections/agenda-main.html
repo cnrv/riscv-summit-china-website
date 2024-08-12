@@ -19,7 +19,7 @@
         {{- range $agendaData }}
         <a id="link-{{.id}}" href="#{{.id}}"><span>{{.titlePrefix}}</span><span class="{{.titlePrefixSub}}">{{.titlePlace}}</span></a>
         {{- end }}
-        <a id="link-aPOSTER" href="#aPOSTER"><span>POSTER</span></a>
+        <a id="link-POSTER" href="#POSTER"><span>POSTER</span></a>
       </div>
       {{- range $agendaData }}
       <div class="agenda-section" id="{{.id}}-section">
@@ -60,8 +60,8 @@
       </div>
       {{- end }}
 
-      <div class="agenda-section" id="aPOSTER-section">
-        <span class="anchor" id="aPOSTER"></span>
+      <div class="agenda-section" id="POSTER-section">
+        <span class="anchor" id="POSTER"></span>
         <h2><span class="title-poster">POSTER</span></h2>
         <div class="small attention">{{ .Params.note }}</div>
         <table>
