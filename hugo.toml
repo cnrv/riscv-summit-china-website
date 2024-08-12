@@ -85,11 +85,11 @@ defaultContentLanguageInSubdir = false
         weight = 15
       [[languages.zh.menu.main]]
         name = "同期活动"
-        url = "#co-events"
+        url = "/co-events"
         weight = 20
       [[languages.zh.menu.main]]
         name = "大会议程"
-        url = "#agenda"
+        url = "/agenda"
         weight = 25
       [[languages.zh.menu.main]]
         name = "观众报名"
@@ -159,11 +159,11 @@ defaultContentLanguageInSubdir = false
         weight = 15
       [[languages.en.menu.main]]
         name = "Co-events"
-        url = "#co-events"
+        url = "/co-events"
         weight = 20
       [[languages.en.menu.main]]
         name = "Agenda"
-        url = "#agenda"
+        url = "/agenda"
         weight = 25
       [[languages.en.menu.main]]
         name = "Registration"
