@@ -19,6 +19,7 @@ events:
       - method: "待更新"
   - name: "“一生一芯”助教大会"
     date_duration: "8月20日全天"
+    place: "紫荆1"
     organizer: "一生一芯"
     registration_method:
       - method: "仅面向助教"

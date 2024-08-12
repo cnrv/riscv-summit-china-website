@@ -19,6 +19,7 @@ events:
       - method: "TBD"
   - name: "One Student One Chip Forum of Teaching Assistants"
     date_duration: "Aug. 20,  all day"
+    place: "紫荆1"
     organizer: "一生一芯"
     registration_method:
       - method: "For teaching assistants only"
