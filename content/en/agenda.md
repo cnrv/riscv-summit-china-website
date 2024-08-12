@@ -276,7 +276,7 @@ a22_A:
     duration: 15
     speakers:
       - name: 肖琳杰
-        title: 支付宝（杭州）信息技术有限公司 技术专家
+        title: 蚂蚁技术研究院 技术专家
   - title: 面向 RISC-V 异构 AI 芯片的“大编译器”设计和实现
     time: 16:30
     duration: 15
