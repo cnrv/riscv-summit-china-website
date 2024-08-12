@@ -495,7 +495,7 @@ section.section-container {
     div.sponsors-container {
         display: flex;
         flex-wrap: wrap;
-        a {
+        div.icon {
             position: relative;
             display: flex;
             background-color: #FFFFFF;
@@ -503,8 +503,10 @@ section.section-container {
             padding: 10px 30px;
             border-radius: 10px;
             box-shadow: 2px 2px 5px #FFFFFF60;
-            img {
+            a {
                 margin: auto;
+            }
+            img {
                 object-fit: contain;
                 height: 120px;
                 @media all and (max-width: 800px) {
@@ -518,32 +520,35 @@ section.section-container {
                 box-shadow: none;
                 img {
                     height: 140px;
+                    @media all and (max-width: 800px) {
+                        height: 100px;
+                    }
                 }
             }
         }
         &.diamond, &.host {
-            a {
+            div.icon {
                 width: calc(50% - 10px);
             }
         }
         &.gold, &.co-hosts, &.organizers, &.co-organizers {
-            a {
+            div.icon {
                 width: calc(33% - 10px);
             }
         }
         &.silver, &.bronze, &.community {
-            a {
+            div.icon {
                 width: calc(25% - 10px);
             }
         }
         @media all and (max-width: 800px) {
             &.diamond, &.host {
-                a {
+                div.icon {
                     width: calc(100% - 10px);
                 }
             }
             &.gold, &.silver, &.bronze, &.community, &.co-hosts, &.organizers, &.co-organizers {
-                a {
+                div.icon {
                     width: calc(50% - 10px);
                 }
             }

@@ -3,97 +3,29 @@
   <div class="text-container">
     <h1>{{ .Title | markdownify | emojify }}</h1>
     <div class="content">
-      {{ if .Params.diamond }}
-        <h2>{{ i18n "diamond" }}</h2>
-        <div class="sponsors-container diamond">
-        {{ range .Params.diamond }}
-          <a target="_blank" href="{{ .url }}"{{if eq true .keepRatio}} class="keep-ratio"{{end}}>
-            <img {{with .backgroundColor}}style="background-color: {{.}}"{{end}} src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
-          </a>
+      {{- $diamond := dict "id" "diamond" "title" (i18n "diamond") "value" .Params.diamond }}
+      {{- $gold := dict "id" "gold" "title" (i18n "gold") "value" .Params.gold }}
+      {{- $silver := dict "id" "silver" "title" (i18n "silver") "value" .Params.silver }}
+      {{- $bronze := dict "id" "bronze" "title" (i18n "bronze") "value" .Params.bronze }}
+      {{- $community := dict "id" "community" "title" (i18n "community") "value" .Params.community }}
+      {{- $host := dict "id" "host" "title" (i18n "host") "value" .Params.host }}
+      {{- $co_hosts := dict "id" "co-hosts" "title" (i18n "co_host") "value" .Params.co_hosts }}
+      {{- $organizers := dict "id" "organizers" "title" (i18n "organizer") "value" .Params.organizers }}
+      {{- $co_organizers := dict "id" "co-organizers" "title" (i18n "co_organizer") "value" .Params.co_organizers }}
+      {{- $sponsorsData := slice $diamond $gold $silver $bronze $community $host $co_hosts $organizers $co_organizers }}
+      {{- range $sponsorsData }}
+        {{- if .value }}
+        <h2>{{ .title }}</h2>
+        <div class="sponsors-container {{.id}}">
+        {{ range .value }}
+          <div class="icon{{if eq true .keepRatio}} keep-ratio{{end}}">
+            <a target="_blank" href="{{ .url }}"><img {{with .backgroundColor}}style="background-color: {{.}}"{{end}} src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" /></a>
+          </div>
         {{ end }}
         </div>
-      {{ end }}
-      {{ if .Params.gold }}
-        <h2>{{ i18n "gold" }}</h2>
-        <div class="sponsors-container gold">
-        {{ range .Params.gold }}
-          <a target="_blank" href="{{ .url }}">
-            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
-          </a>
-        {{ end }}
-        </div>
-      {{ end }}
-      {{ if .Params.silver }}
-        <h2>{{ i18n "silver" }}</h2>
-        <div class="sponsors-container silver">
-        {{ range .Params.silver }}
-          <a target="_blank" href="{{ .url }}">
-            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
-          </a>
-        {{ end }}
-        </div>
-      {{ end }}
-      {{ if .Params.bronze }}
-        <h2>{{ i18n "bronze" }}</h2>
-        <div class="sponsors-container bronze">
-        {{ range .Params.bronze }}
-          <a target="_blank" href="{{ .url }}">
-            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
-          </a>
-        {{ end }}
-        </div>
-      {{ end }}
-      {{ if .Params.community }}
-        <h2>{{ i18n "community" }}</h2>
-        <div class="sponsors-container community">
-        {{ range .Params.community }}
-          <a target="_blank" href="{{ .url }}">
-            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
-          </a>
-        {{ end }}
-        </div>
-      {{ end }}
-      <br />
-      {{ if .Params.host }}
-        <h2>{{ i18n "host" }}</h2>
-        <div class="sponsors-container host">
-        {{ range .Params.host }}
-          <a target="_blank" href="{{ .url }}">
-            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
-          </a>
-        {{ end }}
-        </div>
-      {{ end }}
-      {{ if .Params.co_hosts }}
-        <h2>{{ i18n "co_host" }}</h2>
-        <div class="sponsors-container co-hosts">
-        {{ range .Params.co_hosts }}
-          <a target="_blank" href="{{ .url }}">
-            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
-          </a>
-        {{ end }}
-        </div>
-      {{ end }}
-      {{ if .Params.organizers }}
-        <h2>{{ i18n "organizer" }}</h2>
-        <div class="sponsors-container organizers">
-        {{ range .Params.organizers }}
-          <a target="_blank" href="{{ .url }}">
-            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
-          </a>
-        {{ end }}
-        </div>
-      {{ end }}
-      {{ if .Params.co_organizers }}
-        <h2>{{ i18n "co_organizer" }}</h2>
-        <div class="sponsors-container co-organizers">
-        {{ range .Params.co_organizers }}
-          <a target="_blank" href="{{ .url }}">
-            <img src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" />
-          </a>
-        {{ end }}
-        </div>
-      {{ end }}
+        {{- end }}
+      {{- end }}
+
       <p>{{ .Content | markdownify | emojify | safeHTML }}</p>
     </div>
     {{ if .Params.link_slug }}
