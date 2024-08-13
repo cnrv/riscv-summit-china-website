@@ -32,7 +32,7 @@ a21:
     speakers:
       - name: 何宁
         title: 奕斯伟计算，高级副总裁、首席技术官
-  - title: Keynote - 沁恒微电子
+  - title: 青稞 RISC-V 与接口 PHY 的多快少省
     time: 10:50
     duration: 20
     speakers:
