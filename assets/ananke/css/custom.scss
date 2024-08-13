@@ -500,34 +500,48 @@ section.section-container {
             display: flex;
             background-color: #FFFFFF;
             margin: 5px auto;
-            padding: 20px 30px;
-            a, img {
+            padding: 0;
+            a {
+                position: relative;
+                margin: auto;
+                height: 140px;
+                width: 100%;
+                display: flex;
+                padding: 20px 30px;
+            }
+            img {
+                margin: auto;
+                object-fit: contain;
+                border: none;
                 height: 100px;
-                @media all and (max-width: 800px) {
+            }
+            @media all and (max-width: 800px) {
+                a {
+                    height: 100px;
+                }
+                img {
                     height: 60px;
                 }
             }
-            a {
-                margin: auto;
-                display: block;
-                padding: 0;
-            }
-            img {
-                object-fit: contain;
-                border: none;
-            }
             &.keep-ratio {
-                padding: 0;
                 background-color: transparent;
                 border-radius: 0;
                 box-shadow: none;
+                a {
+                    padding: 0;
+                    display: block;
+                    width: fit-content;
+                }
+                img {
+                    margin: 0;
+                }
                 a, img {
                     height: 140px;
                 }
                 @media all and (max-width: 800px) {
-                    background-color: #FFFFFF;
                     a, img {
                         height: 100px;
+                        width: 100%;
                     }
                 }
             }
