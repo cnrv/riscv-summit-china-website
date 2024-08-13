@@ -400,7 +400,7 @@ a22_B:
     speakers:
       - name: 丁昊楠
         title: 中国科学院计算技术研究所，芯片设计工程师
-  - title: 基于香山的开源众包验证探索与实践
+  - title: 万众一芯：基于开源众包芯片验证的探索与实践
     time: 10:20
     duration: 20
     index: 143
