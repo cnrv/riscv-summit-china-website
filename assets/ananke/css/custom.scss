@@ -501,26 +501,32 @@ section.section-container {
             background-color: #FFFFFF;
             margin: 5px auto;
             padding: 20px 30px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 5px #FFFFFF60;
-            a {
-                margin: auto;
-            }
-            img {
-                object-fit: contain;
+            a, img {
                 height: 100px;
                 @media all and (max-width: 800px) {
                     height: 60px;
                 }
+            }
+            a {
+                margin: auto;
+                display: block;
+                padding: 0;
+            }
+            img {
+                object-fit: contain;
+                border: none;
             }
             &.keep-ratio {
                 padding: 0;
                 background-color: transparent;
                 border-radius: 0;
                 box-shadow: none;
-                img {
+                a, img {
                     height: 140px;
-                    @media all and (max-width: 800px) {
+                }
+                @media all and (max-width: 800px) {
+                    background-color: #FFFFFF;
+                    a, img {
                         height: 100px;
                     }
                 }
