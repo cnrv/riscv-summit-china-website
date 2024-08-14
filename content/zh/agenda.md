@@ -1145,7 +1145,7 @@ aPOSTER:
     authors:
       - name: 罗佳维
         title: 广东赛昉科技有限公司，软件工程师
-  - title: RISC-V+AI 与车载新应用场景
+  - title: 嵌入式RISC-V+AI在汽车场景的应用
     time: 16
     duration: POSTER
     index: 243
