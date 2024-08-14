@@ -1130,7 +1130,7 @@ aPOSTER:
     index: 237
     authors:
       - name: 梁致远
-        title: 中国电信股份有限公司研究院，科研人员
+        title: 中国电信研究院，研究员
   - title: 基于 RISC-V 服务器的寒武纪 MLU370 智能加速卡适配
     time: 14
     duration: POSTER
