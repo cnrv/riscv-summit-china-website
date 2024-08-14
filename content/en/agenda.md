@@ -178,7 +178,7 @@ a22_A:
     speakers:
       - name: 陈晨
         title: 阿里巴巴达摩院，资深技术专家
-  - title: 已开源的片上网络
+  - title: 一种片上网络的开源实现
     time: 10:00
     duration: 20
     index: 151
