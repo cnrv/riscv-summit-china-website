@@ -163,7 +163,7 @@ a22_A:
     speakers:
       - name: 张涛
         title: RISC-V 工委会副秘书长
-  - title: 面向云数据中心的 RISC-V IOMMU 技术探索与应用
+  - title: 云数据中心 RISC-V IOMMU 虚拟化的探索与应用
     time: 09:00
     duration: 20
     index: 182
