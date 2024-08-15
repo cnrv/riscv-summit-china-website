@@ -76,8 +76,8 @@ events:
     registration_url:
       - url: "https://egytfz5jk0ye1g0g.mikecrm.com/aRmQz95"
   - name: "TBD"
-    date_duration: "8月22日上午"
-    organizer: "TBD"
+    date_duration: "Aug. 22, a.m."
+    place: "Bauhinia Hall 1"
   - name: "RISC-V+AI International Talent and Open Source Technology and Ecology Forum"
     date_duration: "Aug. 22, a.m."
     place: "Bauhinia Room 2"
@@ -105,7 +105,8 @@ events:
     registration_method:
       - method: "TBD"
   - name: "TBD"
-    date_duration: "8月23日上午"
+    date_duration: "Aug. 23, a.m."
+    place: "Pearl Ballroom 1"
   - name: "openEuler RISC-V SIG Developer Day and Hangzhou Meetup"
     date_duration: "Aug. 23, a.m."
     place: "Pearl Ballroom 2"
