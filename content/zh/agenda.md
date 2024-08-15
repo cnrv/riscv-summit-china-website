@@ -134,7 +134,7 @@ a21:
     index: 142
     speakers:
       - name: 席宏海
-        title: 武汉元石智算科技有限公司
+        title: 元石智算，研发副总经理
   - title: 全球首款 RISC-V 超级 SIM 芯片的技术创新与应用
     time: 17:20
     duration: 20
