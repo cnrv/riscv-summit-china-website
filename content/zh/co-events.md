@@ -112,7 +112,9 @@ events:
     place: "珍珠厅 2"
     organizer: "OERV"
     registration_method:
-      - method: "待更新"
+      - method: "仅限手机端"
+    registration_url:
+      - url: "https://openatomcon.openatom.cn/registration_mobile/?activityNo=HD20240813151246"
   - name: "甲辰计划 · 开源实习生朝朝联合招聘会"
     date_duration: "8月23日上午"
     place: "紫荆厅 1"

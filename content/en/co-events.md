@@ -112,7 +112,9 @@ events:
     place: "Pearl Ballroom 2"
     organizer: "OERV"
     registration_method:
-      - method: "TBD"
+      - method: "Only for mobile"
+    registration_url:
+      - url: "https://openatomcon.openatom.cn/registration_mobile/?activityNo=HD20240813151246"
   - name: "RISC-V Prosperity 2036 · 开源实习生朝朝联合招聘会"
     date_duration: "Aug. 23, a.m."
     place: "Bauhinia Hall 1"
