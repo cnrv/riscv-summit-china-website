@@ -66,7 +66,9 @@ events:
     place: "珍珠厅 1"
     organizer: "达坦科技 DatenLord"
     registration_method:
-      - method: "待更新"
+      - method: "峰会报名"
+    registration_url:
+      - url: "https://www.wenjuan.com/s/UZBZJvFH93/"
   - name: "赛昉科技全场景 RISC-V 解决方案交流会"
     date_duration: "8月22日上午"
     place: "珍珠厅 2"

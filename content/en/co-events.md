@@ -66,7 +66,9 @@ events:
     place: "Pearl Ballroom 1"
     organizer: "DatenLord"
     registration_method:
-      - method: "TBD"
+      - method: "Via RISC-V Summit China"
+    registration_url:
+      - url: "https://www.wenjuan.com/s/bQzaYrS/"
   - name: "StarFive Full Scenario RISC-V Solutions Workshop"
     date_duration: "Aug. 22, a.m."
     place: "Pearl Ballroom 2"
