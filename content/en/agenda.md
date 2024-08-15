@@ -157,6 +157,11 @@ a21:
       - name: 柯一冉
         title: 深圳市群芯闪耀科技有限公司 (Milk-V)，副总裁
 a22_A:
+  - title: 发挥标准引领优势，共促产业生态繁荣
+    time: 08:50
+    duration: 10
+    speakers:
+      - name: 张涛，RISC-V 工委会副秘书长
   - title: 面向云数据中心的 RISC-V IOMMU 技术探索与应用
     time: 09:00
     duration: 20
