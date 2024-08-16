@@ -161,8 +161,8 @@ a22_A:
     time: 08:50
     duration: 10
     speakers:
-      - name: 张涛
-        title: RISC-V 工委会副秘书长
+      - name: 周萌
+        title: RISC-V 工委会秘书长
   - title: 云数据中心 RISC-V IOMMU 虚拟化的探索与应用
     time: 09:00
     duration: 20
