@@ -853,7 +853,7 @@ a23_B:
     speakers:
       - name: 桂兵
         title: 芯来科技，高级软件工程师
-  - title: 基于 RISC-V 的 HSM 方案设计与实现
+  - title: 基于 RISC-V 的 HSM 方案
     time: 10:30
     duration: 10
     index: 132
