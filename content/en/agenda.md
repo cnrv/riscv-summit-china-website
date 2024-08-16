@@ -68,7 +68,7 @@ a21:
     speakers:
       - name: 包云岗
         title: 北京开源芯片研究院首席科学家
-  - title: Keynote - 知合计算
+  - title: 加速打造标杆产品，推动 RISC-V 生态进化
     time: 14:20
     duration: 20
     speakers:
