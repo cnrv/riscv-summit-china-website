@@ -969,13 +969,9 @@ a23_B:
     speakers:
       - name: 梁琪
         title: 思尔芯 S2C, 产品经理
-  - title: 基于 AIGC 的 RISCV CPU 及其模拟器设计初探
+  - title: TBD
     time: 15:40
     duration: 10
-    index: 209
-    speakers:
-      - name: 赖晓铮
-        title: 华南理工大学，副教授
   - title: 从 IP 到系统的 RISC-V 敏捷验证方案
     time: 15:50
     duration: 10
