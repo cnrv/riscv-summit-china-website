@@ -40,7 +40,7 @@
             <tr class="{{ cond (eq .class "SE") "se" "" }} {{ cond (eq .class "LUNCH") "se lunch" "" }}">
               <td class="time">{{ .time }}</td>
               <td class="duration">{{ .duration }}<sup>'</sup></td>
-              <td class="title">{{ .title }}</td>
+              <td class="title">{{if or (eq .title "TBD") (eq .title "TBA")}}-{{else}}{{ .title }}{{end}}</td>
                 {{ if .speakers }}
               <td class="speaker">
                 {{ range .speakers}}
@@ -74,7 +74,7 @@
           <tbody>
             {{ range .Params.aPOSTER }}
             <tr>
-              <td class="title">{{ .title }}</td>
+              <td class="title">{{if or (eq .title "TBD") (eq .title "TBA")}}-{{else}}{{ .title }}{{end}}</td>
               <td class="author">
                 {{ if .authors }}
                 {{ range .authors }}

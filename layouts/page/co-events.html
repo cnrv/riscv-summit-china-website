@@ -32,7 +32,7 @@
           <tr>
             <td class="date-duration {{cond (not .date_duration) "empty" ""}}"><label class="hide-on-wide">{{i18n "co_event_date_duration"}}{{i18n "colon"}}</label>{{ .date_duration }}</td>
             <td class="place {{cond (not .place) "empty" ""}}"><label class="hide-on-wide">{{i18n "co_event_place"}}{{i18n "colon"}}</label>{{ .place }}</td>
-            <td class="name"><label class="hide-on-wide">{{i18n "co_event_name"}}{{i18n "colon"}}</label>{{if eq .name "TBD" }}<i>{{else}}<b>{{end}}{{ .name }}{{if eq .name "TBD" }}</i>{{else}}</b>{{end}}</td>
+            <td class="name"><label class="hide-on-wide">{{i18n "co_event_name"}}{{i18n "colon"}}</label>{{if eq .name "TBD" }}-{{else}}<b>{{ .name }}</b>{{end}}</td>
             <td class="organizer {{cond (not .organizer) "empty" ""}}"><label class="hide-on-wide">{{i18n "co_event_organizer"}}{{i18n "colon"}}</label>{{ .organizer }}</td>
             <td class="registration-method {{cond (and (not .registration_method) (not .registration_url)) "empty" ""}}">
               <label class="hide-on-wide">{{i18n "co_event_registration_method"}}{{i18n "colon"}}</label>
