@@ -93,3 +93,18 @@ other = "Platform"
 
 [live_description]
 other = "Description"
+
+[live_check_desc]
+other = "Main Venue streaming"
+
+[live_uncheck_desc]
+other = "No streaming"
+
+[live_other_desc]
+other = "Co-events streaming"
+
+[am]
+other = "a.m."
+
+[pm]
+other = "p.m."

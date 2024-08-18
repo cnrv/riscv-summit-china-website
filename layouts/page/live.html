@@ -13,62 +13,84 @@
     <div class="content">
       {{ .Content | markdownify | emojify | safeHTML }}
     </div>
+    <div class="symbol-info">
+      <div class="row">
+      <div class="symbol check"></div><div>{{i18n "live_check_desc"}}</div>
+      </div>
+      <div class="row">
+      <div class="symbol uncheck"></div><div>{{i18n "live_uncheck_desc"}}</div>
+      </div>
+      <div class="row">
+      <div class="symbol other"></div><div>{{i18n "live_other_desc"}}</div>
+      </div>
+    </div>
     <table>
         <thead>
           <tr>
-            <th colspan="2">{{i18n "live_platform"}}</th>
+            <th colspan="2" rowspan="2">{{i18n "live_platform"}}</th>
             <th></th>
             {{- range .Params.dates }}
+            {{- $subCounts := len .day.sub }}
+            <th colspan="{{$subCounts}}">{{.day.name}}</th>
+            {{- end }}
+            <th rowspan="2">{{i18n "live_description"}}</th>
+          </tr>
+          <tr>
+            <th></th>
+            {{- range .Params.dates }}
+            {{- range .day.sub }}
             <th>{{.name}}</th>
             {{- end }}
-            <th>{{i18n "live_description"}}</th>
+            {{- end }}
           </tr>
         </thead>
         <tbody>
           {{- range $idx, $val := .Params.methods }}
           {{- $pltCounts := len $val.platforms }}
-          <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
+          <tr class="pri {{cond (eq (mod $idx 2) 0) "even" "odd"}}">
             <td rowspan="{{mul 2 $pltCounts}}">{{.name}}</td>
             {{- with index $val.platforms 0 }}
-            <td rowspan="2">{{.name}}</td>
-            <td>上午</td>
-            <td class="a0821 am">{{< livesc .a0821 am >}}</td>
-            <td class="a0822a am"></td>
-            <td class="a0822b am"></td>
-            <td class="a0823a am"></td>
-            <td class="a0823b am"></td>
+            <td rowspan="2"><a {{with .url}}href="{{.}}"{{end}}>{{.name}}{{if not .url}} ({{i18n "tba1"}}){{end}}</a></td>
+            <td>{{i18n "am"}}</td>
+            <td class="stat a0821 am">{{ partial "func/liveStat.html" (dict "d" .a0821 "ampm" "am") }}</td>
+            <td class="stat a0822a am">{{ partial "func/liveStat.html" (dict "d" .a0822 "ampm" "am" "ab" "a") }}</td>
+            <td class="stat a0822b am">{{ partial "func/liveStat.html" (dict "d" .a0822 "ampm" "am" "ab" "b") }}</td>
+            <td class="stat a0823a am">{{ partial "func/liveStat.html" (dict "d" .a0823 "ampm" "am" "ab" "a") }}</td>
+            <td class="stat a0823b am">{{ partial "func/liveStat.html" (dict "d" .a0823 "ampm" "am" "ab" "b") }}</td>
             {{- end }}
             <td rowspan="{{mul 2 $pltCounts}}">{{.description}}</td>
           </tr>
           <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
             {{/*pm*/}}
-            <td>下午</td>
-            <td class="a0821 pm"></td>
-            <td class="a0822a pm"></td>
-            <td class="a0822b pm"></td>
-            <td class="a0823a pm"></td>
-            <td class="a0823b pm"></td>
+            {{- with index $val.platforms 0 }}
+            <td>{{i18n "pm"}}</td>
+            <td class="stat a0821 pm">{{ partial "func/liveStat.html" (dict "d" .a0821 "ampm" "pm") }}</td>
+            <td class="stat a0822a pm">{{ partial "func/liveStat.html" (dict "d" .a0822 "ampm" "pm" "ab" "a") }}</td>
+            <td class="stat a0822b pm">{{ partial "func/liveStat.html" (dict "d" .a0822 "ampm" "pm" "ab" "b") }}</td>
+            <td class="stat a0823a pm">{{ partial "func/liveStat.html" (dict "d" .a0823 "ampm" "pm" "ab" "a") }}</td>
+            <td class="stat a0823b pm">{{ partial "func/liveStat.html" (dict "d" .a0823 "ampm" "pm" "ab" "b") }}</td>
+            {{- end }}
           </tr>
           {{- if gt $pltCounts 1 }}
             {{- range $index, $value := $val.platforms }}
             {{- if gt $index 0 }}
             <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
-              <td rowspan="2">{{$value.name}}</td>
-              <td>上午</td>
-              <td class="a0821 am"></td>
-              <td class="a0822a am"></td>
-              <td class="a0822b am"></td>
-              <td class="a0823a am"></td>
-              <td class="a0823b am"></td>
+              <td rowspan="2"><a {{with $value.url}}href="{{.}}"{{end}}>{{$value.name}}{{if not $value.url}} ({{i18n "tba1"}}){{end}}</a></td>
+              <td>{{i18n "am"}}</td>
+              <td class="stat a0821 am">{{ partial "func/liveStat.html" (dict "d" $value.a0821 "ampm" "am") }}</td>
+              <td class="stat a0822a am">{{ partial "func/liveStat.html" (dict "d" $value.a0822 "ampm" "am" "ab" "a") }}</td>
+              <td class="stat a0822b am">{{ partial "func/liveStat.html" (dict "d" $value.a0822 "ampm" "am" "ab" "b") }}</td>
+              <td class="stat a0823a am">{{ partial "func/liveStat.html" (dict "d" $value.a0823 "ampm" "am" "ab" "a") }}</td>
+              <td class="stat a0823b am">{{ partial "func/liveStat.html" (dict "d" $value.a0823 "ampm" "am" "ab" "b") }}</td>
             </tr>
             <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
               {{/*pm*/}}
-              <td>下午</td>
-              <td class="a0821 pm"></td>
-              <td class="a0822a pm"></td>
-              <td class="a0822b pm"></td>
-              <td class="a0823a pm"></td>
-              <td class="a0823b pm"></td>
+              <td>{{i18n "pm"}}</td>
+              <td class="stat a0821 pm">{{ partial "func/liveStat.html" (dict "d" $value.a0821 "ampm" "pm") }}</td>
+              <td class="stat a0822a pm">{{ partial "func/liveStat.html" (dict "d" $value.a0822 "ampm" "pm" "ab" "a") }}</td>
+              <td class="stat a0822b pm">{{ partial "func/liveStat.html" (dict "d" $value.a0822 "ampm" "pm" "ab" "b") }}</td>
+              <td class="stat a0823a pm">{{ partial "func/liveStat.html" (dict "d" $value.a0823 "ampm" "pm" "ab" "a") }}</td>
+              <td class="stat a0823b pm">{{ partial "func/liveStat.html" (dict "d" $value.a0823 "ampm" "pm" "ab" "b") }}</td>
             </tr>
             {{- end }}
             {{- end }}

@@ -93,3 +93,18 @@ other = "平台"
 
 [live_description]
 other = "说明"
+
+[live_check_desc]
+other = "主会场直播"
+
+[live_uncheck_desc]
+other = "无直播"
+
+[live_other_desc]
+other = "相应同期活动直播"
+
+[am]
+other = "上午"
+
+[pm]
+other = "下午"
