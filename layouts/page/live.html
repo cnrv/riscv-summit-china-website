@@ -4,7 +4,7 @@
 {{ end }}
 
 {{ define "main" }}
-  <article id="live" class="flex-l flex-wrap justify-between mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+  <article id="live" class="flex-l flex-wrap justify-between mw9 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
     <header class="mt4 w-100">
       <h1 class="f1 mt3 mb1">
         {{- .Title -}}
@@ -16,18 +16,63 @@
     <table>
         <thead>
           <tr>
-            <th>{{i18n "live_name"}}</th>
-            <th>{{i18n "live_method"}}</th>
+            <th colspan="2">{{i18n "live_platform"}}</th>
+            <th></th>
+            {{- range .Params.dates }}
+            <th>{{.name}}</th>
+            {{- end }}
             <th>{{i18n "live_description"}}</th>
           </tr>
         </thead>
         <tbody>
-          {{- range .Params.platforms }}
-          <tr>
-            <td>{{.name}}</td>
-            <td>{{range .method}}<div class="method">{{if .url}}<a href="{{.url}}">{{.name}}</a>{{else}}{{i18n "tba1"}}{{end}}</div>{{end}}</td>
-            <td>{{.description}}</td>
+          {{- range $idx, $val := .Params.methods }}
+          {{- $pltCounts := len $val.platforms }}
+          <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
+            <td rowspan="{{mul 2 $pltCounts}}">{{.name}}</td>
+            {{- with index $val.platforms 0 }}
+            <td rowspan="2">{{.name}}</td>
+            <td>上午</td>
+            <td class="a0821 am">{{< livesc .a0821 am >}}</td>
+            <td class="a0822a am"></td>
+            <td class="a0822b am"></td>
+            <td class="a0823a am"></td>
+            <td class="a0823b am"></td>
+            {{- end }}
+            <td rowspan="{{mul 2 $pltCounts}}">{{.description}}</td>
           </tr>
+          <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
+            {{/*pm*/}}
+            <td>下午</td>
+            <td class="a0821 pm"></td>
+            <td class="a0822a pm"></td>
+            <td class="a0822b pm"></td>
+            <td class="a0823a pm"></td>
+            <td class="a0823b pm"></td>
+          </tr>
+          {{- if gt $pltCounts 1 }}
+            {{- range $index, $value := $val.platforms }}
+            {{- if gt $index 0 }}
+            <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
+              <td rowspan="2">{{$value.name}}</td>
+              <td>上午</td>
+              <td class="a0821 am"></td>
+              <td class="a0822a am"></td>
+              <td class="a0822b am"></td>
+              <td class="a0823a am"></td>
+              <td class="a0823b am"></td>
+            </tr>
+            <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
+              {{/*pm*/}}
+              <td>下午</td>
+              <td class="a0821 pm"></td>
+              <td class="a0822a pm"></td>
+              <td class="a0822b pm"></td>
+              <td class="a0823a pm"></td>
+              <td class="a0823b pm"></td>
+            </tr>
+            {{- end }}
+            {{- end }}
+          {{- end }}
           {{- end }}
         </tbody>
     </table>

@@ -88,11 +88,8 @@ other = "Author"
 [tba1]
 other = "TBA"
 
-[live_name]
-other = "Name"
-
-[live_method]
-other = "Method"
+[live_platform]
+other = "Platform"
 
 [live_description]
 other = "Description"
