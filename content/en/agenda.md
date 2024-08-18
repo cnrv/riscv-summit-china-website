@@ -476,12 +476,9 @@ a22_B:
     speakers:
       - name: David Kelf
         title: CEO, Breker Verification Systems
-  - title: "RISC-V ecosystem: enabling debuggers for high-performance RISC-V servers and mobile"
+  - title: TBD
     time: 13:30
     duration: 15
-    speakers:
-      - name: Sergey Yakushkin
-        title: Director of Software Engineering, Syntacore
   - title: 基于 RISC-V 的 DSP 中增强型 PWM 的设计与应用
     time: 13:45
     duration: 15

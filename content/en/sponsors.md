@@ -30,8 +30,6 @@ gold:
   - icon: "/img/logos/1-Gold/Imagination.webp"
     url: "https://www.imaginationtech.com"
 silver:
-  - icon: "/img/logos/2-Silver/Syntacore.webp"
-    url: "https://syntacore.com"
   - icon: "/img/logos/2-Silver/StreamComputing.webp"
     url: "https://www.streamcomputing.com"
   - icon: "/img/logos/2-Silver/Codasip.webp"
