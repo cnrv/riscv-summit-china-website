@@ -1,0 +1,61 @@
+{{ $result := "" }}
+{{ $ampm := .ampm }}
+{{ $ab := .ab }}
+{{ $checkStr := "<div class='check'></div>" | safeHTML }}
+{{ $uncheckStr := "<div class='uncheck'></div>" | safeHTML }}
+{{ $otherFmt := "<div class='other'>%s</div>" }}
+{{ if eq .d true }}
+  {{ $result = $checkStr }}
+{{ else }}
+  {{ with .d }}
+    {{ if eq .separatedMethod "ampm" }}
+      {{ if eq $ampm "am" }}
+        {{ $result = $uncheckStr }}
+        {{ with .am }}
+          {{ if eq . true }}
+            {{ $result = $checkStr }}
+          {{ else if .other }}
+            {{ $result = (printf $otherFmt .other) | safeHTML }}
+          {{ end }}
+        {{ end }}
+      {{ else if eq $ampm "pm" }}
+        {{ $result = $uncheckStr }}
+        {{ with .pm }}
+          {{ if eq . true }}
+            {{ $result = $checkStr }}
+          {{ else if .other }}
+            {{ $result = (printf $otherFmt .other) | safeHTML }}
+          {{ end }}
+        {{ end }}
+      {{ else }}
+        {{ $result = "unknown" }}
+      {{ end }}
+    {{ else if eq .separatedMethod "ab" }}
+      {{ if eq $ab "a" }}
+        {{ $result = $uncheckStr }}
+        {{ with .a }}
+          {{ if eq . true }}
+            {{ $result = $checkStr }}
+          {{ else if .other }}
+            {{ $result = (printf $otherFmt .other) | safeHTML }}
+          {{ end }}
+        {{ end }}
+      {{ else if eq $ab "b" }}
+        {{ $result = $uncheckStr }}
+        {{ with .b }}
+          {{ if eq . true}}
+            {{ $result = $checkStr }}
+          {{ else if .other }}
+            {{ $result = (printf $otherFmt .other) | safeHTML }}
+          {{ end }}
+        {{ end }}
+      {{ else }}
+        {{ $result = "unknown" }}
+      {{ end }}
+    {{ else }}
+      {{ $result = "unknown" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $result }}
