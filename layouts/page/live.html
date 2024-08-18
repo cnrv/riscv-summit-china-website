@@ -1,0 +1,35 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <article id="live" class="flex-l flex-wrap justify-between mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+    <header class="mt4 w-100">
+      <h1 class="f1 mt3 mb1">
+        {{- .Title -}}
+      </h1>
+    </header>
+    <div class="content">
+      {{ .Content | markdownify | emojify | safeHTML }}
+    </div>
+    <table>
+        <thead>
+          <tr>
+            <th>{{i18n "live_name"}}</th>
+            <th>{{i18n "live_method"}}</th>
+            <th>{{i18n "live_description"}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{- range .Params.platforms }}
+          <tr>
+            <td>{{.name}}</td>
+            <td>{{range .method}}<div class="method">{{if .url}}<a href="{{.url}}">{{.name}}</a>{{else}}{{i18n "tba1"}}{{end}}</div>{{end}}</td>
+            <td>{{.description}}</td>
+          </tr>
+          {{- end }}
+        </tbody>
+    </table>
+  </article>
+{{ end }}
