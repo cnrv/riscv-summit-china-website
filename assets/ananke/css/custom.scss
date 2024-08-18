@@ -396,10 +396,6 @@ section.section-container {
                 }
             }
         }
-        &.is-en div#the-title:after {
-            width: 160px;
-            background-position-y: 60px;
-        }
         div#host-info {
             position: absolute;
             bottom: 0;
@@ -432,8 +428,15 @@ section.section-container {
                 }
             }
         }
-        &.is-en div#host-info label:after {
-            content: ': ';
+        &.is-en {
+            div#host-info label:after {
+                content: ': ';
+            }
+            >div.center-container >div#the-title:after {
+                width: 160px;
+                height: 50px;
+                background-position-y: 50px;
+            }
         }
     }
 
