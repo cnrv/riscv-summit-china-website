@@ -84,3 +84,15 @@ other = "Speaker"
 
 [agenda_author]
 other = "Author"
+
+[tba1]
+other = "TBA"
+
+[live_name]
+other = "Name"
+
+[live_method]
+other = "Method"
+
+[live_description]
+other = "Description"

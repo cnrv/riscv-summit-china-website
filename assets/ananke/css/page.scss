@@ -488,6 +488,14 @@ body:not(.in-home) {
             }
         }
     }
+    article#live {
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1em;
+        }
+        div.method {
+        }
+    }
     footer {
         color: $fontColorDark;
     }

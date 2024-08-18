@@ -78,10 +78,6 @@ defaultContentLanguageInSubdir = false
         url = "#news"
         weight = 5
       [[languages.zh.menu.main]]
-        name = "演讲征集"
-        url = "#cfp"
-        weight = 10
-      [[languages.zh.menu.main]]
         name = "赞助商"
         url = "#sponsors"
         weight = 15
@@ -93,6 +89,10 @@ defaultContentLanguageInSubdir = false
         name = "大会议程"
         url = "/agenda"
         weight = 25
+      [[languages.zh.menu.main]]
+        name = "直播"
+        url = "/live"
+        weight = 26
       [[languages.zh.menu.main]]
         name = "观众报名"
         url = "#registration"
@@ -154,10 +154,6 @@ defaultContentLanguageInSubdir = false
         url = "#news"
         weight = 5
       [[languages.en.menu.main]]
-        name = "Call for Papers"
-        url = "#cfp"
-        weight = 10
-      [[languages.en.menu.main]]
         name = "Sponsors"
         url = "#sponsors"
         weight = 15
@@ -169,6 +165,10 @@ defaultContentLanguageInSubdir = false
         name = "Agenda"
         url = "/agenda"
         weight = 25
+      [[languages.en.menu.main]]
+        name = "Live"
+        url = "/live"
+        weight = 26
       [[languages.en.menu.main]]
         name = "Registration"
         url = "#registration"

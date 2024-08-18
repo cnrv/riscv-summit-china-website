@@ -84,3 +84,15 @@ other = "演讲者"
 
 [agenda_author]
 other = "作者"
+
+[tba1]
+other = "待更新"
+
+[live_name]
+other = "名称"
+
+[live_method]
+other = "渠道"
+
+[live_description]
+other = "说明"
