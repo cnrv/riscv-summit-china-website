@@ -1,0 +1,51 @@
+{{ $result := "" }}
+{{ $pName := .name }}
+{{ $ampm := .ampm }}
+{{ $ab := .ab }}
+{{ $otherInfo := .otherInfo }}
+
+{{ $checkStr := "<div class='check'></div>" | safeHTML }}
+{{ $uncheckStr := "<div class='uncheck'></div>" | safeHTML }}
+{{ $otherFmt := "<div class='other'>%s</div>" }}
+{{ if $otherInfo }}
+  {{ $checkStr = "" }}
+  {{ $uncheckStr = "" }}
+{{ end }}
+
+{{ with .d }}
+  {{ if eq $ab "a" }}
+    {{ $result = $uncheckStr }}
+    {{ with .a }}
+      {{ if eq . true }}
+        {{ $result = $checkStr }}
+      {{ else if .other }}
+        {{ if $otherInfo }}
+          {{ $result = (dict "pName" $pName "id" $otherInfo "ab" $ab "ampm" $ampm "msg" .other) }}
+        {{ else }}
+          {{ $result = (printf $otherFmt .other) | safeHTML }}
+        {{ end }}
+      {{ else if or .am .pm }}
+        {{ $result = (partial "func/liveStat-ampm.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
+      {{ end }}
+    {{ end }}
+  {{ else if eq $ab "b" }}
+    {{ $result = $uncheckStr }}
+    {{ with .b }}
+      {{ if eq . true}}
+        {{ $result = $checkStr }}
+      {{ else if .other }}
+        {{ if $otherInfo }}
+          {{ $result = (dict "pName" $pName "id" $otherInfo "ab" $ab "ampm" $ampm "msg" .other) }}
+        {{ else }}
+          {{ $result = (printf $otherFmt .other) | safeHTML }}
+        {{ end }}
+      {{ else if or .am .pm }}
+        {{ $result = (partial "func/liveStat-ampm.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    {{ $result = "unknown" }}
+  {{ end }}
+{{ end }}
+
+{{ return $result }}

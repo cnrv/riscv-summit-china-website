@@ -1,0 +1,47 @@
+{{ $result := "" }}
+{{ $pName := .name }}
+{{ $ampm := .ampm }}
+{{ $ab := .ab }}
+{{ $otherInfo := .otherInfo }}
+
+{{ $checkStr := "<div class='check'></div>" | safeHTML }}
+{{ $uncheckStr := "<div class='uncheck'></div>" | safeHTML }}
+{{ $otherFmt := "<div class='other'>%s</div>" }}
+{{ if $otherInfo }}
+  {{ $checkStr = "" }}
+  {{ $uncheckStr = "" }}
+{{ end }}
+
+{{ with .d }}
+  {{ if eq $ampm "am" }}
+    {{ $result = $uncheckStr }}
+    {{ with .am }}
+      {{ if eq . true }}
+        {{ $result = $checkStr }}
+      {{ else if .other }}
+        {{ if $otherInfo }}
+          {{ $result = (dict "pName" $pName "id" $otherInfo "ab" $ab "ampm" $ampm "msg" .other) }}
+        {{ else }}
+          {{ $result = (printf $otherFmt .other) | safeHTML }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ else if eq $ampm "pm" }}
+    {{ $result = $uncheckStr }}
+    {{ with .pm }}
+      {{ if eq . true }}
+        {{ $result = $checkStr }}
+      {{ else if .other }}
+        {{ if $otherInfo }}
+          {{ $result = (dict "pName" $pName "id" $otherInfo "ab" $ab "ampm" $ampm "msg" .other) }}
+        {{ else }}
+          {{ $result = (printf $otherFmt .other) | safeHTML }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    {{ $result = "unknown" }}
+  {{ end }}
+{{ end }}
+
+{{ return $result }}

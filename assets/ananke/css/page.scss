@@ -493,6 +493,18 @@ body:not(.in-home) {
             font-size: 2rem;
             margin-bottom: 1em;
         }
+        a {
+            color: $primaryColorLighter;
+            text-decoration: none;
+            border-bottom: dotted 1px;
+            &:hover {
+                border-bottom: solid 1px;
+            }
+            &:not([href]) {
+                color: inherit;
+                border-bottom: none;
+            }
+        }
         div.method {
         }
         table {
@@ -520,11 +532,12 @@ body:not(.in-home) {
                     padding: 0;
                     position: relative;
                     text-align: center;
+                    font-size: 90%;
                     div {
                         position: absolute;
                         top: 0;
-                        left: 0;
-                        width: 100%;
+                        left: 0.5px;
+                        width: calc(100% - 1px);
                         height: 100%;
                         display: flex;
                         flex-wrap: wrap;
@@ -532,6 +545,9 @@ body:not(.in-home) {
                         justify-content: center;
                     }
                 }
+            }
+            tr.other-info, tr.end-of-row {
+                display: none;
             }
         }
         div.symbol-info {
@@ -555,6 +571,186 @@ body:not(.in-home) {
         }
         div.uncheck {
             background: #e3715f;
+        }
+        @media all and (max-width: 960px) {
+            table {
+                border-spacing: 0;
+                position: relative;
+                font-size: 110%;
+                thead {
+                    tr {
+                        height: 10px;
+                        display: block;
+                        th {
+                            display: none;
+                        }
+                    }
+                }
+                tbody {
+                    position: relative;
+                    display: block;
+                    tr {
+                        display: flex;
+                        flex-wrap: wrap;
+                        border-bottom: none;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-bottom: 0;
+                        margin: 0;
+                        position: relative;
+                        &.pri {
+                            padding-top: 1rem;
+                            .platform {
+                                margin-top: 0.3rem;
+                                padding-top: 0.5rem;
+                            }
+                        }
+                        &.pri::before {
+                            padding-bottom: 1.5rem;
+                            .ampm {
+                                height: 23px;
+                                padding-bottom: 8px;
+                            }
+                        }
+                        td {
+                            padding: 0;
+                            margin: 0;
+                            &.name {
+                                display: block;
+                                width: 100%;
+                                font-weight: bold;
+                            }
+                            &.platform, &.ampm {
+                                position: relative;
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 1rem;
+                                    width: 1px;
+                                    height: 100%;
+                                    background: #00000020;
+                                }
+                            }
+                            &.platform {
+                                display: block;
+                                width: 100%;
+                                font-size: 90%;
+                                padding: 0.8em 0 0.5em 1.8rem;
+                            }
+                            &.ampm, &.stat {
+                                height: 18px;
+                            }
+                            &.ampm {
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 12px;
+                                margin: 0;
+                                padding: 3px 0.5em 3px 2.5rem;
+                                box-sizing: border-box;
+                            }
+                            &.stat {
+                                display: inline-block;
+                                margin: 0;
+                                width: 42px;
+                                overflow: hidden;
+                                border-bottom: 1px solid transparent;
+                                border-right: 1px solid transparent;
+                                div {
+                                    font-size: 12px;
+                                    line-height: 12px;
+                                    padding: 3px;
+                                }
+                                &.a0821:before, &.a0822a:before, &.a0822b:before, &.a0823a:before, &.a0823b:before {
+                                    content: "8/21";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    box-sizing: border-box;
+                                    padding: 4px 0;
+                                    font-size: 10px;
+                                    line-height: 10px;
+                                    font-family: monospace;
+                                    z-index: 1;
+                                    top: 0;
+                                    left: 0;
+                                }
+                                &.a0822a:before {
+                                    content: "8/22A";
+                                }
+                                &.a0822b:before {
+                                    content: "8/22B";
+                                }
+                                &.a0823a:before {
+                                    content: "8/23A";
+                                }
+                                &.a0823b:before {
+                                    content: "8/23B";
+                                }
+                                .other {
+                                    color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+                tr.other-info {
+                    display: flex;
+                    font-size: 10px;
+                    line-height: 10px;
+                    font-family: monospace;
+                    position: relative;
+                    padding-left: 2.8rem;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 2rem;
+                        width: 1px;
+                        height: 100%;
+                        background: #00000020;
+                    }
+                    td {
+                        display: flex;
+                        padding: 4px 0;
+                        &.o-name {
+                            margin-right: .2em;
+                        }
+                        &.stat {
+                            width: 60px;
+                            margin-right: .2em;
+                        }
+                        &:before {
+                            width: 42px !important;
+                        }
+                        &:after {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 18px;
+                            padding: 4px 0;
+                            font-size: 10px;
+                            line-height: 10px;
+                        }
+                        &.am {
+                            &:after {
+                                content: "AM";
+                            }
+                        }
+                        &.pm {
+                            &:after {
+                                content: "PM";
+                            }
+                        }
+                    }
+                }
+                tr.end-of-row {
+                    display: flex;
+                    td {
+                        height: 0.8em;
+                    }
+                }
+            }
         }
     }
     footer {
