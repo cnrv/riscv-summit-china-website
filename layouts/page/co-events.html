@@ -37,7 +37,7 @@
             <td class="registration-method {{cond (and (not .registration_method) (not .registration_url)) "empty" ""}}">
               <label class="hide-on-wide">{{i18n "co_event_registration_method"}}{{i18n "colon"}}</label>
               {{- range .registration_method }}
-              <span>{{- .method | markdownify | emojify | safeHTML -}}</span>
+              <span>{{if or (eq .method "TBD") (eq .method "待更新")}}-{{else}}{{- .method | markdownify | emojify | safeHTML -}}{{end}}</span>
               {{- end -}}
               {{- if and .registration_method .registration_url -}}
               ,
