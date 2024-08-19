@@ -1,28 +1,53 @@
-{{ $result := "" }}
-{{ $pName := .name }}
-{{ $ampm := .ampm }}
-{{ $ab := .ab }}
-{{ $otherInfo := .otherInfo }}
+{{ $result := . }} {{/*code: int, classes: string, text: string, and passed params*/}}
+{{ $resultStr := "" }}
+{{ $params := . }}
 
-{{ $checkStr := "<div class='check'></div>" | safeHTML }}
-{{ if $otherInfo }}
-  {{ $checkStr = "" }}
-{{ end }}
+{{ $checkStrFmt := "<td class='%s'><div class='check'></div></td>" }} {{/*result.code: 1*/}}
+{{ $uncheckStrFmt := "<td class='%s'><div class='uncheck'></div></td>" }} {{/*result.code: 2*/}}
+{{ $otherFmt := "<td colspan='%d' class='%s'><div class='other'>%s</div></td>" }} {{/*result.code: 3*/}}
+{{ $defaultClass := "stat" }}
 
 {{ if eq .d true }}
-  {{ $result = $checkStr }}
+  {{ $result = merge $result (dict "code" 1) }}
 {{ else }}
+  {{ $result = merge $result (dict "code" 2) }}
   {{ with .d }}
     {{ if eq .separatedMethod "ampm" }}
-      {{ $result = (partial "func/liveStat-ampm.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
+      {{ $result = merge $result (partial "func/liveStat-ampm.html" $params) }}
     {{ else if eq .separatedMethod "ab" }}
-      {{ $result = (partial "func/liveStat-ab.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
+      {{ $result = merge $result (partial "func/liveStat-ab.html" $params) }}
     {{ else if eq .separatedMethod "ampmab" }}
-      {{ $result = (partial "func/liveStat-ampm.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
-    {{ else }}
-      {{ $result = "unknown" }}
+      {{ $result = merge $result (partial "func/liveStat-ampm.html" $params) }}
     {{ end }}
   {{ end }}
 {{ end }}
 
-{{ return $result }}
+{{ if eq $result.code 1 }}
+  {{ $resultStr = printf $checkStrFmt (printf "%s %s%s %s" $defaultClass $result.id $result.ab $result.ampm) | safeHTML }}
+{{ else if eq $result.code 2 }}
+  {{ $resultStr = printf $uncheckStrFmt (printf "%s %s%s %s" $defaultClass $result.id $result.ab $result.ampm) | safeHTML }}
+{{ else if eq $result.code 3 }}
+  {{ $colspan := 1 }}
+  {{ if or (eq $result.ab "a") (eq $result.ab "") }}
+    {{ if eq $result.ab "a" }}
+      {{ $colspan = 2 }}
+      {{ $defaultClass = "stat colspan"}}
+      {{ $result = merge $result (dict "colspan" 2)}}
+    {{ end }}
+    {{ $resultStr = printf $otherFmt $colspan (printf "%s %s%s %s" $defaultClass $result.id $result.ab $result.ampm) $result.text | safeHTML }}
+  {{ else }}
+    {{ $resultStr = "" }}
+  {{ end }}
+{{ else }}
+  {{ $resultStr = printf "<td class='%s'>unknown</td>" $defaultClass | safeHTML }}
+{{ end }}
+
+{{ if $params.dataOnly }}
+  {{ if and (eq $result.ab "b") (eq $result.code 3) }}
+    {{/*the other string in the venue B result should always be the same the venue A, just ignore it*/}}
+    {{ $resultStr = false }}
+  {{ else }}
+    {{ $resultStr = $result }}
+  {{ end }}
+{{ end }}
+{{ return $resultStr }}
