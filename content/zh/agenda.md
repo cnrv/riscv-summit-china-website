@@ -470,6 +470,12 @@ a22_B:
     time: 12:00
     duration: 60
     class: LUNCH
+  - title: All-in-one Risc-V AI Compute Engine for Software Defined Everything
+    time: 13:00
+    duration: 15
+    speakers:
+      - name: Volker Politz
+        title: Chief Sales Officer, Semidynamics
   - title: "RISC-V Certification: Applying Advanced RISC-V Core and SoC Verification Towards the Anticipated Certification Requirements"
     time: 13:15
     duration: 15
