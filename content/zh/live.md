@@ -60,12 +60,12 @@ methods:
           separatedMethod: ampm
           am: true
           pm:
-            other: 玄铁同期活动
+            other: 智算时代，RISC-V 创新发展新路径
         a0822:
           separatedMethod: ampm
           am: true
           pm:
-            other: 玄铁同期活动
+            other: 玄铁技术开放日
         a0823: true
     mobile_only: false
   - name: 中科厦门研究院

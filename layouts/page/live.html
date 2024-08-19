@@ -112,8 +112,9 @@
           </tr>
           {{/*for mobile*/}}
           {{- $vaCoEvents := slice }}
-          {{- $differentEventsInDifferentPlatforms := 0 }}
-          {{- $lastCoEvent := dict "pName" "" "event" "" }}
+          {{- $pushedPlatforms := slice }}
+          {{- $pushedCoEvents := slice }}
+          {{- $coEventsPerPlatform := dict }}
           {{- range $val.platforms }}
             {{- $va := slice (dict "dataOnly" true "pName" .name "d" .a0821 "id" "a0821" "ampm" (slice "am" "pm") "ab" (slice "")) }}
             {{- $va = append (dict "dataOnly" true "pName" .name "d" .a0822 "id" "a0822" "ampm" (slice "am" "pm") "ab" (slice "a" "b")) $va }}
@@ -122,26 +123,29 @@
               {{- range $ampm := $val.ampm }}
                 {{- range $val.ab }}
                   {{- $newVal := partial "func/liveStat.html" (merge $val (dict "ab" . "ampm" $ampm)) }}
-                  {{- if and (and $newVal (eq $newVal.code 3)) (or (ne $newVal.pName $lastCoEvent.pName) (ne $newVal.text $lastCoEvent.event)) }}
-                    {{- if and (ne $newVal.pName $lastCoEvent.pName) (ne $newVal.text $lastCoEvent.event) }}
-                      {{- $differentEventsInDifferentPlatforms = add $differentEventsInDifferentPlatforms 1 }}
+                  {{- if and (and $newVal (eq $newVal.code 3)) (not (in $pushedCoEvents $newVal.text)) }}
+                    {{- $pushedCoEvents = append $newVal.text $pushedCoEvents }}
+                    {{- if not (in $pushedPlatforms $newVal.pName) }}
+                      {{- $pushedPlatforms = append $newVal.pName $pushedPlatforms }}
                     {{- end }}
                     {{- $vaCoEvents = append $newVal $vaCoEvents }}
-                    {{- $lastCoEvent = merge $lastCoEvent (dict "pName" $newVal.pName "event" $newVal.text) }}
+                    {{- $countsPerPlt := 0 }}
+                    {{- with index $coEventsPerPlatform (sha1 $newVal.pName) }}
+                      {{- $countsPerPlt = . }}
+                    {{- end }}
+                    {{- $coEventsPerPlatform = merge $coEventsPerPlatform (dict (sha1 $newVal.pName) (add $countsPerPlt 1)) }}
                   {{- end }}
                 {{- end }}
               {{- end }}
             {{- end }}
           {{- end }}
-          {{- range $ceIdx, $ceVal := $vaCoEvents }}
+          {{- range $vaCoEvents }}
             <tr class="other-info {{cond (eq (mod $idx 2) 0) "even" "odd"}}">
-              {{- if lt $ceIdx $differentEventsInDifferentPlatforms }}
-                {{- if gt $differentEventsInDifferentPlatforms 1 }}
+              {{- if gt (len $pushedPlatforms) 1 }}
               <td class="o-name">{{.pName}}</td>
-                {{- end }}
-              <td class="stat {{if gt $differentEventsInDifferentPlatforms 1 }}show-label{{end}} {{.id}}{{.ab}} {{.ampm}}"><div class="other"></div></td>
-              <td class="desc">{{.text}}</td>
               {{- end }}
+              <td class="stat {{if gt (index $coEventsPerPlatform (sha1 .pName)) 1 }}show-label{{end}} {{.id}}{{.ab}} {{.ampm}}"><div class="other"></div></td>
+              <td class="desc">{{.text}}</td>
             </tr>
           {{- end }}
           <tr class="end-of-row {{cond (eq (mod $idx 2) 0) "even" "odd"}}">
