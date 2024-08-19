@@ -470,7 +470,7 @@ a22_B:
     time: 12:00
     duration: 60
     class: LUNCH
-  - title: All-in-one Risc-V AI Compute Engine for Software Defined Everything
+  - title: All-in-one RISC-V AI Compute Engine for Software Enabled Everything
     time: 13:00
     duration: 15
     speakers:
