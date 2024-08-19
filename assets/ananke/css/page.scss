@@ -661,6 +661,9 @@ body:not(.in-home) {
                                     line-height: 12px;
                                     padding: 3px;
                                 }
+                                &.colspan {
+                                    width: 84px;
+                                }
                                 .check:before, .uncheck:before, .other:before {
                                     content: '';
                                     position: absolute;
@@ -725,34 +728,49 @@ body:not(.in-home) {
                     }
                     td {
                         display: flex;
+                        flex-wrap: wrap;
                         padding: 4px 0;
                         &.o-name {
+                            width: 100%;
                             margin-right: .2em;
+                            +td.stat {
+                                margin-left: 1em;
+                            }
                         }
                         &.stat {
                             width: 60px;
                             margin-right: .2em;
-                        }
-                        &:before {
-                            width: 42px !important;
-                        }
-                        &:after {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            width: 18px;
-                            padding: 4px 0;
-                            font-size: 10px;
-                            line-height: 10px;
-                        }
-                        &.am {
-                            &:after {
-                                content: "AM";
+                            div.other:before {
+                                display: none;
+                                text-align: left;
+                                padding-left: 8px;
                             }
                         }
-                        &.pm {
+                        &.show-label {
+                            &.stat {
+                                div.other:before {
+                                    display: block;
+                                }
+                            }
                             &:after {
-                                content: "PM";
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 18px;
+                                padding: 4px 8px 4px 0;
+                                font-size: 10px;
+                                text-align: right;
+                                line-height: 10px;
+                            }
+                            &.am {
+                                &:after {
+                                    content: "AM";
+                                }
+                            }
+                            &.pm {
+                                &:after {
+                                    content: "PM";
+                                }
                             }
                         }
                     }

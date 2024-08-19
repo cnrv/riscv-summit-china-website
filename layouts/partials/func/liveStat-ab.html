@@ -1,46 +1,23 @@
-{{ $result := "" }}
-{{ $pName := .name }}
-{{ $ampm := .ampm }}
-{{ $ab := .ab }}
-{{ $otherInfo := .otherInfo }}
-
-{{ $checkStr := "<div class='check'></div>" | safeHTML }}
-{{ $uncheckStr := "<div class='uncheck'></div>" | safeHTML }}
-{{ $otherFmt := "<div class='other'>%s</div>" }}
-{{ if $otherInfo }}
-  {{ $checkStr = "" }}
-  {{ $uncheckStr = "" }}
-{{ end }}
+{{ $result := . }} {{/*code: int, classes: string, text: string*/}}
+{{ $params := . }}
 
 {{ with .d }}
-  {{ if eq $ab "a" }}
-    {{ $result = $uncheckStr }}
+  {{ if eq $params.ab "a" }}
     {{ with .a }}
       {{ if eq . true }}
-        {{ $result = $checkStr }}
+        {{ $result = merge $result (dict "code" 1) }}
       {{ else if .other }}
-        {{ if $otherInfo }}
-          {{ $result = (dict "pName" $pName "id" $otherInfo "ab" $ab "ampm" $ampm "msg" .other) }}
-        {{ else }}
-          {{ $result = (printf $otherFmt .other) | safeHTML }}
-        {{ end }}
+        {{ $result = merge $result (dict "code" 3 "text" .other) }}
       {{ end }}
     {{ end }}
-  {{ else if eq $ab "b" }}
-    {{ $result = $uncheckStr }}
+  {{ else if eq $params.ab "b" }}
     {{ with .b }}
       {{ if eq . true}}
-        {{ $result = $checkStr }}
+        {{ $result = merge $result (dict "code" 1) }}
       {{ else if .other }}
-        {{ if $otherInfo }}
-          {{ $result = (dict "pName" $pName "id" $otherInfo "ab" $ab "ampm" $ampm "msg" .other) }}
-        {{ else }}
-          {{ $result = (printf $otherFmt .other) | safeHTML }}
-        {{ end }}
+        {{ $result = merge $result (dict "code" 3 "text" .other) }}
       {{ end }}
     {{ end }}
-  {{ else }}
-    {{ $result = "unknown" }}
   {{ end }}
 {{ end }}
 

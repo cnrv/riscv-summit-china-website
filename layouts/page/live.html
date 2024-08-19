@@ -52,11 +52,14 @@
             {{- with index $val.platforms 0 }}
             <td class="platform" rowspan="2"><a {{with .url}}href="{{.}}"{{end}}>{{.name}}{{if not (or .url .cname)}} ({{i18n "tba1"}}){{end}}</a></td>
             <td class="ampm">{{i18n "am"}}</td>
-            <td class="stat a0821 am">{{ partial "func/liveStat.html" (dict "d" .a0821 "ampm" "am") }}</td>
-            <td class="stat a0822a am">{{ partial "func/liveStat.html" (dict "d" .a0822 "ampm" "am" "ab" "a") }}</td>
-            <td class="stat a0822b am">{{ partial "func/liveStat.html" (dict "d" .a0822 "ampm" "am" "ab" "b") }}</td>
-            <td class="stat a0823a am">{{ partial "func/liveStat.html" (dict "d" .a0823 "ampm" "am" "ab" "a") }}</td>
-            <td class="stat a0823b am">{{ partial "func/liveStat.html" (dict "d" .a0823 "ampm" "am" "ab" "b") }}</td>
+            {{- $va := slice (dict "d" .a0821 "id" "a0821" "ampm" "am" "ab" (slice "")) }}
+            {{- $va = append (dict "d" .a0822 "id" "a0822" "ampm" "am" "ab" (slice "a" "b")) $va }}
+            {{- $va = append (dict "d" .a0823 "id" "a0823" "ampm" "am" "ab" (slice "a" "b")) $va }}
+              {{- range $val := $va }}
+                {{- range $val.ab }}
+                  {{ partial "func/liveStat.html" (merge $val (dict "ab" .)) }}
+                {{- end }}
+              {{- end }}
             {{- end }}
             <td rowspan="{{mul 2 $pltCounts}}">{{.description}}</td>
           </tr>
@@ -64,11 +67,14 @@
             {{/*pm*/}}
             {{- with index $val.platforms 0 }}
             <td class="ampm">{{i18n "pm"}}</td>
-            <td class="stat a0821 pm">{{ partial "func/liveStat.html" (dict "d" .a0821 "ampm" "pm") }}</td>
-            <td class="stat a0822a pm">{{ partial "func/liveStat.html" (dict "d" .a0822 "ampm" "pm" "ab" "a") }}</td>
-            <td class="stat a0822b pm">{{ partial "func/liveStat.html" (dict "d" .a0822 "ampm" "pm" "ab" "b") }}</td>
-            <td class="stat a0823a pm">{{ partial "func/liveStat.html" (dict "d" .a0823 "ampm" "pm" "ab" "a") }}</td>
-            <td class="stat a0823b pm">{{ partial "func/liveStat.html" (dict "d" .a0823 "ampm" "pm" "ab" "b") }}</td>
+            {{- $va := slice (dict "d" .a0821 "id" "a0821" "ampm" "pm" "ab" (slice "")) }}
+            {{- $va = append (dict "d" .a0822 "id" "a0822" "ampm" "pm" "ab" (slice "a" "b")) $va }}
+            {{- $va = append (dict "d" .a0823 "id" "a0823" "ampm" "pm" "ab" (slice "a" "b")) $va }}
+              {{- range $val := $va }}
+                {{- range $val.ab }}
+                  {{ partial "func/liveStat.html" (merge $val (dict "ab" .)) }}
+                {{- end }}
+              {{- end }}
             {{- end }}
           </tr>
           {{- if gt $pltCounts 1 }}
@@ -77,20 +83,26 @@
             <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
               <td class="platform" rowspan="2"><a {{with $value.url}}href="{{.}}"{{end}}>{{$value.name}}{{if not (or $value.url $value.cname)}} ({{i18n "tba1"}}){{end}}</a></td>
               <td class="ampm">{{i18n "am"}}</td>
-              <td class="stat a0821 am">{{ partial "func/liveStat.html" (dict "d" $value.a0821 "ampm" "am") }}</td>
-              <td class="stat a0822a am">{{ partial "func/liveStat.html" (dict "d" $value.a0822 "ampm" "am" "ab" "a") }}</td>
-              <td class="stat a0822b am">{{ partial "func/liveStat.html" (dict "d" $value.a0822 "ampm" "am" "ab" "b") }}</td>
-              <td class="stat a0823a am">{{ partial "func/liveStat.html" (dict "d" $value.a0823 "ampm" "am" "ab" "a") }}</td>
-              <td class="stat a0823b am">{{ partial "func/liveStat.html" (dict "d" $value.a0823 "ampm" "am" "ab" "b") }}</td>
+              {{- $va := slice (dict "d" $value.a0821 "id" "a0821" "ampm" "am" "ab" (slice "")) }}
+              {{- $va = append (dict "d" $value.a0822 "id" "a0822" "ampm" "am" "ab" (slice "a" "b")) $va }}
+              {{- $va = append (dict "d" $value.a0823 "id" "a0823" "ampm" "am" "ab" (slice "a" "b")) $va }}
+                {{- range $val := $va }}
+                  {{- range $val.ab }}
+                    {{ partial "func/liveStat.html" (merge $val (dict "ab" .)) }}
+                  {{- end }}
+                {{- end }}
             </tr>
             <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
               {{/*pm*/}}
               <td class="ampm">{{i18n "pm"}}</td>
-              <td class="stat a0821 pm">{{ partial "func/liveStat.html" (dict "d" $value.a0821 "ampm" "pm") }}</td>
-              <td class="stat a0822a pm">{{ partial "func/liveStat.html" (dict "d" $value.a0822 "ampm" "pm" "ab" "a") }}</td>
-              <td class="stat a0822b pm">{{ partial "func/liveStat.html" (dict "d" $value.a0822 "ampm" "pm" "ab" "b") }}</td>
-              <td class="stat a0823a pm">{{ partial "func/liveStat.html" (dict "d" $value.a0823 "ampm" "pm" "ab" "a") }}</td>
-              <td class="stat a0823b pm">{{ partial "func/liveStat.html" (dict "d" $value.a0823 "ampm" "pm" "ab" "b") }}</td>
+              {{- $va := slice (dict "d" $value.a0821 "id" "a0821" "ampm" "pm" "ab" (slice "")) }}
+              {{- $va = append (dict "d" $value.a0822 "id" "a0822" "ampm" "pm" "ab" (slice "a" "b")) $va }}
+              {{- $va = append (dict "d" $value.a0823 "id" "a0823" "ampm" "pm" "ab" (slice "a" "b")) $va }}
+                {{- range $val := $va }}
+                  {{- range $val.ab }}
+                    {{ partial "func/liveStat.html" (merge $val (dict "ab" .)) }}
+                  {{- end }}
+                {{- end }}
             </tr>
             {{- end }}
             {{- end }}
@@ -99,42 +111,38 @@
             <td></td>
           </tr>
           {{/*for mobile*/}}
-          {{- $coEvents := slice }}
-          {{- $lastCoE := "" }}
-          {{- $allTheSame := true }}
+          {{- $vaCoEvents := slice }}
+          {{- $differentEventsInDifferentPlatforms := 0 }}
+          {{- $lastCoEvent := dict "pName" "" "event" "" }}
           {{- range $val.platforms }}
-            {{- range $dd := slice (dict "name" .name "d" .a0821 "id" "a0821") (dict "name" .name "d" .a0822 "id" "a0822") (dict "name" .name "d" .a0823 "id" "a0823")}}
-              {{- range $ab := slice "a" "b" }}
-                {{- range $ampm := slice "am" "pm" }}
-                  {{- $dic := (partial "func/liveStat.html" (dict "name" $dd.name "d" $dd.d "otherInfo" $dd.id "ampm" $ampm "ab" (cond (eq $dd.id "a0821") "" $ab)) ) }}
-                  {{- if not (eq $dic "") }}
-                    {{- if not (eq $dic.msg $lastCoE) }}
-                      {{- if not (eq $lastCoE "") }}
-                        {{- $allTheSame = false }}
-                      {{- end }}
-                      {{- $lastCoE = $dic.msg }}
+            {{- $va := slice (dict "dataOnly" true "pName" .name "d" .a0821 "id" "a0821" "ampm" (slice "am" "pm") "ab" (slice "")) }}
+            {{- $va = append (dict "dataOnly" true "pName" .name "d" .a0822 "id" "a0822" "ampm" (slice "am" "pm") "ab" (slice "a" "b")) $va }}
+            {{- $va = append (dict "dataOnly" true "pName" .name "d" .a0823 "id" "a0823" "ampm" (slice "am" "pm") "ab" (slice "a" "b")) $va }}
+            {{- range $val := $va }}
+              {{- range $ampm := $val.ampm }}
+                {{- range $val.ab }}
+                  {{- $newVal := partial "func/liveStat.html" (merge $val (dict "ab" . "ampm" $ampm)) }}
+                  {{- if and (and $newVal (eq $newVal.code 3)) (or (ne $newVal.pName $lastCoEvent.pName) (ne $newVal.text $lastCoEvent.event)) }}
+                    {{- if and (ne $newVal.pName $lastCoEvent.pName) (ne $newVal.text $lastCoEvent.event) }}
+                      {{- $differentEventsInDifferentPlatforms = add $differentEventsInDifferentPlatforms 1 }}
                     {{- end }}
-                    {{- $coEvents = append $dic $coEvents }}
+                    {{- $vaCoEvents = append $newVal $vaCoEvents }}
+                    {{- $lastCoEvent = merge $lastCoEvent (dict "pName" $newVal.pName "event" $newVal.text) }}
                   {{- end }}
                 {{- end }}
               {{- end }}
             {{- end }}
           {{- end }}
-          {{- if $allTheSame }}
-            {{- with index $coEvents 0}}
-              <tr class="other-info {{cond (eq (mod $idx 2) 0) "even" "odd"}}">
-                <td class="stat"><div class="other"></div></td>
-                <td class="desc">{{.msg}}</td>
-              </tr>
-            {{- end }}
-          {{- else }}
-            {{- range $coEvents }}
-              <tr class="other-info {{cond (eq (mod $idx 2) 0) "even" "odd"}}">
-                <td class="o-name">{{.pName}}</td>
-                <td class="stat {{.id}}{{.ab}} {{.ampm}}"><div class="other"></div></td>
-                <td class="desc">{{.msg}}</td>
-              </tr>
-            {{- end }}
+          {{- range $ceIdx, $ceVal := $vaCoEvents }}
+            <tr class="other-info {{cond (eq (mod $idx 2) 0) "even" "odd"}}">
+              {{- if lt $ceIdx $differentEventsInDifferentPlatforms }}
+                {{- if gt $differentEventsInDifferentPlatforms 1 }}
+              <td class="o-name">{{.pName}}</td>
+                {{- end }}
+              <td class="stat {{if gt $differentEventsInDifferentPlatforms 1 }}show-label{{end}} {{.id}}{{.ab}} {{.ampm}}"><div class="other"></div></td>
+              <td class="desc">{{.text}}</td>
+              {{- end }}
+            </tr>
           {{- end }}
           <tr class="end-of-row {{cond (eq (mod $idx 2) 0) "even" "odd"}}">
             <td></td>

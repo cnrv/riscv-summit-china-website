@@ -1,50 +1,27 @@
-{{ $result := "" }}
-{{ $pName := .name }}
-{{ $ampm := .ampm }}
-{{ $ab := .ab }}
-{{ $otherInfo := .otherInfo }}
-
-{{ $checkStr := "<div class='check'></div>" | safeHTML }}
-{{ $uncheckStr := "<div class='uncheck'></div>" | safeHTML }}
-{{ $otherFmt := "<div class='other'>%s</div>" }}
-{{ if $otherInfo }}
-  {{ $checkStr = "" }}
-  {{ $uncheckStr = "" }}
-{{ end }}
+{{ $result := . }} {{/*code: int, classes: string, text: string*/}}
+{{ $params := . }}
 
 {{ with .d }}
-  {{ if eq $ampm "am" }}
-    {{ $result = $uncheckStr }}
+  {{ if eq $params.ampm "am" }}
     {{ with .am }}
       {{ if eq . true }}
-        {{ $result = $checkStr }}
+        {{ $result = merge $result (dict "code" 1) }}
       {{ else if .other }}
-        {{ if $otherInfo }}
-          {{ $result = (dict "pName" $pName "id" $otherInfo "ab" $ab "ampm" $ampm "msg" .other) }}
-        {{ else }}
-          {{ $result = (printf $otherFmt .other) | safeHTML }}
-        {{ end }}
+        {{ $result = merge $result (dict "code" 3 "text" .other) }}
       {{ else if or .a .b }}
-        {{ $result = (partial "func/liveStat-ab.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
+        {{ $result = merge $result (partial "func/liveStat-ab.html" (merge $params (dict "d" .))) }}
       {{ end }}
     {{ end }}
-  {{ else if eq $ampm "pm" }}
-    {{ $result = $uncheckStr }}
+  {{ else if eq $params.ampm "pm" }}
     {{ with .pm }}
       {{ if eq . true }}
-        {{ $result = $checkStr }}
+        {{ $result = merge $result (dict "code" 1) }}
       {{ else if .other }}
-        {{ if $otherInfo }}
-          {{ $result = (dict "pName" $pName "id" $otherInfo "ab" $ab "ampm" $ampm "msg" .other) }}
-        {{ else }}
-          {{ $result = (printf $otherFmt .other) | safeHTML }}
-        {{ end }}
+        {{ $result = merge $result (dict "code" 3 "text" .other) }}
       {{ else if or .a .b }}
-        {{ $result = (partial "func/liveStat-ab.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
+        {{ $result = merge $result (partial "func/liveStat-ab.html" (merge $params (dict "d" .))) }}
       {{ end }}
     {{ end }}
-  {{ else }}
-    {{ $result = "unknown" }}
   {{ end }}
 {{ end }}
 
