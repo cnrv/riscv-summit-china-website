@@ -66,8 +66,6 @@ defaultContentLanguageInSubdir = false
       [[languages.zh.params.banners]]
         id   = 1
         text = '欢迎参加 RISC-V 中国峰会 2024'
-        link = 'https://www.wenjuan.com/t/UZBZJvFH93/'
-        link_text = '报名链接'
     [languages.zh.menu]
       [[languages.zh.menu.main]]
         name = "主页"
@@ -142,8 +140,6 @@ defaultContentLanguageInSubdir = false
       [[languages.en.params.banners]]
         id   = 1
         text = 'Welcome to attend RISC-V Summit China 2024'
-        link = 'https://www.wenjuan.com/s/bQzaYrS/'
-        link_text = 'Registration link'
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "Home"
