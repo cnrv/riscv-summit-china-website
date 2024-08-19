@@ -94,13 +94,28 @@ methods:
       - name: WeChat Channel
         cname: RISCV国际人才培养认证中心
         a0821: true
-        a0822: true
-        a0823: true
+        a0822:
+          separatedMethod: ampmab
+          am:
+            other: RISC-V+AI 国际人才暨开源技术与生态论坛
+          pm:
+            a: true
+            b: false
+        a0823:
+          separatedMethod: ab
+          a: false
+          b: true
       - name: bilibili Live
         url: "https://live.bilibili.com/32321180"
         a0821: true
-        a0822: true
-        a0823: true
+        a0822:
+          separatedMethod: ab
+          a: true
+          b: false
+        a0823:
+          separatedMethod: ab
+          a: false
+          b: true
     mobile_only: false
   - name: CRVA 广东省中心
     platforms:
@@ -158,7 +173,6 @@ methods:
           separatedMethod: ab
           a: true
           b: false
-
 ---
 
 The live broadcast schedule is subject to change, please check this page for updates.
