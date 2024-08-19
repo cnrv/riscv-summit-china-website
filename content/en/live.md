@@ -68,6 +68,7 @@ methods:
   - name: 中科厦门研究院
     platforms:
       - name: bilibili Live
+        url: "https://live.bilibili.com/23913668"
         a0821: true
         a0822: true
         a0823: true
