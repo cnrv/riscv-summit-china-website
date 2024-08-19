@@ -20,6 +20,7 @@ methods:
   - name: 半导体行业观察
     platforms:
       - name: WeChat Channel
+        cname: 半导体行业观察
         a0821: true
         a0822:
           separatedMethod: ab
@@ -30,9 +31,10 @@ methods:
           a: true
           b: false
     mobile_only: false
-  - name: 开源芯片研究院
+  - name: 北京开源芯片研究院
     platforms:
       - name: WeChat Channel
+        cname: 北京开源芯片研究院
         a0821: true
         a0822:
           separatedMethod: ampm
@@ -53,6 +55,7 @@ methods:
   - name: 厦门市开源芯片产业促进会
     platforms:
       - name: WeChat Channel
+        cname: 厦门市开源芯片产业促进会
         a0821:
           separatedMethod: ampm
           am: true
@@ -81,6 +84,7 @@ methods:
         a0822: true
         a0823: true
       - name: WeChat Channel
+        cname: 电子发烧友论坛
         a0821: true
         a0822: true
         a0823: true
@@ -88,6 +92,7 @@ methods:
   - name: RISC-V 国际人才培养认证中心
     platforms:
       - name: WeChat Channel
+        cname: RISCV国际人才培养认证中心
         a0821: true
         a0822: true
         a0823: true
@@ -100,6 +105,7 @@ methods:
   - name: CRVA 广东中心
     platforms:
       - name: WeChat Channel
+        cname: CRVA广东省中心
         a0821: true
         a0822: true
         a0823: true

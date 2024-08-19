@@ -50,7 +50,7 @@
           <tr class="pri {{cond (eq (mod $idx 2) 0) "even" "odd"}}">
             <td class="name" rowspan="{{mul 2 $pltCounts}}">{{.name}}</td>
             {{- with index $val.platforms 0 }}
-            <td class="platform" rowspan="2"><a {{with .url}}href="{{.}}"{{end}}>{{.name}}{{if not .url}} ({{i18n "tba1"}}){{end}}</a></td>
+            <td class="platform" rowspan="2"><a {{with .url}}href="{{.}}"{{end}}>{{.name}}{{if not (or .url .cname)}} ({{i18n "tba1"}}){{end}}</a></td>
             <td class="ampm">{{i18n "am"}}</td>
             <td class="stat a0821 am">{{ partial "func/liveStat.html" (dict "d" .a0821 "ampm" "am") }}</td>
             <td class="stat a0822a am">{{ partial "func/liveStat.html" (dict "d" .a0822 "ampm" "am" "ab" "a") }}</td>
@@ -75,7 +75,7 @@
             {{- range $index, $value := $val.platforms }}
             {{- if gt $index 0 }}
             <tr class="{{cond (eq (mod $idx 2) 0) "even" "odd"}}">
-              <td class="platform" rowspan="2"><a {{with $value.url}}href="{{.}}"{{end}}>{{$value.name}}{{if not $value.url}} ({{i18n "tba1"}}){{end}}</a></td>
+              <td class="platform" rowspan="2"><a {{with $value.url}}href="{{.}}"{{end}}>{{$value.name}}{{if not (or $value.url $value.cname)}} ({{i18n "tba1"}}){{end}}</a></td>
               <td class="ampm">{{i18n "am"}}</td>
               <td class="stat a0821 am">{{ partial "func/liveStat.html" (dict "d" $value.a0821 "ampm" "am") }}</td>
               <td class="stat a0822a am">{{ partial "func/liveStat.html" (dict "d" $value.a0822 "ampm" "am" "ab" "a") }}</td>
