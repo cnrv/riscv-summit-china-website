@@ -91,6 +91,7 @@ methods:
         a0822: true
         a0823: true
       - name: bilibili 直播
+        url: "https://live.bilibili.com/32321180"
         a0821: true
         a0822: true
         a0823: true
