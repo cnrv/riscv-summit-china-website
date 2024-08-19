@@ -24,8 +24,6 @@
         {{ else }}
           {{ $result = (printf $otherFmt .other) | safeHTML }}
         {{ end }}
-      {{ else if or .am .pm }}
-        {{ $result = (partial "func/liveStat-ampm.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
       {{ end }}
     {{ end }}
   {{ else if eq $ab "b" }}
@@ -39,8 +37,6 @@
         {{ else }}
           {{ $result = (printf $otherFmt .other) | safeHTML }}
         {{ end }}
-      {{ else if or .am .pm }}
-        {{ $result = (partial "func/liveStat-ampm.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
       {{ end }}
     {{ end }}
   {{ else }}

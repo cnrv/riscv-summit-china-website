@@ -17,8 +17,8 @@
       {{ $result = (partial "func/liveStat-ampm.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
     {{ else if eq .separatedMethod "ab" }}
       {{ $result = (partial "func/liveStat-ab.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
-    {{ else if eq .separatedMethod "abampm" }}
-      {{ $result = (partial "func/liveStat-ab.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
+    {{ else if eq .separatedMethod "ampmab" }}
+      {{ $result = (partial "func/liveStat-ampm.html" (dict "name" $pName "d" . "ampm" $ampm "ab" $ab "otherInfo" $otherInfo))}}
     {{ else }}
       {{ $result = "unknown" }}
     {{ end }}

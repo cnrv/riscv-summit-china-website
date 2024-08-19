@@ -94,21 +94,42 @@ methods:
       - name: 微信视频号
         cname: RISCV国际人才培养认证中心
         a0821: true
-        a0822: true
-        a0823: true
+        a0822:
+          separatedMethod: ampmab
+          am:
+            other: RISC-V+AI 国际人才暨开源技术与生态论坛
+          pm:
+            a: true
+            b: false
+        a0823:
+          separatedMethod: ab
+          a: false
+          b: true
       - name: bilibili 直播
         url: "https://live.bilibili.com/32321180"
         a0821: true
-        a0822: true
-        a0823: true
+        a0822:
+          separatedMethod: ab
+          a: true
+          b: false
+        a0823:
+          separatedMethod: ab
+          a: false
+          b: true
     mobile_only: false
-  - name: CRVA 广东中心
+  - name: CRVA 广东省中心
     platforms:
       - name: 微信视频号
         cname: CRVA广东省中心
         a0821: true
-        a0822: true
-        a0823: true
+        a0822:
+          separatedMethod: ab
+          a: false
+          b: true
+        a0823:
+          separatedMethod: ab
+          a: true
+          b: false
     mobile_only: false
   - name: C114 通信网
     platforms:

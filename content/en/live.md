@@ -102,13 +102,19 @@ methods:
         a0822: true
         a0823: true
     mobile_only: false
-  - name: CRVA 广东中心
+  - name: CRVA 广东省中心
     platforms:
       - name: WeChat Channel
         cname: CRVA广东省中心
         a0821: true
-        a0822: true
-        a0823: true
+        a0822:
+          separatedMethod: ab
+          a: false
+          b: true
+        a0823:
+          separatedMethod: ab
+          a: true
+          b: false
     mobile_only: false
   - name: C114 通信网
     platforms:

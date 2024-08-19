@@ -661,11 +661,12 @@ body:not(.in-home) {
                                     line-height: 12px;
                                     padding: 3px;
                                 }
-                                &.a0821:before, &.a0822a:before, &.a0822b:before, &.a0823a:before, &.a0823b:before {
-                                    content: "8/21";
+                                .check:before, .uncheck:before, .other:before {
+                                    content: '';
                                     position: absolute;
                                     width: 100%;
                                     height: 100%;
+                                    color: $fontColorDark;
                                     box-sizing: border-box;
                                     padding: 4px 0;
                                     font-size: 10px;
@@ -675,17 +676,29 @@ body:not(.in-home) {
                                     top: 0;
                                     left: 0;
                                 }
-                                &.a0822a:before {
+                                &.a0821 .check:before, &.a0821 .uncheck:before {
+                                    content: "8/21";
+                                }
+                                &.a0821 .other:before {
+                                    content: "8/21";
+                                }
+                                &.a0822a .check:before, &.a0822a .uncheck:before {
                                     content: "8/22A";
                                 }
-                                &.a0822b:before {
+                                &.a0822b .check:before, &.a0822b .uncheck:before {
                                     content: "8/22B";
                                 }
-                                &.a0823a:before {
+                                &.a0822a .other:before, &.a0822b .other:before {
+                                    content: "8/22";
+                                }
+                                &.a0823a .check:before, &.a0823a .uncheck:before {
                                     content: "8/23A";
                                 }
-                                &.a0823b:before {
+                                &.a0823b .check:before, &.a0823b .uncheck:before {
                                     content: "8/23B";
+                                }
+                                &.a0823a .other:before, &.a0823b .other:before {
+                                    content: "8/23";
                                 }
                                 .other {
                                     color: transparent;
