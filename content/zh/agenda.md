@@ -23,9 +23,12 @@ a21:
     speakers:
       - name: Prof. Krste Asanović
         title: SiFive 联合创始人兼首席架构师
-  - title: Keynote - 达摩院
+  - title: 构筑技术能力，拓展 RISC-V 应用新边界
     time: 10:10
     duration: 20
+    speakers:
+      - name: 戚肖宁
+        title: 阿里巴巴集团副总裁
   - title: 推动 RISC-V 产业升级，携手共筑 RDI 新生态
     time: 10:30
     duration: 20
