@@ -126,6 +126,32 @@ methods:
         a0821: true
         a0822: true
         a0823: true
+  - name: AEIC 学术交流中心
+    platforms:
+      - name: 微信视频号
+        cname: AEIC 学术交流中心
+        a0821: true
+        a0822:
+          separatedMethod: ab
+          a: false
+          b: true
+        a0823:
+          separatedMethod: ab
+          a: false
+          b: true
+  - name: 艾思科蓝
+    platforms:
+      - name: 微信视频号
+        cname: 艾思科蓝
+        a0821: true
+        a0822:
+          separatedMethod: ab
+          a: true
+          b: false
+        a0823:
+          separatedMethod: ab
+          a: true
+          b: false
 ---
 
 直播时间安排可能存在变动，请关注本页面获取最新状态。

@@ -126,6 +126,33 @@ methods:
         a0821: true
         a0822: true
         a0823: true
+  - name: AEIC 学术交流中心
+    platforms:
+      - name: WeChat Channel
+        cname: AEIC 学术交流中心
+        a0821: true
+        a0822:
+          separatedMethod: ab
+          a: false
+          b: true
+        a0823:
+          separatedMethod: ab
+          a: false
+          b: true
+  - name: 艾思科蓝
+    platforms:
+      - name: WeChat Channel
+        cname: 艾思科蓝
+        a0821: true
+        a0822:
+          separatedMethod: ab
+          a: true
+          b: false
+        a0823:
+          separatedMethod: ab
+          a: true
+          b: false
+
 ---
 
 The live broadcast schedule is subject to change, please check this page for updates.
