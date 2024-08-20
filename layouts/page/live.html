@@ -15,13 +15,16 @@
     </div>
     <div class="symbol-info">
       <div class="row">
-      <div class="symbol check"></div><div>{{i18n "live_check_desc"}}</div>
+        <div class="symbol check"></div><div>{{i18n "live_check_desc"}}</div>
       </div>
       <div class="row">
-      <div class="symbol uncheck"></div><div>{{i18n "live_uncheck_desc"}}</div>
+        <div class="symbol uncheck"></div><div>{{i18n "live_uncheck_desc"}}</div>
       </div>
       <div class="row">
-      <div class="symbol other"></div><div>{{i18n "live_other_desc"}}</div>
+        <div class="symbol other"></div><div>{{i18n "live_other_desc"}}</div>
+      </div>
+      <div class="row">
+        <div class="symbol other other-spec"></div><div>{{i18n "live_other_spec_desc"}}</div>
       </div>
     </div>
     <table>
@@ -114,6 +117,7 @@
           {{- $vaCoEvents := slice }}
           {{- $pushedPlatforms := slice }}
           {{- $pushedCoEvents := slice }}
+          {{- $pushedSpecDurations := slice }}
           {{- $coEventsPerPlatform := dict }}
           {{- range $val.platforms }}
             {{- $va := slice (dict "dataOnly" true "pName" .name "d" .a0821 "id" "a0821" "ampm" (slice "am" "pm") "ab" (slice "")) }}
@@ -123,8 +127,11 @@
               {{- range $ampm := $val.ampm }}
                 {{- range $val.ab }}
                   {{- $newVal := partial "func/liveStat.html" (merge $val (dict "ab" . "ampm" $ampm)) }}
-                  {{- if and (and $newVal (eq $newVal.code 3)) (not (in $pushedCoEvents $newVal.text)) }}
+                  {{- if and (and $newVal (or (eq $newVal.code 3) (eq $newVal.code 4))) (not (in $pushedCoEvents $newVal.text)) }}
                     {{- $pushedCoEvents = append $newVal.text $pushedCoEvents }}
+                    {{- if not (in $pushedSpecDurations $newVal.text) }}
+                      {{- $pushedSpecDurations = append $newVal.text $pushedSpecDurations }}
+                    {{- end }}
                     {{- if not (in $pushedPlatforms $newVal.pName) }}
                       {{- $pushedPlatforms = append $newVal.pName $pushedPlatforms }}
                     {{- end }}
@@ -144,7 +151,7 @@
               {{- if gt (len $pushedPlatforms) 1 }}
               <td class="o-name">{{.pName}}</td>
               {{- end }}
-              <td class="stat {{if gt (index $coEventsPerPlatform (sha1 .pName)) 1 }}show-label{{end}} {{.id}}{{.ab}} {{.ampm}}"><div class="other"></div></td>
+              <td class="stat {{if gt (index $coEventsPerPlatform (sha1 .pName)) 1 }}show-label{{end}} {{.id}}{{.ab}} {{.ampm}}"><div class="other {{if eq .code 4}}other-spec{{end}}"></div></td>
               <td class="desc">{{.text}}</td>
             </tr>
           {{- end }}

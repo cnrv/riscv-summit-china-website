@@ -147,6 +147,18 @@ methods:
         a0821: true
         a0822: true
         a0823: true
+  - name: XuanTie 玄铁
+    mobile_only: false
+    platforms:
+      - name: 微信视频号
+        cname: XuanTie玄铁
+        a0821:
+          separatedMethod: ampmspec
+          am:
+            other: "10:10 - 10:30"
+          pm: false
+        a0822: false
+        a0823: false
   - name: AEIC 学术交流中心
     platforms:
       - name: 微信视频号

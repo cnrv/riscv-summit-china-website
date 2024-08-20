@@ -565,6 +565,9 @@ body:not(.in-home) {
         }
         div.other {
             background: #bde6f0;
+            &.other-spec {
+                background: #fbcd69;
+            }
         }
         div.check {
             background: #2cd67f;

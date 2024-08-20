@@ -5,12 +5,14 @@
 {{ $checkStrFmt := "<td class='%s'><div class='check'></div></td>" }} {{/*result.code: 1*/}}
 {{ $uncheckStrFmt := "<td class='%s'><div class='uncheck'></div></td>" }} {{/*result.code: 2*/}}
 {{ $otherFmt := "<td colspan='%d' class='%s'><div class='other'>%s</div></td>" }} {{/*result.code: 3*/}}
+{{ $otherSpecFmt := "<td class='%s'><div class='other other-spec'>%s</div></td>" }} {{/*result.code: 4*/}}
 {{ $defaultClass := "stat" }}
 
 {{ if eq .d true }}
   {{ $result = merge $result (dict "code" 1) }}
 {{ else }}
   {{ $result = merge $result (dict "code" 2) }}
+  {{ $params = merge $params (dict "codeForOther" 3) }}
   {{ with .d }}
     {{ if eq .separatedMethod "ampm" }}
       {{ $result = merge $result (partial "func/liveStat-ampm.html" $params) }}
@@ -18,6 +20,8 @@
       {{ $result = merge $result (partial "func/liveStat-ab.html" $params) }}
     {{ else if eq .separatedMethod "ampmab" }}
       {{ $result = merge $result (partial "func/liveStat-ampm.html" $params) }}
+    {{ else if eq .separatedMethod "ampmspec" }}
+      {{ $result = merge $result (partial "func/liveStat-ampm.html" (merge $params (dict "codeForOther" 4))) }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -38,6 +42,8 @@
   {{ else }}
     {{ $resultStr = "" }}
   {{ end }}
+{{ else if eq $result.code 4 }}
+  {{ $resultStr = printf $otherSpecFmt (printf "%s %s%s %s" $defaultClass $result.id $result.ab $result.ampm) $result.text | safeHTML }}
 {{ else }}
   {{ $resultStr = printf "<td class='%s'>unknown</td>" $defaultClass | safeHTML }}
 {{ end }}

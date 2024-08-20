@@ -7,7 +7,7 @@
       {{ if eq . true }}
         {{ $result = merge $result (dict "code" 1) }}
       {{ else if .other }}
-        {{ $result = merge $result (dict "code" 3 "text" .other) }}
+        {{ $result = merge $result (dict "code" $params.codeForOther "text" .other) }}
       {{ end }}
     {{ end }}
   {{ else if eq $params.ab "b" }}
@@ -15,7 +15,7 @@
       {{ if eq . true}}
         {{ $result = merge $result (dict "code" 1) }}
       {{ else if .other }}
-        {{ $result = merge $result (dict "code" 3 "text" .other) }}
+        {{ $result = merge $result (dict "code" $params.codeForOther "text" .other) }}
       {{ end }}
     {{ end }}
   {{ end }}

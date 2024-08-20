@@ -7,7 +7,7 @@
       {{ if eq . true }}
         {{ $result = merge $result (dict "code" 1) }}
       {{ else if .other }}
-        {{ $result = merge $result (dict "code" 3 "text" .other) }}
+        {{ $result = merge $result (dict "code" $params.codeForOther "text" .other) }}
       {{ else if or .a .b }}
         {{ $result = merge $result (partial "func/liveStat-ab.html" (merge $params (dict "d" .))) }}
       {{ end }}
@@ -17,7 +17,7 @@
       {{ if eq . true }}
         {{ $result = merge $result (dict "code" 1) }}
       {{ else if .other }}
-        {{ $result = merge $result (dict "code" 3 "text" .other) }}
+        {{ $result = merge $result (dict "code" $params.codeForOther "text" .other) }}
       {{ else if or .a .b }}
         {{ $result = merge $result (partial "func/liveStat-ab.html" (merge $params (dict "d" .))) }}
       {{ end }}

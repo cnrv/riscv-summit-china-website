@@ -103,6 +103,9 @@ other = "无直播"
 [live_other_desc]
 other = "相应同期活动直播"
 
+[live_other_spec_desc]
+other = "特定时间段的直播"
+
 [am]
 other = "上午"
 
