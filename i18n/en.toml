@@ -104,7 +104,7 @@ other = "No streaming"
 other = "Co-events streaming"
 
 [live_other_spec_desc]
-other = "Streaming on specified duration"
+other = "Streaming in a specified time"
 
 [am]
 other = "a.m."
