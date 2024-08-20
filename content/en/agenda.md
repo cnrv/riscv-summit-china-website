@@ -12,11 +12,12 @@ a21:
   - title: 领导致辞、院士致辞、主席致辞
     time: 09:00
     duration: 30
-  - title: RVI keynote
+  - title: RISC-V opportunity, innovation, and collaboration igniting adoption
     time: 09:30
     duration: 20
     speakers:
       - name: Calista Redmond
+        title: CEO, RISC-V International
   - title: RISC-V is Growing Rapidly--Everywhere
     time: 09:50
     duration: 20
