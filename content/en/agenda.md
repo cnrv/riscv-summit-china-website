@@ -54,11 +54,22 @@ a21:
     speakers:
       - name: 胡振波
         title: 芯来科技创始人
-  - title: 圆桌讨论
+  - title: 圆桌讨论：如何让 RISC-V 企业赚钱？
     time: 11:50
     duration: 40
     speakers:
+      - name: 戴伟民
+        title: 芯原微電子董事长兼总裁
+      - name: 武延军
+        title: 中国科学院软件所副所长、总工
+      - name: 孟建熠
+        title: 知合计算 CEO
+      - name: 何宁
+        title: 奕斯伟计算高级副总裁、CTO
+      - name: 孙彦邦
+        title: 进迭时空创始人、总裁
       - name: 包云岗
+        title: 北京开源芯片研究院首席科学家（主持人）
   - title: 午餐、展区
     time: 12:30
     duration: 70
