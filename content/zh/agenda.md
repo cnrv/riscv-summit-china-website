@@ -161,6 +161,10 @@ a21:
       - name: 柯一冉
         title: 深圳市群芯闪耀科技有限公司 (Milk-V)，副总裁
 a22_A:
+  - title: 签到
+    time: 08:30
+    duration: 20
+    class: SE
   - title: 发挥标准引领优势，共促产业生态繁荣
     time: 08:50
     duration: 10
@@ -380,6 +384,10 @@ a22_A:
       - name: 赵正朋
         title: 兆松科技（武汉）有限公司，软件开发工程师
 a22_B:
+  - title: 签到
+    time: 08:30
+    duration: 30
+    class: SE
   - title: 香山 RISC-V 服务器 IP 现状和路线图
     time: 09:00
     duration: 20
@@ -621,6 +629,10 @@ a22_B:
       - name: 李天正
         title: 中国电信研究院，RISC-V 指令集研究员
 a23_A:
+  - title: 签到
+    time: 08:30
+    duration: 30
+    class: SE
   - title: OpenJDK on RISC-V Update
     time: 09:00
     duration: 20
@@ -825,6 +837,10 @@ a23_A:
       - name: 何若轻
         title: 中国科学院软件研究所，工程师
 a23_B:
+  - title: 签到
+    time: 08:30
+    duration: 30
+    class: SE
   - title: 可抵御缓存侧信道攻击的随机化缓存设计
     time: 09:00
     duration: 20
