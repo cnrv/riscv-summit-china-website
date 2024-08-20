@@ -84,12 +84,12 @@ a21:
     speakers:
       - name: 刚至坚
         title: SiFive 全球商务资深副总裁
-  - title: Accelerating SoC Innovation with Synopsys RISC-V Solutions
+  - title: 新思科技 RISC-V 整体解决方案加速芯片创新
     time: 14:55
     duration: 15
     speakers:
-      - name: James NG
-        title: Executive Director
+      - name: 黄宗杰
+        title: 新思科技应用工程执行总监
   - title: RISC-V for Intelligent Edge Application Processing
     time: 15:10
     duration: 15

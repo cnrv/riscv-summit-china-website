@@ -89,7 +89,7 @@ a21:
     duration: 15
     speakers:
       - name: James NG
-        title: Executive Director
+        title: Executive Director, Synopsys
   - title: RISC-V for Intelligent Edge Application Processing
     time: 15:10
     duration: 15
