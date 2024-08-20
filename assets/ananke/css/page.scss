@@ -95,6 +95,10 @@ body:not(.in-home) {
                     border-top-left-radius: 1.2em;
                     border-top-right-radius: 0.5em;
                     border-bottom-right-radius: 0.2em;
+                    @media all and (max-width: 960px) {
+                        border-top-right-radius: 1.2em;
+                        border-bottom-right-radius: 1.2em;
+                    }
                     a {
                         opacity: 0.6;
                         transition-property: opacity;
@@ -139,7 +143,7 @@ body:not(.in-home) {
                     &#link-POSTER {
                         background-color: $primaryColor;
                     }
-                    span {
+                    >span {
                         font-weight: bold;
                         &:nth-of-type(2) {
                             &:before {
@@ -158,11 +162,17 @@ body:not(.in-home) {
                 }
                 @media all and (max-width: 960px) {
                     // TODO
-                    display: none;
-                    flex-direction: column;
-                    >span {
-                    }
+                    // Workaround
+                    max-width: 100%;
+                    font-size: 12px;
+                    line-height: 12px;
                     a {
+                        display: flex;
+                        padding: 6px 10px;
+                        &:first-of-type {
+                            padding-left: 18px;
+                        }
+                        /*
                         border-left: none;
                         border-top: 0.5px solid #FFFFFFA0;
                         &:last-of-type {
@@ -179,6 +189,54 @@ body:not(.in-home) {
                             border-bottom-left-radius: 0;
                         }
                         border-bottom: 0.5px solid #F1F1F1;
+                        */
+                        >span {
+                            margin: 0 auto;
+                            font-family: monospace;
+                            display: block;
+                            height: 12px;
+                            width: 30px;
+                            overflow: hidden;
+                        }
+                        >span:last-of-type {
+                            display: none;
+                            color: transparent;
+                            width: fit-content;
+                            >span {
+                                display: none;
+                            }
+                            &:before {
+                                display: none;
+                            }
+                        }
+                        >span.A, >span.B {
+                            display: block;
+                            flex-wrap: nowrap;
+                            &:before {
+                                color: white;
+                                display: inline-block;
+                                margin: 0;
+                                padding: 0 0 0 3px;
+                            }
+                        }
+                        >span.A {
+                            &:before {
+                                content: "A";
+                            }
+                        }
+                        >span.B {
+                            &:before {
+                                content: "B";
+                            }
+                        }
+                        &#link-POSTER {
+                            display: none;
+                        }
+                        &#link-A0823b {
+                            border-top-right-radius: 1.2em;
+                            border-bottom-right-radius: 1.2em;
+                            padding-right: 18px;
+                        }
                     }
                 }
             }

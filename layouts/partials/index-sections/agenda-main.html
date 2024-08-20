@@ -17,7 +17,7 @@
       <div id="agenda-toc">
         <span></span>
         {{- range $agendaData }}
-        <a id="link-{{.id}}" href="#{{.id}}"><span>{{.titlePrefix}}</span><span class="{{.titlePrefixSub}}">{{.titlePlace}}</span></a>
+        <a id="link-{{.id}}" href="#{{.id}}"><span>{{.titlePrefix}}</span><span class="{{.titlePrefixSub}}"><span>{{.titlePlace}}</span></span></a>
         {{- end }}
         <a id="link-POSTER" href="#POSTER"><span>POSTER</span></a>
       </div>
