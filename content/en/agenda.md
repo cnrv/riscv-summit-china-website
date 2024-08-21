@@ -574,13 +574,9 @@ a22_B:
     time: 16:00
     duration: 30
     class: SE
-  - title: 面向 risc-v 芯片的无人机领域应用及优化
+  - title: TBA
     time: 16:30
     duration: 20
-    index: 196
-    speakers:
-      - name: 杨侃
-        title: 中科院空天院
   - title: 基于 RISC-V 芯片的键鼠方案介绍
     time: 16:50
     duration: 10
