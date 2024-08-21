@@ -583,7 +583,7 @@ a22_B:
     index: 124
     speakers:
       - name: 陶玉凯
-        title: 沁恒微电子股份有限公司，产品开发工程师
+        title: 南京沁恒微电子股份有限公司，产品开发工程师
   - title: 高性能 RISC-V DSP，助力先进制造出海
     time: 17:00
     duration: 10
