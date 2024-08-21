@@ -577,7 +577,7 @@ a22_B:
   - title: TBA
     time: 16:30
     duration: 20
-  - title: 基于 RISC-V 芯片的键鼠方案介绍
+  - title: 青稞RISC-V内核USB/蓝牙/以太网芯片——专业接口技术助力RISC-V落地开花
     time: 16:50
     duration: 10
     index: 124
