@@ -143,7 +143,7 @@ methods:
     mobile_only: false
     platforms:
       - name: The Official Site
-        url: "https://www.koushare.com/live/details/36270"
+        url: "https://www.koushare.com/live/details/36684"
         a0821: true
         a0822: true
         a0823: true
