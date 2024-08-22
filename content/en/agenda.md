@@ -312,7 +312,20 @@ a22_A:
     time: 15:10
     duration: 50
     speakers:
-      - name: Philipp & Tao
+      - name: Philipp Tomsich
+        title: Chief Technologist & Founder of VRULL
+      - name: Xie Tao
+        title: Peking University Chair Professor, Chief Scientist of Beijing Institute of Open Source Chip
+      - name: Bao Yungang
+        title: Chief Scientist of Beijing Institute of Open Source Chip
+      - name: Mei Di
+        title: CEO of Stream Computing
+      - name: He Hu
+        title: Professor at Tsinghua University
+      - name: Wang Lei
+        title: Senior vice president of Sophgo
+      - name: Mao Yu
+        title: CECloud Security General Manager
   - title: 茶歇、展区
     time: 16:00
     duration: 15
