@@ -741,8 +741,8 @@ a23_A:
     duration: 20
     index: 136
     speakers:
-      - name: 张丙儒
-        title: 上海睿赛德电子科技有限公司，社区技术主管
+      - name: 王顺
+        title: 上海睿赛德电子科技有限公司，RT-Thread 嵌入式软件工程师
   - title: Debian riscv64 移植的最新进展
     time: 13:40
     duration: 10
