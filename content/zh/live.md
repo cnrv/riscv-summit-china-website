@@ -185,6 +185,20 @@ methods:
           separatedMethod: ab
           a: true
           b: false
+  - name: Call4Papers 学术会议
+    mobile_only: false
+    platforms:
+      - name: 微信视频号
+        cname: Call4Papers 学术会议
+        a0821: false
+        a0822:
+          separatedMethod: ab
+          a: true
+          b: false
+        a0823:
+          separatedMethod: ab
+          a: true
+          b: false
 ---
 
 直播时间安排可能存在变动，请关注本页面获取最新状态。

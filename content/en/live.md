@@ -185,6 +185,20 @@ methods:
           separatedMethod: ab
           a: true
           b: false
+  - name: Call4Papers 学术会议
+    mobile_only: false
+    platforms:
+      - name: WeChat Channel
+        cname: Call4Papers 学术会议
+        a0821: false
+        a0822:
+          separatedMethod: ab
+          a: true
+          b: false
+        a0823:
+          separatedMethod: ab
+          a: true
+          b: false
 ---
 
 The live broadcast schedule is subject to change, please check this page for updates.
