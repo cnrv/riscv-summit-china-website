@@ -74,7 +74,7 @@ a21:
     time: 12:30
     duration: 70
     class: LUNCH
-  - title: 一分钟 POSTER 报告（暂定）
+  - title: 一分钟 POSTER 报告
     time: 13:40
     duration: 20
   - title: RISC-V 赋予技术创新与商业变革新机遇
