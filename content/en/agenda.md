@@ -1086,13 +1086,13 @@ a23_B:
       - name: 蒋子健
         title: 中国科学院大学，计算机科学与技术 研一
 aPOSTER:
-  - title: Building Risc-v containers on VisionFive v2
+  - title: Building RISC-V containers on VisionFive v2
     time: 1
     duration: POSTER
     index: 301
     authors:
       - name: Leon Nunes
-        title: Personal/Risc-v Devboard program, Customer Success Engineer
+        title: Personal/RISC-V Devboard program, Customer Success Engineer
   - title: "RISC-V AI Edge: 一站式 AI 边缘计算开发平台"
     time: 2
     duration: POSTER
@@ -1122,7 +1122,7 @@ aPOSTER:
     index: 210
     authors:
       - name: 李枫
-        title: 独立开发者，独立开发者
+        title: 独立开发者
   - title: Porting Latest AOSP (Android 15)
     time: 7
     duration: POSTER
