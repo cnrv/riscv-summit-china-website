@@ -131,7 +131,7 @@ a21:
     duration: 15
     speakers:
       - name: Philipp Tomsich
-        title: VRULL
+        title: Chief Technologist & Founder of VRULL
   - title: 茶歇、展区
     time: 16:25
     duration: 15
