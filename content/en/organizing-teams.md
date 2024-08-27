@@ -4,14 +4,75 @@ layout: organizing-teams
 teams:
   - name: The Steering Committee
     id: the-steering-committee
-    withAvatar: true
-    withProfile: true
+    withAvatar: false
+    categories:
+      - name: Voters
+      - name: Observers
     members:
-      - name: Placeholder
+      - name: Yungang Bao
+        position: BoD Member
+        category: Voters
         title:
-          - name: Title placeholder
-            affiliation: Affiliation placeholder
-        profile: link
+          - name: ""
+            affiliation: BOSC
+      - name: Yankin Tanurhan
+        position: BoD Member
+        category: Voters
+        title:
+          - name: ""
+            affiliation: Synopsys
+      - name: Mei Andy
+        position: BoD Member
+        category: Voters
+        title:
+          - name: ""
+            affiliation: Stream Computing
+      - name: Philipp Tomisch
+        position: BoD Member
+        category: Voters
+        title:
+          - name: ""
+            affiliation: VRULL
+      - name: Dr. Meng Jianyi
+        position: BoD designate on behalf of Dr. Qi from Alibaba
+        category: Voters
+        title:
+          - name: ""
+            affiliation: Alibaba
+      - name: Zhangxi Tan
+        position: BoD designate of Dave Patterson
+        category: Voters
+        title:
+          - name: ""
+            affiliation: RIOS
+      - name: Stefan Wallentowitz
+        position: BoD Member
+        category: Voters
+        title:
+          - name: Professor at Munich University of Applied Sciences
+            affiliation: ""
+      - name: Alex Guo
+        category: Voters
+        title:
+          - name: ""
+            affiliation: CNRV Community
+          - name: Core organzier of RISC-V Summit China
+      - name: Wei Wu
+        category: Voters
+        title:
+          - name: ""
+            affiliation: ISCAS
+          - name: Core organzier of RISC-V Summit China
+      - name: Calista Redmond
+        category: Observers
+        title:
+          - name: CEO
+            affiliation: RVI
+      - name: Tiffany Spark
+        category: Observers
+        title:
+          - name: CMO
+            affiliation: RVI
   - name: Chairs
     id: chairs
     withAvatar: true
@@ -43,81 +104,194 @@ teams:
   - name: The Program Committee
     id: the-program-committee
     members:
-      - name: Placeholder
+      - name: 何小庆
+        position: Chair
         title:
-          - name: Title placeholder
-            affiliation: Affiliation placeholder
-      - name: Placeholder
+          - name: 秘书长
+            affiliation: 嵌入式联谊会
+          - name: 创始人
+            affiliation: 麦克泰软件公司
+        description: 2009-2023 年曾任《单片机与嵌入式系统应用》副主编和编委会副主任，现是《嵌入式技术与智能系统》副主编。何小庆长期从事嵌入式与物联网技术、产业生态和教育方面工作，出版有《嵌入式操作系统风云录》，《嵌入式实时操作系统》和《深入理解 RISC-V 程序开发》等 8 本中英文著译作，发表论文 80 余篇，在高校和企业兼职授课。何小庆是中国软件行业协会理事、中国计算机学会嵌入式系统专委常委、德国 embedded world Conference 程序委员。
+      - name: 高鹏
+        position: Vice Chair
         title:
-          - name: Title placeholder
-            affiliation: Affiliation placeholder
-      - name: Placeholder
+          - name: 高级副总裁
+            affiliation: 北京算能科技有限公司
+        description: 深耕 IC 设计 19 年，智算和中大规模处理器设计领域专家，持有 10 余项发明专利，是国内智算和 RISC-V 处理器领域最早期的探索者和践行者。自加入算能以来，成功主导了算能智算处理器 BM1684、BM1684X 的研发与商用；目前负责算能新一代桌面级处理器产品定义和研发。
+      - name: 解壁伟
+        position: Vice Chair
         title:
-          - name: Title placeholder
-            affiliation: Affiliation placeholder
-  - name: The Organizing Committee
-    id: the-organizing-committee
-    members:
-      - name: 吴伟
+          - name: 助理研究员
+            affiliation: 中国科学院计算技术研究所
+        description: 2018 年博士毕业于中科院计算所，现从事开源 EDA 和开源芯片等方向的研究，专注构建“使用开源 EDA 和开源 IP 设计开源芯片”的技术生态体系。当前参与的项目有 iEDA（开源 EDA）、一生一芯（芯片人才培养）以及芯片设计云平台等。
+      - name: 郭雄飞
         title:
-          - name: 中国科学院软件研究所
-            affiliation: PLCT 实验室项目总监
-      - name: 张松
+          - name: 核心成员
+            affiliation: CNRV 社区
+      - name: 张先轶
         title:
-          - name: 中国开放指令 (RISC-V) 生态联盟
-            affiliation: 副秘书长
-      - name: 王飞
+          - name: 创始人及 CEO
+            affiliation: 澎峰科技
+      - name: 宋威
         title:
-          - name: 算能
-            affiliation: 市场总监
-      - name: 王晓雁
+          - name: 副研究员
+            affiliation: 中国科学院信息工程研究所
+      - name: 余子濠
         title:
-          - name: 知合计算
-            affiliation: 运营
-      - name: 张珣
+          - name: 工程师
+            affiliation: 中国科学院计算技术研究所
+      - name: 陈炜
         title:
-          - name: 奕斯伟计算
-            affiliation: 生态合作经理
-      - name: 陶玉凯
+          - name: 执行副总裁
+            affiliation: 希姆计算
+      - name: 李威威
         title:
-          - name: 沁恒微电子
-            affiliation: 工程师
-      - name: 袁楚蓉
+          - name: CEO
+            affiliation: 上海苦芽科技有限公司
+      - name: 王俊强
         title:
-          - name: 北京微核芯科技有限公司
-            affiliation: BD 市场拓展主管
-      - name: 傅炜
-        title:
-          - name: 红帽软件（北京）有限公司
-            affiliation: 首席软件工程师
-      - name: 安放
-        title:
-          - name: 达摩院 RISC-V 及生态
-            affiliation: 玄铁市场运营
-      - name: 章翔
-        title:
-          - name: 上海苦芽科技有限公司
-            affiliation: 社区运营顾问
-      - name: 赵英丹
-        title:
-          - name: 中国 RISC-V 产业联盟
-            affiliation: 副秘书长
+          - name: RISC-V Maintainer
+            affiliation: openEuler 社区
       - name: 邱吉
         title:
-          - name: 中国科学院软件研究所
-            affiliation: PLCT 实验室技术总监
+          - name: PLCT 实验室技术总监
+            affiliation: 中国科学院软件研究所
+          - name: RISC-V 大使
+      - name: 段建钢
+        title:
+          - name: 总监
+            affiliation: 英特尔亚太研发中心
+      - name: 傅炜
+        title:
+          - name: 首席软件工程师
+            affiliation: 红帽软件（北京）有限公司
+          - name: RISC-V 大使
+      - name: 王伟
+        title:
+          - name: 技术经理
+            affiliation: 新思科技
+      - name: 邢明杰
+        title:
+          - name: 高级工程师
+            affiliation: 中国科学院软件研究所
+      - name: 杨勇
+        title:
+          - name: 技术总监
+            affiliation: 沁恒微电子
+      - name: 马越
+        title:
+          - name: 高级总监
+            affiliation: 芯来科技
+      - name: 郭任
+        title:
+          - name: 高级技术专家
+            affiliation: 阿里巴巴达摩院
+      - name: 赵思齐
+        title:
+          - name: 技术专家
+            affiliation: 阿里巴巴达摩院
+      - name: 吴才泽
+        title:
+          - name: CTO
+            affiliation: 深圳矽速科技有限公司
+      - name: 谢幸家
+        title:
+          - name: 软件组技术负责人
+            affiliation: 深圳市群芯闪耀科技有限公司
+      - name: 郑英炜
+        title:
+          - name: 开发者
+            affiliation: LLVM 社区
+      - name: 陈奕成
+        title:
+          - name: 架构部处长
+            affiliation: 晶心科技
+      - name: 吴伟
+        title:
+          - name: PLCT 实验室项目总监
+            affiliation: 中国科学院软件研究所
+          - name: RISC-V 大使
+  - name: The Organizing Committee
+    id: the-organizing-committee
+    description: 吴伟和郭雄飞是 RISC-V 中国峰会的最初发起者和策划人员；同时，是 RISC-V 国际基金会 (RVI) 的中国联络人。自 2021 年起，在 RISC-V 国际基金会、历届主办方、协办及赞助方的支持下，连续四年组织 RISC-V 中国峰会，使其成为目前全球影响力最大的 RISC-V 三大峰会之一。
+    members:
+      - name: 吴伟
+        position: Chair
+        title:
+          - name: PLCT 实验室项目总监
+            affiliation: 中国科学院软件研究所
+          - name: RISC-V 大使
+        description: 
+      - name: 郭雄飞
+        position: Vice Chair
+        title:
+          - name: 核心成员
+            affiliation: CNRV 社区
+      - name: 张松
+        title:
+          - name: 副秘书长
+            affiliation: 中国开放指令 (RISC-V) 生态联盟
+        description: 
+      - name: 王飞
+        title:
+          - name: 市场总监
+            affiliation: 算能
+      - name: 王晓雁
+        title:
+          - name: 运营
+            affiliation: 知合计算
+      - name: 张珣
+        title:
+          - name: 生态合作经理
+            affiliation: 奕斯伟计算
+      - name: 陶玉凯
+        title:
+          - name: 工程师
+            affiliation: 沁恒微电子
+      - name: 袁楚蓉
+        title:
+          - name: BD 市场拓展主管
+            affiliation: 北京微核芯科技有限公司
+      - name: 傅炜
+        title:
+          - name: 首席软件工程师
+            affiliation: 红帽软件（北京）有限公司
+      - name: 安放
+        title:
+          - name: 运营
+            affiliation: 阿里巴巴达摩院 RISC-V 及生态
+      - name: 章翔
+        title:
+          - name: 社区运营顾问
+            affiliation: 上海苦芽科技有限公司
+      - name: 赵英丹
+        title:
+          - name: 副秘书长
+            affiliation: 中国 RISC-V 产业联盟
+      - name: 邱吉
+        title:
+          - name: PLCT 实验室技术总监
+            affiliation: 中国科学院软件研究所
       - name: 贠利君
         title:
-          - name: 中科（厦门）数据智能研究院
-            affiliation: 院长助理
+          - name: 院长助理
+            affiliation: 中科（厦门）数据智能研究院
       - name: 余璠
         title:
-          - name: 芯来科技
-            affiliation: 生态市场运营
+          - name: 生态市场运营
+            affiliation: 芯来科技
       - name: 李响
         title:
-          - name: ""
+          - name: COO
             affiliation: 知合计算
+      - name: 张宇溪
+        title:
+          - name: 新媒体团队主管
+            affiliation: PLCT 实验室
+      - name: 王文君
+        title:
+          - name: 行政总监
+            affiliation: 苦芽科技
   - name: The Volunteer Team
     id: the-volunteer-team
     tba: true

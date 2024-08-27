@@ -553,7 +553,7 @@ body:not(.in-home) {
             position: relative;
             margin-top: 3em;
             padding-bottom: 3em;
-            h2 {
+            h2, div.category {
                 margin: 0 auto 0 0;
                 padding: 0;
                 color: white;
@@ -571,14 +571,33 @@ body:not(.in-home) {
                     text-decoration: none;
                 }
             }
-            >p.tba {
-                margin: 1em 0 0 0;
-                padding: 0 3em 0 3em;
+            div.category {
+                font-size: 90%;
+                padding: 0.3em 0.8em;
+                margin-left: 1.5rem;
+                margin-top: 1.5rem;
+                border-top-right-radius: 0.2em;
+                border-bottom-right-radius: 0.2em;
+                &:after {
+                    content: ":";
+                }
+            }
+            >p.description, >p.tba {
+                margin: 1.5em 0 0 0;
+                padding: 0 3em 0 3rem;
                 font-style: italic;
+            }
+            >p.description {
+                font-style: normal;
+                font-size: 90%;
+                line-height: 1.3em;
+                &:before {
+                    content: "说明：";
+                }
             }
             div.members {
                 margin: 1em 0 0 0;
-                padding: 0 3em 0 3em;
+                padding: 0 3em 0 3rem;
                 position: relative;
                 display: flex;
                 flex-direction: column;
@@ -593,6 +612,11 @@ body:not(.in-home) {
                     >div.person {
                         >div.name {
                             font-weight: bold;
+                            >span.position {
+                                font-weight: normal;
+                                font-size: 90%;
+                                margin-left: 0.2em;
+                            }
                         }
                         >div.title, >div.description {
                             margin-top: 0.5em;
@@ -601,27 +625,24 @@ body:not(.in-home) {
                         }
                         >div.title {
                             display: flex;
-                            flex-direction: column;
-                            span {
-                                display: block;
-                                &.name {
-                                    margin-top: .3em;
-                                }
-                            }
-                        }
-                        >div.description {
-                            &:before {
-                                content: '简介：';
-                            }
-                        }
-                        &.with-description >div.title {
                             flex-direction: row;
+                            .affiliation {
+                                white-space: pre;
+                            }
                             span{
                                 display: inline-block;
                                 &.name {
                                     margin: 0;
                                 }
                             }
+                        }
+                        >div.description {
+                            line-height: 1.3em;
+                            &:before {
+                                content: '简介：';
+                            }
+                        }
+                        &.with-description >div.title {
                         }
                         margin-bottom: 1em;
                     }
@@ -692,6 +713,11 @@ body:not(.in-home) {
         }
         &.is-en {
             section {
+                >p.description {
+                    &:before {
+                        content: "Description: ";
+                    }
+                }
                 >div.members {
                     >div.member {
                         >div.person {
