@@ -624,13 +624,13 @@ body:not(.in-home) {
                             opacity: .8;
                         }
                         >div.title {
-                            display: flex;
-                            flex-direction: row;
+                            //display: flex;
+                            //flex-direction: row;
                             .affiliation {
                                 white-space: pre;
                             }
                             span{
-                                display: inline-block;
+                                display: inline;
                                 &.name {
                                     margin: 0;
                                 }
@@ -705,6 +705,19 @@ body:not(.in-home) {
                             }
                             >div.person {
                                 max-width: 100%;
+                            }
+                        }
+                    }
+                }
+                div.members {
+                    div.member {
+                        margin-top: 10px;
+                        >div.person {
+                            >div.name {
+                                font-size: 95%;
+                                >span.position {
+                                    font-size: 70%;
+                                }
                             }
                         }
                     }
