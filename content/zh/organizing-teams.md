@@ -6,63 +6,63 @@ teams:
     id: the-steering-committee
     withAvatar: false
     categories:
-      - name: 选举人
+      - name: 投票人
       - name: 观察员
     members:
-      - name: 包云岗
-        position: 董事会成员
-        category: 选举人
+      - name: Yungang Bao
+        position: BoD Member
+        category: 投票人
         title:
           - name: ""
-            affiliation: 北京开源芯片研究院
+            affiliation: BOSC
       - name: Yankin Tanurhan
-        position: 董事会成员
-        category: 选举人
+        position: BoD Member
+        category: 投票人
         title:
           - name: ""
             affiliation: Synopsys
-      - name: 梅迪
-        position: 董事会成员
-        category: 选举人
+      - name: Mei Andy
+        position: BoD Member
+        category: 投票人
         title:
           - name: ""
             affiliation: Stream Computing
       - name: Philipp Tomisch
-        position: 董事会成员
-        category: 选举人
+        position: BoD Member
+        category: 投票人
         title:
           - name: ""
             affiliation: VRULL
-      - name: 孟建熠博士
-        position: 阿里巴巴戚博士的指定董事会代表
-        category: 选举人
+      - name: Dr. Meng Jianyi
+        position: BoD designate on behalf of Dr. Qi from Alibaba
+        category: 投票人
         title:
           - name: ""
-            affiliation: 阿里巴巴
-      - name: 谭章熹
-        position: Dave Patterson 的指定董事会代表
-        category: 选举人
+            affiliation: Alibaba
+      - name: Zhangxi Tan
+        position: BoD designate of Dave Patterson
+        category: 投票人
         title:
           - name: ""
             affiliation: RIOS
       - name: Stefan Wallentowitz
-        position: 董事会成员
-        category: 选举人
+        position: BoD Member
+        category: 投票人
         title:
           - name: Professor at Munich University of Applied Sciences
             affiliation: ""
-      - name: 郭雄飞
-        category: 选举人
+      - name: Alex Guo
+        category: 投票人
         title:
           - name: ""
-            affiliation: CNRV 社区
-          - name: RISC-V 中国峰会核心组织者
-      - name: 吴伟
-        category: 选举人
+            affiliation: CNRV Community
+          - name: Core organzier of RISC-V Summit China
+      - name: Wei Wu
+        category: 投票人
         title:
           - name: ""
             affiliation: ISCAS
-          - name: RISC-V 中国峰会核心组织者
+          - name: Core organzier of RISC-V Summit China
       - name: Calista Redmond
         category: 观察员
         title:
