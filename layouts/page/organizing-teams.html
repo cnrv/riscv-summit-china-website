@@ -1,0 +1,58 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <article id="organizing-teams" class="flex-l flex-column-l flex-wrap justify-between mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+    {{- range .Params.teams }}
+    <section class="{{if .withAvatar}}with-avatar {{end}} flex-l flex-column">
+      <span class="anchor" id="{{.id}}"></span>
+      <h2><a href="#{{.id}}">{{.name}}</a></h2>
+      {{- with .description }}
+      <p class="description">{{.}}</p>
+      {{- end }}
+      {{- if .tba }}
+      <p class="tba">{{i18n "tba2"}}</p>
+      {{- else }}
+      {{- $members := .members }}
+      {{- $categories := slice "none" }}
+      {{- if .categories }}
+        {{- $categories = .categories }}
+      {{- end }} {{/*end if .categories*/}}
+      {{- range $cate := $categories }}
+        {{- $usefulCate := "" }}
+        {{- if ne $cate "none" }}
+          {{ $usefulCate = $cate.name }}
+        <div class="category">{{$cate.name}}</div>
+        {{- end }}
+      <div class="members">
+        {{- range $members }}
+          {{- if or (eq $usefulCate "") (eq $usefulCate .category) }}
+        <div class="member">
+          {{- if .avatar }}
+          <a {{with .profile}}href="{{.}}" target="_blank"{{end}}>
+            {{- with .avatar }}
+            <img style="object-position: {{.position}}" src="{{.url}}" />
+            {{- end }}
+          </a>
+          {{- end }}
+          <div class="person{{if .description}} with-description{{end}}">
+            <div class="name">{{.name}}{{with .position}}<span class="position"> ({{.}})</span>{{end}}</div>
+            {{- range .title }}
+            <div class="title">{{with .affiliation}}<span class="affiliation">{{.}} </span>{{end}}<span class="name">{{.name}}</span></div>
+            {{- end -}}
+            {{- with .description }}
+            <div class="description">{{.}}</div>
+            {{- end }}
+          </div>
+        </div>
+          {{- end }} {{/*end if or usefulCate ...*/}}
+        {{- end }} {{/*end range members*/}}
+      </div>
+      {{- end }} {{/*end range categories*/}}
+      {{- end }} {{/*end tba*/}}
+    </section>
+    {{- end }}
+  </article>
+{{ end }}

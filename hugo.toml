@@ -103,6 +103,10 @@ defaultContentLanguageInSubdir = false
         name = "展厅信息"
         url = "#exhibition"
         weight = 40
+      [[languages.zh.menu.main]]
+        name = "组织团队"
+        url = "/organizing-teams"
+        weight = 45
   [languages.en]
     contentDir = 'content/en'
     disabled = false
@@ -177,3 +181,7 @@ defaultContentLanguageInSubdir = false
         name = "Exhibition Space"
         url = "#exhibition"
         weight = 40
+      [[languages.en.menu.main]]
+        name = "Organizing Teams"
+        url = "/organizing-teams"
+        weight = 45
