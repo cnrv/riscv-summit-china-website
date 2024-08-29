@@ -63,9 +63,13 @@ defaultContentLanguageInSubdir = false
         name = "CRVIC"
       [[languages.zh.params.co_organizer]]
         name = "中科（厦门）数据智能研究院"
-      #[[languages.zh.params.banners]]
+      [[languages.zh.params.banners]]
       #  id   = 1
       #  text = '欢迎参加 RISC-V 中国峰会 2024'
+        id   = 2
+        text = '《RISC-V 中国峰会 2024 - 参会指南》已上传'
+        link = 'https://github.com/cnrv/riscv-summit-china-website/blob/main/RISC-V-Summit-China-2024-Catalog.pdf?raw=true'
+        link_text = "点击下载"
     [languages.zh.menu]
       [[languages.zh.menu.main]]
         name = "主页"
@@ -141,9 +145,13 @@ defaultContentLanguageInSubdir = false
         name = "CRVIC"
       [[languages.en.params.co_organizer]]
         name = "Xiamen Institute of Data Intelligence"
-      #[[languages.en.params.banners]]
+      [[languages.en.params.banners]]
       #  id   = 1
       #  text = 'Welcome to attend RISC-V Summit China 2024'
+        id   = 2
+        text = 'The "RISC-V Summit China 2024 Catalog" has been uploaded'
+        link = 'https://github.com/cnrv/riscv-summit-china-website/blob/main/RISC-V-Summit-China-2024-Catalog.pdf?raw=true'
+        link_text = "Click to download"
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "Home"
