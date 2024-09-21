@@ -294,10 +294,45 @@ teams:
             affiliation: 苦芽科技
   - name: The Volunteer Team
     id: the-volunteer-team
-    tba: true
     members:
-      - name: Placeholder
-        title:
-          - name: Title placeholder
-            affiliation: Affiliation placeholder
+      - name: 卢天钺
+      - name: 杜建华
+      - name: 王超凡
+      - name: 顾嘉琪
+      - name: 段新利
+      - name: 冯镒铤
+      - name: 王跃翔
+      - name: 曹耀匀
+      - name: 喻希
+      - name: 段金一
+      - name: 王润涵
+      - name: 成晨
+      - name: 章辰
+      - name: 崔博涵
+      - name: 潘国瑞
+      - name: 赵祖康
+      - name: 温蕙宇
+      - name: 郭宇轩
+      - name: 崔孟洋
+      - name: 朱令糠
+      - name: 王文聪
+      - name: 翁江杰
+      - name: 肖琪臻
+      - name: 张天宇
+      - name: 徐艳怡
+      - name: 常振宇
+      - name: 吴辰
+      - name: 潘圣雯
+      - name: 熊家辉
+      - name: 叶李双
+      - name: 孙晋斐
+      - name: 高芳
+      - name: 卢琦轩
+      - name: 徐一鸣
+      - name: 张倍玮
+      - name: 张子默
+      - name: 程子函
+      - name: 王凡
+      - name: 黄琴南
+      - name: 韩宇康
 ---
