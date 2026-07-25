@@ -13,6 +13,7 @@
     <div class="content">
       {{ .Content | markdownify | emojify | safeHTML }}
     </div>
+    {{- if and .Params.dates .Params.methods }}
     <div class="symbol-info">
       <div class="row">
         <div class="symbol check"></div><div>{{i18n "live_check_desc"}}</div>
@@ -161,5 +162,6 @@
           {{- end }} {{/*end range .Params.methods*/}}
         </tbody>
     </table>
+    {{- end }}
   </article>
 {{ end }}
