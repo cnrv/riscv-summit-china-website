@@ -1,4 +1,16 @@
 <section id="cover" class="hero-image-section section-container {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
   <h1 class="force-hidden">{{ .Title | default .Site.Title }}</h1>
-  <img class="hero-image" src="{{ relURL (printf "/img/rvsc2026-hero-wide.png?v=%s" (readFile "static/img/rvsc2026-hero-wide.png" | sha1)) }}" alt="{{ .Title | default .Site.Title }}" />
+  {{- $heroDesktop := "static/img/rvsc2026-hero-wide.webp" -}}
+  {{- $heroMobile := "static/img/rvsc2026-hero-wide-960.webp" -}}
+  <img
+    class="hero-image"
+    src="{{ relURL (printf "/img/rvsc2026-hero-wide.webp?v=%s" (readFile $heroDesktop | sha1)) }}"
+    srcset="{{ relURL (printf "/img/rvsc2026-hero-wide-960.webp?v=%s" (readFile $heroMobile | sha1)) }} 960w, {{ relURL (printf "/img/rvsc2026-hero-wide.webp?v=%s" (readFile $heroDesktop | sha1)) }} 1915w"
+    sizes="(max-width: 600px) calc(100vw - 32px), min(1520px, calc(100vw - 64px))"
+    width="1915"
+    height="821"
+    fetchpriority="high"
+    decoding="async"
+    alt="{{ .Title | default .Site.Title }}"
+  />
 </section>
