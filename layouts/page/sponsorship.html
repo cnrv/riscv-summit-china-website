@@ -1,0 +1,243 @@
+{{ define "header" }}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<article id="sponsorship" class="mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
+  <header class="sponsorship-page-header">
+    <span class="eyebrow">RISC-V SUMMIT CHINA 2026</span>
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  <section id="background" class="sponsor-section sponsor-front-section">
+    <div class="section-heading">
+      <span>01</span>
+      <h2>{{ .Params.background_title }}</h2>
+    </div>
+    <div class="background-copy">
+      {{ range .Params.background_paragraphs }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <h3 class="subsection-title">{{ .Params.industry_title }}</h3>
+    <div class="industry-stats">
+      {{ range .Params.industry_stats }}
+      <article>
+        <svg class="industry-icon" viewBox="0 0 48 48" aria-hidden="true">
+          {{ if eq .icon "chip" }}
+          <rect x="12" y="12" width="24" height="24" rx="4"></rect><rect x="18" y="18" width="12" height="12" rx="1"></rect><path d="M17 6v6M24 6v6M31 6v6M17 36v6M24 36v6M31 36v6M6 17h6M6 24h6M6 31h6M36 17h6M36 24h6M36 31h6"></path>
+          {{ else if eq .icon "industry" }}
+          <path d="M7 40V18l12 7v-7l12 7v-7l10 6v16H7Z"></path><path d="M12 40V29h8v11M27 30h4M35 30h3M27 35h4M35 35h3M11 13h7"></path>
+          {{ else if eq .icon "value" }}
+          <circle cx="24" cy="24" r="18"></circle><path d="m17 14 7 9 7-9M24 23v13M17 25h14M17 30h14"></path>
+          {{ else }}
+          <rect x="9" y="15" width="30" height="24" rx="9"></rect><path d="M24 9v6M21 8h6M15 15l-4-5M33 15l4-5M17 27h.01M31 27h.01M18 34h12"></path>
+          {{ end }}
+        </svg>
+        <strong>{{ .value }}</strong>
+        <span>{{ .label }}</span>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section id="highlights" class="sponsor-section sponsor-front-section">
+    <div class="section-heading">
+      <span>02</span>
+      <h2>{{ .Params.highlights_title }}</h2>
+    </div>
+    <div class="highlight-stats">
+      {{ range .Params.highlight_stats }}
+      <article>
+        <strong>{{ .value }}</strong>
+        <h3>{{ .label }}</h3>
+        <p>{{ .note }}</p>
+      </article>
+      {{ end }}
+    </div>
+    <div class="topic-diagram" aria-label="{{ .Params.topics_title }}">
+      <div class="topic-list topic-list-left">
+        {{ range $index, $topic := .Params.topics }}{{ if lt $index 4 }}<span>{{ $topic }}</span>{{ end }}{{ end }}
+      </div>
+      <div class="topic-core">
+        <i aria-hidden="true"></i>
+        <strong>{{ .Params.topics_title }}</strong>
+      </div>
+      <div class="topic-list topic-list-right">
+        {{ range $index, $topic := .Params.topics }}{{ if ge $index 4 }}<span>{{ $topic }}</span>{{ end }}{{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section id="venue-layout" class="sponsor-section sponsor-front-section">
+    <div class="section-heading">
+      <span>03</span>
+      <h2>{{ .Params.venue_title }}</h2>
+    </div>
+    <p class="venue-lead">{{ .Params.venue_lead }}</p>
+    <div class="venue-facts">
+      {{ range .Params.venue_facts }}
+      <article>
+        <strong>{{ .title }}</strong>
+        <p>{{ .description }}</p>
+      </article>
+      {{ end }}
+    </div>
+    {{ with .Params.venue_media }}
+    <div class="venue-media">
+      {{ range . }}
+      <figure{{ if .wide }} class="venue-media-wide"{{ end }}>
+        <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
+      </figure>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+
+  <section id="tiers" class="sponsor-section">
+    <div class="section-heading">
+      <span>{{ .Params.tiers_number }}</span>
+      <h2>{{ .Params.tiers_title }}</h2>
+    </div>
+    <div class="sponsorship-note">
+      <strong>{{ .Params.review_note_title }}</strong>
+      <p>{{ .Params.review_note }}</p>
+    </div>
+    <div class="benefit-matrix-wrap">
+      <table class="benefit-matrix">
+        <thead>
+          <tr>
+            <th>{{ .Params.package_label }}</th>
+            {{ range .Params.tiers }}
+            <th>{{ .name }}{{ with .limit }}<small>{{ if eq $.Site.Language.Lang "zh" }}（{{ . }}）{{ else }}({{ . }}){{ end }}</small>{{ end }}</th>
+            {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Params.benefit_rows }}
+          <tr>
+            <th>{{ .label }}</th>
+            {{ range .values }}<td>{{ . }}</td>{{ end }}
+          </tr>
+          {{ end }}
+          <tr class="matrix-price">
+            <th>{{ .Params.price_label }}</th>
+            {{ range .Params.tiers }}<td>{{ .price }}</td>{{ end }}
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tier-grid">
+      {{ range $tierIndex, $tier := .Params.tiers }}
+      <article class="tier-card tier-{{ .key }}">
+        <header>
+          <div>
+            <span class="tier-label">{{ .name }}</span>
+            {{ with .limit }}<span class="tier-limit">{{ if eq $.Site.Language.Lang "zh" }}（{{ . }}）{{ else }}({{ . }}){{ end }}</span>{{ end }}
+          </div>
+          <strong class="tier-price">{{ .price }}</strong>
+        </header>
+        <dl class="tier-benefits">
+          {{ range $row := $.Params.benefit_rows }}
+            {{ $value := index $row.values $tierIndex }}
+            {{ if ne $value "—" }}
+            <div>
+              <dt>{{ $row.label }}</dt>
+              <dd>{{ $value }}</dd>
+            </div>
+            {{ end }}
+          {{ end }}
+        </dl>
+      </article>
+      {{ end }}
+    </div>
+    <p class="booth-priority-note"><span aria-hidden="true">★</span>{{ .Params.booth_priority_note }}</p>
+  </section>
+
+  {{ range .Params.sections }}
+  <section id="{{ .id }}" class="sponsor-section">
+    <div class="section-heading">
+      <span>{{ .number }}</span>
+      <h2>{{ .title }}</h2>
+    </div>
+    {{ with .description }}<p class="section-description">{{ . }}</p>{{ end }}
+    {{ if eq .id "independent-booth" }}
+    <div class="booth-detail-list">
+      {{ range .items }}{{ range .details }}
+      <div>
+        <strong>{{ .label }}{{ if eq $.Site.Language.Lang "zh" }}：{{ else }}:{{ end }}</strong>
+        <span>{{ .value }}</span>
+      </div>
+      {{ end }}{{ end }}
+    </div>
+    {{ else if eq .id "demo-presentation" }}
+    <div class="booth-detail-list">
+      {{ range .items }}{{ range .details }}
+      <div>
+        <strong>{{ .label }}{{ if eq $.Site.Language.Lang "zh" }}：{{ else }}:{{ end }}</strong>
+        <span>{{ .value }}</span>
+      </div>
+      {{ end }}{{ end }}
+    </div>
+    {{ else if eq .id "branded-sponsorships" }}
+    <div class="branded-packages">
+      {{ range .items }}
+      <article class="branded-package">
+        <header>
+          <span class="laurel" aria-hidden="true"><svg viewBox="0 0 32 48"><path d="M23 44C11 33 10 17 20 4M17 36c-5-1-8-4-9-8 5 0 8 2 10 6M14 28c-5-1-8-4-8-8 5 0 8 2 9 6M14 20c-4-2-6-5-5-9 4 1 6 4 6 7M16 32c4-1 7-4 8-8-5 0-8 2-9 6M15 24c4-1 7-4 8-8-5 0-8 2-9 6M17 16c4-2 6-5 5-9-4 1-6 4-6 7"></path></svg></span>
+          <div>
+            <h3>{{ .name }} <small>({{ .limit }})</small></h3>
+            <strong>{{ if eq $.Site.Language.Lang "zh" }}收费标准：{{ else }}Rate: {{ end }}{{ .price }}</strong>
+          </div>
+          <span class="laurel laurel-right" aria-hidden="true"><svg viewBox="0 0 32 48"><path d="M23 44C11 33 10 17 20 4M17 36c-5-1-8-4-9-8 5 0 8 2 10 6M14 28c-5-1-8-4-8-8 5 0 8 2 9 6M14 20c-4-2-6-5-5-9 4 1 6 4 6 7M16 32c4-1 7-4 8-8-5 0-8 2-9 6M15 24c4-1 7-4 8-8-5 0-8 2-9 6M17 16c4-2 6-5 5-9-4 1-6 4-6 7"></path></svg></span>
+        </header>
+        <div class="exclusive-benefits">
+          <strong><span class="benefit-star" aria-hidden="true">★</span> {{ $.Params.exclusive_benefits_label }}</strong>
+          <ol>{{ range .features }}<li>{{ . }}</li>{{ end }}</ol>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div class="opportunity-grid">
+      {{ range .items }}
+      {{ $item := . }}
+      <article class="opportunity-card">
+        <header>
+          <h3>{{ .name }}</h3>
+          {{ with .limit }}<span>{{ . }}</span>{{ end }}
+        </header>
+        <div class="opportunity-price">{{ .price }}</div>
+        {{ with .description }}<p{{ if $item.description_accent }} class="card-accent-text"{{ end }}>{{ with $item.description_label }}<strong class="card-inline-label">{{ if $item.description_star }}<span class="benefit-star" aria-hidden="true">★</span> {{ end }}{{ . }}{{ if eq $.Site.Language.Lang "zh" }}：{{ else }}: {{ end }}</strong>{{ end }}{{ . }}</p>{{ end }}
+        {{ with .features }}
+        <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+        {{ end }}
+        {{ range .groups }}
+        <div class="card-benefit-group">
+          <strong><span class="benefit-star" aria-hidden="true">★</span> {{ .label }}</strong>
+          {{ with .description }}<p>{{ . }}</p>{{ end }}
+          {{ with .features }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+        </div>
+        {{ end }}
+        {{ with .note }}<p class="card-note{{ if $item.note_plain }} card-note-plain{{ end }}">{{ with $item.note_label }}<strong class="card-inline-label">{{ . }}{{ if eq $.Site.Language.Lang "zh" }}：{{ else }}: {{ end }}</strong>{{ end }}{{ . }}</p>{{ end }}
+        {{ with .images }}
+        <div class="opportunity-media{{ if gt (len .) 1 }} opportunity-media-grid{{ end }}">
+          {{ range . }}<img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">{{ end }}
+        </div>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  <section id="contact" class="sponsorship-contact">
+    <div>
+      <span>RISC-V SUMMIT CHINA 2026</span>
+      <h2>{{ .Params.contact_title }}</h2>
+      {{ with .Params.contact_text }}<p>{{ . }}</p>{{ end }}
+      {{ with .Params.organizer }}<p class="sponsor-organizer"><strong>{{ .label }}</strong>{{ .value }}</p>{{ end }}
+    </div>
+    <a href="mailto:{{ .Params.contact_email }}">{{ .Params.contact_email }}</a>
+  </section>
+</article>
+{{ end }}

@@ -1,5 +1,6 @@
 ---
 title: 赞助商
+link_slug: sponsorship-2026
 host:
   - icon: "/img/rios-logo.png"
     url: "https://www.rioslab.org"
