@@ -7,6 +7,8 @@ host:
 
 我们诚邀全球 RISC-V 生态伙伴、半导体企业、系统厂商、软件与工具链企业、科研机构及开源社区参与赞助，共同推动 RISC-V 技术创新、产业落地与生态繁荣。
 
+<a class="details" href="/posts/sponsorship-2026/">点击查看赞助方案详情</a>
+
 如有赞助合作意向，欢迎联系大会组委会：
 
 risc-v_summit_2026@rioslab.org
