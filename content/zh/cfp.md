@@ -1,6 +1,65 @@
 ---
-title: 2026 RISC-V 中国峰会（RVSC2026）演说征集（CFP）
+title: 2026 RISC-V 中国峰会演说征集（CFP）
+layout: cfp
 link_slug: cfp-2026
+status_label: 投稿开放中
+page_eyebrow: RISC-V SUMMIT CHINA 2026 · CFP
+home_title: 2026 RISC-V 中国峰会演说征集（CFP）
+home_lead: 2026 RISC-V 中国峰会学术与产业议题全面征集现已启动。我们诚邀全球学术界泰斗、产业领袖、开源社区开发者提交前沿演说申请！
+organizer_label: 大会主办方：
+organizer_value: RISC-V 国际开源实验室
+event_date_label: 大会时间：
+event_date_value: 2026 年 10 月 18 日-20 日
+venue_label: 大会地点：
+venue_value: 深圳会展中心（福田）
+timeline_title: 核心时间节点
+timeline_stage_label: 阶段
+timeline_date_label: 截止日期 / 通知时间
+timeline_status_label: 状态
+milestones:
+  - stage: 投稿截止日期
+    date: 2026 年 8 月 31 日（AoE）
+    status: 开放投递中
+  - stage: 评审结果通知
+    date: 2026 年 9 月 21 日
+    status: 准备中
+  - stage: 峰会举办日期
+    date: 2026 年 10 月 18 日-20 日
+    status: 准备中
+deadline_label: 投稿截止
+deadline_date: 2026 年 8 月 31 日
+deadline_note: AoE（全球任意时区）
+tracks_title: 七大分论坛征集方向
+tracks_intro: 请根据您的研究或产业方向，选择对应的分论坛提交议题。
+tracks_policy: 各分论坛均欢迎学术研究成果与产业落地报告两类投稿。已在同行评审会议（如 ISCA、MICRO、HPCA、ASPLOS、DAC、PLDI/CGO 等）上发表的工作明确欢迎投稿；程序委员会将在议程编排中有意将研究成果与部署实践并置呈现。
+track_names:
+  - 人工智能
+  - 数据中心 / 高性能计算
+  - 软件生态
+  - 芯片设计与验证
+  - 汽车电子、工业与机器人
+  - 嵌入式、物联网与智能硬件
+  - 产学合作与创新创业
+track_summaries:
+  - name: 人工智能
+    description: 聚焦 RISC-V 在 AI 计算全栈中的角色——从矩阵 / 向量扩展的指令集标准化、编译器与算子库，到 AI 框架与运行时，再到云端集群与端侧异构部署的系统集成。议题应兼顾标准化进展与真实产品 / 部署案例。同样欢迎面向矩阵/向量加速的体系结构与编译器研究成果，包括已在同行评审会议上发表的工作。
+  - name: 数据中心 / 高性能计算
+    description: 聚焦应用级 RISC-V 在数据中心与高性能计算的平台化落地：服务器 SoC 与平台规范、固件与启动（UEFI / ACPI / SBI）、内存与互连（含 CXL）、虚拟化与云原生编排、机密计算与可信执行、HPC 并行框架与可扩展性。同样欢迎面向可扩展 RISC-V 系统的服务器级微架构、内存与互连体系结构及系统软件方面的研究成果。
+  - name: 软件生态
+    description: 覆盖从工具链、内核、固件到发行版与上层运行时的通用软件生态，以及托管 / 语言运行时（JVM、V8、.NET、Python、Rust、Go）、JIT、调试与性能分析工具链、多发行版与软件包生态。凸显可移植的软件使能与生态成熟度。同样欢迎编译技术、运行时系统与性能分析方面的研究成果，包括已发表的学术工作。
+  - name: 芯片设计与验证
+    description: 覆盖从微架构与 RTL 设计、敏捷开发方法学（Chisel/SpinalHDL），到硅前 / 形式化验证、一致性（compliance）与合规测试、原型（FPGA / 仿真）与流片的完整设计—验证链路。同时涵盖 EDA 工具，尤其突出开源 EDA 与开源 RISC-V 核生态，以及面向规范一致性的验证方法学。
+  - name: 汽车电子、工业与机器人
+    description: 面向安全关键与实时嵌入式领域的 RISC-V 落地，涵盖车载电子电气架构、工业控制、机器人运动与感知、低空经济与航空航天。功能安全（ISO 26262 / IEC 61508）、实时性与确定性、安全关键认证、车规级软件栈与 AUTOSAR 适配。
+  - name: 嵌入式、物联网与智能硬件
+    description: 面向资源受限与成本敏感的嵌入式与 IoT 量产场景，涵盖 MCU 级 RISC-V、RTOS 与裸机软件、低功耗与电源管理、无线连接、端侧 AI（TinyML）、设备安全与可信启动、量产与供应链，以及各种消费类电子产品的最新产业化进展等。
+  - name: 产学合作与创新创业
+    description: 覆盖 RISC-V 人才培养与课程建设、高校与科研机构的前沿研究、开源社区与标准组织协作、初创企业与投融资生态等。
+submission_url: https://cfp2026.riscv-summit-china.org/rvsc2026/cfp
+submission_label: 立即投稿
+details_label: 查看详情
+contact_label: 如有疑问，请联系大会组委会
+contact_email: risc-v_summit_2026@rioslab.org
 ---
 
 大会主办方：RISC-V 国际开源实验室
@@ -10,6 +69,31 @@ link_slug: cfp-2026
 大会地点：深圳会展中心（福田）
 
 2026 RISC-V 中国峰会学术与产业议题全面征集现已启动。我们诚邀全球学术界泰斗、产业领袖、开源社区开发者提交前沿演说申请！
+
+## 七大分论坛征集方向
+
+1. **人工智能**
+   聚焦矩阵与向量扩展、编译器和算子库、AI 框架与运行时，以及云端和端侧异构部署。
+
+2. **数据中心 / 高性能计算**
+   覆盖服务器 SoC、固件与启动、内存与互连、虚拟化、云原生、机密计算和 HPC 可扩展性。
+
+3. **软件生态**
+   覆盖工具链、内核、固件、发行版、语言运行时、JIT、调试和性能分析工具。
+
+4. **芯片设计与验证**
+   覆盖微架构与 RTL、敏捷开发、形式化验证、合规测试、原型验证、流片及开源 EDA。
+
+5. **汽车电子、工业与机器人**
+   聚焦安全关键和实时应用，包括汽车电子、工业控制、机器人、低空经济及航空航天。
+
+6. **嵌入式、物联网与智能硬件**
+   面向 MCU、RTOS、低功耗、无线连接、端侧 AI、设备安全以及消费电子量产场景。
+
+7. **产学合作与创新创业**
+   覆盖人才培养、课程建设、科研创新、开源与标准协作、初创企业及投融资生态。
+
+[查看 7 大分论坛的完整征集说明](/posts/cfp-2026/)
 
 ## 投稿链接
 

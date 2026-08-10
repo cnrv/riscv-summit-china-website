@@ -1,6 +1,6 @@
 {{- with .Site.GetPage "co-events" }}
 {{- $leftImg := true }}
-<section id="co-events" class="fullweb-section section-container {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+<section id="co-events" class="section-container {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
   <div class="text-container">
     <h1>{{ .Title | markdownify | emojify }}</h1>
     <!--

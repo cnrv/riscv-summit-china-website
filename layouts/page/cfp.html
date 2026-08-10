@@ -1,0 +1,83 @@
+{{ define "header" }}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <article id="cfp-page" class="{{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
+    <header class="cfp-hero">
+      <div class="cfp-shell">
+        <div class="cfp-hero-copy">
+          <span class="cfp-eyebrow">RISC-V SUMMIT CHINA 2026</span>
+          <h1>{{ .Title }}</h1>
+          <dl class="cfp-event-facts">
+            <div>
+              <dt>{{ .Params.organizer_label }}</dt>
+              <dd>{{ .Params.organizer_value }}</dd>
+            </div>
+            <div>
+              <dt>{{ .Params.event_date_label }}</dt>
+              <dd>{{ .Params.event_date_value }}</dd>
+            </div>
+            <div>
+              <dt>{{ .Params.venue_label }}</dt>
+              <dd>{{ .Params.venue_value }}</dd>
+            </div>
+          </dl>
+          <p class="cfp-lead">{{ .Params.home_lead }}</p>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="cfp-shell cfp-content">
+      <section class="cfp-section cfp-tracks">
+        <header class="cfp-section-header">
+          <h2>{{ .Params.tracks_title }}</h2>
+        </header>
+        <div class="cfp-section-intro">
+          <p>{{ .Params.tracks_intro }}</p>
+          <p>{{ .Params.tracks_policy }}</p>
+        </div>
+
+        <ol class="cfp-track-list">
+          {{ range .Params.track_summaries }}
+            <li>
+              <h3>{{ .name }}</h3>
+              <p>{{ .description }}</p>
+            </li>
+          {{ end }}
+        </ol>
+      </section>
+
+      <section class="cfp-section cfp-timeline">
+        <header class="cfp-section-header">
+          <h2>{{ .Params.timeline_title }}</h2>
+        </header>
+
+        <div class="cfp-timeline-list">
+          {{ range $index, $milestone := .Params.milestones }}
+            <div class="cfp-milestone{{ if eq $index 0 }} is-active{{ end }}">
+              <span class="cfp-milestone-dot" aria-hidden="true"></span>
+              <div>
+                <p>{{ $milestone.stage }}</p>
+                <strong>{{ $milestone.date }}</strong>
+                <small>{{ $milestone.status }}</small>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+        <div class="cfp-timeline-action">
+          <a class="cfp-button" href="{{ .Params.submission_url }}" target="_blank" rel="noopener noreferrer">{{ .Params.submission_label }}</a>
+        </div>
+      </section>
+
+      <section id="contact" class="cfp-footer">
+        <div>
+          <span>RISC-V SUMMIT CHINA 2026</span>
+          <h2>{{ .Params.contact_label }}</h2>
+        </div>
+        <a href="mailto:{{ .Params.contact_email }}">{{ .Params.contact_email }}</a>
+      </section>
+    </div>
+  </article>
+{{ end }}
