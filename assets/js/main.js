@@ -6,9 +6,8 @@ import './banners.js';
 import './inline-news.js';
 import './adaptive-table.js';
 import './adaptive-agenda.js';
-import { resizeToFullCover, resizeToFullHeight } from "./common";
+import { resizeToFullCover } from "./common";
 
-news = undefined;
 homePageCover = undefined;
 function resizeHeaderCover() {
   if ( ! homePageCover ) {
@@ -19,9 +18,7 @@ function resizeHeaderCover() {
 
 window.addEventListener('DOMContentLoaded', () => {
   homePageCover = document.querySelector('#home-page-cover');
-  news = document.querySelector('main section#news');
   resizeHeaderCover();
-  resizeToFullHeight(news);
   const allFullwebSections = document.querySelectorAll('.fullweb-section');
   allFullwebSections.forEach((ele) => {
     resizeToFullCover(ele);
@@ -30,7 +27,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('resize', () => {
   resizeHeaderCover();
-  resizeToFullHeight(news);
   const allFullwebSections = document.querySelectorAll('.fullweb-section');
   allFullwebSections.forEach((ele) => {
     resizeToFullCover(ele);

@@ -83,6 +83,10 @@ defaultContentLanguageInSubdir = false
         url = "#news"
         weight = 5
       [[languages.zh.menu.main]]
+        name = "演说征集"
+        url = "/cfp"
+        weight = 10
+      [[languages.zh.menu.main]]
         name = "赞助商"
         url = "#sponsors"
         weight = 15
@@ -164,6 +168,10 @@ defaultContentLanguageInSubdir = false
         name = "News"
         url = "#news"
         weight = 5
+      [[languages.en.menu.main]]
+        name = "CFP"
+        url = "/cfp"
+        weight = 10
       [[languages.en.menu.main]]
         name = "Sponsors"
         url = "#sponsors"

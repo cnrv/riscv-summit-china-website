@@ -192,7 +192,7 @@ body >header >div >nav {
         color: $primaryColor !important;
 
         &:hover {
-            color: #d69700 !important;
+            color: $accentColor !important;
         }
     }
 
@@ -251,8 +251,9 @@ body.in-home {
 
 section.section-container {
     position: relative;
-    padding-top: calc(#{$navHeightForMobile} + 5em);
-    padding-bottom: 5em;
+    scroll-margin-top: calc(#{$navHeightForMobile} + 20px);
+    padding-top: $sectionVerticalSpacing;
+    padding-bottom: $sectionVerticalSpacing;
     &:not(:first-of-type):before {
         content: '';
         position: absolute;
@@ -269,9 +270,21 @@ section.section-container {
     a {
         color: $fontColorLight;
         &.details {
-            display: inline-block;
-            font-weight: bold;
-            margin: 1em 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 3em;
+            margin: 1.5em 0;
+            padding: 0 1.25em;
+            border: 1px solid $accentColor;
+            border-radius: 8px;
+            color: #0C153D;
+            background: $accentColor;
+            box-sizing: border-box;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 800;
+            white-space: nowrap;
         }
     }
     h1 {
@@ -283,7 +296,7 @@ section.section-container {
         left: 0;
         height: 100%;
         width: 100%;
-        padding-top: calc(#{$navHeightForMobile} + 5em);
+        padding-top: $sectionVerticalSpacing;
         background-color: #00000050;
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(30px);
@@ -294,7 +307,7 @@ section.section-container {
 
     div.text-container {
         max-width: 960px;
-        margin: 2em auto;
+        margin: 0 auto;
         padding: 0 1em;
         text-align: center;
         p {
@@ -499,8 +512,8 @@ section.section-container {
     &#welcome {
         --section-container-pl: 3em;
         --section-container-pr: 3em;
-        padding-top: 3em;
-        padding-bottom: 6em;
+        padding-top: $sectionVerticalSpacing;
+        padding-bottom: $sectionVerticalSpacing;
         color: $fontColorDark;
         background-color: #fff;
         a {
@@ -512,13 +525,14 @@ section.section-container {
         display: flex;
         flex-direction: column;
         position: relative;
+        min-height: auto;
         padding: 0;
         div.text-container {
             text-align: left;
             margin: 0 auto;
             max-height: 100%;
-            padding-top: calc(5em + #{$navHeightForMobile});
-            padding-bottom: 5em;
+            padding-top: $sectionVerticalSpacing;
+            padding-bottom: $sectionVerticalSpacing;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -552,43 +566,89 @@ section.section-container {
     }
 
     &#cfp {
-        .markdown-content {
+        .cfp-home {
+            width: 100%;
             max-width: 900px;
-            margin: 0 auto;
+            box-sizing: border-box;
             text-align: left;
+        }
+        .cfp-home-header {
+            max-width: none;
+            margin: 0 0 1.5em;
+            h1 {
+                margin: 0.5em 0 1em;
+                font-size: 2em;
+                line-height: 1.25;
+                text-align: center;
+            }
+            p {
+                margin: 0;
+                max-width: none;
+                font-size: 1.05rem;
+                line-height: 1.7;
+                opacity: 0.88;
+                text-align: left;
+            }
+        }
+        .cfp-home >h2 {
+            margin: 1.4em 0 0.6em;
+            font-size: 1.15rem;
+            text-align: left;
+        }
+        .cfp-track-list {
+            margin: 0;
+            max-width: 860px;
+            line-height: 1.8;
+            opacity: 0.9;
+            text-align: left;
+        }
+        .cfp-actions {
+            display: flex;
+            justify-content: center;
+            gap: 0.8em;
+            margin-top: 1.5em;
+        }
+        a.cfp-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 3em;
+            padding: 0 1.25em;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 8px;
+            box-sizing: border-box;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+        a.cfp-action-primary {
+            border-color: $accentColor;
+            color: #0C153D;
+            background: $accentColor;
+        }
+        a.cfp-action-secondary { background: transparent; }
+        @media all and (max-width: 700px) {
+            .cfp-actions { flex-direction: column; }
+            a.cfp-action { width: 100%; box-sizing: border-box; }
         }
         .cfp-timeline {
             width: 100%;
-            margin: 2em auto 0;
+            margin: 0;
             border-collapse: collapse;
-            background: #FFFFFF12;
-            overflow: hidden;
+            background: transparent;
             th, td {
-                padding: 1em;
-                border: 1px solid #FFFFFF24;
+                padding: 0.75em 0.8em;
+                border: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.18);
                 line-height: 1.45;
+                text-align: left;
                 vertical-align: middle;
             }
             th {
-                background: #FFFFFF20;
+                border-top: 1px solid rgba(255, 255, 255, 0.3);
+                background: transparent;
                 font-weight: 700;
-                text-align: left;
-            }
-            .status {
-                display: inline-block;
-                padding: 0.35em 0.75em;
-                border-radius: 999px;
-                white-space: nowrap;
-                font-size: 90%;
-                font-weight: 700;
-            }
-            .status.open {
-                color: #0C153D;
-                background: #FFD25A;
-            }
-            .status.pending {
-                color: #F1F1F1;
-                background: #FFFFFF1F;
             }
         }
         @media all and (max-width: 700px) {
@@ -774,13 +834,21 @@ section.section-container {
     }
     &#registration {
         a.button {
-            display: block;
-            padding: 1em 0.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            height: 3em;
+            padding: 0 1.25em;
             margin: 2em auto;
-            border-radius: 10px;
-            background-color: #0000002A;
-            max-width: 10em;
+            border: 1px solid $accentColor;
+            border-radius: 8px;
+            color: $primaryColor;
+            background-color: $accentColor;
+            box-sizing: border-box;
             text-decoration: none;
+            font-weight: 800;
+            white-space: nowrap;
         }
     }
     &#venue {
