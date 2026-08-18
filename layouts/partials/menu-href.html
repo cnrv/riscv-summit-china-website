@@ -1,0 +1,12 @@
+{{- $url := .entry.URL -}}
+{{- if hasPrefix $url "#" -}}
+  {{- if .page.IsHome -}}
+    {{- $url -}}
+  {{- else -}}
+    {{- printf "%s%s" (relLangURL "") $url -}}
+  {{- end -}}
+{{- else if or (hasPrefix $url "http://") (hasPrefix $url "https://") -}}
+  {{- $url -}}
+{{- else -}}
+  {{- relLangURL $url -}}
+{{- end -}}

@@ -1,0 +1,30 @@
+{{ define "header" }}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <article id="sponsorship-registration-news" class="{{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
+    <header class="registration-news-hero">
+      <div class="registration-news-shell">
+        <span class="registration-news-eyebrow">{{ .Params.page_eyebrow }}</span>
+        <h1>{{ .Title }}</h1>
+        <dl class="registration-news-facts">
+          <div>
+            <dt>{{ .Params.published_label }}</dt>
+            <dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) }}</time></dd>
+          </div>
+          <div>
+            <dt>{{ .Params.publisher_label }}</dt>
+            <dd>{{ .Params.publisher_value }}</dd>
+          </div>
+        </dl>
+      </div>
+    </header>
+
+    <div class="registration-news-shell registration-news-content">
+      <div class="registration-news-body">
+        {{ .Content }}
+      </div>
+    </div>
+  </article>
+{{ end }}

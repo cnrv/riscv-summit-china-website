@@ -5,23 +5,32 @@
   <div class="desktop-nav">
     <div class="flex-l items-center">
       {{ if .Site.Menus.main }}
+        {{ $page := . }}
         <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0" "pl0" }}">
-          {{ if .IsHome }}
-            {{ range .Site.Menus.main }}
-            <li class="list f5 fw4 dib">
-              <a class="no-underline white-90" href="{{ cond (eq (substr .URL 0 1) "#") .URL (relLangURL .URL) }}">
+          {{ range .Site.Menus.main }}
+          {{ $href := partial "menu-href.html" (dict "entry" . "page" $page) }}
+          {{ $external := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
+          {{ $anchor := hasPrefix .URL "#" }}
+          {{ $current := and (not $external) (not $anchor) (eq (trim $page.RelPermalink "/") (trim $href "/")) }}
+          <li class="nav-menu-item list f5 fw4 dib{{ if .HasChildren }} has-children{{ end }}{{ if $current }} is-current{{ end }}">
+            {{ if .HasChildren }}
+            <div class="nav-dropdown dropdown">
+              <a class="nav-parent dropbtn no-underline white-90" href="{{ $href }}" aria-haspopup="true"{{ if $current }} aria-current="page"{{ end }}>
                 {{ .Name }}
               </a>
-            </li>
+              <div class="nav-dropdown-content dropdown-content">
+                {{ range .Children }}
+                {{ $external := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
+                <a class="no-underline" href="{{ partial "menu-href.html" (dict "entry" . "page" $page) }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </div>
+            {{ else }}
+            <a class="no-underline white-90" href="{{ $href }}"{{ if $current }} aria-current="page"{{ end }}>
+              {{ .Name }}
+            </a>
             {{ end }}
-          {{ else }}
-            {{ range .Site.Menus.main }}
-            <li class="list f5 fw4 dib">
-              <a class="no-underline white-90" href="{{ cond (eq (substr .URL 0 1) "#") (printf "%s%s" (relLangURL "") .URL) (relLangURL .URL) }}">
-                {{ .Name }}
-              </a>
-            </li>
-            {{ end }}
+          </li>
           {{ end }}
         </ul>
       {{ end }}
