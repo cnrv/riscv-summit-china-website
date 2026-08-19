@@ -94,6 +94,32 @@ a#sidebar-btn {
                     }
                     border-bottom: 1px solid #FFFFFF30;
                 }
+                >li.is-current >a {
+                    color: $accentColor;
+                    font-weight: 700;
+                    text-decoration-line: underline;
+                    text-decoration-color: $accentColor;
+                    text-decoration-thickness: 2px;
+                    text-underline-offset: 0.45em;
+                }
+                >li.has-children {
+                    >a { font-weight: 700; }
+                    >ul.sidebar-submenu {
+                        margin: 0;
+                        padding: 0;
+                        background: #00000024;
+                        >li {
+                            border-top: 1px solid #FFFFFF18;
+                            border-bottom: 0;
+                            >a {
+                                padding-top: 1em;
+                                padding-bottom: 1em;
+                                padding-left: calc(var(--sal) + 4.5em);
+                                font-size: 0.92rem;
+                            }
+                        }
+                    }
+                }
             }
             >div {
                 margin: auto 0 20px 0;

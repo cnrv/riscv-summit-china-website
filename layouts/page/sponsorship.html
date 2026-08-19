@@ -230,6 +230,12 @@
   </section>
   {{ end }}
 
+  {{ with .Params.registration_url }}
+  <div class="sponsorship-registration-action">
+    <a class="sponsorship-registration-button" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $.Params.registration_label }}</a>
+  </div>
+  {{ end }}
+
   <section id="contact" class="sponsorship-contact">
     <div>
       <span>RISC-V SUMMIT CHINA 2026</span>

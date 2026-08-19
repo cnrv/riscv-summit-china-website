@@ -3,23 +3,28 @@
     <a class="close-btn"></a>
     <div>
       {{ if .Site.Menus.main }}
+        {{ $page := . }}
         <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0" "pl0" }}">
-          {{ if .IsHome }}
-            {{ range .Site.Menus.main }}
-            <li class="list">
-              <a class="no-underline white-90" href="{{ cond (eq (substr .URL 0 1) "#") .URL (relLangURL .URL) }}">
-                {{ .Name }}
-              </a>
-            </li>
+          {{ range .Site.Menus.main }}
+          {{ $href := partial "menu-href.html" (dict "entry" . "page" $page) }}
+          {{ $external := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
+          {{ $anchor := hasPrefix .URL "#" }}
+          {{ $current := and (not $external) (not $anchor) (eq (trim $page.RelPermalink "/") (trim $href "/")) }}
+          <li class="list{{ if .HasChildren }} has-children{{ end }}{{ if $current }} is-current{{ end }}">
+            <a class="no-underline white-90" href="{{ $href }}"{{ if $current }} aria-current="page"{{ end }}>
+              {{ .Name }}
+            </a>
+            {{ if .HasChildren }}
+            <ul class="sidebar-submenu">
+              {{ range .Children }}
+              {{ $external := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
+              <li class="list">
+                <a class="no-underline white-90" href="{{ partial "menu-href.html" (dict "entry" . "page" $page) }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
             {{ end }}
-          {{ else }}
-            {{ range .Site.Menus.main }}
-            <li class="list">
-              <a class="no-underline white-90" href="{{ cond (eq (substr .URL 0 1) "#") (printf "%s%s" (relLangURL "") .URL) (relLangURL .URL) }}">
-                {{ .Name }}
-              </a>
-            </li>
-            {{ end }}
+          </li>
           {{ end }}
         </ul>
       {{ end }}

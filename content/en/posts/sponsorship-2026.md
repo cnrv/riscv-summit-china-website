@@ -255,4 +255,6 @@ sections:
             alt: A4 flyer distribution illustration
 contact_title: Sponsorship Contact
 contact_email: risc-v_summit_2026@rioslab.org
+registration_url: https://www.surveymonkey.com/r/TSST6JZ
+registration_label: Register for Sponsorship
 ---

@@ -264,6 +264,8 @@ sections:
             alt: A4 宣传单页投放示意
 contact_title: 赞助咨询
 contact_email: risc-v_summit_2026@rioslab.org
+registration_url: https://www.surveymonkey.com/r/TSST6JZ
+registration_label: 立即登记赞助
 organizer:
   label: 主办方：
   value: RISC-V 国际开源实验室

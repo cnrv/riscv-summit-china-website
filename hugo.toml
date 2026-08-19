@@ -84,14 +84,37 @@ defaultContentLanguageInSubdir = false
         weight = 5
       [[languages.zh.menu.main]]
         name = "演说征集"
+        identifier = "cfp"
         url = "/cfp"
         weight = 10
       [[languages.zh.menu.main]]
+        name = "征集详情"
+        parent = "cfp"
+        url = "/cfp"
+        weight = 1
+      [[languages.zh.menu.main]]
+        name = "立即投稿"
+        parent = "cfp"
+        url = "https://cfp2026.riscv-summit-china.org/rvsc2026/cfp"
+        weight = 2
+      [[languages.zh.menu.main]]
         name = "赞助商"
+        identifier = "sponsors"
         url = "#sponsors"
         weight = 15
       [[languages.zh.menu.main]]
+        name = "赞助方案"
+        parent = "sponsors"
+        url = "/posts/sponsorship-2026/"
+        weight = 1
+      [[languages.zh.menu.main]]
+        name = "立即登记"
+        parent = "sponsors"
+        url = "https://www.surveymonkey.com/r/TSST6JZ"
+        weight = 2
+      [[languages.zh.menu.main]]
         name = "同期活动"
+        identifier = "co-events"
         url = "/co-events"
         weight = 20
       [[languages.zh.menu.main]]
@@ -100,6 +123,7 @@ defaultContentLanguageInSubdir = false
         weight = 25
       [[languages.zh.menu.main]]
         name = "直播"
+        identifier = "live"
         url = "/live"
         weight = 26
       [[languages.zh.menu.main]]
@@ -108,10 +132,12 @@ defaultContentLanguageInSubdir = false
         weight = 30
       [[languages.zh.menu.main]]
         name = "路线及酒店"
+        identifier = "venue"
         url = "#venue"
         weight = 35
       [[languages.zh.menu.main]]
         name = "展厅信息"
+        identifier = "exhibition"
         url = "#exhibition"
         weight = 40
       [[languages.zh.menu.main]]
@@ -170,14 +196,37 @@ defaultContentLanguageInSubdir = false
         weight = 5
       [[languages.en.menu.main]]
         name = "CFP"
+        identifier = "cfp"
         url = "/cfp"
         weight = 10
       [[languages.en.menu.main]]
+        name = "CFP Details"
+        parent = "cfp"
+        url = "/cfp"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Submit a Proposal"
+        parent = "cfp"
+        url = "https://cfp2026.riscv-summit-china.org/rvsc2026/cfp"
+        weight = 2
+      [[languages.en.menu.main]]
         name = "Sponsors"
+        identifier = "sponsors"
         url = "#sponsors"
         weight = 15
       [[languages.en.menu.main]]
+        name = "Sponsorship Proposal"
+        parent = "sponsors"
+        url = "/posts/sponsorship-2026/"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Register Now"
+        parent = "sponsors"
+        url = "https://www.surveymonkey.com/r/TSST6JZ"
+        weight = 2
+      [[languages.en.menu.main]]
         name = "Co-events"
+        identifier = "co-events"
         url = "/co-events"
         weight = 20
       [[languages.en.menu.main]]
@@ -186,6 +235,7 @@ defaultContentLanguageInSubdir = false
         weight = 25
       [[languages.en.menu.main]]
         name = "Live"
+        identifier = "live"
         url = "/live"
         weight = 26
       [[languages.en.menu.main]]
@@ -194,10 +244,12 @@ defaultContentLanguageInSubdir = false
         weight = 30
       [[languages.en.menu.main]]
         name = "Venue & Accommodation"
+        identifier = "venue"
         url = "#venue"
         weight = 35
       [[languages.en.menu.main]]
         name = "Exhibition Space"
+        identifier = "exhibition"
         url = "#exhibition"
         weight = 40
       [[languages.en.menu.main]]
