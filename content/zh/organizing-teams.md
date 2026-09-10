@@ -22,45 +22,45 @@ teams:
       - name: 苏中
         position: 达摩院
       - name: 何宁
-        position: 北京奕斯伟计算技术股份有限公司
+        position: 奕思伟计算
       - name: 李向明
-        position: RISCStar
+        position: RISCstar
       - name: 郭松柳
         position: 中科院软件所
       - name: 唐丹
         position: 开芯院
-      - name: Charlie Su
-        position: 晶心科技股份有限公司
-      - name: 徐涛
-        position: 赛昉
+      - name: 苏泓萌
+        position: 晶心科技
+      - name: 徐滔
+        position: 赛昉科技
       - name: 杨勇
         position: 沁恒微
       - name: 张涛
         position: 海思
       - name: 胡振波
-        position: 芯来
+        position: 芯来科技
       - name: 刘明
-        position: RIOS Lab
+        position: RISC-V 国际开源实验室
       - name: 杨轩
-        position: Linux Foundation
+        position: Linux 基金会亚太区
       - name: Tom Gall
         position: RISC-V International
       - name: Nick Brown
-        position: EPCC
+        position: 爱丁堡并行计算中心
       - name: Christian Fabre
-        position: CEA
+        position: 法国原子能和替代能源委员会
       - name: Teresa Cervero Garcia
-        position: BSC
+        position: 巴塞罗那超级计算中心
       - name: Aniket Saha
         position: Tenstorrent
       - name: Philipp Tomsich
-        position: VRULL
+        position: VRULL GmbH
       - name: Florian Woh
-        position: OpenHW
+        position: OpenHW Foundation
       - name: 范福杰
         position: 希姆计算
-      - name: Bing Yu
-        position: 晶心科技股份有限公司
+      - name: 俞彬
+        position: 晶心科技
       - name: 刘强
         position: 天津大学
       - name: 张薇
@@ -71,6 +71,22 @@ teams:
         position: 香港城市大学
       - name: 刘伟强
         position: 南京航空航天大学
+      - name: 屈晟
+        position: 中科院软件所
+      - name: 贾云翔
+        position: 中兴通讯
+      - name: 段建钢
+        position: 英特尔亚太研发中心
+      - name: Ken Dockser
+        position: Tenstorrent
+      - name: 贾天宇
+        position: 北京大学
+      - name: 孙亚男
+        position: 上海交通大学
+      - name: 黄迪江
+        position: 西交利物浦大学
+      - name: 李春强
+        position: 达摩院
   - name: 组织委员会
     id: organizing-committee
     members:

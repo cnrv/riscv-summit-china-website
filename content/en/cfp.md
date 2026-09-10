@@ -19,7 +19,7 @@ timeline_status_label: Status
 milestones:
   - stage: Submission Deadline
     date: August 31, 2026 (AoE)
-    status: Open for submissions
+    status: Closed
   - stage: Review Results Notification
     date: September 21, 2026
     status: In preparation
@@ -112,6 +112,6 @@ For questions, please contact the organizing committee: risc-v\_summit\_2026@rio
 
 | Stage | Deadline / Notification Date | Status |
 | --- | --- | --- |
-| Submission Deadline | August 31, 2026 (AoE) | Open for submissions |
+| Submission Deadline | August 31, 2026 (AoE) | Closed |
 | Review Results Notification | September 21, 2026 | In preparation |
 | Summit Dates | October 18-20, 2026 | In preparation |
