@@ -19,7 +19,7 @@ timeline_status_label: 状态
 milestones:
   - stage: 投稿截止日期
     date: 2026 年 8 月 31 日（AoE）
-    status: 开放投递中
+    status: 已截止
   - stage: 评审结果通知
     date: 2026 年 9 月 21 日
     status: 准备中
@@ -105,6 +105,6 @@ contact_email: risc-v_summit_2026@rioslab.org
 
 | 阶段 | 截止日期/通知时间 | 状态 |
 | --- | --- | --- |
-| 投稿截止日期 | 2026 年 8 月 31 日（AoE） | 开放投递中（Open） |
+| 投稿截止日期 | 2026 年 8 月 31 日（AoE） | 已截止 |
 | 评审结果通知 | 2026 年 9 月 21 日 | 准备中 |
 | 峰会举办日期 | 2026 年 10 月 18 日-20 日 | 准备中 |

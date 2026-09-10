@@ -20,19 +20,19 @@ teams:
       - name: Ray C.C. Cheung
         position: Co-chair / City University of Hong Kong
       - name: Zhong Su
-        position: DAMO Academy
+        position: Alibaba DAMO Academy
       - name: Ning He
-        position: ESWIN
+        position: ESWIN Computing
       - name: Samuel Li
-        position: RISCStar
+        position: RISCstar
       - name: Songliu Guo
         position: Institute of Software, Chinese Academy of Sciences
       - name: Dan Tang
         position: Beijing Institute of Open Source Chip
       - name: Charlie Su
-        position: Andes
+        position: Andes Technology
       - name: Thomas Xu
-        position: StarFive
+        position: StarFive Tech
       - name: Yong Yang
         position: WCH
       - name: Derek Zhang
@@ -42,25 +42,25 @@ teams:
       - name: Ming Liu
         position: RIOS Lab
       - name: Xuan Yang
-        position: Linux Foundation
+        position: Linux Foundation APAC
       - name: Tom Gall
         position: RISC-V International
       - name: Nick Brown
-        position: EPCC
+        position: Edinburgh Parallel Computing Centre
       - name: Christian Fabre
         position: CEA
       - name: Teresa Cervero Garcia
-        position: BSC
+        position: Barcelona Supercomputing Center
       - name: Aniket Saha
         position: Tenstorrent
       - name: Philipp Tomsich
-        position: VRULL
+        position: VRULL GmbH
       - name: Florian Woh
-        position: OpenHW
+        position: OpenHW Foundation
       - name: Fujie Fan
         position: Stream Computing
       - name: Bing Yu
-        position: Andes
+        position: Andes Technology
       - name: Qiang Liu
         position: Tianjin University
       - name: Wei Zhang
@@ -71,6 +71,22 @@ teams:
         position: City University of Hong Kong
       - name: Weiqiang Liu
         position: Nanjing University of Aeronautics and Astronautics
+      - name: Sheng Qu
+        position: Institute of Software, Chinese Academy of Sciences
+      - name: Yunxiang Jia
+        position: ZTE
+      - name: Jiangang Duan
+        position: Intel Asia Pacific R&D
+      - name: Ken Dockser
+        position: Tenstorrent
+      - name: Tianyu Jia
+        position: Peking University
+      - name: Yanan Sun
+        position: Shanghai Jiao Tong University
+      - name: Dijiang Huang
+        position: Xi'an Jiaotong-Liverpool University
+      - name: Chunqiang Li
+        position: Alibaba DAMO Academy
   - name: Organizing Committee
     id: organizing-committee
     members:
