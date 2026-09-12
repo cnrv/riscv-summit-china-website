@@ -1366,7 +1366,11 @@ body:not(.in-home) {
                         }
                         strong,
                         span { display: inline; }
-                        strong { margin: 0 0.35em 0 0; }
+                        strong {
+                            margin: 0 0.35em 0 0;
+                            font-size: 1rem;
+                        }
+                        span { font-size: 0.9rem; }
                     }
                 }
 
