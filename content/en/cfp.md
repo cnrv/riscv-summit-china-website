@@ -1,11 +1,11 @@
 ---
-title: RISC-V Summit China 2026 Call for Presentations (CFP)
+title: RISC-V Summit China 2026 Call for Presentations
 layout: cfp
 link_slug: cfp-2026
-status_label: Submissions Open
+status_label: Submissions Closed
 page_eyebrow: RISC-V SUMMIT CHINA 2026 · CFP
-home_title: RISC-V Summit China 2026 Call for Presentations (CFP)
-home_lead: The call for academic and industry topics is now open. We warmly invite leading scholars, industry leaders, and open-source community developers worldwide to submit proposals for cutting-edge presentations.
+home_title: RISC-V Summit China 2026 Call for Presentations
+home_lead: The call for presentations for the 6th RISC-V Summit China officially closed on **August 31, 2026**. We sincerely thank every technical expert, industry partner, and community contributor who followed the Summit, carefully prepared, and submitted a presentation proposal. The organizing committee is now conducting the review process, evaluating each submission based on its technical value, innovation, practical relevance, and effectiveness for an on-site presentation.
 organizer_label: "Organizer: "
 organizer_value: RISC-V International Open-Source Laboratory
 event_date_label: "Conference Dates: "
@@ -22,7 +22,8 @@ milestones:
     status: Closed
   - stage: Review Results Notification
     date: September 21, 2026
-    status: In preparation
+    status: Review in progress
+    active: true
   - stage: Summit Dates
     date: October 18-20, 2026
     status: In preparation
@@ -30,8 +31,8 @@ deadline_label: Submission Deadline
 deadline_date: August 31, 2026
 deadline_note: Anywhere on Earth (AoE)
 tracks_title: Seven Forum Tracks
-tracks_intro: Please select the appropriate forum based on your research or industry area when submitting your topic.
-tracks_policy: Each track welcomes both academic research contributions and industrial deployment reports. Work previously presented at peer-reviewed venues (e.g., ISCA, MICRO, HPCA, ASPLOS, DAC, PLDI/CGO) is explicitly welcome; the program committee will deliberately program research results alongside deployment experience within sessions.
+tracks_intro: This year's call for presentations covered the following seven forum tracks.
+tracks_policy: Each track accepted both academic research contributions and industrial deployment reports. Work previously presented at peer-reviewed venues (e.g., ISCA, MICRO, HPCA, ASPLOS, DAC, PLDI/CGO) was also within scope; the program committee will deliberately program research results alongside deployment experience within sessions.
 track_names:
   - Artificial Intelligence
   - Datacenter / High-Performance Computing
@@ -63,7 +64,8 @@ track_summaries:
     description: >-
       Covers RISC-V talent development and curriculum building; frontier research at universities and research institutes; open-source community and standards-body collaboration; and the startup and investment ecosystem.
 submission_url: https://cfp2026.riscv-summit-china.org/rvsc2026/cfp
-submission_label: Submit a Proposal
+submission_label: Access Submission System
+submission_note: Submissions are closed. Registered users can still sign in to manage their account and submission information.
 details_label: View Details
 contact_label: Questions? Contact the organizing committee
 contact_email: risc-v_summit_2026@rioslab.org
@@ -75,7 +77,7 @@ Conference Dates: October 18-20, 2026
 
 Venue: Shenzhen Convention & Exhibition Center (Futian)
 
-The call for academic and industry topics for RISC-V Summit China 2026 has now officially launched. We warmly invite leading scholars, industry leaders, and open-source community developers from around the world to submit proposals for cutting-edge presentations.
+The call for presentations for the 6th RISC-V Summit China officially closed on **August 31, 2026**. We sincerely thank every technical expert, industry partner, and community contributor who followed the Summit, carefully prepared, and submitted a presentation proposal. The organizing committee is now conducting the review process, evaluating each submission based on its technical value, innovation, practical relevance, and effectiveness for an on-site presentation.
 
 ## Seven Forum Tracks
 
@@ -113,5 +115,5 @@ For questions, please contact the organizing committee: risc-v\_summit\_2026@rio
 | Stage | Deadline / Notification Date | Status |
 | --- | --- | --- |
 | Submission Deadline | August 31, 2026 (AoE) | Closed |
-| Review Results Notification | September 21, 2026 | In preparation |
+| Review Results Notification | September 21, 2026 | Review in progress |
 | Summit Dates | October 18-20, 2026 | In preparation |

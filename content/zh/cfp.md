@@ -1,11 +1,11 @@
 ---
-title: 2026 RISC-V 中国峰会演说征集（CFP）
+title: 2026 RISC-V 中国峰会演说征集
 layout: cfp
 link_slug: cfp-2026
-status_label: 投稿开放中
+status_label: 投稿已截止
 page_eyebrow: RISC-V SUMMIT CHINA 2026 · CFP
-home_title: 2026 RISC-V 中国峰会演说征集（CFP）
-home_lead: 2026 RISC-V 中国峰会学术与产业议题全面征集现已启动。我们诚邀全球学术界泰斗、产业领袖、开源社区开发者提交前沿演说申请！
+home_title: 2026 RISC-V 中国峰会演说征集
+home_lead: 第六届 RISC-V 中国峰会演讲征集已于 **2026 年 8 月 31 日**正式截止。感谢每一位关注峰会、认真准备并提交分享申请的技术专家、行业伙伴与社区贡献者。组委会正在有序推进投稿评审工作，综合考量议题的技术价值、创新性、实践意义与现场分享效果。
 organizer_label: 大会主办方：
 organizer_value: RISC-V 国际开源实验室
 event_date_label: 大会时间：
@@ -22,7 +22,8 @@ milestones:
     status: 已截止
   - stage: 评审结果通知
     date: 2026 年 9 月 21 日
-    status: 准备中
+    status: 评审进行中
+    active: true
   - stage: 峰会举办日期
     date: 2026 年 10 月 18 日-20 日
     status: 准备中
@@ -30,8 +31,8 @@ deadline_label: 投稿截止
 deadline_date: 2026 年 8 月 31 日
 deadline_note: AoE（全球任意时区）
 tracks_title: 七大分论坛征集方向
-tracks_intro: 请根据您的研究或产业方向，选择对应的分论坛提交议题。
-tracks_policy: 各分论坛均欢迎学术研究成果与产业落地报告两类投稿。已在同行评审会议（如 ISCA、MICRO、HPCA、ASPLOS、DAC、PLDI/CGO 等）上发表的工作明确欢迎投稿；程序委员会将在议程编排中有意将研究成果与部署实践并置呈现。
+tracks_intro: 本届演讲征集设置以下七个分论坛方向。
+tracks_policy: 本届各分论坛面向学术研究成果与产业落地报告两类内容征集。已在同行评审会议（如 ISCA、MICRO、HPCA、ASPLOS、DAC、PLDI/CGO 等）上发表的工作也在征集范围内；程序委员会将在议程编排中有意将研究成果与部署实践并置呈现。
 track_names:
   - 人工智能
   - 数据中心 / 高性能计算
@@ -56,7 +57,8 @@ track_summaries:
   - name: 产学合作与创新创业
     description: 覆盖 RISC-V 人才培养与课程建设、高校与科研机构的前沿研究、开源社区与标准组织协作、初创企业与投融资生态等。
 submission_url: https://cfp2026.riscv-summit-china.org/rvsc2026/cfp
-submission_label: 立即投稿
+submission_label: 进入投稿系统
+submission_note: 投稿已截止，已注册用户仍可登录管理账户及投稿信息。
 details_label: 查看详情
 contact_label: 如有疑问，请联系大会组委会
 contact_email: risc-v_summit_2026@rioslab.org
@@ -68,7 +70,7 @@ contact_email: risc-v_summit_2026@rioslab.org
 
 大会地点：深圳会展中心（福田）
 
-2026 RISC-V 中国峰会学术与产业议题全面征集现已启动。我们诚邀全球学术界泰斗、产业领袖、开源社区开发者提交前沿演说申请！
+第六届 RISC-V 中国峰会演讲征集已于 **2026 年 8 月 31 日**正式截止。感谢每一位关注峰会、认真准备并提交分享申请的技术专家、行业伙伴与社区贡献者。组委会正在有序推进投稿评审工作，综合考量议题的技术价值、创新性、实践意义与现场分享效果。
 
 ## 七大分论坛征集方向
 
@@ -106,5 +108,5 @@ contact_email: risc-v_summit_2026@rioslab.org
 | 阶段 | 截止日期/通知时间 | 状态 |
 | --- | --- | --- |
 | 投稿截止日期 | 2026 年 8 月 31 日（AoE） | 已截止 |
-| 评审结果通知 | 2026 年 9 月 21 日 | 准备中 |
+| 评审结果通知 | 2026 年 9 月 21 日 | 评审进行中 |
 | 峰会举办日期 | 2026 年 10 月 18 日-20 日 | 准备中 |

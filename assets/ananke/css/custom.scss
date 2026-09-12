@@ -752,6 +752,13 @@ section.section-container {
             background: $accentColor;
         }
         a.cfp-action-secondary { background: transparent; }
+        p.cfp-submission-note {
+            margin: 0.7em 0 0;
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.82rem;
+            line-height: 1.55;
+            text-align: center;
+        }
         @media all and (max-width: 700px) {
             .cfp-actions { flex-direction: column; }
             a.cfp-action { width: 100%; box-sizing: border-box; }

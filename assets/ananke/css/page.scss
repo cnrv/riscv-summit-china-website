@@ -968,6 +968,12 @@ body:not(.in-home) {
 
         .cfp-timeline-action {
             margin-top: 2.25em;
+            .cfp-submission-note {
+                margin: 0.75em 0 0;
+                color: var(--cfp-muted);
+                font-size: 0.82rem;
+                line-height: 1.6;
+            }
         }
 
         .cfp-milestone {
