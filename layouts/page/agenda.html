@@ -4,17 +4,22 @@
 {{ end }}
 
 {{ define "main" }}
-  <article id="agenda" class="flex-l flex-wrap justify-between mw9 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
-    <header class="mt4 w-100">
-      <h1 class="f1 mt3 mb1">
-        {{- .Title -}}
-      </h1>
+  <article id="agenda" class="{{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh"}}">
+    <header class="cfp-hero">
+      <div class="cfp-shell">
+        <div class="cfp-hero-copy">
+          <span class="cfp-eyebrow">RISC-V SUMMIT CHINA 2026</span>
+          <h1>{{ .Title }}</h1>
+        </div>
+      </div>
     </header>
-    <div class="content">
-      {{ .Content | markdownify | emojify | safeHTML }}
+    <div class="cfp-shell">
+      <div class="content">
+        {{ .Content | markdownify | emojify | safeHTML }}
+      </div>
+      {{ if or .Params.a21 .Params.a22_A .Params.a22_B .Params.a22_C .Params.a22_D .Params.a22_E .Params.a23_A .Params.a23_B .Params.a23_C .Params.a23_D .Params.a23_E }}
+      {{ partial "index-sections/agenda-main.html" . }}
+      {{ end }}
     </div>
-    {{ if or .Params.a21 .Params.a22_A .Params.a22_B .Params.a22_C .Params.a22_D .Params.a22_E .Params.a23_A .Params.a23_B .Params.a23_C .Params.a23_D .Params.a23_E }}
-    {{ partial "index-sections/agenda-main.html" . }}
-    {{ end }}
   </article>
 {{ end }}
