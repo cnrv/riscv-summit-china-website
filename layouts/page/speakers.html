@@ -5,6 +5,7 @@
 <article id="keynote-speakers-page" class="mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
   <header class="mt4 w-100">
     <h1 class="f1 mt3 mb1">{{ .Title }}</h1>
+    {{- with .Params.updating_notice }}<p class="keynote-speaker-updating">{{ . }}</p>{{ end }}
   </header>
   <div class="keynote-speaker-profiles">
     {{- range .Params.speakers }}

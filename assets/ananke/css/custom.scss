@@ -1023,6 +1023,12 @@ section.section-container {
         }
     }
     &#keynote-speakers {
+        .keynote-speaker-updating {
+            margin: -2.7em 0 2.4em;
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.9rem;
+            text-align: center;
+        }
         .keynote-speaker-grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1240,6 +1246,11 @@ article#agenda {
 
 article#keynote-speakers-page {
     padding-bottom: 5em;
+    .keynote-speaker-updating {
+        margin: 0.6em 0 0;
+        color: #64748b;
+        font-size: 0.95rem;
+    }
     .keynote-speaker-profiles {
         display: grid;
         gap: 1.5em;

@@ -1,7 +1,7 @@
 ---
 title: 大会议程
 layout: agenda
-home_desc: 2026 RISC-V 中国峰会议程包括开幕式、主论坛、7 场并行技术分论坛及 RISC-V GBA/HK Day。
+home_desc: 2026 RISC-V 中国峰会议程包括教程日、开幕式、主论坛、7 场并行技术分论坛及 RISC-V GBA/HK Day。
 link_slug: agenda
 ---
 
@@ -10,6 +10,10 @@ link_slug: agenda
     <tr><th>日期</th><th>时间</th><th>议程安排</th></tr>
   </thead>
   <tbody>
+    <tr><td class="agenda-date" rowspan="4">10 月 18 日<span>周日</span></td><td class="agenda-time">9:30–18:00</td><td><strong>Tutorial</strong><span>玫瑰厅1——5F</span></td></tr>
+    <tr><td class="agenda-time">9:30–18:00</td><td><strong>Tutorial</strong><span>玫瑰厅2——5F</span></td></tr>
+    <tr><td class="agenda-time">9:00–17:30</td><td><strong>SPMP TG 工作会议 &amp; Tutorial</strong><span>郁金香厅——6F</span></td></tr>
+    <tr><td class="agenda-time">13:30–17:30</td><td><strong>Andrea’s Q&amp;A / CSC 工作会议：矩阵扩展指令集与软件抽象的专题研讨</strong><span>水仙厅——6F</span></td></tr>
     <tr><td class="agenda-date" rowspan="2">10 月 19 日<span>周一</span></td><td class="agenda-time">9:00–12:20</td><td><strong>第六届 RISC-V 中国峰会开幕式</strong><span>梅花厅——5F</span></td></tr>
     <tr><td class="agenda-time">13:30–17:40</td><td><strong>第六届 RISC-V 中国峰会主论坛</strong><span>梅花厅——5F</span></td></tr>
     <tr><td class="agenda-date" rowspan="7">10 月 20 日<span>周二</span></td><td class="agenda-time">9:00–17:45</td><td><strong>人工智能计算分论坛</strong><span>茉莉厅——6F</span></td></tr>

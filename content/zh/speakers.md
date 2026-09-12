@@ -2,6 +2,7 @@
 title: 主旨演讲嘉宾
 layout: speakers
 link_slug: speakers
+updating_notice: 持续更新中…
 speakers:
   - name: 大卫·帕特森
     name_en: David A. Patterson

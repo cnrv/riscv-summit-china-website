@@ -1,7 +1,7 @@
 ---
 title: Agenda
 layout: agenda
-home_desc: The RISC-V Summit China 2026 program includes the Opening Ceremony, Main Forum, seven parallel technical forums, and RISC-V GBA/HK Day.
+home_desc: The RISC-V Summit China 2026 program includes Tutorial Day, the Opening Ceremony, Main Forum, seven parallel technical forums, and RISC-V GBA/HK Day.
 link_slug: agenda
 ---
 
@@ -10,6 +10,10 @@ link_slug: agenda
     <tr><th>Date</th><th>Time</th><th>Program</th></tr>
   </thead>
   <tbody>
+    <tr><td class="agenda-date" rowspan="4">October 18<span>Sunday</span></td><td class="agenda-time">9:30–18:00</td><td><strong>Tutorial</strong><span>Rose Hall 1, 5F</span></td></tr>
+    <tr><td class="agenda-time">9:30–18:00</td><td><strong>Tutorial</strong><span>Rose Hall 2, 5F</span></td></tr>
+    <tr><td class="agenda-time">9:00–17:30</td><td><strong>SPMP TG Workshop &amp; Tutorial</strong><span>Tulip Hall, 6F</span></td></tr>
+    <tr><td class="agenda-time">13:30–17:30</td><td><strong>Andrea’s Q&amp;A / CSC Workshop: Seminar on Matrix Extension Instruction Sets and Software Abstraction</strong><span>Daffodil Hall, 6F</span></td></tr>
     <tr><td class="agenda-date" rowspan="2">October 19<span>Monday</span></td><td class="agenda-time">9:00–12:20</td><td><strong>The 6th RISC-V Summit China Opening Ceremony</strong><span>Plum Blossom Hall, 5F</span></td></tr>
     <tr><td class="agenda-time">13:30–17:40</td><td><strong>The 6th RISC-V Summit China Main Forum</strong><span>Plum Blossom Hall, 5F</span></td></tr>
     <tr><td class="agenda-date" rowspan="7">October 20<span>Tuesday</span></td><td class="agenda-time">9:00–17:45</td><td><strong>AI Computing Forum</strong><span>Jasmine Hall, 6F</span></td></tr>

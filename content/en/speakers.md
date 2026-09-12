@@ -2,6 +2,7 @@
 title: Keynote Speakers
 layout: speakers
 link_slug: speakers
+updating_notice: More speakers to be announced…
 speakers:
   - name: David A. Patterson
     position: Professor Emeritus, UC Berkeley

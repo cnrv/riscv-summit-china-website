@@ -2,6 +2,7 @@
 <section id="keynote-speakers" class="section-container {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
   <div class="text-container">
     <h1>{{ .Title | markdownify | emojify }}</h1>
+    {{- with .Params.updating_notice }}<p class="keynote-speaker-updating">{{ . }}</p>{{ end }}
     <div class="keynote-speaker-grid">
       {{- range $index, $speaker := .Params.speakers }}
       <article class="keynote-speaker-card">
