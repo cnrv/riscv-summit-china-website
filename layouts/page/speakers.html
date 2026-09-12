@@ -1,0 +1,23 @@
+{{ define "header" }}
+  {{ partial "page-header.html" . }}
+{{ end }}
+{{ define "main" }}
+<article id="keynote-speakers-page" class="mw8 center ph3 {{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
+  <header class="mt4 w-100">
+    <h1 class="f1 mt3 mb1">{{ .Title }}</h1>
+  </header>
+  <div class="keynote-speaker-profiles">
+    {{- range .Params.speakers }}
+    <section class="keynote-speaker-profile">
+      <header>
+        <h2>{{ .name }}</h2>
+        {{- with .name_en }}<p class="keynote-speaker-name-en">{{ . }}</p>{{ end }}
+        <p class="keynote-speaker-position">{{ .position }}</p>
+        {{- with .position_en }}<p class="keynote-speaker-position-en">{{ . }}</p>{{ end }}
+      </header>
+      <p class="keynote-speaker-bio">{{ .bio }}</p>
+    </section>
+    {{- end }}
+  </div>
+</article>
+{{ end }}

@@ -24,7 +24,12 @@
         <div class="sponsors-container {{.id}}">
         {{ range .value }}
           <div class="icon{{if eq true .keepRatio}} keep-ratio{{end}}">
-            <a target="_blank" href="{{ .url }}"><img {{with .backgroundColor}}style="background-color: {{.}}"{{end}} src="{{ (printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) ) }}" /></a>
+            {{- $src := printf "%s?v=%s" .icon (readFile (printf "static%s" .icon) | sha1) }}
+            {{- if .url }}
+            <a class="sponsor-logo" target="_blank" rel="noopener noreferrer" href="{{ .url }}"><img {{with .backgroundColor}}style="background-color: {{.}}"{{end}} src="{{ $src }}" alt="{{ .alt | default .name }}" /></a>
+            {{- else }}
+            <div class="sponsor-logo"><img {{with .backgroundColor}}style="background-color: {{.}}"{{end}} src="{{ $src }}" alt="{{ .alt | default .name }}" /></div>
+            {{- end }}
           </div>
         {{ end }}
         </div>
