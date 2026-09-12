@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-  <article id="sponsorship-registration-news" class="{{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}">
+  <article id="sponsorship-registration-news" class="{{ cond (eq .Site.Language.Lang "en") "is-en" "is-zh" }}{{ with .Params.page_variant }} {{ . }}{{ end }}">
     <header class="registration-news-hero">
       <div class="registration-news-shell">
         <span class="registration-news-eyebrow">{{ .Params.page_eyebrow }}</span>

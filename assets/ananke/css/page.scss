@@ -1271,6 +1271,242 @@ body:not(.in-home) {
 
         }
 
+        &.volunteer-recruitment {
+            h1 {
+                font-size: clamp(1.65rem, 2.65vw, 2.2rem);
+                white-space: nowrap;
+            }
+
+            .registration-news-body {
+                .volunteer-grid,
+                .volunteer-steps {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 0.9em;
+                    max-width: 900px;
+                    margin: 0 0 1.4em;
+                    padding: 0;
+                    border: 0;
+                    list-style: none;
+                }
+
+                .volunteer-grid li,
+                .volunteer-steps li {
+                    position: relative;
+                    min-height: 5.4em;
+                    box-sizing: border-box;
+                    padding: 1.15em 1.25em;
+                    border: 1px solid var(--registration-news-border);
+                    border-radius: 10px;
+                    background: white;
+                    color: var(--registration-news-muted);
+                    line-height: 1.65;
+                    box-shadow: 0 10px 28px rgba(12, 21, 61, 0.08);
+                    &:before { display: none; }
+                    strong {
+                        display: block;
+                        margin-bottom: 0.3em;
+                        color: $primaryColor;
+                    }
+                    span {
+                        display: block;
+                        font-size: 0.82rem;
+                    }
+                }
+
+                .volunteer-requirements {
+                    gap: 0.2em 1em;
+                    margin-bottom: 0.9em;
+                    li {
+                        min-height: 0;
+                        padding: 0.25em 0 0.25em 1.1em;
+                        border: 0;
+                        border-radius: 0;
+                        background: transparent;
+                        line-height: 1.5;
+                        box-shadow: none;
+                        &:before {
+                            content: '';
+                            display: block;
+                            top: 0.9em;
+                            left: 0.1em;
+                            width: 0.3em;
+                            height: 0.3em;
+                            background: #a9b5c6;
+                        }
+                    }
+                }
+
+                .volunteer-roles li {
+                    border-left: 0;
+                }
+
+                .volunteer-roles,
+                .volunteer-benefits {
+                    display: block;
+                    border-top: 1px solid var(--registration-news-border);
+                    li {
+                        min-height: 0;
+                        padding: 1em 0 1em 2em;
+                        border: 0;
+                        border-bottom: 1px solid var(--registration-news-border);
+                        border-radius: 0;
+                        background: transparent;
+                        box-shadow: none;
+                        &:before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 1.6em;
+                            left: 0.35em;
+                            width: 0.55em;
+                            height: 0.55em;
+                            border-radius: 50%;
+                            background: $accentColor;
+                        }
+                        strong,
+                        span { display: inline; }
+                        strong { margin: 0 0.35em 0 0; }
+                    }
+                }
+
+                .volunteer-facts {
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    gap: 0;
+                    border-top: 1px solid #dfe8ef;
+                    border-bottom: 1px solid #dfe8ef;
+                    background: transparent;
+                    li {
+                        min-height: 0;
+                        padding: 1em 1.4em;
+                        border: 0;
+                        border-right: 1px solid #dfe8ef;
+                        border-radius: 0;
+                        color: var(--registration-news-muted);
+                        background: transparent;
+                        box-shadow: none;
+                        &:last-child { border-right: 0; }
+                        span {
+                            margin: 0 0 0.4em;
+                            color: #657287;
+                            font-size: 0.84rem;
+                            font-weight: 600;
+                        }
+                        strong {
+                            margin: 0;
+                            color: $primaryColor;
+                            font-size: 0.92rem;
+                            line-height: 1.55;
+                        }
+                    }
+                }
+
+                .volunteer-steps {
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                    counter-reset: volunteer-step;
+                    li {
+                        min-height: 9em;
+                        padding: 3.6em 1.1em 1.1em;
+                        border: 1px solid #d9e8f1;
+                        border-radius: 12px;
+                        color: var(--registration-news-muted);
+                        background: #f5fafc;
+                        box-shadow: none;
+                        text-align: center;
+                        counter-increment: volunteer-step;
+                        strong { color: $primaryColor; }
+                        &:before {
+                            content: counter(volunteer-step, decimal-leading-zero);
+                            display: grid;
+                            place-items: center;
+                            position: absolute;
+                            top: 0.85em;
+                            left: 50%;
+                            width: 2.2em;
+                            height: 2.2em;
+                            border-radius: 50%;
+                            color: white;
+                            background: $primaryColor;
+                            font-size: 0.82rem;
+                            font-weight: 800;
+                            transform: translateX(-50%);
+                        }
+                        &:not(:last-child):after {
+                            content: '›';
+                            position: absolute;
+                            z-index: 2;
+                            top: 50%;
+                            right: -0.72em;
+                            display: grid;
+                            place-items: center;
+                            width: 1.35em;
+                            height: 1.35em;
+                            border-radius: 50%;
+                            color: white;
+                            background: $primaryColorLighter;
+                            font-size: 1.1rem;
+                            font-weight: 800;
+                            line-height: 1;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+
+                .volunteer-note {
+                    margin: 0.6em 0 1.5em;
+                    color: #718096;
+                    font-size: 0.78rem;
+                    line-height: 1.6;
+                }
+
+                .volunteer-signup {
+                    margin: 1.6em 0 3em;
+                    padding: 1.4em 0 0;
+                    border-top: 1px solid var(--registration-news-border);
+                    background: transparent;
+                    text-align: center;
+                    p {
+                        margin: 0 0 0.8em;
+                        color: #526079;
+                        font-size: 0.82rem;
+                        line-height: 1.7;
+                    }
+                }
+
+                .volunteer-closing {
+                    margin: 3.5em auto 0;
+                    padding: 2em 1.5em;
+                    color: $primaryColor;
+                    background: linear-gradient(135deg, #eef7fb, #fff7e9);
+                    font-size: 1rem;
+                    line-height: 1.8;
+                    text-align: center;
+                    strong {
+                        color: #b96516;
+                        font-size: 1.25rem;
+                    }
+                    span {
+                        color: #526079;
+                        font-size: 0.82rem;
+                    }
+                }
+
+                a.details {
+                    min-height: 3.2em;
+                    padding-right: 2.2em;
+                    padding-left: 2.2em;
+                    border-radius: 8px;
+                    color: $primaryColor;
+                    background: $accentColor;
+                    box-shadow: 0 8px 20px rgba(12, 21, 61, 0.14);
+                    &:hover {
+                        color: $primaryColor;
+                        background: #edbd37;
+                    }
+                }
+            }
+        }
+
         @media all and (max-width: 760px) {
             .registration-news-shell { width: calc(100% - 2.4em); }
             .registration-news-hero >.registration-news-shell { padding-top: 2em; }
@@ -1285,6 +1521,31 @@ body:not(.in-home) {
             }
             .registration-news-body h2 { padding-right: 1.6em; padding-left: 1.6em; }
             .registration-news-body a.details { width: 100%; }
+            &.volunteer-recruitment {
+                h1 {
+                    font-size: clamp(1.7rem, 8vw, 2.2rem);
+                    white-space: normal;
+                }
+                .registration-news-body {
+                    .volunteer-grid,
+                    .volunteer-facts,
+                    .volunteer-steps {
+                        grid-template-columns: 1fr;
+                    }
+                    .volunteer-steps li { min-height: 0; }
+                    .volunteer-steps li:not(:last-child):after {
+                        top: auto;
+                        right: 50%;
+                        bottom: -0.72em;
+                        transform: translateX(50%) rotate(90deg);
+                    }
+                    .volunteer-facts li {
+                        border-right: 0;
+                        border-bottom: 1px solid #dfe8ef;
+                        &:last-child { border-bottom: 0; }
+                    }
+                }
+            }
         }
     }
     article#sponsorship {
