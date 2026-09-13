@@ -87,6 +87,8 @@ teams:
         position: Xi'an Jiaotong-Liverpool University
       - name: Chunqiang Li
         position: Alibaba DAMO Academy
+      - name: Patrick Hung
+        position: City University of Hong Kong
   - name: Organizing Committee
     id: organizing-committee
     members:
