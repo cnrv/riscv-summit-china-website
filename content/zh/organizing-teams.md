@@ -87,6 +87,8 @@ teams:
         position: 西交利物浦大学
       - name: 李春强
         position: 达摩院
+      - name: Patrick Hung
+        position: 香港城市大学
   - name: 组织委员会
     id: organizing-committee
     members:

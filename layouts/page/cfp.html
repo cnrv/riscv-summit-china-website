@@ -23,7 +23,7 @@
               <dd>{{ .Params.venue_value }}</dd>
             </div>
           </dl>
-          <p class="cfp-lead">{{ .Params.home_lead }}</p>
+          <p class="cfp-lead">{{ .Params.home_lead | markdownify | emojify }}</p>
         </div>
 
       </div>
@@ -55,8 +55,8 @@
         </header>
 
         <div class="cfp-timeline-list">
-          {{ range $index, $milestone := .Params.milestones }}
-            <div class="cfp-milestone{{ if eq $index 0 }} is-active{{ end }}">
+          {{ range $milestone := .Params.milestones }}
+            <div class="cfp-milestone{{ if $milestone.active }} is-active{{ end }}">
               <span class="cfp-milestone-dot" aria-hidden="true"></span>
               <div>
                 <p>{{ $milestone.stage }}</p>
@@ -68,6 +68,7 @@
         </div>
         <div class="cfp-timeline-action">
           <a class="cfp-button" href="{{ .Params.submission_url }}" target="_blank" rel="noopener noreferrer">{{ .Params.submission_label }}</a>
+          <p class="cfp-submission-note">{{ .Params.submission_note }}</p>
         </div>
       </section>
 
